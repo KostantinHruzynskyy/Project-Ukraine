@@ -54,6 +54,46 @@ const rooms = {
     object: "Oggetto simbolico: vyshyvanka, pane e parola ucraina.",
     image: "https://commons.wikimedia.org/wiki/Special:FilePath/Ukrainian%20embroidery.jpg",
     alt: "Ricamo tradizionale ucraino"
+  },
+  lingua: {
+    period: "Dal medioevo a oggi",
+    title: "Lingua ucraina",
+    text: "L'ucraino e una lingua slava orientale, scritta in cirillico. La sua storia passa da creativita letteraria, divieti imperiali, russificazione sovietica e rinascita pubblica dopo l'indipendenza.",
+    object: "Oggetto simbolico: una pagina in ucraino con la parola воля, liberta.",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Ukrainian%20alphabet.svg",
+    alt: "Alfabeto ucraino"
+  },
+  autori: {
+    period: "XVIII-XXI secolo",
+    title: "Autori e coscienza nazionale",
+    text: "Skovoroda, Shevchenko, Lesia Ukrainka, Franko, Stus, Kostenko, Zabuzhko e Zhadan mostrano come la letteratura difenda lingua, memoria, liberta e identita europea.",
+    object: "Oggetto simbolico: un libro consumato passato di mano in mano.",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Taras_Shevchenko_selfportrait_1840.jpg",
+    alt: "Autoritratto di Taras Shevchenko"
+  },
+  musica: {
+    period: "Tradizione e presente",
+    title: "Musica ucraina",
+    text: "Kobzari, bandura, canto corale, Mykola Lysenko, DakhaBrakha, Jamala, Go_A, ONUKA e Kalush collegano memoria popolare, sperimentazione e diplomazia culturale.",
+    object: "Oggetto simbolico: bandura, microfono e coro in rifugio.",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Bandura_instrument.jpg",
+    alt: "Bandura ucraina"
+  },
+  cibo: {
+    period: "Famiglia e stagioni",
+    title: "Cibo e tradizioni",
+    text: "Borshch, varenyky, holubtsi, pampushky, kutia, pysanky e vyshyvanka raccontano ospitalita, agricoltura, rituali familiari e identita regionale.",
+    object: "Oggetto simbolico: una ciotola di borshch con pane e aglio.",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Borscht_served.jpg",
+    alt: "Borshch servito in una ciotola"
+  },
+  citta: {
+    period: "Mappa viva",
+    title: "Citta ucraine",
+    text: "Kyiv, Lviv, Odesa, Kharkiv, Dnipro, Zaporizhzhia, Chernihiv e Uzhhorod hanno storie diverse: capitale, porto, industria, universita, confini, minoranze e resistenza.",
+    object: "Oggetto simbolico: una mappa con il Dnipro e le strade verso il Mar Nero.",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Map%20of%20Ukraine%20political%20simple%20blank.png",
+    alt: "Mappa politica semplificata dell'Ucraina"
   }
 };
 
@@ -76,6 +116,17 @@ roomButtons.forEach((button) => {
         <strong>${room.object}</strong>
       </div>
     `;
+
+    const image = display.querySelector("img");
+
+    if (image) {
+      image.loading = "lazy";
+      image.decoding = "async";
+      image.referrerPolicy = "no-referrer";
+      image.addEventListener("error", () => {
+        image.src = "https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Ukraine.svg";
+      }, { once: true });
+    }
   });
 });
 
