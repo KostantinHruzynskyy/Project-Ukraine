@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Archivio interattivo sull'Ucraina: storia, cultura, guerra russo-ucraina, memoria civile e fonti affidabili.">
+    <title>Skyy History - Battaglie</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="event-page-body">
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <nav class="navbar navbar-expand-lg war-navbar sticky-top" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="Main.html"><span class="brand-mark">SH</span>Skyy History</a>
+        <a class="nav-link ms-auto" href="atrocita.html">Atrocita</a>
+        <a class="nav-link" href="difesa.html">Difesa</a>
+      </div>
+    </nav>
+
+    <header class="event-hero" style='--event-image: url("https://commons.wikimedia.org/wiki/Special:FilePath/Crimea%20in%20Ukraine.svg");'>
+      <div class="container event-hero-content reveal">
+        <p class="hero-kicker mb-3">Mappa operativa</p>
+        <h1>Battaglie</h1>
+        <p class="hero-lead mt-4">Una pagina ispirata alle mappe operative tipo DeepState: non una mappa live, ma una lettura visuale delle battaglie che hanno segnato la guerra.</p>
+      </div>
+    </header>
+
+    <main class="event-detail-section">
+      <div class="container">
+        <div class="row g-4 align-items-center mb-5">
+          <div class="col-lg-7 reveal">
+            <div class="front-dashboard">
+              <div class="front-map" aria-label="Mappa simbolica dei fronti ucraini">
+                <div class="front-line"></div>
+                <span class="front-zone kyiv" title="Kyiv"></span>
+                <span class="front-zone kharkiv" title="Kharkiv"></span>
+                <span class="front-zone donbas" title="Donbas"></span>
+                <span class="front-zone south" title="Sud"></span>
+                <span class="front-zone black-sea" title="Mar Nero"></span>
+              </div>
+              <div class="front-legend">
+                <button class="front-filter active" type="button" data-front-filter="all">Tutte</button>
+                <button class="front-filter" type="button" data-front-filter="north">Nord</button>
+                <button class="front-filter" type="button" data-front-filter="east">Est</button>
+                <button class="front-filter" type="button" data-front-filter="south">Sud</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 reveal">
+            <p class="section-kicker mb-2">Lettura del fronte</p>
+            <h2 class="display-6">Dalla difesa di Kyiv alle battaglie d'attrito</h2>
+            <p class="section-text">Le battaglie qui sotto sono selezionate per peso militare, impatto civile e valore simbolico. La guerra cambia, quindi questa e una base storica da aggiornare.</p>
+          </div>
+        </div>
+
+        <section class="video-library mb-5">
+          <div class="row align-items-end mb-3 reveal">
+            <div class="col-lg-8">
+              <p class="section-kicker mb-2">Video di riferimento</p>
+              <h2 class="display-6">Guarda, poi collega alla mappa</h2>
+            </div>
+            <div class="col-lg-4">
+              <p class="section-text">Video e documentari reali per studiare le battaglie, il fronte e il costo umano della guerra.</p>
+            </div>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-lg-6">
+              <article class="video-card reveal">
+                <div class="video-frame">
+                  <iframe src="https://www.youtube.com/embed/9H_Fg_5x4ME" title="20 Days In Mariupol - FRONTLINE trailer" allowfullscreen></iframe>
+                </div>
+                <div class="video-body">
+                  <span>Mariupol</span>
+                  <h3>20 Days in Mariupol - FRONTLINE/AP</h3>
+                  <p>Trailer ufficiale del documentario di Mstyslav Chernov sull'assedio di Mariupol.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-lg-6">
+              <article class="video-card reveal">
+                <div class="video-frame">
+                  <iframe src="https://www.youtube.com/embed/o_e9F3ryi8M" title="The Battle of Bakhmut documentary" allowfullscreen></iframe>
+                </div>
+                <div class="video-body">
+                  <span>Bakhmut</span>
+                  <h3>The Battle of Bakhmut</h3>
+                  <p>Documentario divulgativo sulla battaglia piu lunga e logorante della guerra russo-ucraina.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6">
+              <article class="video-link-card reveal">
+                <span>Kyiv</span>
+                <h3>Sky News - The battle for Kyiv</h3>
+                <p>Servizio con testimonianze di soldati e civili sulla difesa della capitale nel 2022.</p>
+                <a class="source-link" href="https://news.sky.com/video/ukraine-war-the-battle-for-kyiv-12608856">Apri video</a>
+              </article>
+            </div>
+            <div class="col-md-6">
+              <article class="video-link-card reveal">
+                <span>Bucha e Kyiv oblast</span>
+                <h3>FRONTLINE/AP - Documenting War Crimes</h3>
+                <p>Indagine video su crimini di guerra russi, con focus sulle aree attorno a Kyiv e Bucha.</p>
+                <a class="source-link" href="https://www.pbs.org/wgbh/frontline/documentary/putins-attack-on-ukraine-documenting-war-crimes/">Apri documentario</a>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <aside class="motto-strip reveal">
+          <strong>Борітеся - поборете!</strong>
+          <span>Combattete e vincerete. Verso di Taras Shevchenko, spesso citato come motto di resistenza ucraina.</span>
+        </aside>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-xl-4"><article class="front-card reveal" data-front="north"><span>Feb-mar 2022</span><h3>Battaglia di Kyiv</h3><p>La capitale resiste all'offensiva iniziale russa e impedisce il crollo dello stato ucraino.</p></article></div>
+          <div class="col-md-6 col-xl-4"><article class="front-card reveal" data-front="north"><span>Feb-apr 2022</span><h3>Irpin, Bucha, Hostomel</h3><p>I combattimenti attorno a Kyiv fermano l'avanzata e rivelano poi gravi atrocita contro i civili.</p></article></div>
+          <div class="col-md-6 col-xl-4"><article class="front-card reveal" data-front="east"><span>Feb-mag 2022</span><h3>Kharkiv</h3><p>La seconda citta ucraina resiste a bombardamenti e tentativi di penetrazione russa.</p></article></div>
+          <div class="col-md-6 col-xl-4"><article class="front-card reveal" data-front="south"><span>Mar-mag 2022</span><h3>Mariupol e Azovstal</h3><p>Assedio durissimo, distruzione urbana e difesa finale nell'acciaieria Azovstal.</p></article></div>
+          <div class="col-md-6 col-xl-4"><article class="front-card reveal" data-front="south"><span>Feb-giu 2022</span><h3>Snake Island</h3><p>Piccola isola, enorme valore simbolico: la sfida alla Moskva diventa motto mondiale della resistenza ucraina.</p></article></div>
+          <div class="col-md-6 col-xl-4"><article class="front-card reveal" data-front="east"><span>Mag-lug 2022</span><h3>Sievierodonetsk e Lysychansk</h3><p>Battaglie d'artiglieria nel Luhansk, con logoramento pesante e ritirate ucraine organizzate.</p></article></div>
+          <div class="col-md-6 col-xl-4"><article class="front-card reveal" data-front="south"><span>Set-nov 2022</span><h3>Controffensiva di Kherson</h3><p>L'Ucraina riconquista Kherson, unico capoluogo regionale preso dalla Russia nel 2022.</p></article></div>
+          <div class="col-md-6 col-xl-4"><article class="front-card reveal" data-front="east"><span>2022-2023</span><h3>Bakhmut</h3><p>Simbolo della guerra d'attrito: mesi di combattimenti urbani, distruzione e perdite altissime.</p></article></div>
+          <div class="col-md-6 col-xl-4"><article class="front-card reveal" data-front="south"><span>2023</span><h3>Robotyne e Zaporizhzhia</h3><p>Settore chiave della controffensiva ucraina, tra campi minati e difese stratificate.</p></article></div>
+          <div class="col-md-6 col-xl-4"><article class="front-card reveal" data-front="east"><span>2023-2024</span><h3>Avdiivka</h3><p>Fortezza davanti a Donetsk, caduta dopo una lunga offensiva russa e combattimenti intensi.</p></article></div>
+          <div class="col-md-6 col-xl-4"><article class="front-card reveal" data-front="east"><span>2024-2025</span><h3>Chasiv Yar e Pokrovsk</h3><p>Assi orientali cruciali per la pressione russa verso il Donetsk occidentale.</p></article></div>
+          <div class="col-md-6 col-xl-4"><article class="front-card reveal" data-front="north"><span>2024</span><h3>Kursk</h3><p>Incursione ucraina oltre confine, usata per pressione operativa e politica sulla Russia.</p></article></div>
+          <div class="col-md-6 col-xl-4"><article class="front-card reveal" data-front="south"><span>2022-2026</span><h3>Mar Nero</h3><p>Attacchi navali, droni e pressione sulla flotta russa cambiano l'equilibrio marittimo.</p></article></div>
+        </div>
+        <a class="back-link" href="Main.html">Torna alla home</a>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="encyclopedia-data.js"></script>
+    <script src="encyclopedia.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
