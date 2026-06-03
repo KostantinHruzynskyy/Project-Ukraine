@@ -162,7 +162,7 @@ img {
 }
 
 .language-select {
-  width: 156px;
+  width: 176px;
   border: 1px solid rgba(238, 227, 200, 0.35);
   border-radius: 999px;
   padding: 0.45rem 0.75rem;
@@ -171,6 +171,11 @@ img {
   font-family: Arial, sans-serif;
   font-size: 0.82rem;
   outline: none;
+}
+
+.language-select option {
+  color: var(--ink);
+  background: var(--paper-light);
 }
 
 .language-select:focus {
@@ -1632,6 +1637,13 @@ img.image-focus-top {
 .dossier-section {
   background: var(--paper);
   color: var(--ink);
+}
+
+.event-detail-section .dossier-section {
+  margin: 0 0 2rem;
+  padding: 0;
+  background: transparent;
+  color: inherit;
 }
 
 .dossier-grid {

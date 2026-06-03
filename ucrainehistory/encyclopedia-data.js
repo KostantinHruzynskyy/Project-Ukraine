@@ -64,6 +64,18 @@ window.SkyyEncyclopediaData = {
     "museo.html": {
       title: "Museo interattivo Ucraina | Skyy History",
       description: "Museo interattivo con sale su Kyivan Rus, cosacchi, Holodomor, Maidan, lingua, cultura e guerra."
+    },
+    "lingua-cultura.html": {
+      title: "Lingua e cultura ucraina | Skyy History",
+      description: "Approfondimento su lingua ucraina, plurilinguismo, toponimi, letteratura, musica, patrimonio e identita culturale."
+    },
+    "rifugiati.html": {
+      title: "Rifugiati e diaspora ucraina | Skyy History",
+      description: "Scheda su rifugiati, sfollati interni, accoglienza europea, diaspora storica e reti civili ucraine."
+    },
+    "ricostruzione.html": {
+      title: "Ricostruzione dell'Ucraina | Skyy History",
+      description: "Approfondimento su ricostruzione, energia, mine, infrastrutture, economia, scuole, salute e futuro europeo dell'Ucraina."
     }
   },
   sources: [
@@ -250,6 +262,14 @@ window.SkyyEncyclopediaData = {
       text: "Il paese e rilevante per sicurezza alimentare, metallurgia, energia nucleare, reti elettriche, logistica ferroviaria e settore tecnologico. La guerra ha colpito porti, campi, fabbriche e infrastrutture energetiche.",
       facts: ["Chornozem e uno dei suoli agricoli piu fertili", "Porti del Mar Nero cruciali per export", "Industria pesante nell'est e nel sud", "Settore digitale e volontariato tecnologico durante la guerra"],
       source: "Britannica, Encyclopedia of Ukraine"
+    },
+    {
+      id: "ricostruzione",
+      label: "Ricostruzione",
+      title: "Riparare danni, servizi e fiducia",
+      text: "Ricostruire l'Ucraina significa riparare case, energia, scuole, ospedali, ferrovie, campi agricoli, porti, reti digitali e amministrazioni locali. Le stime cambiano mentre la guerra continua.",
+      facts: ["RDNA distingue danni, perdite e bisogni", "Mine e ordigni inesplosi rallentano ritorni e agricoltura", "Energia e riscaldamento sono priorita civili", "Ricostruzione e riforme europee procedono insieme"],
+      source: "UNDP RDNA5, World Bank, OHCHR"
     },
     {
       id: "guerra",
@@ -722,13 +742,13 @@ window.SkyyEncyclopediaData = {
       {
         title: "Percorso difesa e societa",
         aim: "Per leggere la resistenza come sistema militare, civile, logistico e tecnologico.",
-        pages: ["difesa.html", "battaglie.html", "invasione-2022.html", "mariupol.html", "museo.html"],
+        pages: ["difesa.html", "battaglie.html", "invasione-2022.html", "rifugiati.html", "ricostruzione.html", "museo.html"],
         output: "Disegna il sistema: fronte, retrovia, sanita, volontari, tecnologia."
       },
       {
         title: "Percorso cultura viva",
         aim: "Per evitare di raccontare l'Ucraina solo attraverso il dolore.",
-        pages: ["museo.html", "dossier.html", "indipendenza.html", "tatari-crimea.html", "euromaidan.html"],
+        pages: ["lingua-cultura.html", "museo.html", "dossier.html", "indipendenza.html", "tatari-crimea.html", "euromaidan.html"],
         output: "Scegli cinque elementi culturali e collegali a regione, lingua e storia."
       }
     ],
@@ -736,14 +756,14 @@ window.SkyyEncyclopediaData = {
       {
         title: "Imperi, sovranita e lingua",
         text: "L'Ucraina va letta dentro la pressione di imperi, politiche di russificazione, scelta linguistica e costruzione statale.",
-        pages: ["holodomor.html", "indipendenza.html", "euromaidan.html", "crimea-donbas.html"],
+        pages: ["lingua-cultura.html", "holodomor.html", "indipendenza.html", "euromaidan.html", "crimea-donbas.html"],
         sources: ["Internet Encyclopedia of Ukraine", "Encyclopedia of Modern Ukraine", "UK PCGN - Ukraine Toponymic Factfile"],
         notes: ["La lingua non e solo comunicazione: e diritto culturale.", "La sovranita moderna si collega a memorie piu lunghe.", "Toponimi corretti rendono il sito piu professionale."]
       },
       {
         title: "Violenza contro civili",
         text: "Massacri, fame, deportazioni, assedi e bombardamenti colpiscono persone e comunita, non soltanto territori.",
-        pages: ["holodomor.html", "babyn-yar.html", "tatari-crimea.html", "bucha.html", "mariupol.html", "atrocita.html"],
+        pages: ["holodomor.html", "babyn-yar.html", "tatari-crimea.html", "bucha.html", "mariupol.html", "atrocita.html", "rifugiati.html"],
         sources: ["OHCHR Ukraine reports", "OHCHR Protection of Civilians - April 2026", "Human Rights Watch - Bucha", "International Criminal Court - Ukraine"],
         notes: ["Separare emozione e prova rafforza il racconto.", "Le vittime vanno nominate come persone, non numeri.", "Ogni pagina deve indicare data, luogo e fonte."]
       },
@@ -757,7 +777,7 @@ window.SkyyEncyclopediaData = {
       {
         title: "Cultura, patrimonio e futuro",
         text: "Patrimonio, musei, musica, cucina, libri, diaspora e ricostruzione spiegano perche la storia non finisce sul fronte.",
-        pages: ["museo.html", "dossier.html", "indipendenza.html", "tatari-crimea.html", "chernobyl.html"],
+        pages: ["lingua-cultura.html", "museo.html", "dossier.html", "rifugiati.html", "ricostruzione.html", "indipendenza.html", "tatari-crimea.html", "chernobyl.html"],
         sources: ["Ukrainian Institute - Insight UA", "UNESCO - Ukraine intangible heritage", "UNDP RDNA5 Ukraine", "World Bank Data - Ukraine"],
         notes: ["Cultura e ricostruzione sono parte della sopravvivenza nazionale.", "Ogni oggetto puo diventare una fonte.", "La diaspora collega memoria e futuro."]
       }
@@ -897,6 +917,33 @@ window.SkyyEncyclopediaData = {
         places: ["Kyiv", "Crimea", "Carpazi", "Dnipro", "diaspora ucraina"],
         questions: ["Che cosa racconta un oggetto oltre alla sua bellezza?", "Come evitare folklore senza contesto?", "Quali sale servono per mostrare cultura, trauma e futuro insieme?"],
         next: "Torna al Dossier per collegare ogni sala a fonti, date e domande."
+      },
+      "lingua-cultura.html": {
+        related: ["museo.html", "dossier.html", "indipendenza.html", "tatari-crimea.html", "euromaidan.html", "rifugiati.html"],
+        compare: ["Museo: oggetti e sale culturali.", "Tatari di Crimea: lingua e popolo indigeno.", "Rifugiati: lingua, scuola e diaspora dopo il 2022."],
+        external: ["UK PCGN - Ukraine Toponymic Factfile", "Ukrainian Institute - Insight UA", "UNESCO - Ukraine intangible heritage"],
+        concepts: ["lingua ucraina", "toponimi", "russificazione", "plurilinguismo", "patrimonio", "letteratura"],
+        places: ["Kyiv", "Kharkiv", "Lviv", "Crimea", "Odesa", "diaspora ucraina"],
+        questions: ["Perche usare Kyiv invece di Kiev?", "Come distinguere lingua quotidiana e identita politica?", "Quali tradizioni mostrano una cultura viva e non solo folklorica?"],
+        next: "Apri il Museo per vedere come lingua, oggetti e memoria diventano percorso visuale."
+      },
+      "rifugiati.html": {
+        related: ["invasione-2022.html", "mariupol.html", "bucha.html", "ricostruzione.html", "lingua-cultura.html", "dossier.html"],
+        compare: ["Invasione 2022: origine dello sfollamento di massa.", "Ricostruzione: ritorni, case, scuole e servizi.", "Lingua e cultura: scuola e identita nella diaspora."],
+        external: ["UNHCR Ukraine Situation", "UNHCR Europe - Ukraine displacement 2026", "OHCHR Ukraine reports"],
+        concepts: ["rifugiati", "sfollati interni", "protezione temporanea", "diaspora", "ritorno", "integrazione"],
+        places: ["Polonia", "Germania", "Italia", "Ucraina occidentale", "Kyiv", "Mariupol"],
+        questions: ["Che differenza c'e tra rifugiato e sfollato interno?", "Perche ogni numero va letto con fonte e data?", "Come scuola, lingua e lavoro trasformano l'accoglienza lunga?"],
+        next: "Passa a Ricostruzione per capire quando e come il ritorno puo diventare possibile."
+      },
+      "ricostruzione.html": {
+        related: ["rifugiati.html", "invasione-2022.html", "battaglie.html", "difesa.html", "chernobyl.html", "dossier.html"],
+        compare: ["Rifugiati: ritorni e servizi civili.", "Difesa: energia e infrastrutture come retrovia.", "Chornobyl: ambiente, rischio e fiducia pubblica."],
+        external: ["UNDP RDNA5 Ukraine", "World Bank Data - Ukraine", "OHCHR Ukraine reports"],
+        concepts: ["ricostruzione", "energia", "mine", "danni", "perdite", "bisogni", "riforme"],
+        places: ["Kyiv", "Kharkiv", "Kherson", "Donbas", "Mar Nero", "campi agricoli minati"],
+        questions: ["Perche ricostruzione e bonifica devono procedere insieme?", "Come distinguere danni, perdite e bisogni?", "Quali infrastrutture proteggono meglio la vita civile?"],
+        next: "Torna al Dossier per trasformare dati, bisogni e fonti in una ricerca completa."
       }
     }
   },
@@ -1050,6 +1097,36 @@ window.SkyyEncyclopediaData = {
         ["Compito", "Scheda", "Per ogni oggetto puoi scrivere data, luogo, uso, fonte e significato."]
       ],
       sources: ["Ukrainian Institute - Insight UA", "UNESCO intangible heritage", "Encyclopedia of Modern Ukraine"]
+    },
+    "lingua-cultura.html": {
+      title: "Scheda enciclopedica: lingua e cultura",
+      text: "Lingua ucraina, plurilinguismo, toponimi, letteratura, musica e patrimonio spiegano perche la cultura sia parte della sovranita e della resistenza civile.",
+      cards: [
+        ["Toponimi", "Kyiv, Kharkiv, Chornobyl", "Usare nomi ucraini rende la ricerca piu precisa e rispettosa."],
+        ["Plurilinguismo", "Identita complessa", "Lingua quotidiana, memoria familiare e identita politica non coincidono sempre."],
+        ["Patrimonio", "Cultura viva", "Borshch, pysanky, vyshyvanka, musica e libri cambiano nel presente."]
+      ],
+      sources: ["UK PCGN - Ukraine Toponymic Factfile", "Ukrainian Institute - Insight UA", "UNESCO intangible heritage"]
+    },
+    "rifugiati.html": {
+      title: "Scheda enciclopedica: rifugiati e diaspora",
+      text: "Lo sfollamento causato dalla guerra riguarda casa, scuola, lavoro, salute, protezione legale e memoria. I dati vanno letti con fonte e data.",
+      cards: [
+        ["Civili", "Rifugiati e sfollati", "Chi attraversa un confine e chi resta dentro il paese vive problemi diversi."],
+        ["Accoglienza", "Dall'emergenza alla continuita", "Scuola, lingua, lavoro e salute trasformano il primo arrivo in vita quotidiana."],
+        ["Diaspora", "Reti globali", "Comunita ucraine nel mondo sostengono cultura, aiuti e memoria."]
+      ],
+      sources: ["UNHCR Ukraine Situation", "UNHCR Europe - Ukraine displacement 2026", "OHCHR Ukraine reports"]
+    },
+    "ricostruzione.html": {
+      title: "Scheda enciclopedica: ricostruzione",
+      text: "Ricostruzione significa riparare infrastrutture e servizi, bonificare mine, proteggere energia, sostenere ritorni e collegare riforme al futuro europeo.",
+      cards: [
+        ["Dati", "Danni, perdite, bisogni", "Le valutazioni come RDNA separano categorie diverse e cambiano nel tempo."],
+        ["Sicurezza", "Mine e energia", "Bonifica e reti resilienti sono condizioni per vita civile, agricoltura e ritorno."],
+        ["Futuro", "Riforme e comunità", "Trasparenza, digitale e amministrazioni locali decidono qualita della riparazione."]
+      ],
+      sources: ["UNDP RDNA5 Ukraine", "World Bank Data - Ukraine", "OHCHR Ukraine reports"]
     }
   },
   internalDeepening: {
@@ -1472,6 +1549,90 @@ window.SkyyEncyclopediaData = {
       ],
       lenses: [["Museo", "Ogni oggetto e una domanda, non un ornamento."], ["Didattica", "Una sala deve insegnare a collegare fonte e significato."], ["Cultura", "Proteggere patrimonio significa proteggere futuro."]],
       mistakes: ["Mettere oggetti senza contesto.", "Saltare le fonti delle immagini.", "Raccontare la cultura come folklore fisso."]
+    },
+    "lingua-cultura.html": {
+      title: "Approfondimento completo: lingua e cultura",
+      intro: "Lingua e cultura ucraine vanno lette come storia viva: toponimi, scuola, letteratura, musica, cucina, minoranze e identita politica si intrecciano.",
+      chapters: [
+        {
+          title: "Lingua e toponimi",
+          text: "L'ucraino usa un alfabeto cirillico proprio e porta con se storia letteraria, divieti imperiali, politiche sovietiche e rinascita pubblica dopo il 1991.",
+          points: ["Kyiv, Kharkiv e Chornobyl sono forme coerenti con l'ucraino.", "La lingua ufficiale non cancella il plurilinguismo reale.", "Toponimi corretti migliorano credibilita e rispetto."]
+        },
+        {
+          title: "Plurilinguismo e societa",
+          text: "Molti cittadini hanno vissuto in ambienti bilingui. La guerra ha reso piu forte l'uso pubblico dell'ucraino, ma identita e lingua quotidiana restano complesse.",
+          points: ["Non identificare automaticamente lingua russa e politica russa.", "Le minoranze hanno storie proprie.", "Scuola, media e famiglia cambiano lentamente."]
+        },
+        {
+          title: "Cultura viva",
+          text: "Libri, musica, teatro, cinema, borshch, vyshyvanka e archivi digitali mostrano un paese che crea, esporta cultura e difende patrimonio durante la guerra.",
+          points: ["Tradizione e sperimentazione convivono.", "La cultura serve anche a curare trauma e diaspora.", "Le fonti ucraine sono fondamentali."]
+        }
+      ],
+      timeline: [
+        ["XIX secolo", "Rinascita culturale", "Letteratura e lingua diventano strumenti di coscienza nazionale."],
+        ["1991", "Stato indipendente", "L'ucraino entra nel quadro istituzionale dello stato moderno."],
+        ["Dal 2014", "Nuova centralita", "Guerra, media e scuola rafforzano il ruolo pubblico della lingua."]
+      ],
+      lenses: [["Lingua", "E anche diritto culturale e memoria."], ["Pluralita", "Bilinguismo non significa identita divisa."], ["Patrimonio", "La cultura cambia mentre resiste."]],
+      mistakes: ["Usare Kiev quando si sta seguendo lo standard ucraino moderno.", "Confondere russofono con filorusso.", "Raccontare la cultura come folklore immobile."]
+    },
+    "rifugiati.html": {
+      title: "Approfondimento completo: rifugiati e diaspora",
+      intro: "Rifugiati e sfollati mostrano il costo civile della guerra: famiglie divise, scuole cambiate, lavoro perso, trauma, accoglienza e desiderio di ritorno.",
+      chapters: [
+        {
+          title: "Sfollamento interno ed estero",
+          text: "Chi resta dentro l'Ucraina e chi attraversa un confine affronta sistemi diversi di protezione, documenti, casa, lavoro, scuola e salute.",
+          points: ["Distinguere rifugiati e sfollati interni.", "Ogni dato richiede fonte e data.", "Il ritorno dipende da sicurezza, casa e servizi."]
+        },
+        {
+          title: "Accoglienza lunga",
+          text: "La protezione temporanea e l'ospitalita iniziale devono diventare scuola, lingua, lavoro, salute mentale e reti sociali.",
+          points: ["I bambini hanno bisogno di continuita educativa.", "Le madri e gli anziani portano carichi specifici.", "Il trauma non finisce con l'arrivo in un paese sicuro."]
+        },
+        {
+          title: "Diaspora e memoria",
+          text: "La diaspora storica e la nuova diaspora post-2022 raccolgono aiuti, difendono toponimi, organizzano cultura e tengono aperta la memoria pubblica.",
+          points: ["La diaspora non e solo nostalgia.", "Reti civili sostengono ospedali, generatori e scuole.", "Lingua e tradizioni aiutano l'identita dei bambini."]
+        }
+      ],
+      timeline: [
+        ["Dal 2014", "Primi sfollamenti moderni", "Crimea e Donbas producono migrazioni interne."],
+        ["Dal 24 febbraio 2022", "Sfollamento di massa", "L'invasione su vasta scala sposta milioni di persone."],
+        ["2023-2026", "Accoglienza lunga", "Ritorni, integrazione e bisogno di servizi restano aperti."]
+      ],
+      lenses: [["Dati", "Ogni numero e una fotografia temporanea."], ["Famiglia", "La guerra cambia cura, scuola e lavoro."], ["Diaspora", "Memoria e aiuti viaggiano insieme."]],
+      mistakes: ["Trattare rifugiati e sfollati interni come la stessa categoria.", "Usare numeri senza data.", "Raccontare l'accoglienza solo come emergenza iniziale."]
+    },
+    "ricostruzione.html": {
+      title: "Approfondimento completo: ricostruzione",
+      intro: "Ricostruire l'Ucraina richiede sicurezza, bonifica, energia, dati affidabili, anticorruzione, servizi locali e attenzione al trauma sociale.",
+      chapters: [
+        {
+          title: "Danni e bisogni",
+          text: "Le valutazioni distinguono danni fisici, perdite economiche e bisogni di ricostruzione. La guerra in corso rende ogni stima aggiornabile.",
+          points: ["Danni non significa bisogni totali.", "Le infrastrutture civili hanno priorita umanitaria.", "Scuole e ospedali contano quanto ponti e centrali."]
+        },
+        {
+          title: "Mine, energia e ritorni",
+          text: "Bonifica e rete energetica decidono se famiglie, agricoltura e imprese possono tornare. Senza sicurezza, la ricostruzione resta fragile.",
+          points: ["Mine e ordigni inesplosi durano anni.", "Energia distribuita aumenta resilienza.", "Ritorno e servizi locali sono inseparabili."]
+        },
+        {
+          title: "Futuro europeo",
+          text: "La ricostruzione e anche riforma: trasparenza, appalti, digitale, anticorruzione, partecipazione locale e standard europei.",
+          points: ["Ricostruire meglio richiede controllo pubblico.", "Le comunita locali conoscono bisogni reali.", "Investimenti e giustizia devono camminare insieme."]
+        }
+      ],
+      timeline: [
+        ["2022", "Danni immediati", "Energia, case, ponti, scuole e ospedali entrano nella lista delle priorita."],
+        ["2023-2025", "Valutazioni RDNA", "Stime internazionali aggiornano danni, perdite e bisogni."],
+        ["2026 e oltre", "Ricostruzione lunga", "Bonifica, ritorni, riforme e infrastrutture richiedono anni."]
+      ],
+      lenses: [["Sicurezza", "Senza bonifica non c'e ritorno stabile."], ["Metodo", "Danni, perdite e bisogni non sono sinonimi."], ["Fiducia", "Trasparenza e comunita locali decidono la qualita della ricostruzione."]],
+      mistakes: ["Parlare solo di edifici e non di servizi.", "Usare stime senza indicare aggiornamento.", "Separare ricostruzione da sicurezza e giustizia."]
     }
   }
 };

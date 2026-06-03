@@ -1,5 +1,90 @@
 const root = document.documentElement;
 
+const SKY_LANGUAGE_OPTIONS = [
+  ["it", "Italiano"],
+  ["en", "English"],
+  ["fr", "Français"],
+  ["de", "Deutsch"],
+  ["es", "Español"],
+  ["uk", "Українська"],
+  ["pl", "Polski"],
+  ["pt", "Português"],
+  ["ro", "Română"],
+  ["nl", "Nederlands"],
+  ["da", "Dansk"],
+  ["sv", "Svenska"],
+  ["no", "Norsk"],
+  ["fi", "Suomi"],
+  ["et", "Eesti"],
+  ["lv", "Latviešu"],
+  ["lt", "Lietuvių"],
+  ["cs", "Čeština"],
+  ["sk", "Slovenčina"],
+  ["sl", "Slovenščina"],
+  ["hr", "Hrvatski"],
+  ["sr", "Српски"],
+  ["bg", "Български"],
+  ["el", "Ελληνικά"],
+  ["tr", "Türkçe"],
+  ["ru", "Русский"],
+  ["be", "Беларуская"],
+  ["ka", "ქართული"],
+  ["hy", "Հայերեն"],
+  ["az", "Azərbaycanca"],
+  ["kk", "Қазақша"],
+  ["uz", "Oʻzbekcha"],
+  ["ky", "Кыргызча"],
+  ["ar", "العربية"],
+  ["iw", "עברית"],
+  ["fa", "فارسی"],
+  ["ur", "اردو"],
+  ["hi", "हिन्दी"],
+  ["bn", "বাংলা"],
+  ["pa", "ਪੰਜਾਬੀ"],
+  ["gu", "ગુજરાતી"],
+  ["mr", "मराठी"],
+  ["ta", "தமிழ்"],
+  ["te", "తెలుగు"],
+  ["kn", "ಕನ್ನಡ"],
+  ["ml", "മലയാളം"],
+  ["si", "සිංහල"],
+  ["ne", "नेपाली"],
+  ["th", "ไทย"],
+  ["vi", "Tiếng Việt"],
+  ["id", "Bahasa Indonesia"],
+  ["ms", "Bahasa Melayu"],
+  ["tl", "Filipino"],
+  ["ja", "日本語"],
+  ["ko", "한국어"],
+  ["zh-CN", "中文简体"],
+  ["zh-TW", "中文繁體"],
+  ["sw", "Kiswahili"],
+  ["am", "አማርኛ"],
+  ["ha", "Hausa"],
+  ["ig", "Igbo"],
+  ["yo", "Yorùbá"],
+  ["zu", "isiZulu"],
+  ["af", "Afrikaans"],
+  ["sq", "Shqip"],
+  ["eu", "Euskara"],
+  ["ca", "Català"],
+  ["gl", "Galego"],
+  ["ga", "Gaeilge"],
+  ["cy", "Cymraeg"],
+  ["is", "Íslenska"],
+  ["mt", "Malti"],
+  ["la", "Latina"],
+  ["eo", "Esperanto"]
+];
+
+const SKY_RTL_LANGUAGES = new Set(["ar", "fa", "iw", "ur"]);
+
+function renderLanguageOptions() {
+  return SKY_LANGUAGE_OPTIONS
+    .map(([value, label]) => `<option value="${value}">${label}</option>`)
+    .join("");
+}
+
 function safeStorageGet(key) {
   try {
     return window.localStorage.getItem(key);
@@ -41,7 +126,8 @@ function setupGlobalNavbar() {
     "mariupol.html"
   ];
   const guerraPages = ["battaglie.html", "atrocita.html", "difesa.html"];
-  const risorsePages = ["museo.html", "dossier.html"];
+  const studioPages = ["lingua-cultura.html"];
+  const risorsePages = ["museo.html", "dossier.html", "rifugiati.html", "ricostruzione.html"];
 
   nav.className = "navbar navbar-expand-lg war-navbar sticky-top";
   nav.setAttribute("data-bs-theme", "dark");
@@ -91,6 +177,7 @@ function setupGlobalNavbar() {
             <ul class="dropdown-menu dropdown-menu-dark history-dropdown">
               <li><a class="dropdown-item" href="${homeAnchor("impara")}">Impara</a></li>
               <li><a class="dropdown-item" href="${homeAnchor("atlante-ucraina")}">Atlante Ucraina</a></li>
+              <li><a class="dropdown-item" href="lingua-cultura.html">Lingua e cultura</a></li>
               <li><a class="dropdown-item" href="${homeAnchor("enciclopedia-ucraina")}">Enciclopedia Ucraina</a></li>
               <li><a class="dropdown-item" href="${homeAnchor("cronologia-civile")}">Cronologia civile</a></li>
               <li><a class="dropdown-item" href="${homeAnchor("storia-ucraina")}">Storia dell'Ucraina</a></li>
@@ -106,6 +193,8 @@ function setupGlobalNavbar() {
               <li><a class="dropdown-item" href="${homeAnchor("documenti")}">Documenti e prove</a></li>
               <li><a class="dropdown-item" href="dossier.html">Dossier totale</a></li>
               <li><a class="dropdown-item" href="museo.html">Museo interattivo</a></li>
+              <li><a class="dropdown-item" href="rifugiati.html">Rifugiati e diaspora</a></li>
+              <li><a class="dropdown-item" href="ricostruzione.html">Ricostruzione</a></li>
               <li><a class="dropdown-item" href="${homeAnchor("esplora")}">Esplora</a></li>
             </ul>
           </li>
@@ -114,18 +203,7 @@ function setupGlobalNavbar() {
           </li>
           <li class="nav-item">
             <select class="language-select" id="languageSelect" aria-label="Lingua">
-              <option value="it">Italiano</option>
-              <option value="en">English</option>
-              <option value="fr">Français</option>
-              <option value="de">Deutsch</option>
-              <option value="es">Español</option>
-              <option value="uk">Українська</option>
-              <option value="zh-CN">中文</option>
-              <option value="hi">हिन्दी</option>
-              <option value="ru">Русский</option>
-              <option value="pl">Polski</option>
-              <option value="ar">العربية</option>
-              <option value="pt">Português</option>
+              ${renderLanguageOptions()}
             </select>
           </li>
         </ul>
@@ -142,6 +220,8 @@ function setupGlobalNavbar() {
     nav.querySelector('[data-nav-section="eventi"]')?.classList.add("active");
   } else if (guerraPages.includes(currentFile)) {
     nav.querySelector('[data-nav-section="guerra"]')?.classList.add("active");
+  } else if (studioPages.includes(currentFile)) {
+    nav.querySelector('[data-nav-section="studio"]')?.classList.add("active");
   } else if (risorsePages.includes(currentFile)) {
     nav.querySelector('[data-nav-section="risorse"]')?.classList.add("active");
   }
@@ -195,6 +275,9 @@ function setupGlobalFooter() {
           <a href="${homeAnchor("film")}">Film e documentari</a>
           <a href="${homeAnchor("potenza-culturale")}">Potenza culturale</a>
           <a href="${homeAnchor("documenti")}">Documenti e prove</a>
+          <a href="lingua-cultura.html">Lingua e cultura</a>
+          <a href="rifugiati.html">Rifugiati e diaspora</a>
+          <a href="ricostruzione.html">Ricostruzione</a>
         </section>
 
         <section>
@@ -204,6 +287,9 @@ function setupGlobalFooter() {
           <a href="difesa.html">Difesa ucraina</a>
           <a href="dossier.html">Dossier totale</a>
           <a href="museo.html">Museo interattivo</a>
+          <a href="lingua-cultura.html">Lingua e cultura</a>
+          <a href="rifugiati.html">Rifugiati e diaspora</a>
+          <a href="ricostruzione.html">Ricostruzione</a>
         </section>
 
         <section>
@@ -244,7 +330,7 @@ function setupGlobalFooter() {
         </div>
         <div>
           <h2>Lingue</h2>
-          <p>Usa il selettore in alto per tradurre il sito in italiano, inglese, francese, tedesco, spagnolo, ucraino, cinese, hindi, russo, polacco, arabo e portoghese.</p>
+          <p>Usa il selettore in alto per tradurre il sito in molte lingue: Europa, Asia, Medio Oriente, Africa e Americhe sono coperte da Google Translate.</p>
         </div>
       </div>
 
@@ -322,6 +408,8 @@ function setupUkraineKnowledgePanel() {
         <a class="history-btn" href="${homeAnchor("enciclopedia-ucraina")}">Enciclopedia</a>
         <a class="history-btn" href="dossier.html">Dossier totale</a>
         <a class="history-btn" href="${homeAnchor("potenza-culturale")}">Cultura e autori</a>
+        <a class="history-btn" href="lingua-cultura.html">Lingua</a>
+        <a class="history-btn" href="ricostruzione.html">Ricostruzione</a>
       </div>
     </div>
   `;
@@ -1033,6 +1121,138 @@ const pageDeepDives = {
       ["UNESCO - Lesia Ukrainka", "https://www.unesco.org/en/articles/lesia-ukrainka-path-love-fight-and-hope"],
       ["UNESCO - Ukrainian borscht", "https://ich.unesco.org/en/USL/01852"]
     ]
+  },
+  "lingua-cultura.html": {
+    eyebrow: "Lingua e identità",
+    title: "Ucraino, plurilinguismo e cultura viva",
+    intro: "Questa pagina aiuta a capire perché la lingua non è solo comunicazione: in Ucraina è scuola, memoria familiare, toponimi, musica, letteratura e diritto culturale.",
+    tabs: [
+      {
+        label: "Lingua",
+        title: "Ucraino nello spazio pubblico",
+        text: "L'ucraino è lingua ufficiale dello stato e usa un alfabeto cirillico proprio. La sua storia passa da creatività letteraria, divieti imperiali, russificazione e rinascita dopo l'indipendenza.",
+        items: ["Alfabeto cirillico ucraino", "Toponimi: Kyiv, Kharkiv, Chornobyl", "Scuola e media", "Lingua come diritto culturale"]
+      },
+      {
+        label: "Pluralità",
+        title: "Una società multilingue",
+        text: "Molti cittadini sono bilingui o parlano lingue minoritarie. Identità politica e lingua quotidiana non coincidono sempre: ridurre tutto a una sola lingua crea errori.",
+        items: ["Ucraino", "Russo come lingua quotidiana per parte della popolazione", "Tatari di Crimea", "Ebraico, romani, ungherese, romeno e altre comunità"]
+      },
+      {
+        label: "Cultura",
+        title: "Dalla parola alla scena culturale",
+        text: "Letteratura, musica, teatro, cinema, cucina, ricami e musei mostrano una cultura viva, capace di resistere e rinnovarsi anche durante la guerra.",
+        items: ["Shevchenko e Lesia Ukrainka", "Bandura, DakhaBrakha, Jamala, Go_A", "Borshch e vyshyvanka", "Musei e archivi digitali"]
+      }
+    ],
+    cards: [
+      ["Toponimi", "Kyiv non Kiev", "Usare nomi ucraini aiuta a rispettare lingua, stato e fonti attuali."],
+      ["Metodo", "Non confondere lingua e lealtà", "Un cittadino russofono può essere pienamente ucraino e difendere l'Ucraina."],
+      ["Cultura", "Non folklore fermo", "Tradizioni e musica contemporanea convivono: patrimonio e innovazione stanno insieme."],
+      ["Studio", "Confronta parole", "Sovranità, occupazione, deportazione e russificazione hanno significati diversi."]
+    ],
+    quiz: {
+      question: "Qual è l'errore da evitare quando si parla di lingua in Ucraina?",
+      answers: [
+        ["Pensare che lingua quotidiana e identità politica coincidano sempre", true],
+        ["Usare toponimi corretti", false],
+        ["Studiare letteratura e musica", false]
+      ]
+    },
+    sources: [
+      ["UK PCGN - Ukraine Toponymic Factfile", "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1084192/Ukraine_Toponymic_Factfile.pdf"],
+      ["Ukrainian Institute - Insight UA", "https://insight.ui.org.ua/"],
+      ["UNESCO - Ukraine intangible heritage", "https://ich.unesco.org/en/state/ukraine-UA?info=elements-on-the-lists"]
+    ]
+  },
+  "rifugiati.html": {
+    eyebrow: "Civili e diaspora",
+    title: "Rifugiati, sfollati e reti ucraine nel mondo",
+    intro: "La guerra sposta persone, scuole, famiglie, lavoro e memoria. Studiare rifugiati e diaspora significa leggere il costo civile della guerra senza ridurlo a numeri.",
+    tabs: [
+      {
+        label: "Sfollamento",
+        title: "Case lasciate e città spezzate",
+        text: "Milioni di persone hanno lasciato casa dopo il 2022 o sono sfollate dentro l'Ucraina. Il dato cambia nel tempo, ma il tema resta: sicurezza, scuola, salute, lavoro e ritorno.",
+        items: ["Rifugiati all'estero", "Sfollati interni", "Ricongiungimenti familiari", "Ritorni difficili"]
+      },
+      {
+        label: "Accoglienza",
+        title: "Europa, scuole e comunità locali",
+        text: "Paesi europei, comuni, scuole e famiglie ospitanti hanno costruito reti di accoglienza. La sfida è passare dall'emergenza all'integrazione dignitosa.",
+        items: ["Documenti e protezione temporanea", "Lingua e scuola", "Lavoro e cura", "Trauma e continuità familiare"]
+      },
+      {
+        label: "Diaspora",
+        title: "Una memoria che viaggia",
+        text: "La diaspora storica ucraina e quella nata dopo il 2022 sostengono cultura, aiuti civili, archivi, manifestazioni, raccolte fondi e difesa della memoria.",
+        items: ["Comunità in Europa e Nord America", "Chiese e associazioni", "Archivi e università", "Aiuti umanitari e cultura"]
+      }
+    ],
+    cards: [
+      ["Civili", "Il fronte entra nelle famiglie", "Evacuare significa perdere scuola, quartiere, lavoro e reti di cura."],
+      ["Metodo", "Numeri con data", "Ogni dato su rifugiati e sfollati va citato con fonte e giorno di aggiornamento."],
+      ["Europa", "Accoglienza lunga", "La protezione non finisce con il primo arrivo: servono scuola, casa, salute e lavoro."],
+      ["Memoria", "Diaspora attiva", "La diaspora conserva lingua e storia, ma crea anche nuove forme di sostegno."]
+    ],
+    quiz: {
+      question: "Come va letto un numero sui rifugiati?",
+      answers: [
+        ["Come dato stabile per sempre", false],
+        ["Con fonte, data e contesto di aggiornamento", true],
+        ["Senza distinguere rifugiati e sfollati interni", false]
+      ]
+    },
+    sources: [
+      ["UNHCR Ukraine Situation", "https://data.unhcr.org/en/situations/ukraine"],
+      ["UNHCR Europe - Ukraine displacement 2026", "https://www.unhcr.org/europe/news/briefing-notes/after-brutal-winter-millions-ukrainians-face-deepening-displacement-and"],
+      ["OHCHR Ukraine reports", "https://ukraine.ohchr.org/en/reports"]
+    ]
+  },
+  "ricostruzione.html": {
+    eyebrow: "Futuro e riparazione",
+    title: "Ricostruzione, energia, mine e ritorno alla vita",
+    intro: "Ricostruire non significa solo rifare edifici: significa rimettere insieme energia, scuole, ferrovie, campi agricoli, ospedali, giustizia, salute mentale e fiducia pubblica.",
+    tabs: [
+      {
+        label: "Danni",
+        title: "Infrastrutture e vita quotidiana",
+        text: "Gli attacchi colpiscono case, rete elettrica, ospedali, scuole, ponti, ferrovie, porti e campi. Ogni danno materiale crea conseguenze sociali.",
+        items: ["Energia e riscaldamento", "Scuole e ospedali", "Trasporti e logistica", "Campi agricoli e mine"]
+      },
+      {
+        label: "Metodo",
+        title: "Valutare bisogni e priorità",
+        text: "Le stime di ricostruzione devono separare danni diretti, perdite economiche e bisogni futuri. Le cifre cambiano perché la guerra continua.",
+        items: ["Danni", "Perdite", "Bisogni", "Aggiornamento periodico"]
+      },
+      {
+        label: "Futuro",
+        title: "Ricostruire meglio",
+        text: "La ricostruzione può rafforzare energia distribuita, accessibilità, trasparenza, digitalizzazione, anticorruzione e integrazione europea.",
+        items: ["Energia resiliente", "Trasparenza", "Comunità locali", "Percorso europeo"]
+      }
+    ],
+    cards: [
+      ["Energia", "Rete sotto attacco", "Proteggere elettricità e riscaldamento significa proteggere civili e ospedali."],
+      ["Mine", "Un rischio lungo anni", "Bonifica e mappatura sono indispensabili prima di ritorni, agricoltura e ricostruzione."],
+      ["Economia", "Grano, porti, industria", "La guerra colpisce filiere che contano anche per sicurezza alimentare globale."],
+      ["Metodo", "Dati aggiornabili", "RDNA, World Bank, UNDP e governo ucraino aiutano a stimare bisogni reali."]
+    ],
+    quiz: {
+      question: "Perché le stime di ricostruzione cambiano?",
+      answers: [
+        ["Perché la guerra continua e nuovi danni modificano bisogni e priorità", true],
+        ["Perché non servono fonti", false],
+        ["Perché riguardano solo monumenti", false]
+      ]
+    },
+    sources: [
+      ["UNDP RDNA5 Ukraine", "https://www.undp.org/ukraine/publications/updated-ukraine-recovery-and-reconstruction-needs-assessment-rdna5"],
+      ["World Bank Data - Ukraine", "https://data.worldbank.org/country/ukraine"],
+      ["OHCHR Ukraine reports", "https://ukraine.ohchr.org/en/reports"]
+    ]
   }
 };
 
@@ -1129,7 +1349,8 @@ function setupTranslation() {
     return;
   }
 
-  const supportedLanguages = ["it", "en", "fr", "de", "es", "uk", "zh-CN", "hi", "ru", "pl", "ar", "pt"];
+  const supportedLanguages = SKY_LANGUAGE_OPTIONS.map(([value]) => value);
+  const translatableLanguages = supportedLanguages.filter((language) => language !== "it");
   const storedLanguage = safeStorageGet("skyy-language");
   const savedLanguage = supportedLanguages.includes(storedLanguage) ? storedLanguage : "it";
 
@@ -1139,7 +1360,7 @@ function setupTranslation() {
 
   select.value = savedLanguage;
   document.documentElement.lang = savedLanguage;
-  document.documentElement.dir = savedLanguage === "ar" ? "rtl" : "ltr";
+  document.documentElement.dir = SKY_RTL_LANGUAGES.has(savedLanguage) ? "rtl" : "ltr";
 
   if (!document.querySelector("#google_translate_element")) {
     const holder = document.createElement("div");
@@ -1158,7 +1379,7 @@ function setupTranslation() {
       new google.translate.TranslateElement(
         {
           pageLanguage: "it",
-          includedLanguages: supportedLanguages.join(","),
+          includedLanguages: translatableLanguages.join(","),
           autoDisplay: false
         },
         "google_translate_element"
@@ -1186,7 +1407,7 @@ function setupTranslation() {
     const language = select.value;
     safeStorageSet("skyy-language", language);
     document.documentElement.lang = language;
-    document.documentElement.dir = language === "ar" ? "rtl" : "ltr";
+    document.documentElement.dir = SKY_RTL_LANGUAGES.has(language) ? "rtl" : "ltr";
 
     if (language === "it" && !document.querySelector("script[data-google-translate]")) {
       return;
@@ -1814,7 +2035,13 @@ function setupNavbarAutoClose() {
   nav.addEventListener("click", (event) => {
     const link = event.target.closest("a[href]");
 
-    if (!link || !collapse.classList.contains("show") || !window.bootstrap?.Collapse) {
+    if (
+      !link
+      || link.classList.contains("dropdown-toggle")
+      || link.dataset.bsToggle === "dropdown"
+      || !collapse.classList.contains("show")
+      || !window.bootstrap?.Collapse
+    ) {
       return;
     }
 
