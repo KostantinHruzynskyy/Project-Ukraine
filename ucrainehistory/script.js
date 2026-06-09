@@ -103,6 +103,16 @@ function safeStorageSet(key, value) {
   return true;
 }
 
+function safeStorageRemove(key) {
+  try {
+    window.localStorage.removeItem(key);
+  } catch (error) {
+    return false;
+  }
+
+  return true;
+}
+
 function setupGlobalNavbar() {
   const nav = document.querySelector(".war-navbar");
 
@@ -1342,6 +1352,29 @@ function setupPageDeepDive() {
 
 setupPageDeepDive();
 
+function clearCookie(name) {
+  try {
+    const expires = "expires=Thu, 01 Jan 1970 00:00:00 GMT";
+    const hostParts = window.location.hostname.split(".").filter(Boolean);
+    const domains = [""];
+
+    if (hostParts.length > 1) {
+      domains.push(window.location.hostname, `.${window.location.hostname}`);
+    }
+
+    domains.forEach((domain) => {
+      const domainPart = domain ? `;domain=${domain}` : "";
+      document.cookie = `${name}=;${expires};path=/${domainPart}`;
+    });
+  } catch (error) {
+    // Cookie cleanup is best-effort; the page still works when cookies are blocked.
+  }
+}
+
+function clearTranslationCache() {
+  clearCookie("googtrans");
+}
+
 function setupTranslation() {
   const select = document.querySelector("#languageSelect");
 
@@ -1351,16 +1384,22 @@ function setupTranslation() {
 
   const supportedLanguages = SKY_LANGUAGE_OPTIONS.map(([value]) => value);
   const translatableLanguages = supportedLanguages.filter((language) => language !== "it");
+  const legacyLanguageKeys = ["skyy-history-language", "skyy-translate-language", "skyySelectedLanguage"];
   const storedLanguage = safeStorageGet("skyy-language");
   const savedLanguage = supportedLanguages.includes(storedLanguage) ? storedLanguage : "it";
 
   if (storedLanguage && storedLanguage !== savedLanguage) {
-    safeStorageSet("skyy-language", savedLanguage);
+    safeStorageRemove("skyy-language");
   }
 
+  legacyLanguageKeys.forEach(safeStorageRemove);
   select.value = savedLanguage;
   document.documentElement.lang = savedLanguage;
   document.documentElement.dir = SKY_RTL_LANGUAGES.has(savedLanguage) ? "rtl" : "ltr";
+
+  if (savedLanguage === "it") {
+    clearTranslationCache();
+  }
 
   if (!document.querySelector("#google_translate_element")) {
     const holder = document.createElement("div");
@@ -1408,6 +1447,10 @@ function setupTranslation() {
     safeStorageSet("skyy-language", language);
     document.documentElement.lang = language;
     document.documentElement.dir = SKY_RTL_LANGUAGES.has(language) ? "rtl" : "ltr";
+
+    if (language === "it") {
+      clearTranslationCache();
+    }
 
     if (language === "it" && !document.querySelector("script[data-google-translate]")) {
       return;

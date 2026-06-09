@@ -1,0 +1,20 @@
+# Generated caches and local tool output
+.cache/
+cache/
+__pycache__/
+*.py[cod]
+
+# JavaScript tooling
+node_modules/
+dist/
+build/
+.vite/
+.parcel-cache/
+coverage/
+
+# Temporary logs and editor leftovers
+*.log
+*.tmp
+*.temp
+*.bak
+*.old
