@@ -69,6 +69,10 @@ window.SkyyEncyclopediaData = {
       title: "Lingua e cultura ucraina | Skyy History",
       description: "Approfondimento su lingua ucraina, plurilinguismo, toponimi, letteratura, musica, patrimonio e identita culturale."
     },
+    "sport.html": {
+      title: "Sport ucraino | Skyy History",
+      description: "Approfondimento su Olimpiadi, Paralimpiadi, calcio, atletica, boxe, scherma e infrastrutture sportive ucraine colpite dalla guerra."
+    },
     "rifugiati.html": {
       title: "Rifugiati e diaspora ucraina | Skyy History",
       description: "Scheda su rifugiati, sfollati interni, accoglienza europea, diaspora storica e reti civili ucraine."
@@ -136,8 +140,38 @@ window.SkyyEncyclopediaData = {
     },
     {
       label: "UNDP RDNA5 Ukraine",
-      href: "https://www.undp.org/ukraine/publications/updated-ukraine-recovery-and-reconstruction-needs-assessment-rdna5",
+      href: "https://www.undp.org/ukraine/publications/ukraine-fifth-rapid-damage-and-needs-assessment-rdna5-february-2022-december-2025",
       note: "Valutazione dei danni, perdite e bisogni di ricostruzione dell'Ucraina al 31 dicembre 2025."
+    },
+    {
+      label: "Ministry of Youth and Sports of Ukraine - Paris 2024",
+      href: "https://mms.gov.ua/news/ukraina-zdobula-12-nahorod-na-olimpiiskykh-ihrakh-u-paryzhi",
+      note: "Bilancio ufficiale ucraino dei risultati olimpici di Paris 2024."
+    },
+    {
+      label: "MFA Ukraine - sport infrastructure",
+      href: "https://mfa.gov.ua/en/news/spilna-zayava-andriya-sibigi-ta-matviya-bidnogo-shchodo-rishennya-mizhnarodnoyi-ta-yevropejskoyi-federacij-gimnastiki-pro-dopusk-sportsmeniv-rf-ta-bilorusi",
+      note: "Dichiarazione ufficiale con il Ministero dello sport sui danni a infrastrutture sportive al 26 maggio 2026."
+    },
+    {
+      label: "IPC Paris 2024 results",
+      href: "https://www.paralympic.org/paris-2024/results/medallists",
+      note: "Risultati e medagliere ufficiale dei Giochi Paralimpici di Paris 2024."
+    },
+    {
+      label: "World Athletics - Yaroslava Mahuchikh",
+      href: "https://worldathletics.org/athletes/ukraine/yaroslava-mahuchikh-14739628/",
+      note: "Profilo ufficiale World Athletics con risultati e record del salto in alto."
+    },
+    {
+      label: "UEFA - Andriy Shevchenko",
+      href: "https://www.uefa.com/uefachampionsleague/news/0249-0e9cdd1c94f3-c7496e6b48c9-1000--champions-league-100-club-andriy-shevchenko/",
+      note: "Profilo UEFA sulle 100 presenze di Shevchenko in Champions League e sulla vittoria con il Milan nel 2003."
+    },
+    {
+      label: "NOC Ukraine - Olympic Games",
+      href: "https://noc-ukr.org/en/olympic/games/",
+      note: "Pagina ufficiale del Comitato olimpico nazionale ucraino sui Giochi."
     },
     {
       label: "International Criminal Court - Ukraine",
@@ -186,13 +220,24 @@ window.SkyyEncyclopediaData = {
     "OHCHR Protection of Civilians - April 2026": "https://ukraine.ohchr.org/sites/default/files/2026-05/Ukraine%20-%20protection%20of%20civilians%20in%20armed%20conflict%20%28April%202026%29_ENG.pdf",
     "UNHCR Ukraine Situation": "https://data.unhcr.org/en/situations/ukraine",
     "UNHCR Europe - Ukraine displacement 2026": "https://www.unhcr.org/europe/news/briefing-notes/after-brutal-winter-millions-ukrainians-face-deepening-displacement-and",
-    "UNDP RDNA5 Ukraine": "https://www.undp.org/ukraine/publications/updated-ukraine-recovery-and-reconstruction-needs-assessment-rdna5"
+    "UNDP RDNA5 Ukraine": "https://www.undp.org/ukraine/publications/ukraine-fifth-rapid-damage-and-needs-assessment-rdna5-february-2022-december-2025",
+    "Ministry of Youth and Sports of Ukraine - Paris 2024": "https://mms.gov.ua/news/ukraina-zdobula-12-nahorod-na-olimpiiskykh-ihrakh-u-paryzhi",
+    "MFA Ukraine - sport infrastructure": "https://mfa.gov.ua/en/news/spilna-zayava-andriya-sibigi-ta-matviya-bidnogo-shchodo-rishennya-mizhnarodnoyi-ta-yevropejskoyi-federacij-gimnastiki-pro-dopusk-sportsmeniv-rf-ta-bilorusi",
+    "IPC Paris 2024 results": "https://www.paralympic.org/paris-2024/results/medallists",
+    "World Athletics - Yaroslava Mahuchikh": "https://worldathletics.org/athletes/ukraine/yaroslava-mahuchikh-14739628/",
+    "UEFA - Andriy Shevchenko": "https://www.uefa.com/uefachampionsleague/news/0249-0e9cdd1c94f3-c7496e6b48c9-1000--champions-league-100-club-andriy-shevchenko/",
+    "NOC Ukraine - Olympic Games": "https://noc-ukr.org/en/olympic/games/"
   },
   stats: [
     ["Nome", "Ukraine / Ukraina", "Nome ufficiale in ucraino: Ukraina. Per i toponimi in inglese e utile usare Kyiv, non Kiev."],
     ["Capitale", "Kyiv", "Centro politico, religioso e culturale sul fiume Dnipro."],
     ["Lingua ufficiale", "Ucraino", "Lingua slava orientale in alfabeto cirillico; la lingua e anche memoria politica."],
     ["Sistema", "Repubblica unitaria", "Stato indipendente dal 1991, con parlamento nazionale: Verkhovna Rada."],
+    ["Popolazione ufficiale", "41,2 mln al 1 gennaio 2022", "Stima del Servizio statale di statistica ucraino prima dell'invasione totale; i dati successivi sono condizionati da guerra e sfollamento."],
+    ["Sfollamento 2026", "5,9 mln rifugiati; 3,7 mln sfollati interni", "UNHCR, briefing 2026: usare sempre fonte e data per questi numeri."],
+    ["Vittime civili", "Aprile 2026: 238 uccisi, 1.404 feriti", "Dato mensile verificato da OHCHR per il conflitto armato in Ucraina."],
+    ["Ricostruzione", "587,7 mld USD di bisogni", "RDNA5 al 31 dicembre 2025, preparata da Governo ucraino, World Bank, UE e ONU."],
+    ["Sport", "Paris 2024: 12 medaglie olimpiche", "Ministero ucraino dello sport: 3 ori, 5 argenti, 4 bronzi."],
     ["Geografia", "Dnipro, Carpazi, Mar Nero", "Il paese collega pianure agricole, foreste, montagne occidentali e coste meridionali."],
     ["Patrimonio", "Borshch, pysanka, Petrykivka", "UNESCO riconosce diverse pratiche ucraine di patrimonio immateriale."],
     ["Guerra moderna", "Dal 2014", "Crimea occupata, guerra nel Donbas e invasione russa su vasta scala dal 24 febbraio 2022."],
@@ -712,6 +757,14 @@ window.SkyyEncyclopediaData = {
         category: "Patrimonio e didattica",
         summary: "Sale tematiche su storia lunga, cultura, oggetti, memoria, guerra, diaspora e futuro.",
         tags: ["museo", "patrimonio", "oggetti", "cultura", "didattica"]
+      },
+      {
+        href: "sport.html",
+        title: "Sport ucraino",
+        era: "1994-oggi",
+        category: "Cultura, societa e ricostruzione",
+        summary: "Olimpiadi, Paralimpiadi, calcio, atletica, boxe, scherma e impianti sportivi colpiti dalla guerra.",
+        tags: ["sport", "Olimpiadi", "Paralimpiadi", "calcio", "ricostruzione"]
       }
     ],
     routes: [
@@ -748,7 +801,7 @@ window.SkyyEncyclopediaData = {
       {
         title: "Percorso cultura viva",
         aim: "Per evitare di raccontare l'Ucraina solo attraverso il dolore.",
-        pages: ["lingua-cultura.html", "museo.html", "dossier.html", "indipendenza.html", "tatari-crimea.html", "euromaidan.html"],
+        pages: ["lingua-cultura.html", "sport.html", "museo.html", "dossier.html", "indipendenza.html", "tatari-crimea.html", "euromaidan.html"],
         output: "Scegli cinque elementi culturali e collegali a regione, lingua e storia."
       }
     ],
@@ -777,8 +830,8 @@ window.SkyyEncyclopediaData = {
       {
         title: "Cultura, patrimonio e futuro",
         text: "Patrimonio, musei, musica, cucina, libri, diaspora e ricostruzione spiegano perche la storia non finisce sul fronte.",
-        pages: ["lingua-cultura.html", "museo.html", "dossier.html", "rifugiati.html", "ricostruzione.html", "indipendenza.html", "tatari-crimea.html", "chernobyl.html"],
-        sources: ["Ukrainian Institute - Insight UA", "UNESCO - Ukraine intangible heritage", "UNDP RDNA5 Ukraine", "World Bank Data - Ukraine"],
+        pages: ["lingua-cultura.html", "sport.html", "museo.html", "dossier.html", "rifugiati.html", "ricostruzione.html", "indipendenza.html", "tatari-crimea.html", "chernobyl.html"],
+        sources: ["Ukrainian Institute - Insight UA", "UNESCO - Ukraine intangible heritage", "Ministry of Youth and Sports of Ukraine - Paris 2024", "UNDP RDNA5 Ukraine", "World Bank Data - Ukraine"],
         notes: ["Cultura e ricostruzione sono parte della sopravvivenza nazionale.", "Ogni oggetto puo diventare una fonte.", "La diaspora collega memoria e futuro."]
       }
     ],
@@ -926,6 +979,15 @@ window.SkyyEncyclopediaData = {
         places: ["Kyiv", "Kharkiv", "Lviv", "Crimea", "Odesa", "diaspora ucraina"],
         questions: ["Perche usare Kyiv invece di Kiev?", "Come distinguere lingua quotidiana e identita politica?", "Quali tradizioni mostrano una cultura viva e non solo folklorica?"],
         next: "Apri il Museo per vedere come lingua, oggetti e memoria diventano percorso visuale."
+      },
+      "sport.html": {
+        related: ["lingua-cultura.html", "museo.html", "ricostruzione.html", "rifugiati.html", "dossier.html", "difesa.html"],
+        compare: ["Lingua e cultura: sport come identita pubblica.", "Ricostruzione: palestre e campi come infrastrutture civili.", "Rifugiati: club e scuole sportive come continuita sociale."],
+        external: ["Ministry of Youth and Sports of Ukraine - Paris 2024", "MFA Ukraine - sport infrastructure", "IPC Paris 2024 results", "World Athletics - Yaroslava Mahuchikh"],
+        concepts: ["Olimpiadi", "Paralimpiadi", "record", "calcio", "infrastrutture sportive", "ricostruzione"],
+        places: ["Paris 2024", "Kyiv", "Lviv", "Kharkiv", "centri sportivi danneggiati"],
+        questions: ["Perche lo sport e parte della diplomazia culturale?", "Come distinguere risultati sportivi e propaganda?", "Quali fonti ufficiali servono per medaglie, record e danni?"],
+        next: "Vai a Ricostruzione per collegare sport, salute pubblica e infrastrutture civili."
       },
       "rifugiati.html": {
         related: ["invasione-2022.html", "mariupol.html", "bucha.html", "ricostruzione.html", "lingua-cultura.html", "dossier.html"],
@@ -1107,6 +1169,16 @@ window.SkyyEncyclopediaData = {
         ["Patrimonio", "Cultura viva", "Borshch, pysanky, vyshyvanka, musica e libri cambiano nel presente."]
       ],
       sources: ["UK PCGN - Ukraine Toponymic Factfile", "Ukrainian Institute - Insight UA", "UNESCO intangible heritage"]
+    },
+    "sport.html": {
+      title: "Scheda enciclopedica: sport ucraino",
+      text: "Lo sport ucraino collega risultati internazionali, identita pubblica, diplomazia culturale e ricostruzione di spazi civili colpiti dalla guerra.",
+      cards: [
+        ["Olimpiadi", "Paris 2024", "Il Ministero ucraino registra 12 medaglie olimpiche: 3 ori, 5 argenti e 4 bronzi."],
+        ["Paralimpiadi", "82 medaglie", "IPC registra 22 ori, 28 argenti e 32 bronzi per l'Ucraina a Paris 2024."],
+        ["Guerra", "Impianti colpiti", "Una dichiarazione ufficiale congiunta segnala 852 infrastrutture sportive danneggiate o distrutte al 26 maggio 2026."]
+      ],
+      sources: ["Ministry of Youth and Sports of Ukraine - Paris 2024", "IPC Paris 2024 results", "MFA Ukraine - sport infrastructure"]
     },
     "rifugiati.html": {
       title: "Scheda enciclopedica: rifugiati e diaspora",
@@ -1577,6 +1649,34 @@ window.SkyyEncyclopediaData = {
       ],
       lenses: [["Lingua", "E anche diritto culturale e memoria."], ["Pluralita", "Bilinguismo non significa identita divisa."], ["Patrimonio", "La cultura cambia mentre resiste."]],
       mistakes: ["Usare Kiev quando si sta seguendo lo standard ucraino moderno.", "Confondere russofono con filorusso.", "Raccontare la cultura come folklore immobile."]
+    },
+    "sport.html": {
+      title: "Approfondimento completo: sport ucraino",
+      intro: "Sport significa medaglie, salute pubblica, scuola, diplomazia culturale e ricostruzione: ogni cifra va letta con fonte ufficiale e data.",
+      chapters: [
+        {
+          title: "Risultati internazionali",
+          text: "Paris 2024 ha dato all'Ucraina medaglie olimpiche e paralimpiche in una fase di guerra, allenamenti interrotti e grande pressione pubblica.",
+          points: ["12 medaglie olimpiche secondo il Ministero ucraino.", "82 medaglie paralimpiche secondo IPC.", "Record e risultati vanno verificati con federazioni ufficiali."]
+        },
+        {
+          title: "Volti e discipline",
+          text: "Atletica, scherma, boxe, calcio e sport paralimpico mostrano una cultura sportiva plurale, non limitata a un solo campione o a una sola disciplina.",
+          points: ["Mahuchikh e il salto in alto.", "Shevchenko e il calcio europeo.", "Sciabola femminile e boxe a Paris 2024."]
+        },
+        {
+          title: "Sport e guerra",
+          text: "Le infrastrutture sportive colpite non sono solo edifici: sono luoghi di scuola, riabilitazione, salute, socialita e ritorno alla normalita.",
+          points: ["852 impianti danneggiati o distrutti al 26 maggio 2026.", "Ricostruzione sportiva come parte della ricostruzione civile.", "Dati aggiornabili perche la guerra continua."]
+        }
+      ],
+      timeline: [
+        ["1994", "Partecipazione indipendente", "Il NOC ucraino elenca i Giochi dal periodo post-indipendenza."],
+        ["2024", "Paris 2024", "Medaglie olimpiche e paralimpiche in una fase di guerra lunga."],
+        ["2026", "Danni agli impianti", "Il Ministero aggiorna il conteggio delle infrastrutture sportive colpite."]
+      ],
+      lenses: [["Fonte", "Medaglie e record richiedono fonti ufficiali."], ["Societa", "Sport e anche scuola, salute e comunita."], ["Ricostruzione", "Un campo riaperto puo essere un ritorno alla vita quotidiana."]],
+      mistakes: ["Usare numeri senza data.", "Ridurre lo sport a propaganda.", "Dimenticare che gli impianti sono infrastrutture civili."]
     },
     "rifugiati.html": {
       title: "Approfondimento completo: rifugiati e diaspora",

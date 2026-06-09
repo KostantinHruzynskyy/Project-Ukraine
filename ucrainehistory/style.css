@@ -1076,12 +1076,15 @@ img.image-focus-top {
 }
 
 .culture-card {
+  display: block;
   height: 100%;
   border: 1px solid rgba(238, 227, 200, 0.16);
   border-radius: 8px;
   padding: 1.25rem;
+  color: inherit;
   background: rgba(238, 227, 200, 0.08);
   box-shadow: 0 18px 45px rgba(0, 0, 0, 0.18);
+  text-decoration: none;
   transition: transform 0.25s ease, background 0.25s ease;
 }
 

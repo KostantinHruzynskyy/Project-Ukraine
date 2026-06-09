@@ -136,7 +136,7 @@ function setupGlobalNavbar() {
     "mariupol.html"
   ];
   const guerraPages = ["battaglie.html", "atrocita.html", "difesa.html"];
-  const studioPages = ["lingua-cultura.html"];
+  const studioPages = ["lingua-cultura.html", "sport.html"];
   const risorsePages = ["museo.html", "dossier.html", "rifugiati.html", "ricostruzione.html"];
 
   nav.className = "navbar navbar-expand-lg war-navbar sticky-top";
@@ -188,6 +188,7 @@ function setupGlobalNavbar() {
               <li><a class="dropdown-item" href="${homeAnchor("impara")}">Impara</a></li>
               <li><a class="dropdown-item" href="${homeAnchor("atlante-ucraina")}">Atlante Ucraina</a></li>
               <li><a class="dropdown-item" href="lingua-cultura.html">Lingua e cultura</a></li>
+              <li><a class="dropdown-item" href="sport.html">Sport ucraino</a></li>
               <li><a class="dropdown-item" href="${homeAnchor("enciclopedia-ucraina")}">Enciclopedia Ucraina</a></li>
               <li><a class="dropdown-item" href="${homeAnchor("cronologia-civile")}">Cronologia civile</a></li>
               <li><a class="dropdown-item" href="${homeAnchor("storia-ucraina")}">Storia dell'Ucraina</a></li>
@@ -286,6 +287,7 @@ function setupGlobalFooter() {
           <a href="${homeAnchor("potenza-culturale")}">Potenza culturale</a>
           <a href="${homeAnchor("documenti")}">Documenti e prove</a>
           <a href="lingua-cultura.html">Lingua e cultura</a>
+          <a href="sport.html">Sport ucraino</a>
           <a href="rifugiati.html">Rifugiati e diaspora</a>
           <a href="ricostruzione.html">Ricostruzione</a>
         </section>
@@ -298,6 +300,7 @@ function setupGlobalFooter() {
           <a href="dossier.html">Dossier totale</a>
           <a href="museo.html">Museo interattivo</a>
           <a href="lingua-cultura.html">Lingua e cultura</a>
+          <a href="sport.html">Sport ucraino</a>
           <a href="rifugiati.html">Rifugiati e diaspora</a>
           <a href="ricostruzione.html">Ricostruzione</a>
         </section>
@@ -323,6 +326,8 @@ function setupGlobalFooter() {
           <a href="https://insight.ui.org.ua/">Insight UA</a>
           <a href="https://ui.org.ua/en/news-en/insight-ua-platform-to-explore-ukrainian-culture-2/">Ukrainian Institute - Insight UA</a>
           <a href="https://ich.unesco.org/en/USL/01852">UNESCO - borshch</a>
+          <a href="https://mms.gov.ua/">Ministero ucraino dello sport</a>
+          <a href="https://www.paralympic.org/paris-2024/results">IPC - Paris 2024</a>
           <a href="https://www.britannica.com/place/Ukraine">Britannica Ukraine</a>
           <a href="https://deepstatemap.live/en">DeepStateMAP</a>
           <a href="https://commons.wikimedia.org/">Wikimedia Commons</a>
@@ -419,6 +424,7 @@ function setupUkraineKnowledgePanel() {
         <a class="history-btn" href="dossier.html">Dossier totale</a>
         <a class="history-btn" href="${homeAnchor("potenza-culturale")}">Cultura e autori</a>
         <a class="history-btn" href="lingua-cultura.html">Lingua</a>
+        <a class="history-btn" href="sport.html">Sport</a>
         <a class="history-btn" href="ricostruzione.html">Ricostruzione</a>
       </div>
     </div>
@@ -1220,6 +1226,52 @@ const pageDeepDives = {
       ["OHCHR Ukraine reports", "https://ukraine.ohchr.org/en/reports"]
     ]
   },
+  "sport.html": {
+    eyebrow: "Sport e identita",
+    title: "Medaglie, squadre, record e sport sotto guerra",
+    intro: "Lo sport ucraino tiene insieme risultati internazionali, memoria civile e diplomazia culturale. I numeri vanno letti con fonti ufficiali e data di aggiornamento.",
+    tabs: [
+      {
+        label: "Olimpiadi",
+        title: "Da indipendenza a Paris 2024",
+        text: "Il Comitato olimpico nazionale ucraino elenca la partecipazione indipendente ai Giochi dal 1994. A Paris 2024 l'Ucraina ha chiuso con 12 medaglie secondo il Ministero della Gioventu e dello Sport.",
+        items: ["3 ori, 5 argenti, 4 bronzi a Paris 2024", "Oro nel salto in alto femminile", "Oro nella boxe 80 kg", "Oro nella sciabola femminile a squadre"]
+      },
+      {
+        label: "Paralimpiadi",
+        title: "Una potenza paralimpica",
+        text: "Il medagliere ufficiale IPC di Paris 2024 registra per l'Ucraina 82 medaglie paralimpiche: 22 ori, 28 argenti e 32 bronzi.",
+        items: ["Nuoto", "Atletica", "Judo", "Tennistavolo"]
+      },
+      {
+        label: "Guerra",
+        title: "Campi, palestre e vite sotto attacco",
+        text: "Una dichiarazione ufficiale congiunta del Ministero degli Esteri e del Ministero dello Sport segnala danni diffusi alle infrastrutture sportive. Parlare di sport oggi significa parlare anche di allenamenti interrotti, rifugi, lutti e ricostruzione.",
+        items: ["852 impianti danneggiati o distrutti al 26 maggio 2026", "Allenamenti spostati", "Competizioni come presenza internazionale", "Ricostruzione di club e palestre"]
+      }
+    ],
+    cards: [
+      ["Metodo", "Numeri datati", "Medaglie, record e danni vanno sempre citati con fonte e giorno di aggiornamento."],
+      ["Atletica", "Mahuchikh", "World Athletics registra il record mondiale del salto in alto a 2,10 m nel 2024."],
+      ["Calcio", "Shevchenko", "UEFA conserva il profilo del campione ucraino e della sua carriera europea."],
+      ["Futuro", "Sport e ricostruzione", "Palestre, piscine e campi sono luoghi di salute, scuola e comunita."]
+    ],
+    quiz: {
+      question: "Perche le statistiche sportive del 2026 devono avere data e fonte?",
+      answers: [
+        ["Perche medaglie e record non esistono", false],
+        ["Perche alcuni dati cambiano e i danni di guerra vengono aggiornati", true],
+        ["Perche le fonti ufficiali non servono", false]
+      ]
+    },
+    sources: [
+      ["Ministero ucraino - Paris 2024", "https://mms.gov.ua/news/ukraina-zdobula-12-nahorod-na-olimpiiskykh-ihrakh-u-paryzhi"],
+      ["IPC - Paris 2024 results", "https://www.paralympic.org/paris-2024/results/medallists"],
+      ["MFA Ucraina - danni sport 2026", "https://mfa.gov.ua/en/news/spilna-zayava-andriya-sibigi-ta-matviya-bidnogo-shchodo-rishennya-mizhnarodnoyi-ta-yevropejskoyi-federacij-gimnastiki-pro-dopusk-sportsmeniv-rf-ta-bilorusi"],
+      ["World Athletics - Mahuchikh", "https://worldathletics.org/athletes/ukraine/yaroslava-mahuchikh-14739628/"],
+      ["UEFA - Andriy Shevchenko", "https://www.uefa.com/uefachampionsleague/news/0249-0e9cdd1c94f3-c7496e6b48c9-1000--champions-league-100-club-andriy-shevchenko/"]
+    ]
+  },
   "ricostruzione.html": {
     eyebrow: "Futuro e riparazione",
     title: "Ricostruzione, energia, mine e ritorno alla vita",
@@ -1259,7 +1311,7 @@ const pageDeepDives = {
       ]
     },
     sources: [
-      ["UNDP RDNA5 Ukraine", "https://www.undp.org/ukraine/publications/updated-ukraine-recovery-and-reconstruction-needs-assessment-rdna5"],
+      ["UNDP RDNA5 Ukraine", "https://www.undp.org/ukraine/publications/ukraine-fifth-rapid-damage-and-needs-assessment-rdna5-february-2022-december-2025"],
       ["World Bank Data - Ukraine", "https://data.worldbank.org/country/ukraine"],
       ["OHCHR Ukraine reports", "https://ukraine.ohchr.org/en/reports"]
     ]
