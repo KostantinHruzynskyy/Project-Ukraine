@@ -136,7 +136,7 @@ function setupGlobalNavbar() {
     "mariupol.html"
   ];
   const guerraPages = ["battaglie.html", "atrocita.html", "difesa.html"];
-  const studioPages = ["lingua-cultura.html", "sport.html"];
+  const studioPages = ["lingua-cultura.html", "cucina.html", "costumi.html", "cucina-costumi.html", "sport.html"];
   const risorsePages = ["museo.html", "dossier.html", "rifugiati.html", "ricostruzione.html"];
 
   nav.className = "navbar navbar-expand-lg war-navbar sticky-top";
@@ -188,6 +188,8 @@ function setupGlobalNavbar() {
               <li><a class="dropdown-item" href="${homeAnchor("impara")}">Impara</a></li>
               <li><a class="dropdown-item" href="${homeAnchor("atlante-ucraina")}">Atlante Ucraina</a></li>
               <li><a class="dropdown-item" href="lingua-cultura.html">Lingua e cultura</a></li>
+              <li><a class="dropdown-item" href="cucina.html">Cucina ucraina</a></li>
+              <li><a class="dropdown-item" href="costumi.html">Costumi ucraini</a></li>
               <li><a class="dropdown-item" href="sport.html">Sport ucraino</a></li>
               <li><a class="dropdown-item" href="${homeAnchor("enciclopedia-ucraina")}">Enciclopedia Ucraina</a></li>
               <li><a class="dropdown-item" href="${homeAnchor("cronologia-civile")}">Cronologia civile</a></li>
@@ -287,6 +289,8 @@ function setupGlobalFooter() {
           <a href="${homeAnchor("potenza-culturale")}">Potenza culturale</a>
           <a href="${homeAnchor("documenti")}">Documenti e prove</a>
           <a href="lingua-cultura.html">Lingua e cultura</a>
+          <a href="cucina.html">Cucina ucraina</a>
+          <a href="costumi.html">Costumi ucraini</a>
           <a href="sport.html">Sport ucraino</a>
           <a href="rifugiati.html">Rifugiati e diaspora</a>
           <a href="ricostruzione.html">Ricostruzione</a>
@@ -300,6 +304,8 @@ function setupGlobalFooter() {
           <a href="dossier.html">Dossier totale</a>
           <a href="museo.html">Museo interattivo</a>
           <a href="lingua-cultura.html">Lingua e cultura</a>
+          <a href="cucina.html">Cucina ucraina</a>
+          <a href="costumi.html">Costumi ucraini</a>
           <a href="sport.html">Sport ucraino</a>
           <a href="rifugiati.html">Rifugiati e diaspora</a>
           <a href="ricostruzione.html">Ricostruzione</a>
@@ -326,6 +332,7 @@ function setupGlobalFooter() {
           <a href="https://insight.ui.org.ua/">Insight UA</a>
           <a href="https://ui.org.ua/en/news-en/insight-ua-platform-to-explore-ukrainian-culture-2/">Ukrainian Institute - Insight UA</a>
           <a href="https://ich.unesco.org/en/USL/01852">UNESCO - borshch</a>
+          <a href="https://ich.unesco.org/en/state/ukraine-UA?info=elements-on-the-lists">UNESCO - patrimonio ucraino</a>
           <a href="https://mms.gov.ua/">Ministero ucraino dello sport</a>
           <a href="https://www.paralympic.org/paris-2024/results">IPC - Paris 2024</a>
           <a href="https://www.britannica.com/place/Ukraine">Britannica Ukraine</a>
@@ -351,7 +358,7 @@ function setupGlobalFooter() {
 
       <div class="footer-bottom">
         <span>Skyy History - Archivio interattivo Ucraina</span>
-        <span>Ultimo aggiornamento contenuti: 2026</span>
+        <span>Ultimo aggiornamento contenuti: giugno 2026</span>
         <a href="${homeAnchor("inizio")}">Torna su</a>
       </div>
     </div>
@@ -424,6 +431,8 @@ function setupUkraineKnowledgePanel() {
         <a class="history-btn" href="dossier.html">Dossier totale</a>
         <a class="history-btn" href="${homeAnchor("potenza-culturale")}">Cultura e autori</a>
         <a class="history-btn" href="lingua-cultura.html">Lingua</a>
+        <a class="history-btn" href="cucina.html">Cucina</a>
+        <a class="history-btn" href="costumi.html">Costumi</a>
         <a class="history-btn" href="sport.html">Sport</a>
         <a class="history-btn" href="ricostruzione.html">Ricostruzione</a>
       </div>
@@ -1182,6 +1191,138 @@ const pageDeepDives = {
       ["UNESCO - Ukraine intangible heritage", "https://ich.unesco.org/en/state/ukraine-UA?info=elements-on-the-lists"]
     ]
   },
+  "cucina.html": {
+    eyebrow: "Cucina ucraina",
+    title: "Ricette, regioni e tavole rituali",
+    intro: "La pagina cucina e separata dai costumi e raccoglie ricette documentate, ingredienti, regioni, feste, borshch UNESCO e un dataset riusabile da PHP o Python.",
+    tabs: [
+      {
+        label: "Ricette",
+        title: "Piatti documentati, non stereotipi",
+        text: "Borshch, varenyky, holubtsi, pampushky, deruny, banosh, kutia, uzvar e paska mostrano casa, stagioni, festa e territorio.",
+        items: ["Borshch riconosciuto da UNESCO come pratica da salvaguardare", "Ricette statiche leggibili anche senza server", "Explorer ricette collegato al dataset cucina"]
+      },
+      {
+        label: "Regioni",
+        title: "Una cucina plurale",
+        text: "Poltava, Halychyna, Carpazi, Polissia, Odesa, Bessarabia e Crimea aiutano a evitare una descrizione generica della cucina ucraina.",
+        items: ["Banosh carpatica", "Pesce e mercati del Mar Nero", "Cucina tatara di Crimea come patrimonio indigeno"]
+      },
+      {
+        label: "Metodo",
+        title: "Come evitare errori",
+        text: "UNESCO riconosce la cultura del borshch ucraino, non una ricetta unica. Le dosi del sito sono basi didattiche, non una legge culinaria.",
+        items: ["Indicare fonte e data", "Scrivere regione o famiglia quando possibile", "Separare ricetta, rito e oggetto culturale"]
+      }
+    ],
+    cards: [
+      ["Dataset", "JSON, PHP e Python", "Le ricette sono anche in cucina-data.json e possono essere servite da cucina-api.php o cucina_backend.py."],
+      ["Ingredienti", "Dispensa ucraina", "Grani, barbabietole, cavolo, patate, funghi, latticini, miele e papavero sono spiegati nel contesto."],
+      ["Feste", "Natale e Pasqua", "Kutia, uzvar e paska mostrano che la cucina e calendario, non solo ricetta."],
+      ["Regioni", "Dal Mar Nero ai Carpazi", "Le differenze regionali rendono piu precisa la lettura culturale."]
+    ],
+    quiz: {
+      question: "Qual e l'errore principale quando si parla di borshch?",
+      answers: [
+        ["Dire che UNESCO riconosce una pratica culturale ucraina con varianti", false],
+        ["Pensare che esista una sola ricetta ufficiale valida per ogni famiglia", true],
+        ["Citare la fonte e la data", false]
+      ]
+    },
+    sources: [
+      ["UNESCO - Culture of Ukrainian borscht cooking", "https://ich.unesco.org/en/USL/01852"],
+      ["Ukrainian Institute - Insight UA", "https://insight.ui.org.ua/"],
+      ["AP - Borsch without a t", "https://apnews.com/article/ec0bd5ce731fe28cf4b35479c0eec911"]
+    ]
+  },
+  "costumi.html": {
+    eyebrow: "Costumi ucraini",
+    title: "Ricami, oggetti e riti separati dalla cucina",
+    intro: "La pagina costumi raccoglie vyshyvanka, vinok, rushnyk, pysanky, Petrykivka, Ornek e abiti regionali senza mescolarli con le ricette.",
+    tabs: [
+      {
+        label: "Abiti",
+        title: "Vyshyvanka e abiti regionali",
+        text: "Una camicia ricamata non e un costume generico: punti, colori, taglio e occasione cambiano per regione e famiglia.",
+        items: ["Poltava, Podillia, Bukovyna, Hutsul e Polissia", "Uso festivo, civile e rituale", "Identita pubblica contemporanea"]
+      },
+      {
+        label: "Oggetti",
+        title: "Rushnyk, pysanky e ornamenti",
+        text: "Oggetti rituali e tecniche decorative funzionano come fonti culturali: indicano casa, festa, religione, protezione e memoria.",
+        items: ["Pysanky pasquali", "Rushnyk in casa e matrimonio", "Petrykivka e Ornek come patrimoni distinti"]
+      },
+      {
+        label: "Metodo",
+        title: "Descrivere con precisione",
+        text: "Per ogni oggetto indica fonte, regione, periodo e occasione. Evita formule generiche quando una comunita o un museo danno contesto.",
+        items: ["Non ridurre tutto a folklore", "Distinguere tecnica e oggetto", "Collegare minoranze e popoli indigeni"]
+      }
+    ],
+    cards: [
+      ["Vyshyvanka", "Ricamo e identita", "La camicia ricamata comunica regione, famiglia e gesto pubblico."],
+      ["Pysanky", "Pasqua e protezione", "Le uova decorate raccontano rinascita, simboli e trasmissione familiare."],
+      ["Rushnyk", "Casa e rito", "Il telo ricamato accompagna ospitalita, icone, matrimonio e pane-sale."],
+      ["Ornek", "Crimea plurale", "L'ornamento tataro di Crimea ricorda che il patrimonio ucraino e plurale."]
+    ],
+    quiz: {
+      question: "Qual e il modo piu corretto di descrivere una vyshyvanka?",
+      answers: [
+        ["Come abito identico in tutta l'Ucraina", false],
+        ["Con regione, occasione, tecnica e fonte", true],
+        ["Solo come decorazione colorata", false]
+      ]
+    },
+    sources: [
+      ["UNESCO - Ukraine intangible heritage", "https://ich.unesco.org/en/state/ukraine-UA?info=elements-on-the-lists"],
+      ["Ukrainian Institute - Insight UA", "https://insight.ui.org.ua/"],
+      ["Internet Encyclopedia of Ukraine", "https://www.encyclopediaofukraine.com/"]
+    ]
+  },
+  "cucina-costumi.html": {
+    eyebrow: "Indice cultura quotidiana",
+    title: "Cucina e costumi ora sono separati",
+    intro: "Questa pagina resta come ponte: apri cucina per ricette e ingredienti, oppure costumi per abiti, ricami e oggetti rituali.",
+    tabs: [
+      {
+        label: "Cucina",
+        title: "Pagina cucina ampia",
+        text: "La cucina ha ricette complete, regioni, ingredienti, calendario e backend dati.",
+        items: ["cucina.html", "cucina-data.json", "cucina-api.php"]
+      },
+      {
+        label: "Costumi",
+        title: "Pagina costumi dedicata",
+        text: "Costumi, ricami e oggetti rituali hanno una pagina autonoma per non confonderli con le ricette.",
+        items: ["costumi.html", "vyshyvanka", "pysanky e rushnyk"]
+      },
+      {
+        label: "Metodo",
+        title: "Link compatibile",
+        text: "Il vecchio indirizzo resta attivo per non rompere collegamenti gia presenti.",
+        items: ["Separazione chiara", "Menu aggiornato", "Contenuti piu leggibili"]
+      }
+    ],
+    cards: [
+      ["Cucina", "Ricette e ingredienti", "Vai alla sezione ampia con explorer ricette."],
+      ["Costumi", "Abiti e oggetti", "Vai alla pagina separata su ricami, pysanky e Ornek."],
+      ["Compatibilita", "Nessun link rotto", "Il vecchio URL rimane un ponte."],
+      ["Performance", "Meno carico", "Le pagine sono divise per ridurre densita e scorrimento."]
+    ],
+    quiz: {
+      question: "Dove si trovano ora le ricette complete?",
+      answers: [
+        ["In cucina.html", true],
+        ["Solo nella pagina costumi", false],
+        ["Solo nel footer", false]
+      ]
+    },
+    sources: [
+      ["Cucina ucraina", "cucina.html"],
+      ["Costumi ucraini", "costumi.html"],
+      ["UNESCO - Culture of Ukrainian borscht cooking", "https://ich.unesco.org/en/USL/01852"]
+    ]
+  },
   "rifugiati.html": {
     eyebrow: "Civili e diaspora",
     title: "Rifugiati, sfollati e reti ucraine nel mondo",
@@ -1670,10 +1811,7 @@ const sections = navLinks
   .map((link) => document.querySelector(link.getAttribute("href")))
   .filter(Boolean);
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-const coarsePointer = window.matchMedia("(pointer: coarse)");
-const compactViewport = window.matchMedia("(max-width: 768px)");
-const logicalCores = navigator.hardwareConcurrency || 8;
-const canUseMotionEffects = !prefersReducedMotion.matches && !coarsePointer.matches && !compactViewport.matches && logicalCores > 4;
+const canUseMotionEffects = false;
 let activeNavigationUsesFallback = false;
 
 function updateScrollEffects() {

@@ -1149,6 +1149,353 @@ img.image-focus-top {
   color: var(--paper);
 }
 
+.food-facts-grid,
+.recipe-grid,
+.costume-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.split-route-grid,
+.pantry-grid,
+.regional-food-grid,
+.season-grid,
+.costume-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.food-section {
+  color: var(--ink);
+  background:
+    linear-gradient(rgba(248, 240, 220, 0.96), rgba(238, 227, 200, 0.94)),
+    repeating-linear-gradient(90deg, rgba(178, 59, 46, 0.06) 0 1px, transparent 1px 28px);
+}
+
+.food-section .section-kicker,
+.costume-section .section-kicker {
+  color: var(--signal);
+}
+
+.split-route-card,
+.pantry-card,
+.regional-food-card,
+.season-card {
+  display: block;
+  height: 100%;
+  border: 1px solid rgba(16, 24, 32, 0.14);
+  border-radius: 8px;
+  padding: 1.25rem;
+  color: var(--ink);
+  background: var(--paper-light);
+  text-decoration: none;
+  box-shadow: 0 14px 34px rgba(16, 24, 32, 0.09);
+}
+
+.split-route-card {
+  min-height: 260px;
+  transition: transform 0.24s ease, background 0.24s ease;
+}
+
+.split-route-card:hover,
+.split-route-card:focus {
+  color: var(--ink);
+  background: #fff7e3;
+  transform: translateY(-5px);
+}
+
+.split-route-card span,
+.pantry-card span,
+.regional-food-card span,
+.season-card span {
+  color: var(--signal);
+  font-family: Arial, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+}
+
+.split-route-card strong {
+  display: inline-flex;
+  margin-top: 1rem;
+  color: var(--signal);
+  font-family: Arial, sans-serif;
+}
+
+.pantry-card p,
+.regional-food-card p,
+.season-card p,
+.split-route-card p {
+  color: rgba(16, 24, 32, 0.74);
+  font-family: Arial, sans-serif;
+  line-height: 1.62;
+}
+
+.cuisine-dashboard {
+  border: 1px solid rgba(16, 24, 32, 0.14);
+  border-radius: 8px;
+  padding: 1rem;
+  background: rgba(255, 247, 227, 0.82);
+  box-shadow: 0 14px 34px rgba(16, 24, 32, 0.09);
+}
+
+.recipe-toolbar {
+  display: grid;
+  grid-template-columns: auto minmax(220px, 1fr) auto;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+  font-family: Arial, sans-serif;
+}
+
+.recipe-toolbar label,
+.recipe-toolbar span {
+  color: var(--signal);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+}
+
+.recipe-search {
+  min-height: 44px;
+  border: 1px solid rgba(16, 24, 32, 0.18);
+  border-radius: 8px;
+  padding: 0.65rem 0.8rem;
+  background: #fffaf0;
+  color: var(--ink);
+  font-family: Arial, sans-serif;
+}
+
+.recipe-search:focus {
+  border-color: var(--signal);
+  outline: 2px solid rgba(178, 59, 46, 0.18);
+}
+
+.recipe-pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  min-height: 42px;
+  margin-bottom: 1rem;
+}
+
+.recipe-pill {
+  border: 1px solid rgba(16, 24, 32, 0.18);
+  border-radius: 999px;
+  padding: 0.48rem 0.75rem;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.52);
+  font-family: Arial, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.recipe-pill.active,
+.recipe-pill:hover {
+  border-color: var(--signal);
+  background: var(--signal);
+  color: var(--paper);
+}
+
+.recipe-app-layout {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.95fr) minmax(320px, 1.35fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+.recipe-explorer-grid {
+  display: grid;
+  gap: 0.7rem;
+  max-height: 620px;
+  overflow: auto;
+  padding-right: 0.25rem;
+}
+
+.recipe-mini-card {
+  border: 1px solid rgba(16, 24, 32, 0.14);
+  border-radius: 8px;
+  padding: 0.85rem;
+  color: var(--ink);
+  background: #fffaf0;
+  font-family: Arial, sans-serif;
+  text-align: left;
+}
+
+.recipe-mini-card:hover,
+.recipe-mini-card:focus,
+.recipe-mini-card.active {
+  border-color: var(--signal);
+  background: #fff4d8;
+}
+
+.recipe-mini-card span,
+.recipe-detail-card > span {
+  display: block;
+  color: var(--signal);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+}
+
+.recipe-mini-card strong,
+.recipe-mini-card small,
+.recipe-mini-card em {
+  display: block;
+}
+
+.recipe-mini-card small,
+.recipe-mini-card em {
+  margin-top: 0.3rem;
+  color: rgba(16, 24, 32, 0.66);
+  font-style: normal;
+  line-height: 1.45;
+}
+
+.recipe-detail-card {
+  min-height: 420px;
+  border: 1px solid rgba(16, 24, 32, 0.14);
+  border-radius: 8px;
+  padding: 1.2rem;
+  background: #fffaf0;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.48);
+}
+
+.recipe-meta-grid,
+.recipe-detail-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.recipe-meta-grid p {
+  margin: 0;
+  border-left: 4px solid var(--signal);
+  padding: 0.65rem;
+  background: rgba(238, 227, 200, 0.5);
+  color: rgba(16, 24, 32, 0.72);
+  font-family: Arial, sans-serif;
+  line-height: 1.45;
+}
+
+.recipe-meta-grid strong {
+  display: block;
+  color: var(--ink);
+}
+
+.recipe-detail-columns h4 {
+  color: var(--signal);
+  font-family: Arial, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.recipe-detail-columns li,
+.recipe-note,
+.recipe-empty {
+  color: rgba(16, 24, 32, 0.74);
+  font-family: Arial, sans-serif;
+  line-height: 1.58;
+}
+
+.recipe-note {
+  margin: 0.9rem 0 0;
+  border-left: 4px solid var(--ukraine-blue);
+  padding: 0.7rem;
+  background: rgba(39, 105, 179, 0.08);
+}
+
+.recipe-grid-wide {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.recipe-card,
+.costume-card {
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid rgba(16, 24, 32, 0.14);
+  border-radius: 8px;
+  background: var(--paper-light);
+  box-shadow: 0 14px 34px rgba(16, 24, 32, 0.1);
+}
+
+.recipe-card {
+  padding: 1.2rem;
+}
+
+.recipe-card span,
+.costume-card span {
+  color: var(--signal);
+  font-family: Arial, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+}
+
+.recipe-card h3,
+.costume-card h3 {
+  margin: 0.35rem 0 0.7rem;
+}
+
+.recipe-card p,
+.recipe-card li,
+.costume-card p {
+  color: rgba(16, 24, 32, 0.75);
+  font-family: Arial, sans-serif;
+  line-height: 1.62;
+}
+
+.recipe-card ol {
+  margin: 0.8rem 0;
+  padding-left: 1.2rem;
+}
+
+.costume-section {
+  color: var(--ink);
+  background:
+    linear-gradient(rgba(238, 227, 200, 0.95), rgba(238, 227, 200, 0.93)),
+    repeating-linear-gradient(0deg, rgba(39, 105, 179, 0.06) 0 1px, transparent 1px 22px);
+}
+
+.costume-card img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.costume-card div {
+  padding: 1.2rem;
+}
+
+.costume-section .culture-reference {
+  border-left-color: var(--signal);
+  background: rgba(255, 247, 227, 0.78);
+}
+
+.costume-section .culture-reference span,
+.costume-section .culture-reference strong {
+  color: var(--signal);
+}
+
+.costume-section .culture-reference p {
+  color: rgba(16, 24, 32, 0.76);
+}
+
+.back-link-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
 .culture-quote {
   border-left: 4px solid var(--ukraine-gold);
   padding: 1.15rem;
@@ -3456,6 +3803,17 @@ img.image-focus-top {
 
   .atlas-grid,
   .culture-reference-grid,
+  .food-facts-grid,
+  .recipe-grid,
+  .costume-grid,
+  .split-route-grid,
+  .pantry-grid,
+  .regional-food-grid,
+  .season-grid,
+  .costume-detail-grid,
+  .recipe-app-layout,
+  .recipe-meta-grid,
+  .recipe-detail-columns,
   .global-ukraine-grid,
   .encyclopedia-stat-grid,
   .encyclopedia-grid,
@@ -3557,6 +3915,14 @@ img.image-focus-top {
   .footer-info {
     grid-template-columns: 1fr;
   }
+
+  .recipe-toolbar {
+    grid-template-columns: 1fr;
+  }
+
+  .recipe-detail-card {
+    min-height: auto;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1199px) {
@@ -3565,6 +3931,11 @@ img.image-focus-top {
   }
 
   .global-ukraine-grid,
+  .recipe-grid-wide,
+  .pantry-grid,
+  .regional-food-grid,
+  .season-grid,
+  .costume-detail-grid,
   .encyclopedia-stat-grid,
   .encyclopedia-grid,
   .encyclopedia-source-grid,
@@ -3578,6 +3949,7 @@ img.image-focus-top {
   }
 
   .deep-layout,
+  .recipe-app-layout,
   .encyclopedia-lower-grid,
   .encyclopedia-source-library,
   .professional-data-head,

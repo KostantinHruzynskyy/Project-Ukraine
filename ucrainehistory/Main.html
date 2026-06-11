@@ -64,6 +64,8 @@
                 <li><a class="dropdown-item" href="#impara">Impara</a></li>
                 <li><a class="dropdown-item" href="#atlante-ucraina">Atlante Ucraina</a></li>
                 <li><a class="dropdown-item" href="lingua-cultura.html">Lingua e cultura</a></li>
+                <li><a class="dropdown-item" href="cucina.html">Cucina ucraina</a></li>
+                <li><a class="dropdown-item" href="costumi.html">Costumi ucraini</a></li>
                 <li><a class="dropdown-item" href="sport.html">Sport ucraino</a></li>
                 <li><a class="dropdown-item" href="#enciclopedia-ucraina">Enciclopedia Ucraina</a></li>
                 <li><a class="dropdown-item" href="#cronologia-civile">Cronologia civile</a></li>
@@ -217,13 +219,23 @@
             <strong>Lingua e cultura</strong>
             <p>Studia toponimi, plurilinguismo, letteratura, musica e patrimonio.</p>
           </a>
-          <a class="quick-card" href="ricostruzione.html">
+          <a class="quick-card" href="cucina.html">
             <span>10</span>
+            <strong>Cucina ucraina</strong>
+            <p>Apri ricette documentate, ingredienti, regioni, feste e backend dati.</p>
+          </a>
+          <a class="quick-card" href="costumi.html">
+            <span>11</span>
+            <strong>Costumi ucraini</strong>
+            <p>Studia vyshyvanka, pysanky, rushnyk, Ornek e oggetti rituali.</p>
+          </a>
+          <a class="quick-card" href="ricostruzione.html">
+            <span>12</span>
             <strong>Ricostruzione</strong>
             <p>Collega energia, mine, ritorni, scuole, ospedali e futuro europeo.</p>
           </a>
           <a class="quick-card" href="sport.html">
-            <span>11</span>
+            <span>13</span>
             <strong>Sport ucraino</strong>
             <p>Leggi medaglie, record, calcio, Paralimpiadi e impianti colpiti dalla guerra.</p>
           </a>
@@ -1483,6 +1495,8 @@
           <button class="culture-tab" type="button" data-culture-filter="libri">Libri</button>
           <button class="culture-tab" type="button" data-culture-filter="autori">Autori</button>
           <button class="culture-tab" type="button" data-culture-filter="arte">Arte</button>
+          <button class="culture-tab" type="button" data-culture-filter="cucina">Cucina</button>
+          <button class="culture-tab" type="button" data-culture-filter="costumi">Costumi</button>
           <button class="culture-tab" type="button" data-culture-filter="scienza">Scienza</button>
           <button class="culture-tab" type="button" data-culture-filter="vita">Vita quotidiana</button>
         </div>
@@ -1566,18 +1580,25 @@
             </article>
           </div>
           <div class="col-md-6 col-xl-4">
-            <article class="culture-card reveal" data-culture="arte vita">
+            <article class="culture-card reveal" data-culture="arte vita costumi">
               <span>Ricamo</span>
               <h3>Vyshyvanka</h3>
               <p>Ogni regione ha segni, colori e geometrie. Indossarla oggi e un gesto culturale e politico.</p>
             </article>
           </div>
           <div class="col-md-6 col-xl-4">
-            <article class="culture-card reveal" data-culture="vita">
-              <span>Cibo</span>
+            <a class="culture-card reveal" data-culture="vita cucina" href="cucina.html">
+              <span>Cucina</span>
               <h3>Borshch, varenyky, holubtsi, pampushky</h3>
-              <p>Il cibo ucraino racconta famiglia, ospitalita, lavoro agricolo e continuita tra generazioni.</p>
-            </article>
+              <p>Apri la pagina ampia con ricette documentate, ingredienti, regioni, feste e dataset backend.</p>
+            </a>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <a class="culture-card reveal" data-culture="arte vita costumi" href="costumi.html">
+              <span>Costumi</span>
+              <h3>Vyshyvanka, pysanky, rushnyk, Ornek</h3>
+              <p>Apri la pagina separata su ricami, abiti regionali, oggetti rituali e patrimonio immateriale.</p>
+            </a>
           </div>
           <div class="col-md-6 col-xl-4">
             <article class="culture-card reveal" data-culture="scienza">
@@ -1634,6 +1655,8 @@
             <p><strong>Pysanky</strong>: uova decorate, simbolo rituale di primavera, famiglia e continuità.</p>
             <p><strong>Borshch</strong>: pratica culinaria familiare e sociale, riconosciuta da UNESCO come patrimonio ucraino da salvaguardare.</p>
             <p><strong>Kobzar e bandura</strong>: cantori e strumento collegati a epopee, memoria storica e tradizione orale.</p>
+            <a class="source-link" href="cucina.html">Apri cucina</a>
+            <a class="source-link" href="costumi.html">Apri costumi</a>
           </article>
         </div>
 

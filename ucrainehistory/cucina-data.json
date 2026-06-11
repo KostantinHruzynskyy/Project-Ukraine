@@ -1,0 +1,394 @@
+{
+  "updated": "2026-06",
+  "note": "Dataset didattico: UNESCO riconosce la cultura del borshch ucraino, non una sola ricetta obbligatoria.",
+  "sources": [
+    {
+      "label": "UNESCO - Culture of Ukrainian borscht cooking",
+      "url": "https://ich.unesco.org/en/USL/01852"
+    },
+    {
+      "label": "UNESCO - Ukraine intangible heritage",
+      "url": "https://ich.unesco.org/en/state/ukraine-UA?info=elements-on-the-lists"
+    },
+    {
+      "label": "Internet Encyclopedia of Ukraine",
+      "url": "https://www.encyclopediaofukraine.com/"
+    },
+    {
+      "label": "Ukrainian Institute - Insight UA",
+      "url": "https://insight.ui.org.ua/"
+    },
+    {
+      "label": "AP - Borsch and Ukrainian culture",
+      "url": "https://apnews.com/article/ec0bd5ce731fe28cf4b35479c0eec911"
+    }
+  ],
+  "categories": [
+    "zuppa",
+    "impasto",
+    "pane",
+    "festa",
+    "verdure",
+    "dolce",
+    "bevanda"
+  ],
+  "recipes": [
+    {
+      "id": "borshch-rosso",
+      "title": "Borshch rosso ucraino",
+      "category": "zuppa",
+      "region": "diffuso, con varianti regionali",
+      "occasion": "pranzo familiare, ospitalita, feste",
+      "time": "2 ore",
+      "servings": "6-8",
+      "ingredients": [
+        "barbabietole",
+        "cavolo",
+        "patate",
+        "carote",
+        "cipolla",
+        "pomodoro o concentrato",
+        "brodo di carne, fagioli o funghi",
+        "aglio",
+        "aneto",
+        "panna acida"
+      ],
+      "steps": [
+        "Prepara il brodo e tienilo caldo.",
+        "Stufa barbabietola, carota e cipolla con pomodoro per fissare colore e dolcezza.",
+        "Cuoci patate e cavolo nel brodo, poi aggiungi il soffritto.",
+        "Rifinisci con aglio, aneto e riposo breve prima di servire."
+      ],
+      "notes": "La parte riconosciuta da UNESCO e la pratica culturale di preparazione e trasmissione, non una formula unica."
+    },
+    {
+      "id": "borshch-verde",
+      "title": "Borshch verde",
+      "category": "zuppa",
+      "region": "primavera, Ucraina centrale e occidentale",
+      "occasion": "stagione primaverile",
+      "time": "1 ora",
+      "servings": "4-6",
+      "ingredients": [
+        "acetosella o erbe verdi",
+        "patate",
+        "uova sode",
+        "carota",
+        "cipolla",
+        "brodo",
+        "aneto",
+        "panna acida"
+      ],
+      "steps": [
+        "Cuoci patate, carota e cipolla nel brodo.",
+        "Aggiungi le erbe verdi solo verso la fine.",
+        "Servi con uovo sodo, aneto e panna acida."
+      ],
+      "notes": "Utile per mostrare che borshch non significa sempre solo barbabietola rossa."
+    },
+    {
+      "id": "varenyky-patate",
+      "title": "Varenyky con patate e cipolla",
+      "category": "impasto",
+      "region": "diffuso",
+      "occasion": "cucina di casa, feste familiari",
+      "time": "1 ora e 30 minuti",
+      "servings": "4-6",
+      "ingredients": [
+        "farina",
+        "acqua tiepida",
+        "sale",
+        "poco olio",
+        "patate lesse",
+        "cipolla rosolata",
+        "pepe",
+        "burro o panna acida"
+      ],
+      "steps": [
+        "Impasta farina, acqua, sale e olio fino a ottenere una pasta elastica.",
+        "Prepara il ripieno con patate schiacciate, cipolla e pepe.",
+        "Taglia dischi, farcisci, chiudi bene i bordi.",
+        "Lessa finche salgono a galla e condisci con cipolla rosolata."
+      ],
+      "notes": "Il formato cambia da casa a casa; il gesto manuale e parte della memoria familiare."
+    },
+    {
+      "id": "varenyky-ciliegie",
+      "title": "Varenyky con ciliegie",
+      "category": "dolce",
+      "region": "cucina estiva",
+      "occasion": "estate, dessert familiare",
+      "time": "1 ora",
+      "servings": "4",
+      "ingredients": [
+        "farina",
+        "acqua",
+        "sale",
+        "ciliegie snocciolate",
+        "zucchero",
+        "panna acida"
+      ],
+      "steps": [
+        "Prepara una pasta sottile ma resistente.",
+        "Farcisci ogni disco con ciliegie e poco zucchero.",
+        "Chiudi con cura per non perdere il succo.",
+        "Lessa brevemente e servi con panna acida o sciroppo."
+      ],
+      "notes": "Mostra il lato stagionale e dolce dei varenyky."
+    },
+    {
+      "id": "holubtsi",
+      "title": "Holubtsi",
+      "category": "verdure",
+      "region": "diffuso, con varianti",
+      "occasion": "pranzi familiari, feste",
+      "time": "2 ore",
+      "servings": "6",
+      "ingredients": [
+        "foglie di cavolo",
+        "riso o grano saraceno",
+        "carne macinata opzionale",
+        "cipolla",
+        "carota",
+        "pomodoro",
+        "brodo",
+        "panna acida"
+      ],
+      "steps": [
+        "Sbollenta il cavolo e assottiglia la costa dura.",
+        "Mescola cereale semicotto, cipolla e carne se prevista.",
+        "Arrotola gli involtini e coprili con salsa di pomodoro e brodo.",
+        "Cuoci lentamente finche ripieno e cavolo sono teneri."
+      ],
+      "notes": "Le versioni senza carne sono importanti nei periodi di digiuno religioso."
+    },
+    {
+      "id": "pampushky",
+      "title": "Pampushky all'aglio",
+      "category": "pane",
+      "region": "diffuso",
+      "occasion": "accompagnamento del borshch",
+      "time": "2 ore con lievitazione",
+      "servings": "8 panini",
+      "ingredients": [
+        "farina",
+        "lievito",
+        "acqua o latte",
+        "zucchero",
+        "sale",
+        "olio",
+        "aglio",
+        "aneto"
+      ],
+      "steps": [
+        "Prepara un impasto morbido e lascialo lievitare.",
+        "Forma piccoli panini e cuoci fino a doratura.",
+        "Pesta aglio, olio, poco liquido e aneto.",
+        "Versa la salsa sui panini caldi."
+      ],
+      "notes": "Pane, aglio e zuppa creano una coppia riconoscibile nella cucina di casa."
+    },
+    {
+      "id": "deruny",
+      "title": "Deruny",
+      "category": "verdure",
+      "region": "Polissia e cucina familiare diffusa",
+      "occasion": "cena semplice, accompagnamento",
+      "time": "35 minuti",
+      "servings": "4",
+      "ingredients": [
+        "patate grattugiate",
+        "cipolla",
+        "uovo",
+        "farina",
+        "sale",
+        "pepe",
+        "olio",
+        "panna acida"
+      ],
+      "steps": [
+        "Grattugia patate e cipolla, poi elimina l'acqua in eccesso.",
+        "Unisci uovo, poca farina, sale e pepe.",
+        "Friggi cucchiaiate sottili fino a doratura.",
+        "Servi subito con panna acida."
+      ],
+      "notes": "Piatto utile per parlare di patata, vita rurale e cucina rapida."
+    },
+    {
+      "id": "banosh",
+      "title": "Banosh hutsul",
+      "category": "verdure",
+      "region": "Carpazi, Hutsulshchyna",
+      "occasion": "cucina montana",
+      "time": "40 minuti",
+      "servings": "4",
+      "ingredients": [
+        "farina di mais",
+        "panna acida o panna",
+        "sale",
+        "brynza",
+        "funghi",
+        "ciccioli opzionali"
+      ],
+      "steps": [
+        "Scalda panna o panna acida con sale.",
+        "Versa la farina di mais a pioggia mescolando.",
+        "Cuoci fino a consistenza cremosa.",
+        "Completa con brynza, funghi o ciccioli."
+      ],
+      "notes": "Aiuta a separare la cucina carpatica dalla cucina di pianura."
+    },
+    {
+      "id": "kapusniak",
+      "title": "Kapusniak",
+      "category": "zuppa",
+      "region": "diffuso",
+      "occasion": "inverno, cucina sostanziosa",
+      "time": "1 ora e 30 minuti",
+      "servings": "6",
+      "ingredients": [
+        "cavolo fermentato",
+        "patate",
+        "carote",
+        "cipolla",
+        "miglio opzionale",
+        "brodo",
+        "alloro",
+        "pepe"
+      ],
+      "steps": [
+        "Prepara il brodo e cuoci patate e verdure.",
+        "Aggiungi cavolo fermentato e miglio se previsto.",
+        "Cuoci lentamente per un sapore piu profondo.",
+        "Servi caldo con pane scuro."
+      ],
+      "notes": "Mostra l'importanza delle fermentazioni e delle conserve invernali."
+    },
+    {
+      "id": "nalysnyky",
+      "title": "Nalysnyky",
+      "category": "dolce",
+      "region": "diffuso",
+      "occasion": "dessert, colazione, feste",
+      "time": "1 ora",
+      "servings": "4",
+      "ingredients": [
+        "uova",
+        "latte",
+        "farina",
+        "sale",
+        "formaggio fresco",
+        "zucchero",
+        "vaniglia opzionale",
+        "burro"
+      ],
+      "steps": [
+        "Prepara crespelle sottili.",
+        "Farcisci con formaggio fresco dolce.",
+        "Arrotola o piega le crespelle.",
+        "Ripassa in forno o in padella con poco burro."
+      ],
+      "notes": "Sono diverse dai varenyky: qui il formato e quello della crespella."
+    },
+    {
+      "id": "kutia",
+      "title": "Kutia",
+      "category": "festa",
+      "region": "Natale, molte regioni",
+      "occasion": "Sviata Vecheria, cena della vigilia",
+      "time": "2 ore piu ammollo",
+      "servings": "6",
+      "ingredients": [
+        "grano cotto",
+        "semi di papavero",
+        "miele",
+        "noci",
+        "uvetta o frutta secca",
+        "uzvar opzionale"
+      ],
+      "steps": [
+        "Cuoci il grano fino a renderlo tenero.",
+        "Ammolla e pesta i semi di papavero.",
+        "Unisci miele, noci e frutta secca.",
+        "Regola la consistenza con poco uzvar."
+      ],
+      "notes": "Piatto rituale: non va presentato come semplice dessert."
+    },
+    {
+      "id": "uzvar",
+      "title": "Uzvar",
+      "category": "bevanda",
+      "region": "diffuso",
+      "occasion": "Natale, inverno, famiglia",
+      "time": "45 minuti piu riposo",
+      "servings": "6",
+      "ingredients": [
+        "mele secche",
+        "pere secche",
+        "prugne secche",
+        "miele",
+        "acqua",
+        "spezie opzionali"
+      ],
+      "steps": [
+        "Sciacqua la frutta secca.",
+        "Fai sobbollire dolcemente senza stracuocere.",
+        "Lascia riposare per estrarre aroma.",
+        "Dolcifica con miele quando la bevanda e tiepida."
+      ],
+      "notes": "Legato alla conservazione della frutta e alla tavola natalizia."
+    },
+    {
+      "id": "paska",
+      "title": "Paska",
+      "category": "pane",
+      "region": "Pasqua, molte regioni",
+      "occasion": "Pasqua",
+      "time": "3 ore con lievitazione",
+      "servings": "1 pane grande",
+      "ingredients": [
+        "farina",
+        "latte",
+        "uova",
+        "burro",
+        "zucchero",
+        "lievito",
+        "sale",
+        "decorazioni di impasto"
+      ],
+      "steps": [
+        "Prepara un impasto ricco e ben lavorato.",
+        "Lascia lievitare con calma.",
+        "Decora con croci, trecce o motivi simbolici.",
+        "Cuoci fino a doratura e raffredda prima del taglio."
+      ],
+      "notes": "Pane rituale pasquale: forma e decorazioni contano quanto la ricetta."
+    },
+    {
+      "id": "korovai",
+      "title": "Korovai",
+      "category": "festa",
+      "region": "matrimoni, molte regioni",
+      "occasion": "matrimonio e rito comunitario",
+      "time": "3-4 ore",
+      "servings": "1 pane cerimoniale",
+      "ingredients": [
+        "farina",
+        "lievito",
+        "uova",
+        "latte",
+        "zucchero",
+        "sale",
+        "burro",
+        "decorazioni di impasto"
+      ],
+      "steps": [
+        "Prepara un impasto festivo ricco.",
+        "Forma il pane e aggiungi trecce, uccelli o fiori di impasto.",
+        "Lascia lievitare e cuoci con attenzione.",
+        "Usalo come oggetto rituale, non solo come pane da tavola."
+      ],
+      "notes": "Collega cucina, famiglia e rito: e una soglia naturale verso la pagina costumi."
+    }
+  ]
+}
