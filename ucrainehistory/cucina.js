@@ -108,7 +108,11 @@
     card.querySelector("strong").textContent = recipe.title;
     card.querySelector("small").textContent = `${recipe.region} · ${recipe.time}`;
     card.querySelector("em").textContent = recipe.occasion;
-    card.addEventListener("click", () => renderDetail(recipe));
+    card.addEventListener("click", () => {
+      explorer?.querySelectorAll(".recipe-mini-card").forEach((item) => item.classList.remove("active"));
+      card.classList.add("active");
+      renderDetail(recipe);
+    });
 
     if (index === 0) {
       card.classList.add("active");

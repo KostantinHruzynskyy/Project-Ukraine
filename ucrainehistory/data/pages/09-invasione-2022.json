@@ -1,0 +1,31 @@
+{
+  "id": "09-invasione-2022",
+  "order": 9,
+  "file": "invasione-2022.html",
+  "section": "Guerra",
+  "title": "Skyy History - Invasione 2022",
+  "h1": "Invasione",
+  "description": "Archivio interattivo sull'Ucraina: storia, cultura, guerra russo-ucraina, memoria civile e fonti affidabili.",
+  "summary": "Invasione russa su vasta scala del 24 febbraio 2022.",
+  "updated": "2026-06",
+  "assets": {
+    "html": "invasione-2022.html",
+    "json": "data/pages/09-invasione-2022.json",
+    "php": "api/pages/09-invasione-2022.php",
+    "python": "backend/pages/09-invasione-2022.py"
+  },
+  "navigation": {
+    "previous": "crimea-donbas.html",
+    "next": "bucha.html",
+    "home": "Main.html"
+  },
+  "quality": {
+    "dataSource": "data/pages",
+    "api": "api/pages",
+    "python": "backend/pages",
+    "css": [
+      "styles/site-order.css",
+      "styles/films.css"
+    ]
+  }
+}

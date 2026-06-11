@@ -1,0 +1,31 @@
+{
+  "id": "23-ricostruzione",
+  "order": 23,
+  "file": "ricostruzione.html",
+  "section": "Futuro",
+  "title": "Skyy History - Ricostruzione Ucraina",
+  "h1": "Ricostruzione",
+  "description": "Ricostruzione dell'Ucraina: energia, mine, infrastrutture, scuole, ospedali, economia, ritorni e futuro europeo.",
+  "summary": "Ricostruzione, energia, mine, economia e futuro europeo.",
+  "updated": "2026-06",
+  "assets": {
+    "html": "ricostruzione.html",
+    "json": "data/pages/23-ricostruzione.json",
+    "php": "api/pages/23-ricostruzione.php",
+    "python": "backend/pages/23-ricostruzione.py"
+  },
+  "navigation": {
+    "previous": "rifugiati.html",
+    "next": "film.html",
+    "home": "Main.html"
+  },
+  "quality": {
+    "dataSource": "data/pages",
+    "api": "api/pages",
+    "python": "backend/pages",
+    "css": [
+      "styles/site-order.css",
+      "styles/films.css"
+    ]
+  }
+}

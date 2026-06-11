@@ -1,0 +1,31 @@
+{
+  "id": "11-mariupol",
+  "order": 11,
+  "file": "mariupol.html",
+  "section": "Assedio",
+  "title": "Skyy History - Mariupol",
+  "h1": "Mariupol",
+  "description": "Archivio interattivo sull'Ucraina: storia, cultura, guerra russo-ucraina, memoria civile e fonti affidabili.",
+  "summary": "Mariupol, assedio, teatro bombardato e Azovstal.",
+  "updated": "2026-06",
+  "assets": {
+    "html": "mariupol.html",
+    "json": "data/pages/11-mariupol.json",
+    "php": "api/pages/11-mariupol.php",
+    "python": "backend/pages/11-mariupol.py"
+  },
+  "navigation": {
+    "previous": "bucha.html",
+    "next": "battaglie.html",
+    "home": "Main.html"
+  },
+  "quality": {
+    "dataSource": "data/pages",
+    "api": "api/pages",
+    "python": "backend/pages",
+    "css": [
+      "styles/site-order.css",
+      "styles/films.css"
+    ]
+  }
+}

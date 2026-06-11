@@ -1,0 +1,31 @@
+{
+  "id": "18-cucina",
+  "order": 18,
+  "file": "cucina.html",
+  "section": "Cucina",
+  "title": "Skyy History - Cucina ucraina",
+  "h1": "Ricette, regioni, memoria",
+  "description": "Guida ampia alla cucina ucraina: ricette tradizionali documentate, regioni, ingredienti, feste, borshch UNESCO e backend dati aggiornato a giugno 2026.",
+  "summary": "Ricette, ingredienti, regioni, feste e dataset culinario.",
+  "updated": "2026-06",
+  "assets": {
+    "html": "cucina.html",
+    "json": "data/pages/18-cucina.json",
+    "php": "api/pages/18-cucina.php",
+    "python": "backend/pages/18-cucina.py"
+  },
+  "navigation": {
+    "previous": "lingua-cultura.html",
+    "next": "costumi.html",
+    "home": "Main.html"
+  },
+  "quality": {
+    "dataSource": "data/pages",
+    "api": "api/pages",
+    "python": "backend/pages",
+    "css": [
+      "styles/site-order.css",
+      "styles/films.css"
+    ]
+  }
+}

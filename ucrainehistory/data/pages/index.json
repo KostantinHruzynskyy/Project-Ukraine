@@ -1,0 +1,246 @@
+{
+  "updated": "2026-06",
+  "count": 24,
+  "pages": [
+    {
+      "id": "01-main",
+      "order": 1,
+      "file": "Main.html",
+      "section": "Home",
+      "title": "Skyy",
+      "json": "data/pages/01-main.json",
+      "php": "api/pages/01-main.php",
+      "python": "backend/pages/01-main.py"
+    },
+    {
+      "id": "02-holodomor",
+      "order": 2,
+      "file": "holodomor.html",
+      "section": "Memoria",
+      "title": "Skyy History - Holodomor",
+      "json": "data/pages/02-holodomor.json",
+      "php": "api/pages/02-holodomor.php",
+      "python": "backend/pages/02-holodomor.py"
+    },
+    {
+      "id": "03-babyn-yar",
+      "order": 3,
+      "file": "babyn-yar.html",
+      "section": "Memoria",
+      "title": "Skyy History - Babyn Yar",
+      "json": "data/pages/03-babyn-yar.json",
+      "php": "api/pages/03-babyn-yar.php",
+      "python": "backend/pages/03-babyn-yar.py"
+    },
+    {
+      "id": "04-tatari-crimea",
+      "order": 4,
+      "file": "tatari-crimea.html",
+      "section": "Popoli",
+      "title": "Skyy History - Tatari di Crimea",
+      "json": "data/pages/04-tatari-crimea.json",
+      "php": "api/pages/04-tatari-crimea.php",
+      "python": "backend/pages/04-tatari-crimea.py"
+    },
+    {
+      "id": "05-chernobyl",
+      "order": 5,
+      "file": "chernobyl.html",
+      "section": "Ambiente",
+      "title": "Skyy History - Chernobyl",
+      "json": "data/pages/05-chernobyl.json",
+      "php": "api/pages/05-chernobyl.php",
+      "python": "backend/pages/05-chernobyl.py"
+    },
+    {
+      "id": "06-indipendenza",
+      "order": 6,
+      "file": "indipendenza.html",
+      "section": "Stato",
+      "title": "Skyy History - Indipendenza",
+      "json": "data/pages/06-indipendenza.json",
+      "php": "api/pages/06-indipendenza.php",
+      "python": "backend/pages/06-indipendenza.py"
+    },
+    {
+      "id": "07-euromaidan",
+      "order": 7,
+      "file": "euromaidan.html",
+      "section": "Societa",
+      "title": "Skyy History - Euromaidan",
+      "json": "data/pages/07-euromaidan.json",
+      "php": "api/pages/07-euromaidan.php",
+      "python": "backend/pages/07-euromaidan.py"
+    },
+    {
+      "id": "08-crimea-donbas",
+      "order": 8,
+      "file": "crimea-donbas.html",
+      "section": "Guerra",
+      "title": "Skyy History - Crimea e Donbas",
+      "json": "data/pages/08-crimea-donbas.json",
+      "php": "api/pages/08-crimea-donbas.php",
+      "python": "backend/pages/08-crimea-donbas.py"
+    },
+    {
+      "id": "09-invasione-2022",
+      "order": 9,
+      "file": "invasione-2022.html",
+      "section": "Guerra",
+      "title": "Skyy History - Invasione 2022",
+      "json": "data/pages/09-invasione-2022.json",
+      "php": "api/pages/09-invasione-2022.php",
+      "python": "backend/pages/09-invasione-2022.py"
+    },
+    {
+      "id": "10-bucha",
+      "order": 10,
+      "file": "bucha.html",
+      "section": "Crimini",
+      "title": "Skyy History - Bucha",
+      "json": "data/pages/10-bucha.json",
+      "php": "api/pages/10-bucha.php",
+      "python": "backend/pages/10-bucha.py"
+    },
+    {
+      "id": "11-mariupol",
+      "order": 11,
+      "file": "mariupol.html",
+      "section": "Assedio",
+      "title": "Skyy History - Mariupol",
+      "json": "data/pages/11-mariupol.json",
+      "php": "api/pages/11-mariupol.php",
+      "python": "backend/pages/11-mariupol.py"
+    },
+    {
+      "id": "12-battaglie",
+      "order": 12,
+      "file": "battaglie.html",
+      "section": "Guerra",
+      "title": "Skyy History - Battaglie",
+      "json": "data/pages/12-battaglie.json",
+      "php": "api/pages/12-battaglie.php",
+      "python": "backend/pages/12-battaglie.py"
+    },
+    {
+      "id": "13-atrocita",
+      "order": 13,
+      "file": "atrocita.html",
+      "section": "Crimini",
+      "title": "Skyy History - Atrocita",
+      "json": "data/pages/13-atrocita.json",
+      "php": "api/pages/13-atrocita.php",
+      "python": "backend/pages/13-atrocita.py"
+    },
+    {
+      "id": "14-difesa",
+      "order": 14,
+      "file": "difesa.html",
+      "section": "Difesa",
+      "title": "Skyy History - Difesa Ucraina",
+      "json": "data/pages/14-difesa.json",
+      "php": "api/pages/14-difesa.php",
+      "python": "backend/pages/14-difesa.py"
+    },
+    {
+      "id": "15-dossier",
+      "order": 15,
+      "file": "dossier.html",
+      "section": "Studio",
+      "title": "Skyy History - Dossier Ucraina",
+      "json": "data/pages/15-dossier.json",
+      "php": "api/pages/15-dossier.php",
+      "python": "backend/pages/15-dossier.py"
+    },
+    {
+      "id": "16-museo",
+      "order": 16,
+      "file": "museo.html",
+      "section": "Patrimonio",
+      "title": "Skyy History - Museo Ucraina",
+      "json": "data/pages/16-museo.json",
+      "php": "api/pages/16-museo.php",
+      "python": "backend/pages/16-museo.py"
+    },
+    {
+      "id": "17-lingua-cultura",
+      "order": 17,
+      "file": "lingua-cultura.html",
+      "section": "Cultura",
+      "title": "Skyy History - Lingua e cultura ucraina",
+      "json": "data/pages/17-lingua-cultura.json",
+      "php": "api/pages/17-lingua-cultura.php",
+      "python": "backend/pages/17-lingua-cultura.py"
+    },
+    {
+      "id": "18-cucina",
+      "order": 18,
+      "file": "cucina.html",
+      "section": "Cucina",
+      "title": "Skyy History - Cucina ucraina",
+      "json": "data/pages/18-cucina.json",
+      "php": "api/pages/18-cucina.php",
+      "python": "backend/pages/18-cucina.py"
+    },
+    {
+      "id": "19-costumi",
+      "order": 19,
+      "file": "costumi.html",
+      "section": "Costumi",
+      "title": "Skyy History - Costumi ucraini",
+      "json": "data/pages/19-costumi.json",
+      "php": "api/pages/19-costumi.php",
+      "python": "backend/pages/19-costumi.py"
+    },
+    {
+      "id": "20-cucina-costumi",
+      "order": 20,
+      "file": "cucina-costumi.html",
+      "section": "Indice",
+      "title": "Skyy History - Cucina e costumi separati",
+      "json": "data/pages/20-cucina-costumi.json",
+      "php": "api/pages/20-cucina-costumi.php",
+      "python": "backend/pages/20-cucina-costumi.py"
+    },
+    {
+      "id": "21-sport",
+      "order": 21,
+      "file": "sport.html",
+      "section": "Sport",
+      "title": "Skyy History - Sport ucraino",
+      "json": "data/pages/21-sport.json",
+      "php": "api/pages/21-sport.php",
+      "python": "backend/pages/21-sport.py"
+    },
+    {
+      "id": "22-rifugiati",
+      "order": 22,
+      "file": "rifugiati.html",
+      "section": "Civili",
+      "title": "Skyy History - Rifugiati e diaspora ucraina",
+      "json": "data/pages/22-rifugiati.json",
+      "php": "api/pages/22-rifugiati.php",
+      "python": "backend/pages/22-rifugiati.py"
+    },
+    {
+      "id": "23-ricostruzione",
+      "order": 23,
+      "file": "ricostruzione.html",
+      "section": "Futuro",
+      "title": "Skyy History - Ricostruzione Ucraina",
+      "json": "data/pages/23-ricostruzione.json",
+      "php": "api/pages/23-ricostruzione.php",
+      "python": "backend/pages/23-ricostruzione.py"
+    },
+    {
+      "id": "24-film",
+      "order": 24,
+      "file": "film.html",
+      "section": "Cinema",
+      "title": "Skyy History - Film e documentari sull'Ucraina",
+      "json": "data/pages/24-film.json",
+      "php": "api/pages/24-film.php",
+      "python": "backend/pages/24-film.py"
+    }
+  ]
+}

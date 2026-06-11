@@ -1,0 +1,31 @@
+{
+  "id": "04-tatari-crimea",
+  "order": 4,
+  "file": "tatari-crimea.html",
+  "section": "Popoli",
+  "title": "Skyy History - Tatari di Crimea",
+  "h1": "Tatari di Crimea",
+  "description": "Archivio interattivo sull'Ucraina: storia, cultura, guerra russo-ucraina, memoria civile e fonti affidabili.",
+  "summary": "Tatari di Crimea, deportazione, ritorno e popolo indigeno.",
+  "updated": "2026-06",
+  "assets": {
+    "html": "tatari-crimea.html",
+    "json": "data/pages/04-tatari-crimea.json",
+    "php": "api/pages/04-tatari-crimea.php",
+    "python": "backend/pages/04-tatari-crimea.py"
+  },
+  "navigation": {
+    "previous": "babyn-yar.html",
+    "next": "chernobyl.html",
+    "home": "Main.html"
+  },
+  "quality": {
+    "dataSource": "data/pages",
+    "api": "api/pages",
+    "python": "backend/pages",
+    "css": [
+      "styles/site-order.css",
+      "styles/films.css"
+    ]
+  }
+}

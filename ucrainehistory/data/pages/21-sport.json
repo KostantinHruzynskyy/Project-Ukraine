@@ -1,0 +1,31 @@
+{
+  "id": "21-sport",
+  "order": 21,
+  "file": "sport.html",
+  "section": "Sport",
+  "title": "Skyy History - Sport ucraino",
+  "h1": "Sport ucraino",
+  "description": "Sport ucraino: Olimpiadi, Paralimpiadi, calcio, atletica, boxe, scherma, record e infrastrutture sportive colpite dalla guerra, con fonti ufficiali.",
+  "summary": "Sport ucraino, medaglie, record e infrastrutture colpite.",
+  "updated": "2026-06",
+  "assets": {
+    "html": "sport.html",
+    "json": "data/pages/21-sport.json",
+    "php": "api/pages/21-sport.php",
+    "python": "backend/pages/21-sport.py"
+  },
+  "navigation": {
+    "previous": "cucina-costumi.html",
+    "next": "rifugiati.html",
+    "home": "Main.html"
+  },
+  "quality": {
+    "dataSource": "data/pages",
+    "api": "api/pages",
+    "python": "backend/pages",
+    "css": [
+      "styles/site-order.css",
+      "styles/films.css"
+    ]
+  }
+}

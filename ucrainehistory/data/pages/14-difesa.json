@@ -1,0 +1,31 @@
+{
+  "id": "14-difesa",
+  "order": 14,
+  "file": "difesa.html",
+  "section": "Difesa",
+  "title": "Skyy History - Difesa Ucraina",
+  "h1": "Difesa ed eroi",
+  "description": "Archivio interattivo sull'Ucraina: storia, cultura, guerra russo-ucraina, memoria civile e fonti affidabili.",
+  "summary": "Forze ucraine, volontari, tecnologia e societa civile.",
+  "updated": "2026-06",
+  "assets": {
+    "html": "difesa.html",
+    "json": "data/pages/14-difesa.json",
+    "php": "api/pages/14-difesa.php",
+    "python": "backend/pages/14-difesa.py"
+  },
+  "navigation": {
+    "previous": "atrocita.html",
+    "next": "dossier.html",
+    "home": "Main.html"
+  },
+  "quality": {
+    "dataSource": "data/pages",
+    "api": "api/pages",
+    "python": "backend/pages",
+    "css": [
+      "styles/site-order.css",
+      "styles/films.css"
+    ]
+  }
+}

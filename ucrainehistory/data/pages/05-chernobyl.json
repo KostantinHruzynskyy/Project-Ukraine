@@ -1,0 +1,31 @@
+{
+  "id": "05-chernobyl",
+  "order": 5,
+  "file": "chernobyl.html",
+  "section": "Ambiente",
+  "title": "Skyy History - Chernobyl",
+  "h1": "Chernobyl",
+  "description": "Archivio interattivo sull'Ucraina: storia, cultura, guerra russo-ucraina, memoria civile e fonti affidabili.",
+  "summary": "Chornobyl, disastro nucleare, liquidatori e fiducia pubblica.",
+  "updated": "2026-06",
+  "assets": {
+    "html": "chernobyl.html",
+    "json": "data/pages/05-chernobyl.json",
+    "php": "api/pages/05-chernobyl.php",
+    "python": "backend/pages/05-chernobyl.py"
+  },
+  "navigation": {
+    "previous": "tatari-crimea.html",
+    "next": "indipendenza.html",
+    "home": "Main.html"
+  },
+  "quality": {
+    "dataSource": "data/pages",
+    "api": "api/pages",
+    "python": "backend/pages",
+    "css": [
+      "styles/site-order.css",
+      "styles/films.css"
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "08-crimea-donbas",
+  "order": 8,
+  "file": "crimea-donbas.html",
+  "section": "Guerra",
+  "title": "Skyy History - Crimea e Donbas",
+  "h1": "Crimea e Donbas",
+  "description": "Archivio interattivo sull'Ucraina: storia, cultura, guerra russo-ucraina, memoria civile e fonti affidabili.",
+  "summary": "Crimea occupata, Donbas e origini della guerra moderna.",
+  "updated": "2026-06",
+  "assets": {
+    "html": "crimea-donbas.html",
+    "json": "data/pages/08-crimea-donbas.json",
+    "php": "api/pages/08-crimea-donbas.php",
+    "python": "backend/pages/08-crimea-donbas.py"
+  },
+  "navigation": {
+    "previous": "euromaidan.html",
+    "next": "invasione-2022.html",
+    "home": "Main.html"
+  },
+  "quality": {
+    "dataSource": "data/pages",
+    "api": "api/pages",
+    "python": "backend/pages",
+    "css": [
+      "styles/site-order.css",
+      "styles/films.css"
+    ]
+  }
+}

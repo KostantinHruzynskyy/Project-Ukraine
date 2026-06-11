@@ -136,7 +136,7 @@ function setupGlobalNavbar() {
     "mariupol.html"
   ];
   const guerraPages = ["battaglie.html", "atrocita.html", "difesa.html"];
-  const studioPages = ["lingua-cultura.html", "cucina.html", "costumi.html", "cucina-costumi.html", "sport.html"];
+  const studioPages = ["lingua-cultura.html", "cucina.html", "costumi.html", "cucina-costumi.html", "film.html", "sport.html"];
   const risorsePages = ["museo.html", "dossier.html", "rifugiati.html", "ricostruzione.html"];
 
   nav.className = "navbar navbar-expand-lg war-navbar sticky-top";
@@ -196,7 +196,7 @@ function setupGlobalNavbar() {
               <li><a class="dropdown-item" href="${homeAnchor("storia-ucraina")}">Storia dell'Ucraina</a></li>
               <li><a class="dropdown-item" href="${homeAnchor("identita")}">Identita e cultura</a></li>
               <li><a class="dropdown-item" href="${homeAnchor("potenza-culturale")}">Potenza culturale</a></li>
-              <li><a class="dropdown-item" href="${homeAnchor("film")}">Film e documentari</a></li>
+              <li><a class="dropdown-item" href="film.html">Film e documentari</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -285,7 +285,7 @@ function setupGlobalFooter() {
           <a href="${homeAnchor("alleati")}">Paesi solidali</a>
           <a href="${homeAnchor("mappe")}">Mappe emotive</a>
           <a href="${homeAnchor("armi")}">Armi usate</a>
-          <a href="${homeAnchor("film")}">Film e documentari</a>
+          <a href="film.html">Film e documentari</a>
           <a href="${homeAnchor("potenza-culturale")}">Potenza culturale</a>
           <a href="${homeAnchor("documenti")}">Documenti e prove</a>
           <a href="lingua-cultura.html">Lingua e cultura</a>
@@ -306,6 +306,7 @@ function setupGlobalFooter() {
           <a href="lingua-cultura.html">Lingua e cultura</a>
           <a href="cucina.html">Cucina ucraina</a>
           <a href="costumi.html">Costumi ucraini</a>
+          <a href="film.html">Film e documentari</a>
           <a href="sport.html">Sport ucraino</a>
           <a href="rifugiati.html">Rifugiati e diaspora</a>
           <a href="ricostruzione.html">Ricostruzione</a>
@@ -1321,6 +1322,52 @@ const pageDeepDives = {
       ["Cucina ucraina", "cucina.html"],
       ["Costumi ucraini", "costumi.html"],
       ["UNESCO - Culture of Ukrainian borscht cooking", "https://ich.unesco.org/en/USL/01852"]
+    ]
+  },
+  "film.html": {
+    eyebrow: "Cinema e memoria",
+    title: "Film e documentari come fonti da leggere con metodo",
+    intro: "La pagina film raccoglie documentari e opere utili per capire Holodomor, Maidan, Donbas, Mariupol, scuola, arte e invasione russa senza confondere cinema e prova giudiziaria.",
+    tabs: [
+      {
+        label: "Fronte",
+        title: "Documentari dal fronte",
+        text: "20 Days in Mariupol e 2000 Meters to Andriivka mostrano il valore della testimonianza giornalistica, ma vanno sempre collegati a fonti, luoghi e date.",
+        items: ["Mariupol e assedio", "Andriivka e fanteria", "FRONTLINE/AP come fonte editoriale"]
+      },
+      {
+        label: "Societa",
+        title: "Scuola, arte e vita civile",
+        text: "Timestamp, Porcelain War, Intercepted e Songs of Slow Burning Earth aprono domande su scuola, arte, paesaggio, suono e resistenza quotidiana.",
+        items: ["Scuole sotto guerra", "Arte e difesa culturale", "Telefonate e paesaggi devastati"]
+      },
+      {
+        label: "Metodo",
+        title: "Come usare un film",
+        text: "Un film puo essere testimonianza, opera d'arte o documento, ma non sostituisce rapporti ufficiali e archivi. Serve sempre contesto.",
+        items: ["Autore e anno", "Festival o distributore", "Limite della prospettiva"]
+      }
+    ],
+    cards: [
+      ["2025", "2000 Meters to Andriivka", "Nuovo riferimento per parlare di fronte, droni, fanteria e perdita umana."],
+      ["2024", "Porcelain War", "Arte e resistenza durante l'invasione russa."],
+      ["2025", "Timestamp", "La scuola ucraina come luogo di continuita durante la guerra."],
+      ["Metodo", "Dataset film", "I titoli sono anche in data/films.json per riuso ordinato."]
+    ],
+    quiz: {
+      question: "Qual e il modo corretto di usare un documentario storico?",
+      answers: [
+        ["Come unica fonte definitiva", false],
+        ["Con autore, anno, fonte, contesto e limiti", true],
+        ["Senza distinguere fiction e documentario", false]
+      ]
+    },
+    sources: [
+      ["FRONTLINE - 20 Days in Mariupol", "https://www.pbs.org/wgbh/frontline/documentary/20-days-in-mariupol/"],
+      ["FRONTLINE - 2000 Meters to Andriivka", "https://www.pbs.org/wgbh/frontline/documentary/2000-meters-to-andriivka/"],
+      ["Porcelain War official", "https://www.porcelainwar.com/"],
+      ["Berlinale", "https://www.berlinale.de/"],
+      ["La Biennale Cinema", "https://www.labiennale.org/en/cinema"]
     ]
   },
   "rifugiati.html": {

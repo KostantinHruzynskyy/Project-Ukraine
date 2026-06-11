@@ -1,0 +1,246 @@
+{
+  "updated": "2026-06",
+  "note": "Archivio didattico di film e documentari sull'Ucraina aggiornato a giugno 2026.",
+  "count": 17,
+  "films": [
+    {
+      "id": "20-days-in-mariupol",
+      "title": "20 Days in Mariupol",
+      "year": 2023,
+      "kind": "Documentario",
+      "tags": [
+        "guerra",
+        "documentario",
+        "mariupol",
+        "premi"
+      ],
+      "director": "Mstyslav Chernov",
+      "note": "Testimonianza AP/FRONTLINE dall'assedio di Mariupol; ha vinto l'Oscar come miglior documentario.",
+      "source": "https://www.pbs.org/wgbh/frontline/documentary/20-days-in-mariupol/"
+    },
+    {
+      "id": "2000-meters-to-andriivka",
+      "title": "2000 Meters to Andriivka",
+      "year": 2025,
+      "kind": "Documentario",
+      "tags": [
+        "guerra",
+        "documentario",
+        "fronte",
+        "2025"
+      ],
+      "director": "Mstyslav Chernov",
+      "note": "Documentario dal fronte orientale: utile per leggere fanteria, avanzamento lento, perdite e testimonianza giornalistica dopo Mariupol.",
+      "source": "https://www.pbs.org/wgbh/frontline/documentary/2000-meters-to-andriivka/"
+    },
+    {
+      "id": "porcelain-war",
+      "title": "Porcelain War",
+      "year": 2024,
+      "kind": "Documentario",
+      "tags": [
+        "guerra",
+        "documentario",
+        "arte",
+        "premi"
+      ],
+      "director": "Brendan Bellomo, Slava Leontyev",
+      "note": "Arte, resistenza e vita quotidiana durante l'invasione; vincitore al Sundance e candidato agli Oscar come documentario.",
+      "source": "https://www.porcelainwar.com/"
+    },
+    {
+      "id": "timestamp",
+      "title": "Timestamp",
+      "year": 2025,
+      "kind": "Documentario",
+      "tags": [
+        "documentario",
+        "scuola",
+        "societa",
+        "2025"
+      ],
+      "director": "Kateryna Gornostai",
+      "note": "Osserva scuola, adolescenti e vita quotidiana in Ucraina durante la guerra, utile per parlare di educazione sotto minaccia.",
+      "source": "https://www.berlinale.de/"
+    },
+    {
+      "id": "intercepted",
+      "title": "Intercepted",
+      "year": 2024,
+      "kind": "Documentario",
+      "tags": [
+        "guerra",
+        "documentario",
+        "prove",
+        "2024"
+      ],
+      "director": "Oksana Karpovych",
+      "note": "Mette in dialogo immagini dell'Ucraina devastata e intercettazioni telefoniche di soldati russi.",
+      "source": "https://www.berlinale.de/"
+    },
+    {
+      "id": "songs-of-slow-burning-earth",
+      "title": "Songs of Slow Burning Earth",
+      "year": 2024,
+      "kind": "Documentario",
+      "tags": [
+        "guerra",
+        "documentario",
+        "societa",
+        "2024"
+      ],
+      "director": "Olha Zhurba",
+      "note": "Documentario corale sulla normalizzazione della guerra e sulla trasformazione della vita civile.",
+      "source": "https://www.labiennale.org/en/cinema"
+    },
+    {
+      "id": "winter-on-fire",
+      "title": "Winter on Fire",
+      "year": 2015,
+      "kind": "Documentario",
+      "tags": [
+        "maidan",
+        "documentario",
+        "storia"
+      ],
+      "director": "Evgeny Afineevsky",
+      "note": "Documentario sulle proteste di Euromaidan e sulla Rivoluzione della Dignita a Kyiv.",
+      "source": "https://www.netflix.com/title/80031666"
+    },
+    {
+      "id": "maidan",
+      "title": "Maidan",
+      "year": 2014,
+      "kind": "Documentario",
+      "tags": [
+        "maidan",
+        "documentario",
+        "storia"
+      ],
+      "director": "Sergei Loznitsa",
+      "note": "Osserva la piazza come corpo collettivo, tra attesa, canti, gelo e violenza politica.",
+      "source": "https://www.festival-cannes.com/"
+    },
+    {
+      "id": "mr-jones",
+      "title": "Mr. Jones",
+      "year": 2019,
+      "kind": "Dramma storico",
+      "tags": [
+        "storia",
+        "holodomor"
+      ],
+      "director": "Agnieszka Holland",
+      "note": "Film sul giornalista Gareth Jones e sulla scoperta dell'Holodomor.",
+      "source": "https://www.berlinale.de/"
+    },
+    {
+      "id": "atlantis",
+      "title": "Atlantis",
+      "year": 2019,
+      "kind": "Dramma",
+      "tags": [
+        "guerra",
+        "donbas"
+      ],
+      "director": "Valentyn Vasyanovych",
+      "note": "Futuro postbellico nel Donbas: trauma, paesaggio distrutto e ricostruzione.",
+      "source": "https://www.labiennale.org/en/cinema"
+    },
+    {
+      "id": "klondike",
+      "title": "Klondike",
+      "year": 2022,
+      "kind": "Dramma",
+      "tags": [
+        "guerra",
+        "donbas"
+      ],
+      "director": "Maryna Er Gorbach",
+      "note": "Una famiglia nel Donbas durante il 2014 e la guerra che entra nella vita civile.",
+      "source": "https://www.sundance.org/"
+    },
+    {
+      "id": "the-distant-barking-of-dogs",
+      "title": "The Distant Barking of Dogs",
+      "year": 2017,
+      "kind": "Documentario",
+      "tags": [
+        "guerra",
+        "documentario",
+        "infanzia"
+      ],
+      "director": "Simon Lereng Wilmont",
+      "note": "La guerra vista attraverso l'infanzia nel Donbas.",
+      "source": "https://www.idfa.nl/"
+    },
+    {
+      "id": "the-living",
+      "title": "The Living",
+      "year": 2008,
+      "kind": "Documentario",
+      "tags": [
+        "storia",
+        "holodomor",
+        "documentario"
+      ],
+      "director": "Serhiy Bukovsky",
+      "note": "Documentario sull'Holodomor e sulla memoria della carestia.",
+      "source": "https://www.encyclopediaofukraine.com/"
+    },
+    {
+      "id": "the-guide",
+      "title": "The Guide",
+      "year": 2014,
+      "kind": "Dramma storico",
+      "tags": [
+        "storia",
+        "cultura"
+      ],
+      "director": "Oles Sanin",
+      "note": "Ambientato nell'Ucraina sovietica degli anni Trenta, tra repressione e cultura dei kobzari.",
+      "source": "https://dovzhenkocentre.org/en/"
+    },
+    {
+      "id": "ukrainian-sheriffs",
+      "title": "Ukrainian Sheriffs",
+      "year": 2015,
+      "kind": "Documentario",
+      "tags": [
+        "cultura",
+        "documentario",
+        "societa"
+      ],
+      "director": "Roman Bondarchuk",
+      "note": "Sguardo alla vita rurale e alla societa ucraina prima dell'invasione totale.",
+      "source": "https://www.idfa.nl/"
+    },
+    {
+      "id": "shadows-of-forgotten-ancestors",
+      "title": "Shadows of Forgotten Ancestors",
+      "year": 1965,
+      "kind": "Classico",
+      "tags": [
+        "cultura",
+        "classico",
+        "hutsul"
+      ],
+      "director": "Sergei Parajanov",
+      "note": "Capolavoro ambientato nella cultura hutsul, centrale per immaginario, musica e tradizioni.",
+      "source": "https://dovzhenkocentre.org/en/"
+    },
+    {
+      "id": "the-tribe",
+      "title": "The Tribe",
+      "year": 2014,
+      "kind": "Dramma",
+      "tags": [
+        "cultura",
+        "societa"
+      ],
+      "director": "Myroslav Slaboshpytskyi",
+      "note": "Film radicale e duro, utile per discutere marginalita, linguaggio e societa.",
+      "source": "https://www.festival-cannes.com/"
+    }
+  ]
+}

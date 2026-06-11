@@ -1,0 +1,31 @@
+{
+  "id": "22-rifugiati",
+  "order": 22,
+  "file": "rifugiati.html",
+  "section": "Civili",
+  "title": "Skyy History - Rifugiati e diaspora ucraina",
+  "h1": "Rifugiati e diaspora",
+  "description": "Rifugiati ucraini, sfollati interni, diaspora, accoglienza europea, scuola, lavoro, trauma e ritorno.",
+  "summary": "Rifugiati, sfollati, accoglienza e diaspora.",
+  "updated": "2026-06",
+  "assets": {
+    "html": "rifugiati.html",
+    "json": "data/pages/22-rifugiati.json",
+    "php": "api/pages/22-rifugiati.php",
+    "python": "backend/pages/22-rifugiati.py"
+  },
+  "navigation": {
+    "previous": "sport.html",
+    "next": "ricostruzione.html",
+    "home": "Main.html"
+  },
+  "quality": {
+    "dataSource": "data/pages",
+    "api": "api/pages",
+    "python": "backend/pages",
+    "css": [
+      "styles/site-order.css",
+      "styles/films.css"
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "16-museo",
+  "order": 16,
+  "file": "museo.html",
+  "section": "Patrimonio",
+  "title": "Skyy History - Museo Ucraina",
+  "h1": "Ucraina: sale della memoria",
+  "description": "Archivio interattivo sull'Ucraina: storia, cultura, guerra russo-ucraina, memoria civile e fonti affidabili.",
+  "summary": "Museo interattivo e oggetti come fonti storiche.",
+  "updated": "2026-06",
+  "assets": {
+    "html": "museo.html",
+    "json": "data/pages/16-museo.json",
+    "php": "api/pages/16-museo.php",
+    "python": "backend/pages/16-museo.py"
+  },
+  "navigation": {
+    "previous": "dossier.html",
+    "next": "lingua-cultura.html",
+    "home": "Main.html"
+  },
+  "quality": {
+    "dataSource": "data/pages",
+    "api": "api/pages",
+    "python": "backend/pages",
+    "css": [
+      "styles/site-order.css",
+      "styles/films.css"
+    ]
+  }
+}

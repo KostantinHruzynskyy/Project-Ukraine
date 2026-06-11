@@ -1,0 +1,31 @@
+{
+  "id": "20-cucina-costumi",
+  "order": 20,
+  "file": "cucina-costumi.html",
+  "section": "Indice",
+  "title": "Skyy History - Cucina e costumi separati",
+  "h1": "Cucina oppure costumi",
+  "description": "Ingresso alle sezioni separate su cucina ucraina e costumi ucraini, con ricette, ingredienti, ricami, oggetti rituali e fonti.",
+  "summary": "Ponte compatibile tra cucina e costumi separati.",
+  "updated": "2026-06",
+  "assets": {
+    "html": "cucina-costumi.html",
+    "json": "data/pages/20-cucina-costumi.json",
+    "php": "api/pages/20-cucina-costumi.php",
+    "python": "backend/pages/20-cucina-costumi.py"
+  },
+  "navigation": {
+    "previous": "costumi.html",
+    "next": "sport.html",
+    "home": "Main.html"
+  },
+  "quality": {
+    "dataSource": "data/pages",
+    "api": "api/pages",
+    "python": "backend/pages",
+    "css": [
+      "styles/site-order.css",
+      "styles/films.css"
+    ]
+  }
+}

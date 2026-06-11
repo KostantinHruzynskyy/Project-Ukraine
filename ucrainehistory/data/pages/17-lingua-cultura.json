@@ -1,0 +1,31 @@
+{
+  "id": "17-lingua-cultura",
+  "order": 17,
+  "file": "lingua-cultura.html",
+  "section": "Cultura",
+  "title": "Skyy History - Lingua e cultura ucraina",
+  "h1": "Lingua e cultura ucraina",
+  "description": "Lingua ucraina, plurilinguismo, toponimi, letteratura, musica, patrimonio e cultura viva dell'Ucraina.",
+  "summary": "Lingua, toponimi, letteratura, musica e patrimonio.",
+  "updated": "2026-06",
+  "assets": {
+    "html": "lingua-cultura.html",
+    "json": "data/pages/17-lingua-cultura.json",
+    "php": "api/pages/17-lingua-cultura.php",
+    "python": "backend/pages/17-lingua-cultura.py"
+  },
+  "navigation": {
+    "previous": "museo.html",
+    "next": "cucina.html",
+    "home": "Main.html"
+  },
+  "quality": {
+    "dataSource": "data/pages",
+    "api": "api/pages",
+    "python": "backend/pages",
+    "css": [
+      "styles/site-order.css",
+      "styles/films.css"
+    ]
+  }
+}

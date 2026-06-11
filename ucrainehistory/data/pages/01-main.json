@@ -1,0 +1,31 @@
+{
+  "id": "01-main",
+  "order": 1,
+  "file": "Main.html",
+  "section": "Home",
+  "title": "Skyy",
+  "h1": "Skyy",
+  "description": "Archivio interattivo sull'Ucraina: storia, cultura, guerra russo-ucraina, memoria civile e fonti affidabili.",
+  "summary": "Ingresso generale al progetto Skyy History sull'Ucraina.",
+  "updated": "2026-06",
+  "assets": {
+    "html": "Main.html",
+    "json": "data/pages/01-main.json",
+    "php": "api/pages/01-main.php",
+    "python": "backend/pages/01-main.py"
+  },
+  "navigation": {
+    "previous": null,
+    "next": "holodomor.html",
+    "home": "Main.html"
+  },
+  "quality": {
+    "dataSource": "data/pages",
+    "api": "api/pages",
+    "python": "backend/pages",
+    "css": [
+      "styles/site-order.css",
+      "styles/films.css"
+    ]
+  }
+}

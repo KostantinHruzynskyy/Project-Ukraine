@@ -69,9 +69,21 @@ window.SkyyEncyclopediaData = {
       title: "Lingua e cultura ucraina | Skyy History",
       description: "Approfondimento su lingua ucraina, plurilinguismo, toponimi, letteratura, musica, patrimonio e identita culturale."
     },
+    "cucina.html": {
+      title: "Cucina ucraina | Skyy History",
+      description: "Guida ampia a ricette tradizionali documentate, ingredienti, regioni, feste, borshch UNESCO e backend dati della cucina ucraina."
+    },
+    "costumi.html": {
+      title: "Costumi ucraini | Skyy History",
+      description: "Pagina dedicata a vyshyvanka, pysanky, rushnyk, Petrykivka, Ornek, abiti regionali e oggetti rituali ucraini."
+    },
     "cucina-costumi.html": {
-      title: "Cucina e costumi ucraini | Skyy History",
-      description: "Ricette tradizionali documentate, borshch UNESCO, vyshyvanka, pysanky, rushnyk, Petrykivka e costumi regionali dell'Ucraina."
+      title: "Cucina e costumi separati | Skyy History",
+      description: "Pagina ponte verso le sezioni separate su cucina ucraina e costumi ucraini."
+    },
+    "film.html": {
+      title: "Film e documentari sull'Ucraina | Skyy History",
+      description: "Archivio aggiornato di film e documentari su Ucraina, Holodomor, Maidan, Donbas, invasione russa, scuola, arte e memoria."
     },
     "sport.html": {
       title: "Sport ucraino | Skyy History",
@@ -224,6 +236,11 @@ window.SkyyEncyclopediaData = {
     "OHCHR Killings of civilians report": "https://www.ohchr.org/sites/default/files/documents/countries/ukraine/2022/2022-12-07-OHCHR-Thematic-Report-Killings-EN.pdf",
     "FRONTLINE/AP": "https://www.pbs.org/wgbh/frontline/documentary/putins-attack-on-ukraine-documenting-war-crimes/",
     "FRONTLINE - 20 Days in Mariupol": "https://www.pbs.org/wgbh/frontline/documentary/20-days-in-mariupol/",
+    "FRONTLINE - 2000 Meters to Andriivka": "https://www.pbs.org/wgbh/frontline/documentary/2000-meters-to-andriivka/",
+    "Porcelain War official": "https://www.porcelainwar.com/",
+    "Berlinale": "https://www.berlinale.de/",
+    "La Biennale Cinema": "https://www.labiennale.org/en/cinema",
+    "Dovzhenko Centre": "https://dovzhenkocentre.org/en/",
     "Amnesty Mariupol theatre report": "https://www.amnesty.org/en/documents/eur50/5713/2022/en/",
     "DeepStateMAP": "https://deepstatemap.live/en",
     "OSW": "https://www.osw.waw.pl/en/publikacje/analyses/2022-11-14/kherson-under-ukrainian-control-263rd-day-war",
@@ -256,7 +273,9 @@ window.SkyyEncyclopediaData = {
     ["Sport", "Paris 2024: 12 medaglie olimpiche", "Ministero ucraino dello sport: 3 ori, 5 argenti, 4 bronzi."],
     ["Geografia", "Dnipro, Carpazi, Mar Nero", "Il paese collega pianure agricole, foreste, montagne occidentali e coste meridionali."],
     ["Patrimonio", "Borshch, pysanka, Petrykivka", "UNESCO riconosce diverse pratiche ucraine di patrimonio immateriale."],
-    ["Cucina e costumi", "Borshch, varenyky, vyshyvanka", "Pagina aggiornata a giugno 2026 con ricette documentate, costumi regionali e fonti."],
+    ["Cucina", "14 ricette nel dataset", "Pagina autonoma aggiornata a giugno 2026 con ricette documentate, ingredienti, regioni e backend dati."],
+    ["Costumi", "Vyshyvanka, pysanky, rushnyk", "Pagina separata per abiti, ricami, oggetti rituali e fonti sul patrimonio immateriale."],
+    ["Cinema", "17 film nel dataset", "Archivio film aggiornato a giugno 2026 con 2000 Meters to Andriivka, Porcelain War, Timestamp e Intercepted."],
     ["Guerra moderna", "Dal 2014", "Crimea occupata, guerra nel Donbas e invasione russa su vasta scala dal 24 febbraio 2022."],
     ["Fonti vive", "ONU, Ucraina, enciclopedie", "Il sito separa memoria, fonti giuridiche, cultura e dati verificabili."]
   ],
@@ -302,12 +321,20 @@ window.SkyyEncyclopediaData = {
       source: "UNESCO, Ukrainian Institute"
     },
     {
-      id: "cucina-costumi",
-      label: "Cucina e costumi",
-      title: "Ricette, ricami e oggetti rituali",
-      text: "Borshch, varenyky, holubtsi, pampushky, kutia, vyshyvanka, rushnyk, pysanky, Petrykivka e Ornek mostrano come cucina e costumi conservino famiglia, regione, festa e memoria pubblica.",
-      facts: ["UNESCO riconosce la cultura ucraina del borshch come patrimonio da salvaguardare", "Non esiste una sola ricetta ufficiale: le varianti regionali sono parte del patrimonio", "Vyshyvanka e rushnyk vanno letti con regione, uso e occasione", "La pagina cucina-costumi e aggiornata a giugno 2026"],
+      id: "cucina",
+      label: "Cucina",
+      title: "Ricette, ingredienti e regioni",
+      text: "Borshch, varenyky, holubtsi, pampushky, deruny, banosh, kutia, uzvar e paska mostrano come la cucina conservi famiglia, regione, festa, diaspora e memoria pubblica.",
+      facts: ["UNESCO riconosce la cultura ucraina del borshch come patrimonio da salvaguardare", "Non esiste una sola ricetta ufficiale: le varianti regionali sono parte del patrimonio", "Il dataset cucina e riusabile da JSON, PHP e Python", "La pagina cucina e aggiornata a giugno 2026"],
       source: "UNESCO, AP, Ukrainian Institute"
+    },
+    {
+      id: "costumi",
+      label: "Costumi",
+      title: "Ricami, abiti e oggetti rituali",
+      text: "Vyshyvanka, vinok, rushnyk, pysanky, Petrykivka e Ornek mostrano come abiti e oggetti comunichino regione, festa, famiglia, protezione e identita pubblica.",
+      facts: ["Vyshyvanka e rushnyk vanno letti con regione, uso e occasione", "Pysanky e Petrykivka fanno parte del patrimonio immateriale riconosciuto", "Ornek collega il patrimonio ucraino alla cultura tatara di Crimea", "La pagina costumi e separata dalla cucina"],
+      source: "UNESCO, Ukrainian Institute, Internet Encyclopedia of Ukraine"
     },
     {
       id: "letteratura",
@@ -784,12 +811,28 @@ window.SkyyEncyclopediaData = {
         tags: ["museo", "patrimonio", "oggetti", "cultura", "didattica"]
       },
       {
-        href: "cucina-costumi.html",
-        title: "Cucina e costumi",
+        href: "cucina.html",
+        title: "Cucina ucraina",
         era: "Tradizioni vive",
-        category: "Cucina, abiti e patrimonio",
-        summary: "Ricette documentate, borshch UNESCO, vyshyvanka, pysanky, rushnyk, Petrykivka e costumi regionali.",
-        tags: ["cucina", "borshch", "vyshyvanka", "pysanky", "costumi"]
+        category: "Cucina e patrimonio alimentare",
+        summary: "Ricette documentate, borshch UNESCO, ingredienti, regioni, calendario rituale e dataset backend.",
+        tags: ["cucina", "borshch", "varenyky", "ricette", "backend"]
+      },
+      {
+        href: "costumi.html",
+        title: "Costumi ucraini",
+        era: "Tradizioni vive",
+        category: "Abiti, oggetti e patrimonio",
+        summary: "Vyshyvanka, pysanky, rushnyk, Petrykivka, Ornek e costumi regionali spiegati con fonti.",
+        tags: ["costumi", "vyshyvanka", "pysanky", "rushnyk", "Ornek"]
+      },
+      {
+        href: "film.html",
+        title: "Film e documentari",
+        era: "1920-oggi",
+        category: "Cinema, memoria e testimonianza",
+        summary: "Archivio aggiornato con film su Holodomor, Maidan, Donbas, Mariupol, scuola, arte e invasione russa.",
+        tags: ["film", "documentari", "cinema", "Mariupol", "Maidan"]
       },
       {
         href: "sport.html",
@@ -834,7 +877,7 @@ window.SkyyEncyclopediaData = {
       {
         title: "Percorso cultura viva",
         aim: "Per evitare di raccontare l'Ucraina solo attraverso il dolore.",
-        pages: ["lingua-cultura.html", "cucina-costumi.html", "sport.html", "museo.html", "dossier.html", "indipendenza.html", "tatari-crimea.html", "euromaidan.html"],
+        pages: ["lingua-cultura.html", "cucina.html", "costumi.html", "film.html", "sport.html", "museo.html", "dossier.html", "indipendenza.html", "tatari-crimea.html", "euromaidan.html"],
         output: "Scegli cinque elementi culturali e collegali a regione, lingua e storia."
       }
     ],
@@ -862,9 +905,9 @@ window.SkyyEncyclopediaData = {
       },
       {
         title: "Cultura, patrimonio e futuro",
-        text: "Patrimonio, musei, musica, cucina, libri, diaspora e ricostruzione spiegano perche la storia non finisce sul fronte.",
-        pages: ["lingua-cultura.html", "cucina-costumi.html", "sport.html", "museo.html", "dossier.html", "rifugiati.html", "ricostruzione.html", "indipendenza.html", "tatari-crimea.html", "chernobyl.html"],
-        sources: ["Ukrainian Institute - Insight UA", "UNESCO - Ukraine intangible heritage", "UNESCO - Culture of Ukrainian borscht cooking", "Ministry of Youth and Sports of Ukraine - Paris 2024", "UNDP RDNA5 Ukraine", "World Bank Data - Ukraine"],
+        text: "Patrimonio, musei, musica, cinema, cucina, libri, diaspora e ricostruzione spiegano perche la storia non finisce sul fronte.",
+        pages: ["lingua-cultura.html", "cucina.html", "costumi.html", "film.html", "sport.html", "museo.html", "dossier.html", "rifugiati.html", "ricostruzione.html", "indipendenza.html", "tatari-crimea.html", "chernobyl.html"],
+        sources: ["Ukrainian Institute - Insight UA", "UNESCO - Ukraine intangible heritage", "UNESCO - Culture of Ukrainian borscht cooking", "FRONTLINE - 2000 Meters to Andriivka", "Porcelain War official", "Ministry of Youth and Sports of Ukraine - Paris 2024", "UNDP RDNA5 Ukraine", "World Bank Data - Ukraine"],
         notes: ["Cultura e ricostruzione sono parte della sopravvivenza nazionale.", "Ogni oggetto puo diventare una fonte.", "La diaspora collega memoria e futuro."]
       }
     ],
@@ -987,8 +1030,8 @@ window.SkyyEncyclopediaData = {
         next: "Vai a Battaglie per osservare come difesa, logistica e territorio interagiscono."
       },
       "dossier.html": {
-        related: ["museo.html", "cucina-costumi.html", "indipendenza.html", "invasione-2022.html", "atrocita.html", "holodomor.html", "battaglie.html"],
-        compare: ["Museo: percorso visuale e oggetti.", "Cucina e costumi: ricette, ricami e fonti culturali.", "Atrocita: metodo delle prove."],
+        related: ["museo.html", "film.html", "cucina.html", "costumi.html", "indipendenza.html", "invasione-2022.html", "atrocita.html", "holodomor.html", "battaglie.html"],
+        compare: ["Museo: percorso visuale e oggetti.", "Film: cinema e documentari come memoria.", "Cucina: ricette e fonti alimentari.", "Costumi: ricami e oggetti culturali.", "Atrocita: metodo delle prove."],
         external: ["Internet Encyclopedia of Ukraine", "Encyclopedia of Modern Ukraine", "UNESCO - Culture of Ukrainian borscht cooking", "World Bank Data - Ukraine", "OHCHR Ukraine reports", "UNDP RDNA5 Ukraine"],
         concepts: ["metodo", "bibliografia", "mappa concettuale", "fonte primaria", "dato verificato", "glossario"],
         places: ["Kyiv", "Crimea", "Donbas", "Dnipro", "Carpazi", "Mar Nero"],
@@ -996,8 +1039,8 @@ window.SkyyEncyclopediaData = {
         next: "Usa il Museo per trasformare il dossier in percorso visivo e didattico."
       },
       "museo.html": {
-        related: ["dossier.html", "cucina-costumi.html", "holodomor.html", "tatari-crimea.html", "chernobyl.html", "indipendenza.html", "euromaidan.html"],
-        compare: ["Dossier: metodo e bibliografia.", "Cucina e costumi: oggetti, pane, ricami e riti.", "Tatari di Crimea: oggetti, lingua e popolo indigeno."],
+        related: ["dossier.html", "film.html", "cucina.html", "costumi.html", "holodomor.html", "tatari-crimea.html", "chernobyl.html", "indipendenza.html", "euromaidan.html"],
+        compare: ["Dossier: metodo e bibliografia.", "Film: fonti visuali e memoria pubblica.", "Cucina: pane, ricette e tavole rituali.", "Costumi: ricami e oggetti come fonti.", "Tatari di Crimea: oggetti, lingua e popolo indigeno."],
         external: ["Ukrainian Institute - Insight UA", "UNESCO - Ukraine intangible heritage", "UNESCO - Culture of Ukrainian borscht cooking", "Encyclopedia of Modern Ukraine"],
         concepts: ["patrimonio", "oggetto-fonte", "diaspora", "lingua", "tradizione", "museo digitale"],
         places: ["Kyiv", "Crimea", "Carpazi", "Dnipro", "diaspora ucraina"],
@@ -1005,26 +1048,53 @@ window.SkyyEncyclopediaData = {
         next: "Torna al Dossier per collegare ogni sala a fonti, date e domande."
       },
       "lingua-cultura.html": {
-        related: ["cucina-costumi.html", "museo.html", "dossier.html", "indipendenza.html", "tatari-crimea.html", "euromaidan.html", "rifugiati.html"],
-        compare: ["Cucina e costumi: borshch, vyshyvanka e pysanky come fonti.", "Museo: oggetti e sale culturali.", "Tatari di Crimea: lingua e popolo indigeno."],
+        related: ["film.html", "cucina.html", "costumi.html", "museo.html", "dossier.html", "indipendenza.html", "tatari-crimea.html", "euromaidan.html", "rifugiati.html"],
+        compare: ["Film: cinema e documentari come lingua culturale.", "Cucina: borshch e ricette come fonti.", "Costumi: vyshyvanka e pysanky come oggetti culturali.", "Museo: oggetti e sale culturali.", "Tatari di Crimea: lingua e popolo indigeno."],
         external: ["UK PCGN - Ukraine Toponymic Factfile", "Ukrainian Institute - Insight UA", "UNESCO - Ukraine intangible heritage", "UNESCO - Culture of Ukrainian borscht cooking"],
         concepts: ["lingua ucraina", "toponimi", "russificazione", "plurilinguismo", "patrimonio", "letteratura"],
         places: ["Kyiv", "Kharkiv", "Lviv", "Crimea", "Odesa", "diaspora ucraina"],
         questions: ["Perche usare Kyiv invece di Kiev?", "Come distinguere lingua quotidiana e identita politica?", "Quali tradizioni mostrano una cultura viva e non solo folklorica?"],
         next: "Apri il Museo per vedere come lingua, oggetti e memoria diventano percorso visuale."
       },
-      "cucina-costumi.html": {
-        related: ["lingua-cultura.html", "museo.html", "dossier.html", "tatari-crimea.html", "rifugiati.html", "ricostruzione.html"],
-        compare: ["Lingua e cultura: parole, toponimi e patrimonio.", "Museo: oggetti e sale culturali.", "Tatari di Crimea: Ornek, cucina e identita indigena."],
+      "cucina.html": {
+        related: ["costumi.html", "lingua-cultura.html", "museo.html", "dossier.html", "tatari-crimea.html", "rifugiati.html", "ricostruzione.html"],
+        compare: ["Costumi: abiti e oggetti separati dalle ricette.", "Lingua e cultura: parole, toponimi e patrimonio.", "Museo: oggetti e sale culturali.", "Tatari di Crimea: cucina e identita indigena."],
         external: ["UNESCO - Culture of Ukrainian borscht cooking", "UNESCO - Ukraine intangible heritage", "Ukrainian Institute - Insight UA", "AP - Borsch and Ukrainian culture"],
-        concepts: ["borshch", "varenyky", "vyshyvanka", "pysanky", "rushnyk", "Petrykivka", "Ornek"],
-        places: ["Kyiv", "Poltava", "Podillia", "Carpazi", "Crimea", "diaspora ucraina"],
-        questions: ["Perche il borshch e una pratica e non una sola ricetta?", "Come leggere un costume regionale senza ridurlo a decorazione?", "Quale fonte serve per distinguere tradizione, famiglia e standardizzazione sovietica?"],
-        next: "Apri Lingua e cultura per collegare cibo, costumi, parole e identita pubblica."
+        concepts: ["borshch", "varenyky", "holubtsi", "pampushky", "kutia", "banosh", "dataset ricette"],
+        places: ["Kyiv", "Poltava", "Carpazi", "Polissia", "Odesa", "Crimea", "diaspora ucraina"],
+        questions: ["Perche il borshch e una pratica e non una sola ricetta?", "Come collegare ingredienti, regione e occasione?", "Perche un dataset aiuta a mantenere pulito il sito?"],
+        next: "Apri Costumi per distinguere cucina, ricami, oggetti e riti."
+      },
+      "costumi.html": {
+        related: ["cucina.html", "lingua-cultura.html", "museo.html", "dossier.html", "tatari-crimea.html", "rifugiati.html", "ricostruzione.html"],
+        compare: ["Cucina: ricette e ingredienti separati dagli abiti.", "Lingua e cultura: parole, toponimi e patrimonio.", "Museo: oggetti e sale culturali.", "Tatari di Crimea: Ornek e popolo indigeno."],
+        external: ["UNESCO - Ukraine intangible heritage", "Ukrainian Institute - Insight UA", "Internet Encyclopedia of Ukraine"],
+        concepts: ["vyshyvanka", "pysanky", "rushnyk", "Petrykivka", "Ornek", "vinok", "abiti regionali"],
+        places: ["Poltava", "Podillia", "Bukovyna", "Carpazi", "Crimea", "diaspora ucraina"],
+        questions: ["Come leggere un costume regionale senza ridurlo a decorazione?", "Quale fonte serve per distinguere oggetto, rito e tecnica?", "Perche Ornek rende plurale il patrimonio ucraino?"],
+        next: "Apri Cucina per collegare oggetti rituali, pane, feste e tavola."
+      },
+      "cucina-costumi.html": {
+        related: ["cucina.html", "costumi.html", "lingua-cultura.html", "museo.html", "dossier.html"],
+        compare: ["Cucina: ricette, ingredienti e regioni.", "Costumi: abiti, ricami e oggetti rituali.", "Lingua e cultura: quadro piu ampio."],
+        external: ["UNESCO - Culture of Ukrainian borscht cooking", "UNESCO - Ukraine intangible heritage"],
+        concepts: ["ponte", "cucina", "costumi", "patrimonio"],
+        places: ["Ucraina", "diaspora ucraina"],
+        questions: ["Quale percorso serve: cucina o costumi?", "Perche separare i contenuti rende il sito piu chiaro?", "Come mantenere compatibilita con vecchi link?"],
+        next: "Apri Cucina o Costumi per il percorso completo."
+      },
+      "film.html": {
+        related: ["lingua-cultura.html", "dossier.html", "museo.html", "mariupol.html", "battaglie.html", "euromaidan.html", "holodomor.html"],
+        compare: ["Mariupol: 20 Days in Mariupol come fonte visiva.", "Battaglie: 2000 Meters to Andriivka e fronte orientale.", "Lingua e cultura: cinema come diplomazia culturale."],
+        external: ["FRONTLINE - 20 Days in Mariupol", "FRONTLINE - 2000 Meters to Andriivka", "Porcelain War official", "Berlinale", "La Biennale Cinema", "Dovzhenko Centre"],
+        concepts: ["cinema documentario", "testimonianza", "montaggio", "prova visiva", "Maidan", "Holodomor", "guerra"],
+        places: ["Mariupol", "Andriivka", "Kyiv", "Donbas", "Kharkiv", "Carpazi"],
+        questions: ["Quale differenza c'e tra documentario, testimonianza e fonte giudiziaria?", "Come cambia la memoria pubblica quando il cinema entra nei festival?", "Perche i film sulla scuola e sull'arte contano quanto quelli sul fronte?"],
+        next: "Vai al Dossier per collegare ogni film a fonti, eventi e domande di studio."
       },
       "sport.html": {
-        related: ["lingua-cultura.html", "cucina-costumi.html", "museo.html", "ricostruzione.html", "rifugiati.html", "dossier.html", "difesa.html"],
-        compare: ["Lingua e cultura: sport come identita pubblica.", "Cucina e costumi: rituali, feste e vita quotidiana.", "Ricostruzione: palestre e campi come infrastrutture civili."],
+        related: ["lingua-cultura.html", "cucina.html", "costumi.html", "museo.html", "ricostruzione.html", "rifugiati.html", "dossier.html", "difesa.html"],
+        compare: ["Lingua e cultura: sport come identita pubblica.", "Cucina: feste e vita quotidiana.", "Costumi: simboli pubblici e identita.", "Ricostruzione: palestre e campi come infrastrutture civili."],
         external: ["Ministry of Youth and Sports of Ukraine - Paris 2024", "MFA Ukraine - sport infrastructure", "IPC Paris 2024 results", "World Athletics - Yaroslava Mahuchikh"],
         concepts: ["Olimpiadi", "Paralimpiadi", "record", "calcio", "infrastrutture sportive", "ricostruzione"],
         places: ["Paris 2024", "Kyiv", "Lviv", "Kharkiv", "centri sportivi danneggiati"],
@@ -1212,15 +1282,45 @@ window.SkyyEncyclopediaData = {
       ],
       sources: ["UK PCGN - Ukraine Toponymic Factfile", "Ukrainian Institute - Insight UA", "UNESCO intangible heritage", "UNESCO - Culture of Ukrainian borscht cooking"]
     },
-    "cucina-costumi.html": {
-      title: "Scheda enciclopedica: cucina e costumi",
-      text: "Cucina e costumi ucraini spiegano famiglia, regione e patrimonio vivo: ricette, ricami, pane, uova decorate, ornamenti e rituali sono fonti culturali.",
+    "cucina.html": {
+      title: "Scheda enciclopedica: cucina ucraina",
+      text: "La cucina ucraina spiega famiglia, regione, stagione e patrimonio vivo: ricette, pane, zuppe, conserve, tavole rituali e diaspora sono fonti culturali.",
       cards: [
         ["Borshch", "Pratica UNESCO", "La fonte UNESCO riconosce la cultura di preparazione e trasmissione, non una ricetta unica."],
-        ["Ricette", "Casa e feste", "Varenyky, holubtsi, pampushky, kutia e syrnyky aiutano a leggere stagioni e famiglia."],
-        ["Costumi", "Ricami e oggetti", "Vyshyvanka, rushnyk, pysanky, Petrykivka e Ornek richiedono regione, uso e fonte."]
+        ["Ricette", "Casa e feste", "Varenyky, holubtsi, pampushky, deruny, banosh, kutia e paska aiutano a leggere stagioni e famiglia."],
+        ["Backend", "Dati riusabili", "cucina-data.json, cucina-api.php e cucina_backend.py permettono filtri e riuso dei contenuti."]
       ],
       sources: ["UNESCO - Culture of Ukrainian borscht cooking", "UNESCO intangible heritage", "Ukrainian Institute - Insight UA", "AP - Borsch and Ukrainian culture"]
+    },
+    "costumi.html": {
+      title: "Scheda enciclopedica: costumi ucraini",
+      text: "Costumi, ricami e oggetti rituali ucraini spiegano regione, occasione, famiglia, tecnica e appartenenza. Vanno letti separatamente dalle ricette.",
+      cards: [
+        ["Vyshyvanka", "Ricamo regionale", "Camicia e segni cambiano per luogo, occasione e storia familiare."],
+        ["Pysanky", "Pasqua e simboli", "Le uova decorate collegano tecnica, protezione, primavera e trasmissione familiare."],
+        ["Ornek", "Crimea tatara", "L'ornamento tataro di Crimea mostra la pluralita del patrimonio ucraino."]
+      ],
+      sources: ["UNESCO intangible heritage", "Ukrainian Institute - Insight UA", "Internet Encyclopedia of Ukraine"]
+    },
+    "cucina-costumi.html": {
+      title: "Scheda enciclopedica: indice cucina e costumi",
+      text: "La pagina mista resta come ponte compatibile: indirizza alla cucina ampia o alla pagina costumi separata.",
+      cards: [
+        ["Cucina", "Ricette e regioni", "La cucina ora vive in cucina.html con dataset e backend."],
+        ["Costumi", "Ricami e oggetti", "Costumi e oggetti rituali ora vivono in costumi.html."],
+        ["Compatibilita", "Vecchi link", "Il vecchio indirizzo non rompe il percorso di navigazione."]
+      ],
+      sources: ["UNESCO - Culture of Ukrainian borscht cooking", "UNESCO intangible heritage"]
+    },
+    "film.html": {
+      title: "Scheda enciclopedica: film e documentari",
+      text: "Cinema e documentari aiutano a leggere esperienze, luoghi, memoria e testimonianze. Non sostituiscono fonti storiche, rapporti ONU o prove giudiziarie.",
+      cards: [
+        ["Fronte", "Chernov", "20 Days in Mariupol e 2000 Meters to Andriivka portano testimonianza giornalistica dal fronte."],
+        ["Societa", "Scuola e arte", "Timestamp, Porcelain War e Songs of Slow Burning Earth raccontano vita civile, cultura e resistenza quotidiana."],
+        ["Metodo", "Cinema come fonte", "Ogni film va collegato a autore, anno, contesto, limite e fonte esterna."]
+      ],
+      sources: ["FRONTLINE - 20 Days in Mariupol", "FRONTLINE - 2000 Meters to Andriivka", "Porcelain War official", "Berlinale", "La Biennale Cinema"]
     },
     "sport.html": {
       title: "Scheda enciclopedica: sport ucraino",
@@ -1702,33 +1802,117 @@ window.SkyyEncyclopediaData = {
       lenses: [["Lingua", "E anche diritto culturale e memoria."], ["Pluralita", "Bilinguismo non significa identita divisa."], ["Patrimonio", "La cultura cambia mentre resiste."]],
       mistakes: ["Usare Kiev quando si sta seguendo lo standard ucraino moderno.", "Confondere russofono con filorusso.", "Raccontare la cultura come folklore immobile."]
     },
-    "cucina-costumi.html": {
-      title: "Approfondimento completo: cucina e costumi",
-      intro: "Cucina e costumi ucraini vanno letti come patrimonio vivo: ricette, ricami, feste, oggetti, famiglie, regioni e fonti si tengono insieme.",
+    "cucina.html": {
+      title: "Approfondimento completo: cucina ucraina",
+      intro: "La cucina ucraina va letta come patrimonio vivo: ricette, ingredienti, regioni, feste, famiglie, diaspora e fonti si tengono insieme.",
       chapters: [
         {
           title: "Ricette come memoria",
-          text: "Borshch, varenyky, holubtsi, pampushky, kutia e syrnyky raccontano agricoltura, stagioni, feste religiose, ospitalita e vita familiare.",
+          text: "Borshch, varenyky, holubtsi, pampushky, deruny, banosh, kutia, uzvar e paska raccontano agricoltura, stagioni, feste religiose, ospitalita e vita familiare.",
           points: ["UNESCO riconosce la cultura del borshch, non una sola formula.", "Ogni regione puo cambiare ingredienti.", "Le ricette vanno presentate come pratiche vive."]
         },
         {
-          title: "Costumi e oggetti",
-          text: "Vyshyvanka, rushnyk, vinok, pysanky, korovai, Petrykivka e Ornek sono fonti culturali: indicano uso, regione, rituale, appartenenza e trasmissione.",
-          points: ["Un ricamo richiede contesto regionale.", "Pysanky e rushnyk sono oggetti rituali.", "Il patrimonio ucraino include anche culture indigene e minoranze."]
+          title: "Regioni e dispensa",
+          text: "Carpazi, Polissia, centro, sud, Crimea e diaspora aiutano a evitare una cucina piatta. Ingredienti, clima e conservazione spiegano molte scelte.",
+          points: ["Banosh e brynza rimandano ai Carpazi.", "Pesce e mercati rimandano al Mar Nero.", "Funghi, cavolo e conserve spiegano l'inverno."]
         },
         {
-          title: "Metodo pulito",
-          text: "Per descrivere cucina e costumi senza errori, indica fonte, data, regione, comunita e occasione. Evita di ridurre tutto a 'folklore tipico'.",
-          points: ["Scrivi fonte e data.", "Distingui ricetta didattica e ricetta familiare.", "Collega il tema a lingua, diaspora e guerra culturale."]
+          title: "Backend pulito",
+          text: "Le ricette principali sono anche in cucina-data.json e possono essere servite da cucina-api.php o cucina_backend.py, cosi il contenuto resta ordinato.",
+          points: ["Scrivi fonte e data.", "Distingui ricetta didattica e ricetta familiare.", "Usa dati strutturati quando una lista cresce."]
         }
       ],
       timeline: [
-        ["Secoli", "Trasmissione familiare", "Ricette e ricami passano attraverso casa, festa, chiesa, villaggio e diaspora."],
+        ["Secoli", "Trasmissione familiare", "Ricette e tavole rituali passano attraverso casa, festa, chiesa, villaggio e diaspora."],
         ["2022", "Borshch UNESCO", "La cultura del borshch viene iscritta nella Lista di salvaguardia urgente."],
-        ["Giugno 2026", "Scheda aggiornata", "Il sito raccoglie ricette documentate, costumi e fonti controllate."]
+        ["Giugno 2026", "Sezione ampliata", "Il sito separa cucina e costumi e aggiunge dataset backend per le ricette."]
       ],
-      lenses: [["Cibo", "Ricetta e pratica sociale."], ["Costume", "Oggetto, regione e uso."], ["Fonte", "UNESCO, istituti culturali e contesto storico."]],
-      mistakes: ["Dire che esiste una sola ricetta ufficiale di borshch.", "Descrivere una vyshyvanka senza regione o uso.", "Confondere tradizione ucraina e standardizzazione sovietica."]
+      lenses: [["Cibo", "Ricetta e pratica sociale."], ["Regione", "Ingredienti e luogo."], ["Fonte", "UNESCO, istituti culturali e contesto storico."]],
+      mistakes: ["Dire che esiste una sola ricetta ufficiale di borshch.", "Presentare tutte le ricette come uguali in ogni regione.", "Mescolare cucina e costumi quando serve precisione."]
+    },
+    "costumi.html": {
+      title: "Approfondimento completo: costumi ucraini",
+      intro: "Costumi e oggetti rituali ucraini vanno letti come fonti: ricami, abiti, uova decorate, teli, ornamenti, regioni, famiglie e minoranze.",
+      chapters: [
+        {
+          title: "Abiti e ricami",
+          text: "Vyshyvanka, vinok e copricapi regionali comunicano occasione, luogo, eta, famiglia e identita pubblica.",
+          points: ["Un ricamo richiede contesto regionale.", "Un costume non e un'uniforme nazionale unica.", "Indossarlo oggi puo essere anche gesto politico."]
+        },
+        {
+          title: "Oggetti rituali",
+          text: "Rushnyk, pysanky, korovai, Petrykivka e Ornek sono fonti culturali: indicano uso, rito, protezione, famiglia e appartenenza.",
+          points: ["Pysanky e rushnyk sono oggetti rituali.", "Petrykivka e una tecnica pittorica distinta.", "Ornek collega Crimea e popolo tataro indigeno."]
+        },
+        {
+          title: "Metodo pulito",
+          text: "Per descrivere costumi senza errori, indica fonte, data, regione, comunita e occasione. Evita di ridurre tutto a 'folklore tipico'.",
+          points: ["Scrivi fonte e data.", "Distingui oggetto, tecnica e rito.", "Collega il tema a lingua, diaspora e guerra culturale."]
+        }
+      ],
+      timeline: [
+        ["Secoli", "Trasmissione familiare", "Ricami e oggetti passano attraverso casa, festa, chiesa, villaggio e diaspora."],
+        ["2013-2024", "Patrimoni UNESCO", "Petrykivka, Ornek e pysanky entrano tra gli elementi di patrimonio immateriale riconosciuto."],
+        ["Giugno 2026", "Sezione separata", "Il sito distingue costumi e cucina per rendere piu chiara la ricerca."]
+      ],
+      lenses: [["Oggetto", "Uso, regione e fonte."], ["Tecnica", "Ricamo, pittura, cera, tessuto."], ["Pluralita", "Patrimonio ucraino e culture minoritarie."]],
+      mistakes: ["Descrivere una vyshyvanka senza regione o uso.", "Confondere Petrykivka, pysanky e ricamo.", "Dimenticare il patrimonio tataro di Crimea."]
+    },
+    "cucina-costumi.html": {
+      title: "Approfondimento completo: indice cucina e costumi",
+      intro: "Questa pagina e un ponte compatibile: cucina e costumi sono stati separati per rendere il sito piu chiaro e meno pesante.",
+      chapters: [
+        {
+          title: "Cucina",
+          text: "Apri cucina.html per ricette, ingredienti, regioni, calendario alimentare, borshch UNESCO e backend dati.",
+          points: ["Ricette complete.", "Dataset JSON.", "PHP e Python opzionali per servire i dati."]
+        },
+        {
+          title: "Costumi",
+          text: "Apri costumi.html per vyshyvanka, pysanky, rushnyk, Petrykivka, Ornek e abiti regionali.",
+          points: ["Oggetti come fonti.", "Metodo regionale.", "Patrimonio immateriale."]
+        },
+        {
+          title: "Compatibilita",
+          text: "Il vecchio indirizzo resta attivo per non rompere link gia presenti nel sito o nel browser.",
+          points: ["Navigazione pulita.", "Vecchi link salvi.", "Percorsi separati."]
+        }
+      ],
+      timeline: [
+        ["Prima", "Pagina unica", "Cucina e costumi erano insieme."],
+        ["Ora", "Separazione", "Cucina e costumi hanno pagine autonome."],
+        ["Giugno 2026", "Aggiornamento", "Menu, home, dossier e enciclopedia puntano alle sezioni nuove."]
+      ],
+      lenses: [["Cucina", "Ricette e ingredienti."], ["Costumi", "Oggetti, abiti e rituali."], ["UX", "Meno densita, piu chiarezza."]],
+      mistakes: ["Usare ancora la pagina mista come contenuto principale.", "Mescolare ricette e abiti quando serve precisione.", "Dimenticare il link compatibile."]
+    },
+    "film.html": {
+      title: "Approfondimento completo: film e documentari",
+      intro: "I film sull'Ucraina vanno letti come memoria visuale, testimonianza e cultura pubblica: aiutano a capire persone e luoghi, ma richiedono contesto.",
+      chapters: [
+        {
+          title: "Documentari dal fronte",
+          text: "20 Days in Mariupol e 2000 Meters to Andriivka mostrano come il cinema documentario possa diventare testimonianza diretta di assedio, fanteria, logoramento e perdita umana.",
+          points: ["Citare autore, anno e fonte.", "Separare emozione e prova.", "Collegare ogni film a luogo e data."]
+        },
+        {
+          title: "Societa sotto guerra",
+          text: "Timestamp, Porcelain War, Intercepted e Songs of Slow Burning Earth permettono di leggere scuola, arte, telefonate, paesaggio e vita ordinaria dentro la guerra.",
+          points: ["La cultura civile e parte della resistenza.", "Un film puo mostrare cio che una cronologia non mostra.", "Il montaggio ha sempre una prospettiva."]
+        },
+        {
+          title: "Storia del cinema ucraino",
+          text: "Dovzhenko, Parajanov, Loznitsa e la nuova scena documentaria collegano classici, memoria sovietica, Maidan, Donbas e invasione russa.",
+          points: ["Non partire solo dal 2022.", "Distinguere film di finzione e documentari.", "Usare fonti festival, archivi e distributori."]
+        }
+      ],
+      timeline: [
+        ["1965", "Shadows of Forgotten Ancestors", "Classico legato alla cultura hutsul e al cinema d'autore."],
+        ["2014-2015", "Maidan", "Il cinema registra la Rivoluzione della Dignita e la nuova scena civile."],
+        ["2023-2025", "Guerra documentata", "Chernov, Porcelain War, Timestamp e altri film portano il conflitto nei festival e negli archivi."]
+      ],
+      lenses: [["Fonte", "Film, festival, archivio e rapporto non sono la stessa cosa."], ["Memoria", "Il cinema fissa volti e luoghi."], ["Contesto", "Ogni titolo richiede data, autore e limite."]],
+      mistakes: ["Usare un film come unica fonte storica.", "Dimenticare anno e contesto di produzione.", "Confondere documentario, fiction e prova giudiziaria."]
     },
     "sport.html": {
       title: "Approfondimento completo: sport ucraino",

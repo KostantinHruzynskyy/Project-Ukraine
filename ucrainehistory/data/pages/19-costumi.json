@@ -1,0 +1,31 @@
+{
+  "id": "19-costumi",
+  "order": 19,
+  "file": "costumi.html",
+  "section": "Costumi",
+  "title": "Skyy History - Costumi ucraini",
+  "h1": "Ricami, oggetti, riti",
+  "description": "Costumi ucraini, ricami, vyshyvanka, pysanky, rushnyk, Petrykivka, Ornek e oggetti rituali separati dalla sezione cucina.",
+  "summary": "Vyshyvanka, pysanky, rushnyk, Ornek e oggetti rituali.",
+  "updated": "2026-06",
+  "assets": {
+    "html": "costumi.html",
+    "json": "data/pages/19-costumi.json",
+    "php": "api/pages/19-costumi.php",
+    "python": "backend/pages/19-costumi.py"
+  },
+  "navigation": {
+    "previous": "cucina.html",
+    "next": "cucina-costumi.html",
+    "home": "Main.html"
+  },
+  "quality": {
+    "dataSource": "data/pages",
+    "api": "api/pages",
+    "python": "backend/pages",
+    "css": [
+      "styles/site-order.css",
+      "styles/films.css"
+    ]
+  }
+}

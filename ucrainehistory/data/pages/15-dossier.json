@@ -1,0 +1,31 @@
+{
+  "id": "15-dossier",
+  "order": 15,
+  "file": "dossier.html",
+  "section": "Studio",
+  "title": "Skyy History - Dossier Ucraina",
+  "h1": "Ucraina: fatti, relazioni, problemi",
+  "description": "Archivio interattivo sull'Ucraina: storia, cultura, guerra russo-ucraina, memoria civile e fonti affidabili.",
+  "summary": "Dossier ordinato su storia, cultura, guerra e fonti.",
+  "updated": "2026-06",
+  "assets": {
+    "html": "dossier.html",
+    "json": "data/pages/15-dossier.json",
+    "php": "api/pages/15-dossier.php",
+    "python": "backend/pages/15-dossier.py"
+  },
+  "navigation": {
+    "previous": "difesa.html",
+    "next": "museo.html",
+    "home": "Main.html"
+  },
+  "quality": {
+    "dataSource": "data/pages",
+    "api": "api/pages",
+    "python": "backend/pages",
+    "css": [
+      "styles/site-order.css",
+      "styles/films.css"
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+.film-library-section {
+  color: var(--ink);
+}
+
+.film-library-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.film-library-card {
+  min-height: 260px;
+  border: 1px solid rgba(16, 24, 32, 0.14);
+  border-radius: 8px;
+  padding: 1.15rem;
+  background: var(--paper-light);
+  box-shadow: 0 14px 34px rgba(16, 24, 32, 0.1);
+  contain: content;
+}
+
+.film-library-card span {
+  color: var(--signal);
+  font-family: Arial, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+}
+
+.film-library-card p {
+  color: rgba(16, 24, 32, 0.74);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.film-library-card.is-hidden {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .film-library-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1199px) {
+  .film-library-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

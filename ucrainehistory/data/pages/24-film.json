@@ -1,0 +1,31 @@
+{
+  "id": "24-film",
+  "order": 24,
+  "file": "film.html",
+  "section": "Cinema",
+  "title": "Skyy History - Film e documentari sull'Ucraina",
+  "h1": "Film e documentari sull'Ucraina",
+  "description": "Archivio aggiornato di film e documentari per capire Ucraina, Holodomor, Maidan, Donbas, invasione russa, cultura e memoria.",
+  "summary": "Archivio aggiornato di film e documentari sull'Ucraina.",
+  "updated": "2026-06",
+  "assets": {
+    "html": "film.html",
+    "json": "data/pages/24-film.json",
+    "php": "api/pages/24-film.php",
+    "python": "backend/pages/24-film.py"
+  },
+  "navigation": {
+    "previous": "ricostruzione.html",
+    "next": null,
+    "home": "Main.html"
+  },
+  "quality": {
+    "dataSource": "data/pages",
+    "api": "api/pages",
+    "python": "backend/pages",
+    "css": [
+      "styles/site-order.css",
+      "styles/films.css"
+    ]
+  }
+}

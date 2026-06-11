@@ -1,0 +1,37 @@
+/* Extra organization layer loaded after style.css. */
+:root {
+  --panel-border: rgba(16, 24, 32, 0.14);
+  --panel-bg: #fff7e3;
+}
+
+.ordered-data-note,
+.backend-note {
+  border-left: 4px solid var(--signal);
+  border-radius: 8px;
+  padding: 1rem;
+  background: rgba(255, 247, 227, 0.82);
+  color: var(--ink);
+  font-family: Arial, sans-serif;
+}
+
+.source-link + .source-link,
+.back-link + .back-link {
+  margin-left: 0.85rem;
+}
+
+.film-card,
+.recipe-card,
+.costume-card,
+.archive-card,
+.dossier-card {
+  contain: content;
+}
+
+@media (max-width: 768px) {
+  .source-link + .source-link,
+  .back-link + .back-link {
+    display: inline-flex;
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+}

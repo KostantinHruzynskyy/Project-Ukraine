@@ -1,0 +1,31 @@
+{
+  "id": "10-bucha",
+  "order": 10,
+  "file": "bucha.html",
+  "section": "Crimini",
+  "title": "Skyy History - Bucha",
+  "h1": "Bucha",
+  "description": "Archivio interattivo sull'Ucraina: storia, cultura, guerra russo-ucraina, memoria civile e fonti affidabili.",
+  "summary": "Bucha, occupazione e prove dei crimini contro civili.",
+  "updated": "2026-06",
+  "assets": {
+    "html": "bucha.html",
+    "json": "data/pages/10-bucha.json",
+    "php": "api/pages/10-bucha.php",
+    "python": "backend/pages/10-bucha.py"
+  },
+  "navigation": {
+    "previous": "invasione-2022.html",
+    "next": "mariupol.html",
+    "home": "Main.html"
+  },
+  "quality": {
+    "dataSource": "data/pages",
+    "api": "api/pages",
+    "python": "backend/pages",
+    "css": [
+      "styles/site-order.css",
+      "styles/films.css"
+    ]
+  }
+}
