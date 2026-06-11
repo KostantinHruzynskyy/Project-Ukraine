@@ -1,0 +1,43 @@
+{
+  "slug": "26-ricerca",
+  "file": "ricerca.html",
+  "title": "Ricerca",
+  "section": "Strumenti",
+  "summary": "Ricerca globale dentro pagine, film, ricette, fonti, mappe e cronologia.",
+  "keywords": [
+    "ricerca",
+    "indice",
+    "studio",
+    "filtri",
+    "dati"
+  ],
+  "updated": "2026-06-11",
+  "dataFiles": [
+    "data/pages/index.json",
+    "data/pages/26-ricerca.json"
+  ],
+  "api": {
+    "php": "api/pages/26-ricerca.php",
+    "python": "backend/pages/26-ricerca.py",
+    "server": "/api/pages/26-ricerca"
+  },
+  "quiz": [
+    {
+      "question": "Qual e lo scopo principale della pagina Ricerca?",
+      "answers": [
+        {
+          "text": "Ricerca globale dentro pagine, film, ricette, fonti, mappe e cronologia.",
+          "correct": true
+        },
+        {
+          "text": "Sostituire le fonti con opinioni non verificate.",
+          "correct": false
+        },
+        {
+          "text": "Nascondere i dati del progetto.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

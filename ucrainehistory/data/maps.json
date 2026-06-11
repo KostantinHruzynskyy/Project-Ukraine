@@ -1,0 +1,86 @@
+[
+  {
+    "place": "Kyiv",
+    "role": "Capitale e centro politico",
+    "text": "Memoria di Kyivan Rus, Maidan, bombardamenti, istituzioni e resistenza civile.",
+    "category": "storia",
+    "coords": "50.4501,30.5234"
+  },
+  {
+    "place": "Kharkiv",
+    "role": "Citta universitaria e industriale",
+    "text": "Bombardamenti, evacuazioni, vita culturale e difesa del nord-est.",
+    "category": "guerra",
+    "coords": "49.9935,36.2304"
+  },
+  {
+    "place": "Odesa",
+    "role": "Porto sul Mar Nero",
+    "text": "Identita multiculturale, export del grano, infrastrutture portuali e patrimonio urbano.",
+    "category": "economia",
+    "coords": "46.4825,30.7233"
+  },
+  {
+    "place": "Lviv",
+    "role": "Nodo culturale occidentale",
+    "text": "Accoglienza sfollati, retrovia culturale, archivi, universita e collegamenti europei.",
+    "category": "cultura",
+    "coords": "49.8397,24.0297"
+  },
+  {
+    "place": "Crimea",
+    "role": "Penisola occupata",
+    "text": "Tatari di Crimea, basi militari russe, repressione e diritto internazionale.",
+    "category": "occupazione",
+    "coords": "45.3453,34.4997"
+  },
+  {
+    "place": "Donbas",
+    "role": "Regione industriale e fronte",
+    "text": "Guerra dal 2014, miniere, citta contese e lunga militarizzazione.",
+    "category": "guerra",
+    "coords": "48.0159,37.8028"
+  },
+  {
+    "place": "Mariupol",
+    "role": "Porto assediato",
+    "text": "Teatro bombardato, Azovstal, distruzione urbana e deportazioni denunciate.",
+    "category": "memoria",
+    "coords": "47.0971,37.5434"
+  },
+  {
+    "place": "Bucha",
+    "role": "Luogo di prove e giustizia",
+    "text": "Occupazione russa, uccisioni di civili e indagini internazionali.",
+    "category": "giustizia",
+    "coords": "50.5539,30.2137"
+  },
+  {
+    "place": "Zaporizhzhia",
+    "role": "Energia e industria",
+    "text": "Centrale nucleare occupata nella regione, infrastrutture e rischio energetico.",
+    "category": "energia",
+    "coords": "47.8388,35.1396"
+  },
+  {
+    "place": "Dnipro",
+    "role": "Retrovia logistica",
+    "text": "Nodo industriale, medico e militare nel centro-est del paese.",
+    "category": "logistica",
+    "coords": "48.4647,35.0462"
+  },
+  {
+    "place": "Chernihiv",
+    "role": "Nord storico",
+    "text": "Assedio 2022, patrimonio medievale e ricostruzione locale.",
+    "category": "storia",
+    "coords": "51.4982,31.2893"
+  },
+  {
+    "place": "Kherson",
+    "role": "Sud liberato in parte",
+    "text": "Occupazione, liberazione della citta, bombardamenti e crisi dopo Kakhovka.",
+    "category": "guerra",
+    "coords": "46.6354,32.6169"
+  }
+]

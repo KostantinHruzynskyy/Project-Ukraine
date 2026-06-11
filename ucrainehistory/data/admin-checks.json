@@ -1,0 +1,32 @@
+[
+  [
+    "Pagine HTML",
+    "ok",
+    "Tutte le pagine principali sono collegate a CSS ordinato e strumenti comuni."
+  ],
+  [
+    "Dati JSON",
+    "ok",
+    "Pagine, film, cucina, fonti, timeline, mappe, studio e ricerca hanno dataset separati."
+  ],
+  [
+    "API PHP",
+    "ok",
+    "Endpoint locali leggono JSON senza database esterno."
+  ],
+  [
+    "Backend Python",
+    "ok",
+    "Server statico con API JSON leggere per sviluppo locale."
+  ],
+  [
+    "Frontend",
+    "ok",
+    "Filtri, ricerca, quiz e layout usano JS leggero e CSS con focus visibile."
+  ],
+  [
+    "Cartelle vecchie",
+    "attenzione",
+    "La cartella storica esterna al sito non e stata modificata: meglio archiviarla solo dopo verifica manuale."
+  ]
+]

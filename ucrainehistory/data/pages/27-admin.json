@@ -1,0 +1,43 @@
+{
+  "slug": "27-admin",
+  "file": "admin.html",
+  "title": "Admin",
+  "section": "Strumenti",
+  "summary": "Dashboard locale per controllare pagine, dataset, API, backend e ordine del progetto.",
+  "keywords": [
+    "admin",
+    "dashboard",
+    "controllo",
+    "backend",
+    "json"
+  ],
+  "updated": "2026-06-11",
+  "dataFiles": [
+    "data/pages/index.json",
+    "data/pages/27-admin.json"
+  ],
+  "api": {
+    "php": "api/pages/27-admin.php",
+    "python": "backend/pages/27-admin.py",
+    "server": "/api/pages/27-admin"
+  },
+  "quiz": [
+    {
+      "question": "Qual e lo scopo principale della pagina Admin?",
+      "answers": [
+        {
+          "text": "Dashboard locale per controllare pagine, dataset, API, backend e ordine del progetto.",
+          "correct": true
+        },
+        {
+          "text": "Sostituire le fonti con opinioni non verificate.",
+          "correct": false
+        },
+        {
+          "text": "Nascondere i dati del progetto.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

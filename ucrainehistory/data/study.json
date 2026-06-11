@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Percorso rapido",
+    "duration": "30 minuti",
+    "steps": [
+      "Main.html",
+      "timeline.html",
+      "mappe.html",
+      "fonti.html"
+    ],
+    "goal": "Capire quadro generale, luoghi e fonti prima di scegliere un tema."
+  },
+  {
+    "title": "Guerra e prove",
+    "duration": "60 minuti",
+    "steps": [
+      "invasione-2022.html",
+      "battaglie.html",
+      "atrocita.html",
+      "difesa.html",
+      "dossier.html"
+    ],
+    "goal": "Collegare eventi militari, civili, prove e giustizia."
+  },
+  {
+    "title": "Cultura, cucina e costumi",
+    "duration": "45 minuti",
+    "steps": [
+      "lingua-cultura.html",
+      "cucina.html",
+      "costumi.html",
+      "film.html"
+    ],
+    "goal": "Studiare identita ucraina senza ridurla alla guerra."
+  },
+  {
+    "title": "Ricostruzione e futuro",
+    "duration": "40 minuti",
+    "steps": [
+      "rifugiati.html",
+      "ricostruzione.html",
+      "sport.html",
+      "fonti.html"
+    ],
+    "goal": "Leggere bisogni umanitari, infrastrutture, salute sociale e futuro europeo."
+  }
+]

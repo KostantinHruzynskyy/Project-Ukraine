@@ -1,0 +1,43 @@
+{
+  "slug": "28-timeline",
+  "file": "timeline.html",
+  "title": "Timeline",
+  "section": "Studio",
+  "summary": "Cronologia compatta dall'Ucraina medievale alla situazione aggiornata a giugno 2026.",
+  "keywords": [
+    "timeline",
+    "cronologia",
+    "storia",
+    "guerra",
+    "cultura"
+  ],
+  "updated": "2026-06-11",
+  "dataFiles": [
+    "data/pages/index.json",
+    "data/pages/28-timeline.json"
+  ],
+  "api": {
+    "php": "api/pages/28-timeline.php",
+    "python": "backend/pages/28-timeline.py",
+    "server": "/api/pages/28-timeline"
+  },
+  "quiz": [
+    {
+      "question": "Qual e lo scopo principale della pagina Timeline?",
+      "answers": [
+        {
+          "text": "Cronologia compatta dall'Ucraina medievale alla situazione aggiornata a giugno 2026.",
+          "correct": true
+        },
+        {
+          "text": "Sostituire le fonti con opinioni non verificate.",
+          "correct": false
+        },
+        {
+          "text": "Nascondere i dati del progetto.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

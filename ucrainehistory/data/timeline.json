@@ -1,0 +1,116 @@
+[
+  {
+    "period": "882-1240",
+    "title": "Kyivan Rus",
+    "text": "Kyiv diventa centro politico, religioso e commerciale dell'Europa orientale.",
+    "category": "storia"
+  },
+  {
+    "period": "1648",
+    "title": "Etmanato cosacco",
+    "text": "La rivolta guidata da Bohdan Khmelnytskyi apre una nuova stagione politica cosacca.",
+    "category": "storia"
+  },
+  {
+    "period": "1917-1921",
+    "title": "Repubblica Popolare Ucraina",
+    "text": "Tentativi di indipendenza durante il crollo degli imperi e la guerra civile.",
+    "category": "storia"
+  },
+  {
+    "period": "1932-1933",
+    "title": "Holodomor",
+    "text": "Carestia forzata che colpisce milioni di ucraini sotto il regime sovietico.",
+    "category": "memoria"
+  },
+  {
+    "period": "1941",
+    "title": "Babyn Yar",
+    "text": "Eccidio nazista a Kyiv e simbolo della Shoah in Ucraina.",
+    "category": "memoria"
+  },
+  {
+    "period": "1944",
+    "title": "Deportazione dei Tatari di Crimea",
+    "text": "Stalin deporta in massa il popolo tataro crimeano.",
+    "category": "memoria"
+  },
+  {
+    "period": "1986",
+    "title": "Chornobyl",
+    "text": "Il disastro nucleare mostra il costo della segretezza sovietica.",
+    "category": "ambiente"
+  },
+  {
+    "period": "24 agosto 1991",
+    "title": "Indipendenza",
+    "text": "Il parlamento proclama l'indipendenza ucraina.",
+    "category": "storia"
+  },
+  {
+    "period": "1 dicembre 1991",
+    "title": "Referendum",
+    "text": "La popolazione conferma l'indipendenza con voto nazionale.",
+    "category": "storia"
+  },
+  {
+    "period": "2004",
+    "title": "Rivoluzione arancione",
+    "text": "Mobilitazione civica contro brogli e per elezioni libere.",
+    "category": "societa"
+  },
+  {
+    "period": "2013-2014",
+    "title": "Euromaidan",
+    "text": "La Rivoluzione della Dignita difende scelta europea e diritti civili.",
+    "category": "societa"
+  },
+  {
+    "period": "2014",
+    "title": "Crimea e Donbas",
+    "text": "La Russia occupa la Crimea e alimenta la guerra nel Donbas.",
+    "category": "guerra"
+  },
+  {
+    "period": "24 febbraio 2022",
+    "title": "Invasione su vasta scala",
+    "text": "La Russia lancia l'invasione contro tutta l'Ucraina.",
+    "category": "guerra"
+  },
+  {
+    "period": "marzo-aprile 2022",
+    "title": "Bucha",
+    "text": "Dopo la ritirata russa emergono prove di uccisioni di civili.",
+    "category": "giustizia"
+  },
+  {
+    "period": "maggio 2022",
+    "title": "Mariupol e Azovstal",
+    "text": "La citta assediata diventa simbolo di distruzione e resistenza.",
+    "category": "guerra"
+  },
+  {
+    "period": "2023",
+    "title": "Cultura sotto attacco",
+    "text": "Musei, scuole, teatri, chiese e archivi diventano parte della memoria di guerra.",
+    "category": "cultura"
+  },
+  {
+    "period": "2024",
+    "title": "Olimpiadi e documentari",
+    "text": "Sport e cinema ucraini raccontano identita e resistenza internazionale.",
+    "category": "cultura"
+  },
+  {
+    "period": "2025",
+    "title": "Ricostruzione e giustizia",
+    "text": "Dati RDNA, processi e memoria pubblica rafforzano la documentazione.",
+    "category": "ricostruzione"
+  },
+  {
+    "period": "giugno 2026",
+    "title": "Sito aggiornato",
+    "text": "Le sezioni sono ordinate con pagine, dataset, API locali, fonti e ricerca.",
+    "category": "studio"
+  }
+]

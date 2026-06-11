@@ -1,0 +1,43 @@
+{
+  "slug": "29-mappe",
+  "file": "mappe.html",
+  "title": "Mappe",
+  "section": "Studio",
+  "summary": "Atlante ordinato di luoghi, regioni, fronti, memoria, cultura e ricostruzione.",
+  "keywords": [
+    "mappe",
+    "luoghi",
+    "regioni",
+    "atlante",
+    "geografia"
+  ],
+  "updated": "2026-06-11",
+  "dataFiles": [
+    "data/pages/index.json",
+    "data/pages/29-mappe.json"
+  ],
+  "api": {
+    "php": "api/pages/29-mappe.php",
+    "python": "backend/pages/29-mappe.py",
+    "server": "/api/pages/29-mappe"
+  },
+  "quiz": [
+    {
+      "question": "Qual e lo scopo principale della pagina Mappe?",
+      "answers": [
+        {
+          "text": "Atlante ordinato di luoghi, regioni, fronti, memoria, cultura e ricostruzione.",
+          "correct": true
+        },
+        {
+          "text": "Sostituire le fonti con opinioni non verificate.",
+          "correct": false
+        },
+        {
+          "text": "Nascondere i dati del progetto.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

@@ -25,7 +25,27 @@
     "python": "backend/pages",
     "css": [
       "styles/site-order.css",
-      "styles/films.css"
+      "styles/films.css",
+      "styles/tools.css"
     ]
-  }
+  },
+  "quiz": [
+    {
+      "question": "Qual e il punto piu importante della pagina Skyy History - Crimea e Donbas?",
+      "answers": [
+        {
+          "text": "Crimea occupata, Donbas e origini della guerra moderna.",
+          "correct": true
+        },
+        {
+          "text": "Usare solo opinioni senza date e senza fonti.",
+          "correct": false
+        },
+        {
+          "text": "Ignorare collegamenti con luoghi, persone e conseguenze.",
+          "correct": false
+        }
+      ]
+    }
+  ]
 }

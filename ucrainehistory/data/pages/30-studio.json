@@ -1,0 +1,43 @@
+{
+  "slug": "30-studio",
+  "file": "studio.html",
+  "title": "Studio",
+  "section": "Studio",
+  "summary": "Percorsi guidati, schede ripasso e quiz per studiare senza perdersi nel sito.",
+  "keywords": [
+    "studio",
+    "ripasso",
+    "quiz",
+    "scuola",
+    "percorso"
+  ],
+  "updated": "2026-06-11",
+  "dataFiles": [
+    "data/pages/index.json",
+    "data/pages/30-studio.json"
+  ],
+  "api": {
+    "php": "api/pages/30-studio.php",
+    "python": "backend/pages/30-studio.py",
+    "server": "/api/pages/30-studio"
+  },
+  "quiz": [
+    {
+      "question": "Qual e lo scopo principale della pagina Studio?",
+      "answers": [
+        {
+          "text": "Percorsi guidati, schede ripasso e quiz per studiare senza perdersi nel sito.",
+          "correct": true
+        },
+        {
+          "text": "Sostituire le fonti con opinioni non verificate.",
+          "correct": false
+        },
+        {
+          "text": "Nascondere i dati del progetto.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

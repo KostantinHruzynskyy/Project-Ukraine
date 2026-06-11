@@ -1,0 +1,98 @@
+[
+  {
+    "label": "OHCHR Ukraine reports",
+    "category": "Diritti umani",
+    "href": "https://ukraine.ohchr.org/en/reports",
+    "note": "Rapporti ONU su vittime civili, diritti umani, occupazione e protezione dei civili."
+  },
+  {
+    "label": "International Criminal Court - Ukraine",
+    "category": "Giustizia",
+    "href": "https://www.icc-cpi.int/situations/ukraine",
+    "note": "Pagina ufficiale della situazione Ucraina presso la Corte penale internazionale."
+  },
+  {
+    "label": "Human Rights Watch - Ukraine",
+    "category": "Diritti umani",
+    "href": "https://www.hrw.org/europe/central-asia/ukraine",
+    "note": "Rapporti indipendenti su abusi, crimini di guerra e protezione dei civili."
+  },
+  {
+    "label": "UNHCR Ukraine situation",
+    "category": "Rifugiati",
+    "href": "https://data.unhcr.org/en/situations/ukraine",
+    "note": "Dati su rifugiati, sfollamento interno e risposta regionale."
+  },
+  {
+    "label": "UNDP RDNA5 Ukraine",
+    "category": "Ricostruzione",
+    "href": "https://www.undp.org/ukraine/publications/ukraine-fifth-rapid-damage-and-needs-assessment-rdna5-february-2022-december-2025",
+    "note": "Valutazione danni, perdite e bisogni di ricostruzione al 31 dicembre 2025."
+  },
+  {
+    "label": "World Bank Data - Ukraine",
+    "category": "Dati",
+    "href": "https://data.worldbank.org/country/ukraine",
+    "note": "Indicatori su popolazione, economia, societa e sviluppo."
+  },
+  {
+    "label": "Internet Encyclopedia of Ukraine",
+    "category": "Enciclopedia",
+    "href": "https://www.encyclopediaofukraine.com/",
+    "note": "Enciclopedia accademica su storia, geografia, cultura e diaspora ucraine."
+  },
+  {
+    "label": "Encyclopedia of Modern Ukraine",
+    "category": "Enciclopedia",
+    "href": "https://esu.com.ua/en/about/overview",
+    "note": "Progetto enciclopedico ucraino sul periodo moderno e contemporaneo."
+  },
+  {
+    "label": "Ukrainian Institute - Insight UA",
+    "category": "Cultura",
+    "href": "https://insight.ui.org.ua/",
+    "note": "Atlante culturale su arti, cinema, letteratura, Crimea, musica e guerra."
+  },
+  {
+    "label": "UNESCO - Ukrainian borscht cooking",
+    "category": "Cultura",
+    "href": "https://ich.unesco.org/en/USL/01852",
+    "note": "Scheda ufficiale UNESCO sulla cultura del borshch ucraino."
+  },
+  {
+    "label": "UNESCO - Ukraine intangible heritage",
+    "category": "Cultura",
+    "href": "https://ich.unesco.org/en/state/ukraine-UA?info=elements-on-the-lists",
+    "note": "Elementi ucraini del patrimonio culturale immateriale UNESCO."
+  },
+  {
+    "label": "PBS FRONTLINE - 2000 Meters to Andriivka",
+    "category": "Film",
+    "href": "https://www.pbs.org/wgbh/frontline/documentary/2000-meters-to-andriivka/",
+    "note": "Pagina ufficiale del documentario di Mstyslav Chernov."
+  },
+  {
+    "label": "Porcelain War - official site",
+    "category": "Film",
+    "href": "https://www.porcelainwar.com/",
+    "note": "Sito ufficiale del documentario premiato su arte e resistenza ucraina."
+  },
+  {
+    "label": "Berlinale - Timestamp",
+    "category": "Film",
+    "href": "https://www.berlinale.de/en/2025/programme/202504688.html",
+    "note": "Scheda festival del film di Kateryna Gornostai sulla scuola in guerra."
+  },
+  {
+    "label": "Biennale Cinema - Songs of Slow Burning Earth",
+    "category": "Film",
+    "href": "https://www.labiennale.org/en/cinema/2024/out-competition/songs-slow-burning-earth",
+    "note": "Scheda del film documentario di Olha Zhurba."
+  },
+  {
+    "label": "Britannica - Ukraine",
+    "category": "Enciclopedia",
+    "href": "https://www.britannica.com/place/Ukraine",
+    "note": "Sintesi generale su territorio, storia, cultura e societa."
+  }
+]

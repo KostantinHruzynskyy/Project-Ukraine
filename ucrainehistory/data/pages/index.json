@@ -1,246 +1,411 @@
-{
-  "updated": "2026-06",
-  "count": 24,
-  "pages": [
-    {
-      "id": "01-main",
-      "order": 1,
-      "file": "Main.html",
-      "section": "Home",
-      "title": "Skyy",
-      "json": "data/pages/01-main.json",
-      "php": "api/pages/01-main.php",
-      "python": "backend/pages/01-main.py"
-    },
-    {
-      "id": "02-holodomor",
-      "order": 2,
-      "file": "holodomor.html",
-      "section": "Memoria",
-      "title": "Skyy History - Holodomor",
-      "json": "data/pages/02-holodomor.json",
-      "php": "api/pages/02-holodomor.php",
-      "python": "backend/pages/02-holodomor.py"
-    },
-    {
-      "id": "03-babyn-yar",
-      "order": 3,
-      "file": "babyn-yar.html",
-      "section": "Memoria",
-      "title": "Skyy History - Babyn Yar",
-      "json": "data/pages/03-babyn-yar.json",
-      "php": "api/pages/03-babyn-yar.php",
-      "python": "backend/pages/03-babyn-yar.py"
-    },
-    {
-      "id": "04-tatari-crimea",
-      "order": 4,
-      "file": "tatari-crimea.html",
-      "section": "Popoli",
-      "title": "Skyy History - Tatari di Crimea",
-      "json": "data/pages/04-tatari-crimea.json",
-      "php": "api/pages/04-tatari-crimea.php",
-      "python": "backend/pages/04-tatari-crimea.py"
-    },
-    {
-      "id": "05-chernobyl",
-      "order": 5,
-      "file": "chernobyl.html",
-      "section": "Ambiente",
-      "title": "Skyy History - Chernobyl",
-      "json": "data/pages/05-chernobyl.json",
-      "php": "api/pages/05-chernobyl.php",
-      "python": "backend/pages/05-chernobyl.py"
-    },
-    {
-      "id": "06-indipendenza",
-      "order": 6,
-      "file": "indipendenza.html",
-      "section": "Stato",
-      "title": "Skyy History - Indipendenza",
-      "json": "data/pages/06-indipendenza.json",
-      "php": "api/pages/06-indipendenza.php",
-      "python": "backend/pages/06-indipendenza.py"
-    },
-    {
-      "id": "07-euromaidan",
-      "order": 7,
-      "file": "euromaidan.html",
-      "section": "Societa",
-      "title": "Skyy History - Euromaidan",
-      "json": "data/pages/07-euromaidan.json",
-      "php": "api/pages/07-euromaidan.php",
-      "python": "backend/pages/07-euromaidan.py"
-    },
-    {
-      "id": "08-crimea-donbas",
-      "order": 8,
-      "file": "crimea-donbas.html",
-      "section": "Guerra",
-      "title": "Skyy History - Crimea e Donbas",
-      "json": "data/pages/08-crimea-donbas.json",
-      "php": "api/pages/08-crimea-donbas.php",
-      "python": "backend/pages/08-crimea-donbas.py"
-    },
-    {
-      "id": "09-invasione-2022",
-      "order": 9,
-      "file": "invasione-2022.html",
-      "section": "Guerra",
-      "title": "Skyy History - Invasione 2022",
-      "json": "data/pages/09-invasione-2022.json",
-      "php": "api/pages/09-invasione-2022.php",
-      "python": "backend/pages/09-invasione-2022.py"
-    },
-    {
-      "id": "10-bucha",
-      "order": 10,
-      "file": "bucha.html",
-      "section": "Crimini",
-      "title": "Skyy History - Bucha",
-      "json": "data/pages/10-bucha.json",
-      "php": "api/pages/10-bucha.php",
-      "python": "backend/pages/10-bucha.py"
-    },
-    {
-      "id": "11-mariupol",
-      "order": 11,
-      "file": "mariupol.html",
-      "section": "Assedio",
-      "title": "Skyy History - Mariupol",
-      "json": "data/pages/11-mariupol.json",
-      "php": "api/pages/11-mariupol.php",
-      "python": "backend/pages/11-mariupol.py"
-    },
-    {
-      "id": "12-battaglie",
-      "order": 12,
-      "file": "battaglie.html",
-      "section": "Guerra",
-      "title": "Skyy History - Battaglie",
-      "json": "data/pages/12-battaglie.json",
-      "php": "api/pages/12-battaglie.php",
-      "python": "backend/pages/12-battaglie.py"
-    },
-    {
-      "id": "13-atrocita",
-      "order": 13,
-      "file": "atrocita.html",
-      "section": "Crimini",
-      "title": "Skyy History - Atrocita",
-      "json": "data/pages/13-atrocita.json",
-      "php": "api/pages/13-atrocita.php",
-      "python": "backend/pages/13-atrocita.py"
-    },
-    {
-      "id": "14-difesa",
-      "order": 14,
-      "file": "difesa.html",
-      "section": "Difesa",
-      "title": "Skyy History - Difesa Ucraina",
-      "json": "data/pages/14-difesa.json",
-      "php": "api/pages/14-difesa.php",
-      "python": "backend/pages/14-difesa.py"
-    },
-    {
-      "id": "15-dossier",
-      "order": 15,
-      "file": "dossier.html",
-      "section": "Studio",
-      "title": "Skyy History - Dossier Ucraina",
-      "json": "data/pages/15-dossier.json",
-      "php": "api/pages/15-dossier.php",
-      "python": "backend/pages/15-dossier.py"
-    },
-    {
-      "id": "16-museo",
-      "order": 16,
-      "file": "museo.html",
-      "section": "Patrimonio",
-      "title": "Skyy History - Museo Ucraina",
-      "json": "data/pages/16-museo.json",
-      "php": "api/pages/16-museo.php",
-      "python": "backend/pages/16-museo.py"
-    },
-    {
-      "id": "17-lingua-cultura",
-      "order": 17,
-      "file": "lingua-cultura.html",
-      "section": "Cultura",
-      "title": "Skyy History - Lingua e cultura ucraina",
-      "json": "data/pages/17-lingua-cultura.json",
-      "php": "api/pages/17-lingua-cultura.php",
-      "python": "backend/pages/17-lingua-cultura.py"
-    },
-    {
-      "id": "18-cucina",
-      "order": 18,
-      "file": "cucina.html",
-      "section": "Cucina",
-      "title": "Skyy History - Cucina ucraina",
-      "json": "data/pages/18-cucina.json",
-      "php": "api/pages/18-cucina.php",
-      "python": "backend/pages/18-cucina.py"
-    },
-    {
-      "id": "19-costumi",
-      "order": 19,
-      "file": "costumi.html",
-      "section": "Costumi",
-      "title": "Skyy History - Costumi ucraini",
-      "json": "data/pages/19-costumi.json",
-      "php": "api/pages/19-costumi.php",
-      "python": "backend/pages/19-costumi.py"
-    },
-    {
-      "id": "20-cucina-costumi",
-      "order": 20,
-      "file": "cucina-costumi.html",
-      "section": "Indice",
-      "title": "Skyy History - Cucina e costumi separati",
-      "json": "data/pages/20-cucina-costumi.json",
-      "php": "api/pages/20-cucina-costumi.php",
-      "python": "backend/pages/20-cucina-costumi.py"
-    },
-    {
-      "id": "21-sport",
-      "order": 21,
-      "file": "sport.html",
-      "section": "Sport",
-      "title": "Skyy History - Sport ucraino",
-      "json": "data/pages/21-sport.json",
-      "php": "api/pages/21-sport.php",
-      "python": "backend/pages/21-sport.py"
-    },
-    {
-      "id": "22-rifugiati",
-      "order": 22,
-      "file": "rifugiati.html",
-      "section": "Civili",
-      "title": "Skyy History - Rifugiati e diaspora ucraina",
-      "json": "data/pages/22-rifugiati.json",
-      "php": "api/pages/22-rifugiati.php",
-      "python": "backend/pages/22-rifugiati.py"
-    },
-    {
-      "id": "23-ricostruzione",
-      "order": 23,
-      "file": "ricostruzione.html",
-      "section": "Futuro",
-      "title": "Skyy History - Ricostruzione Ucraina",
-      "json": "data/pages/23-ricostruzione.json",
-      "php": "api/pages/23-ricostruzione.php",
-      "python": "backend/pages/23-ricostruzione.py"
-    },
-    {
-      "id": "24-film",
-      "order": 24,
-      "file": "film.html",
-      "section": "Cinema",
-      "title": "Skyy History - Film e documentari sull'Ucraina",
-      "json": "data/pages/24-film.json",
-      "php": "api/pages/24-film.php",
-      "python": "backend/pages/24-film.py"
-    }
-  ]
-}
+[
+  {
+    "slug": "01-main",
+    "file": "Main.html",
+    "title": "Skyy",
+    "section": "Home",
+    "summary": "Ingresso generale al progetto Skyy History sull'Ucraina.",
+    "keywords": [
+      "Home",
+      "Skyy"
+    ],
+    "api": "/api/pages/01-main",
+    "updated": "2026-06"
+  },
+  {
+    "slug": "02-holodomor",
+    "file": "holodomor.html",
+    "title": "Skyy History - Holodomor",
+    "section": "Memoria",
+    "summary": "Holodomor, carestia forzata e memoria nazionale.",
+    "keywords": [
+      "Memoria",
+      "Skyy History - Holodomor"
+    ],
+    "api": "/api/pages/02-holodomor",
+    "updated": "2026-06"
+  },
+  {
+    "slug": "03-babyn-yar",
+    "file": "babyn-yar.html",
+    "title": "Skyy History - Babyn Yar",
+    "section": "Memoria",
+    "summary": "Babyn Yar, Shoah in Ucraina e memoria pubblica.",
+    "keywords": [
+      "Memoria",
+      "Skyy History - Babyn Yar"
+    ],
+    "api": "/api/pages/03-babyn-yar",
+    "updated": "2026-06"
+  },
+  {
+    "slug": "04-tatari-crimea",
+    "file": "tatari-crimea.html",
+    "title": "Skyy History - Tatari di Crimea",
+    "section": "Popoli",
+    "summary": "Tatari di Crimea, deportazione, ritorno e popolo indigeno.",
+    "keywords": [
+      "Popoli",
+      "Skyy History - Tatari di Crimea"
+    ],
+    "api": "/api/pages/04-tatari-crimea",
+    "updated": "2026-06"
+  },
+  {
+    "slug": "05-chernobyl",
+    "file": "chernobyl.html",
+    "title": "Skyy History - Chernobyl",
+    "section": "Ambiente",
+    "summary": "Chornobyl, disastro nucleare, liquidatori e fiducia pubblica.",
+    "keywords": [
+      "Ambiente",
+      "Skyy History - Chernobyl"
+    ],
+    "api": "/api/pages/05-chernobyl",
+    "updated": "2026-06"
+  },
+  {
+    "slug": "06-indipendenza",
+    "file": "indipendenza.html",
+    "title": "Skyy History - Indipendenza",
+    "section": "Stato",
+    "summary": "Indipendenza del 1991 e costruzione dello stato moderno.",
+    "keywords": [
+      "Stato",
+      "Skyy History - Indipendenza"
+    ],
+    "api": "/api/pages/06-indipendenza",
+    "updated": "2026-06"
+  },
+  {
+    "slug": "07-euromaidan",
+    "file": "euromaidan.html",
+    "title": "Skyy History - Euromaidan",
+    "section": "Societa",
+    "summary": "Euromaidan e Rivoluzione della Dignita.",
+    "keywords": [
+      "Societa",
+      "Skyy History - Euromaidan"
+    ],
+    "api": "/api/pages/07-euromaidan",
+    "updated": "2026-06"
+  },
+  {
+    "slug": "08-crimea-donbas",
+    "file": "crimea-donbas.html",
+    "title": "Skyy History - Crimea e Donbas",
+    "section": "Guerra",
+    "summary": "Crimea occupata, Donbas e origini della guerra moderna.",
+    "keywords": [
+      "Guerra",
+      "Skyy History - Crimea e Donbas"
+    ],
+    "api": "/api/pages/08-crimea-donbas",
+    "updated": "2026-06"
+  },
+  {
+    "slug": "09-invasione-2022",
+    "file": "invasione-2022.html",
+    "title": "Skyy History - Invasione 2022",
+    "section": "Guerra",
+    "summary": "Invasione russa su vasta scala del 24 febbraio 2022.",
+    "keywords": [
+      "Guerra",
+      "Skyy History - Invasione 2022"
+    ],
+    "api": "/api/pages/09-invasione-2022",
+    "updated": "2026-06"
+  },
+  {
+    "slug": "10-bucha",
+    "file": "bucha.html",
+    "title": "Skyy History - Bucha",
+    "section": "Crimini",
+    "summary": "Bucha, occupazione e prove dei crimini contro civili.",
+    "keywords": [
+      "Crimini",
+      "Skyy History - Bucha"
+    ],
+    "api": "/api/pages/10-bucha",
+    "updated": "2026-06"
+  },
+  {
+    "slug": "11-mariupol",
+    "file": "mariupol.html",
+    "title": "Skyy History - Mariupol",
+    "section": "Assedio",
+    "summary": "Mariupol, assedio, teatro bombardato e Azovstal.",
+    "keywords": [
+      "Assedio",
+      "Skyy History - Mariupol"
+    ],
+    "api": "/api/pages/11-mariupol",
+    "updated": "2026-06"
+  },
+  {
+    "slug": "12-battaglie",
+    "file": "battaglie.html",
+    "title": "Skyy History - Battaglie",
+    "section": "Guerra",
+    "summary": "Battaglie, fronti, logistica, droni e documentari.",
+    "keywords": [
+      "Guerra",
+      "Skyy History - Battaglie"
+    ],
+    "api": "/api/pages/12-battaglie",
+    "updated": "2026-06"
+  },
+  {
+    "slug": "13-atrocita",
+    "file": "atrocita.html",
+    "title": "Skyy History - Atrocita",
+    "section": "Crimini",
+    "summary": "Atrocita, categorie legali, prove e fonti indipendenti.",
+    "keywords": [
+      "Crimini",
+      "Skyy History - Atrocita"
+    ],
+    "api": "/api/pages/13-atrocita",
+    "updated": "2026-06"
+  },
+  {
+    "slug": "14-difesa",
+    "file": "difesa.html",
+    "title": "Skyy History - Difesa Ucraina",
+    "section": "Difesa",
+    "summary": "Forze ucraine, volontari, tecnologia e societa civile.",
+    "keywords": [
+      "Difesa",
+      "Skyy History - Difesa Ucraina"
+    ],
+    "api": "/api/pages/14-difesa",
+    "updated": "2026-06"
+  },
+  {
+    "slug": "15-dossier",
+    "file": "dossier.html",
+    "title": "Skyy History - Dossier Ucraina",
+    "section": "Studio",
+    "summary": "Dossier ordinato su storia, cultura, guerra e fonti.",
+    "keywords": [
+      "Studio",
+      "Skyy History - Dossier Ucraina"
+    ],
+    "api": "/api/pages/15-dossier",
+    "updated": "2026-06"
+  },
+  {
+    "slug": "16-museo",
+    "file": "museo.html",
+    "title": "Skyy History - Museo Ucraina",
+    "section": "Patrimonio",
+    "summary": "Museo interattivo e oggetti come fonti storiche.",
+    "keywords": [
+      "Patrimonio",
+      "Skyy History - Museo Ucraina"
+    ],
+    "api": "/api/pages/16-museo",
+    "updated": "2026-06"
+  },
+  {
+    "slug": "17-lingua-cultura",
+    "file": "lingua-cultura.html",
+    "title": "Skyy History - Lingua e cultura ucraina",
+    "section": "Cultura",
+    "summary": "Lingua, toponimi, letteratura, musica e patrimonio.",
+    "keywords": [
+      "Cultura",
+      "Skyy History - Lingua e cultura ucraina"
+    ],
+    "api": "/api/pages/17-lingua-cultura",
+    "updated": "2026-06"
+  },
+  {
+    "slug": "18-cucina",
+    "file": "cucina.html",
+    "title": "Skyy History - Cucina ucraina",
+    "section": "Cucina",
+    "summary": "Ricette, ingredienti, regioni, feste e dataset culinario.",
+    "keywords": [
+      "Cucina",
+      "Skyy History - Cucina ucraina"
+    ],
+    "api": "/api/pages/18-cucina",
+    "updated": "2026-06"
+  },
+  {
+    "slug": "19-costumi",
+    "file": "costumi.html",
+    "title": "Skyy History - Costumi ucraini",
+    "section": "Costumi",
+    "summary": "Vyshyvanka, pysanky, rushnyk, Ornek e oggetti rituali.",
+    "keywords": [
+      "Costumi",
+      "Skyy History - Costumi ucraini"
+    ],
+    "api": "/api/pages/19-costumi",
+    "updated": "2026-06"
+  },
+  {
+    "slug": "20-cucina-costumi",
+    "file": "cucina-costumi.html",
+    "title": "Skyy History - Cucina e costumi separati",
+    "section": "Indice",
+    "summary": "Ponte compatibile tra cucina e costumi separati.",
+    "keywords": [
+      "Indice",
+      "Skyy History - Cucina e costumi separati"
+    ],
+    "api": "/api/pages/20-cucina-costumi",
+    "updated": "2026-06"
+  },
+  {
+    "slug": "21-sport",
+    "file": "sport.html",
+    "title": "Skyy History - Sport ucraino",
+    "section": "Sport",
+    "summary": "Sport ucraino, medaglie, record e infrastrutture colpite.",
+    "keywords": [
+      "Sport",
+      "Skyy History - Sport ucraino"
+    ],
+    "api": "/api/pages/21-sport",
+    "updated": "2026-06"
+  },
+  {
+    "slug": "22-rifugiati",
+    "file": "rifugiati.html",
+    "title": "Skyy History - Rifugiati e diaspora ucraina",
+    "section": "Civili",
+    "summary": "Rifugiati, sfollati, accoglienza e diaspora.",
+    "keywords": [
+      "Civili",
+      "Skyy History - Rifugiati e diaspora ucraina"
+    ],
+    "api": "/api/pages/22-rifugiati",
+    "updated": "2026-06"
+  },
+  {
+    "slug": "23-ricostruzione",
+    "file": "ricostruzione.html",
+    "title": "Skyy History - Ricostruzione Ucraina",
+    "section": "Futuro",
+    "summary": "Ricostruzione, energia, mine, economia e futuro europeo.",
+    "keywords": [
+      "Futuro",
+      "Skyy History - Ricostruzione Ucraina"
+    ],
+    "api": "/api/pages/23-ricostruzione",
+    "updated": "2026-06"
+  },
+  {
+    "slug": "24-film",
+    "file": "film.html",
+    "title": "Skyy History - Film e documentari sull'Ucraina",
+    "section": "Cinema",
+    "summary": "Archivio aggiornato di film e documentari sull'Ucraina.",
+    "keywords": [
+      "Cinema",
+      "Skyy History - Film e documentari sull'Ucraina"
+    ],
+    "api": "/api/pages/24-film",
+    "updated": "2026-06"
+  },
+  {
+    "slug": "25-fonti",
+    "file": "fonti.html",
+    "title": "Fonti",
+    "section": "Risorse",
+    "summary": "Biblioteca ordinata di fonti primarie, istituzionali, culturali e cinematografiche usate nel sito.",
+    "keywords": [
+      "fonti",
+      "prove",
+      "ONU",
+      "UNESCO",
+      "film",
+      "archivio"
+    ],
+    "api": "/api/pages/25-fonti",
+    "updated": "2026-06-11"
+  },
+  {
+    "slug": "26-ricerca",
+    "file": "ricerca.html",
+    "title": "Ricerca",
+    "section": "Strumenti",
+    "summary": "Ricerca globale dentro pagine, film, ricette, fonti, mappe e cronologia.",
+    "keywords": [
+      "ricerca",
+      "indice",
+      "studio",
+      "filtri",
+      "dati"
+    ],
+    "api": "/api/pages/26-ricerca",
+    "updated": "2026-06-11"
+  },
+  {
+    "slug": "27-admin",
+    "file": "admin.html",
+    "title": "Admin",
+    "section": "Strumenti",
+    "summary": "Dashboard locale per controllare pagine, dataset, API, backend e ordine del progetto.",
+    "keywords": [
+      "admin",
+      "dashboard",
+      "controllo",
+      "backend",
+      "json"
+    ],
+    "api": "/api/pages/27-admin",
+    "updated": "2026-06-11"
+  },
+  {
+    "slug": "28-timeline",
+    "file": "timeline.html",
+    "title": "Timeline",
+    "section": "Studio",
+    "summary": "Cronologia compatta dall'Ucraina medievale alla situazione aggiornata a giugno 2026.",
+    "keywords": [
+      "timeline",
+      "cronologia",
+      "storia",
+      "guerra",
+      "cultura"
+    ],
+    "api": "/api/pages/28-timeline",
+    "updated": "2026-06-11"
+  },
+  {
+    "slug": "29-mappe",
+    "file": "mappe.html",
+    "title": "Mappe",
+    "section": "Studio",
+    "summary": "Atlante ordinato di luoghi, regioni, fronti, memoria, cultura e ricostruzione.",
+    "keywords": [
+      "mappe",
+      "luoghi",
+      "regioni",
+      "atlante",
+      "geografia"
+    ],
+    "api": "/api/pages/29-mappe",
+    "updated": "2026-06-11"
+  },
+  {
+    "slug": "30-studio",
+    "file": "studio.html",
+    "title": "Studio",
+    "section": "Studio",
+    "summary": "Percorsi guidati, schede ripasso e quiz per studiare senza perdersi nel sito.",
+    "keywords": [
+      "studio",
+      "ripasso",
+      "quiz",
+      "scuola",
+      "percorso"
+    ],
+    "api": "/api/pages/30-studio",
+    "updated": "2026-06-11"
+  }
+]

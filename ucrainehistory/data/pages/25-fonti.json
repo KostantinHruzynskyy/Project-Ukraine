@@ -1,0 +1,44 @@
+{
+  "slug": "25-fonti",
+  "file": "fonti.html",
+  "title": "Fonti",
+  "section": "Risorse",
+  "summary": "Biblioteca ordinata di fonti primarie, istituzionali, culturali e cinematografiche usate nel sito.",
+  "keywords": [
+    "fonti",
+    "prove",
+    "ONU",
+    "UNESCO",
+    "film",
+    "archivio"
+  ],
+  "updated": "2026-06-11",
+  "dataFiles": [
+    "data/pages/index.json",
+    "data/pages/25-fonti.json"
+  ],
+  "api": {
+    "php": "api/pages/25-fonti.php",
+    "python": "backend/pages/25-fonti.py",
+    "server": "/api/pages/25-fonti"
+  },
+  "quiz": [
+    {
+      "question": "Qual e lo scopo principale della pagina Fonti?",
+      "answers": [
+        {
+          "text": "Biblioteca ordinata di fonti primarie, istituzionali, culturali e cinematografiche usate nel sito.",
+          "correct": true
+        },
+        {
+          "text": "Sostituire le fonti con opinioni non verificate.",
+          "correct": false
+        },
+        {
+          "text": "Nascondere i dati del progetto.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

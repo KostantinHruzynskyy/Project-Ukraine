@@ -96,6 +96,30 @@ window.SkyyEncyclopediaData = {
     "ricostruzione.html": {
       title: "Ricostruzione dell'Ucraina | Skyy History",
       description: "Approfondimento su ricostruzione, energia, mine, infrastrutture, economia, scuole, salute e futuro europeo dell'Ucraina."
+    },
+    "fonti.html": {
+      title: "Fonti ordinate | Skyy History",
+      description: "Biblioteca di fonti primarie, istituzionali, culturali e cinematografiche usate nel sito."
+    },
+    "ricerca.html": {
+      title: "Ricerca globale | Skyy History",
+      description: "Motore di ricerca locale per pagine, film, ricette, fonti, timeline e mappe."
+    },
+    "admin.html": {
+      title: "Dashboard admin | Skyy History",
+      description: "Dashboard locale per controllare pagine, dataset, API, backend e stato del progetto."
+    },
+    "timeline.html": {
+      title: "Timeline Ucraina | Skyy History",
+      description: "Cronologia essenziale della storia ucraina e della guerra aggiornata a giugno 2026."
+    },
+    "mappe.html": {
+      title: "Mappe ordinate | Skyy History",
+      description: "Atlante didattico di luoghi, regioni, memoria, guerra, logistica e ricostruzione."
+    },
+    "studio.html": {
+      title: "Studio guidato | Skyy History",
+      description: "Percorsi di studio, ripasso e quiz per leggere il sito in modo ordinato."
     }
   },
   sources: [
@@ -841,6 +865,54 @@ window.SkyyEncyclopediaData = {
         category: "Cultura, societa e ricostruzione",
         summary: "Olimpiadi, Paralimpiadi, calcio, atletica, boxe, scherma e impianti sportivi colpiti dalla guerra.",
         tags: ["sport", "Olimpiadi", "Paralimpiadi", "calcio", "ricostruzione"]
+      },
+      {
+        href: "studio.html",
+        title: "Studio guidato",
+        era: "Strumento",
+        category: "Percorsi e ripasso",
+        summary: "Percorsi pronti per leggere il sito con ordine, collegando eventi, cultura, fonti e quiz.",
+        tags: ["studio", "quiz", "percorsi", "ripasso", "scuola"]
+      },
+      {
+        href: "ricerca.html",
+        title: "Ricerca globale",
+        era: "Strumento",
+        category: "Indice locale",
+        summary: "Ricerca leggera nei dataset JSON: pagine, film, ricette, fonti, timeline e mappe.",
+        tags: ["ricerca", "indice", "JSON", "fonti", "film"]
+      },
+      {
+        href: "fonti.html",
+        title: "Fonti ordinate",
+        era: "Metodo",
+        category: "Verifica e bibliografia",
+        summary: "Biblioteca unica con fonti ONU, ICC, UNESCO, enciclopedie, film, dati e ricostruzione.",
+        tags: ["fonti", "OHCHR", "UNESCO", "ICC", "verifica"]
+      },
+      {
+        href: "timeline.html",
+        title: "Timeline",
+        era: "882-2026",
+        category: "Cronologia",
+        summary: "Linea del tempo che collega storia lunga, memoria, guerra, cultura e aggiornamento 2026.",
+        tags: ["timeline", "cronologia", "storia", "guerra", "2026"]
+      },
+      {
+        href: "mappe.html",
+        title: "Mappe ordinate",
+        era: "Atlante",
+        category: "Luoghi e regioni",
+        summary: "Griglia didattica di luoghi chiave: Kyiv, Crimea, Donbas, Bucha, Mariupol, Odesa e altri.",
+        tags: ["mappe", "luoghi", "Crimea", "Donbas", "Kyiv"]
+      },
+      {
+        href: "admin.html",
+        title: "Dashboard admin",
+        era: "Strumento",
+        category: "Controllo progetto",
+        summary: "Cruscotto locale per controllare pagine, dataset, API, backend e file generati.",
+        tags: ["admin", "dashboard", "backend", "API", "JSON"]
       }
     ],
     routes: [
@@ -879,6 +951,12 @@ window.SkyyEncyclopediaData = {
         aim: "Per evitare di raccontare l'Ucraina solo attraverso il dolore.",
         pages: ["lingua-cultura.html", "cucina.html", "costumi.html", "film.html", "sport.html", "museo.html", "dossier.html", "indipendenza.html", "tatari-crimea.html", "euromaidan.html"],
         output: "Scegli cinque elementi culturali e collegali a regione, lingua e storia."
+      },
+      {
+        title: "Percorso strumenti e verifica",
+        aim: "Per usare il sito come progetto ordinato: ricerca, fonti, timeline, mappe, studio e controllo dati.",
+        pages: ["studio.html", "ricerca.html", "fonti.html", "timeline.html", "mappe.html", "admin.html"],
+        output: "Controlla una domanda storica passando da ricerca, fonte, data, luogo e pagina di studio."
       }
     ],
     thematicConnections: [
@@ -899,7 +977,7 @@ window.SkyyEncyclopediaData = {
       {
         title: "Guerra, territorio e logistica",
         text: "La guerra si comprende con strade, fiumi, porti, ferrovie, droni, artiglieria, energia e protezione dei civili.",
-        pages: ["crimea-donbas.html", "invasione-2022.html", "battaglie.html", "difesa.html", "mariupol.html"],
+        pages: ["crimea-donbas.html", "invasione-2022.html", "battaglie.html", "difesa.html", "mariupol.html", "mappe.html"],
         sources: ["DeepStateMAP", "OSW", "Britannica - Russia-Ukraine War", "Ministry of Defence of Ukraine"],
         notes: ["Una mappa non basta senza logistica.", "Il controllo di ponti e corridoi cambia la vita civile.", "Tecnologia e adattamento contano ogni giorno."]
       },
@@ -909,6 +987,13 @@ window.SkyyEncyclopediaData = {
         pages: ["lingua-cultura.html", "cucina.html", "costumi.html", "film.html", "sport.html", "museo.html", "dossier.html", "rifugiati.html", "ricostruzione.html", "indipendenza.html", "tatari-crimea.html", "chernobyl.html"],
         sources: ["Ukrainian Institute - Insight UA", "UNESCO - Ukraine intangible heritage", "UNESCO - Culture of Ukrainian borscht cooking", "FRONTLINE - 2000 Meters to Andriivka", "Porcelain War official", "Ministry of Youth and Sports of Ukraine - Paris 2024", "UNDP RDNA5 Ukraine", "World Bank Data - Ukraine"],
         notes: ["Cultura e ricostruzione sono parte della sopravvivenza nazionale.", "Ogni oggetto puo diventare una fonte.", "La diaspora collega memoria e futuro."]
+      },
+      {
+        title: "Metodo, fonti e studio",
+        text: "Il progetto resta pulito quando ogni pagina puo essere cercata, controllata, collegata a fonti e riletta con una timeline.",
+        pages: ["studio.html", "ricerca.html", "fonti.html", "timeline.html", "mappe.html", "admin.html", "dossier.html"],
+        sources: ["OHCHR Ukraine reports", "International Criminal Court - Ukraine", "UNESCO - Ukraine intangible heritage", "UNDP RDNA5 Ukraine"],
+        notes: ["Ricerca e fonti riducono confusione.", "Timeline e mappe danno contesto.", "La dashboard aiuta a vedere se il progetto resta ordinato."]
       }
     ],
     pageLinks: {
@@ -1118,6 +1203,60 @@ window.SkyyEncyclopediaData = {
         places: ["Kyiv", "Kharkiv", "Kherson", "Donbas", "Mar Nero", "campi agricoli minati"],
         questions: ["Perche ricostruzione e bonifica devono procedere insieme?", "Come distinguere danni, perdite e bisogni?", "Quali infrastrutture proteggono meglio la vita civile?"],
         next: "Torna al Dossier per trasformare dati, bisogni e fonti in una ricerca completa."
+      },
+      "studio.html": {
+        related: ["ricerca.html", "fonti.html", "timeline.html", "mappe.html", "dossier.html"],
+        compare: ["Ricerca: trova contenuti rapidamente.", "Fonti: verifica i dati.", "Timeline e mappe: danno ordine a date e luoghi."],
+        external: ["Internet Encyclopedia of Ukraine", "OHCHR Ukraine reports", "UNESCO - Ukraine intangible heritage"],
+        concepts: ["percorso", "ripasso", "quiz", "metodo", "fonti"],
+        places: ["Kyiv", "Crimea", "Donbas", "Mariupol", "Bucha"],
+        questions: ["Quale percorso serve alla tua domanda?", "Quale fonte conferma il dato?", "Quale luogo o data cambia il contesto?"],
+        next: "Apri Ricerca per trovare una parola chiave e poi Fonti per verificarla."
+      },
+      "ricerca.html": {
+        related: ["studio.html", "fonti.html", "timeline.html", "mappe.html", "film.html", "cucina.html"],
+        compare: ["Studio: trasforma risultati in percorso.", "Fonti: controlla affidabilita.", "Admin: verifica dati generati."],
+        external: ["data/search-index.json"],
+        concepts: ["indice", "JSON", "filtri", "dataset", "frontend leggero"],
+        places: ["tutto il sito"],
+        questions: ["La parola cercata e troppo specifica?", "Il risultato va controllato con una fonte?", "Serve una pagina o un dataset?"],
+        next: "Dopo la ricerca apri Fonti o Timeline per dare contesto al risultato."
+      },
+      "fonti.html": {
+        related: ["ricerca.html", "studio.html", "dossier.html", "timeline.html", "mappe.html"],
+        compare: ["Dossier: usa le fonti dentro un racconto.", "Timeline: lega fonte e data.", "Mappe: lega fonte e luogo."],
+        external: ["OHCHR Ukraine reports", "International Criminal Court - Ukraine", "UNESCO - Ukraine intangible heritage", "UNDP RDNA5 Ukraine"],
+        concepts: ["fonte primaria", "rapporto", "dataset", "bibliografia", "verifica"],
+        places: ["ONU", "ICC", "UNESCO", "Ucraina"],
+        questions: ["La fonte e ufficiale, accademica o giornalistica?", "Qual e la data del dato?", "Che limite ha questa fonte?"],
+        next: "Usa Ricerca per trovare contenuti che citano lo stesso tema."
+      },
+      "timeline.html": {
+        related: ["studio.html", "mappe.html", "fonti.html", "dossier.html", "indipendenza.html"],
+        compare: ["Mappe: spostano la cronologia nello spazio.", "Fonti: verificano date e contesto.", "Dossier: trasforma eventi in sintesi."],
+        external: ["Britannica - Ukraine", "Internet Encyclopedia of Ukraine", "OHCHR Ukraine reports"],
+        concepts: ["cronologia", "periodizzazione", "memoria", "guerra", "aggiornamento"],
+        places: ["Kyiv", "Crimea", "Donbas", "Mar Nero"],
+        questions: ["Che cosa succede prima e dopo?", "La data e precisa o un periodo?", "Quale fonte conferma l'evento?"],
+        next: "Apri Mappe per collegare gli eventi ai luoghi."
+      },
+      "mappe.html": {
+        related: ["timeline.html", "battaglie.html", "crimea-donbas.html", "ricostruzione.html", "fonti.html"],
+        compare: ["Timeline: ordina nel tempo.", "Battaglie: spiega fronti e logistica.", "Ricostruzione: mostra bisogni territoriali."],
+        external: ["Britannica - Ukraine", "DeepStateMAP", "World Bank Data - Ukraine"],
+        concepts: ["luogo", "regione", "logistica", "occupazione", "ricostruzione"],
+        places: ["Kyiv", "Kharkiv", "Odesa", "Lviv", "Crimea", "Donbas", "Mariupol", "Bucha"],
+        questions: ["Il luogo e capitale, fronte, porto o memoria?", "Che ruolo ha nella guerra?", "Che fonte serve per aggiornarlo?"],
+        next: "Apri Timeline per leggere lo stesso luogo dentro la sequenza storica."
+      },
+      "admin.html": {
+        related: ["ricerca.html", "fonti.html", "studio.html", "film.html", "cucina.html"],
+        compare: ["Ricerca: usa l'indice generato.", "Fonti: controlla la qualita dei dati.", "Film e cucina: esempi di dataset tematici."],
+        external: ["data/pages/index.json", "data/search-index.json", "data/films.json"],
+        concepts: ["controllo", "dataset", "API", "backend", "frontend"],
+        places: ["cartella ucrainehistory"],
+        questions: ["Quante pagine sono indicizzate?", "I dataset sono separati?", "Gli endpoint locali rispondono?"],
+        next: "Dopo il controllo apri Ricerca per provare l'indice generato."
       }
     }
   },

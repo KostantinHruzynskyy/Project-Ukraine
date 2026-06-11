@@ -1,0 +1,842 @@
+[
+  {
+    "type": "pagina",
+    "title": "Skyy",
+    "text": "Ingresso generale al progetto Skyy History sull'Ucraina.",
+    "href": "Main.html",
+    "tags": [
+      "Home",
+      "Skyy"
+    ]
+  },
+  {
+    "type": "pagina",
+    "title": "Skyy History - Holodomor",
+    "text": "Holodomor, carestia forzata e memoria nazionale.",
+    "href": "holodomor.html",
+    "tags": [
+      "Memoria",
+      "Skyy History - Holodomor"
+    ]
+  },
+  {
+    "type": "pagina",
+    "title": "Skyy History - Babyn Yar",
+    "text": "Babyn Yar, Shoah in Ucraina e memoria pubblica.",
+    "href": "babyn-yar.html",
+    "tags": [
+      "Memoria",
+      "Skyy History - Babyn Yar"
+    ]
+  },
+  {
+    "type": "pagina",
+    "title": "Skyy History - Tatari di Crimea",
+    "text": "Tatari di Crimea, deportazione, ritorno e popolo indigeno.",
+    "href": "tatari-crimea.html",
+    "tags": [
+      "Popoli",
+      "Skyy History - Tatari di Crimea"
+    ]
+  },
+  {
+    "type": "pagina",
+    "title": "Skyy History - Chernobyl",
+    "text": "Chornobyl, disastro nucleare, liquidatori e fiducia pubblica.",
+    "href": "chernobyl.html",
+    "tags": [
+      "Ambiente",
+      "Skyy History - Chernobyl"
+    ]
+  },
+  {
+    "type": "pagina",
+    "title": "Skyy History - Indipendenza",
+    "text": "Indipendenza del 1991 e costruzione dello stato moderno.",
+    "href": "indipendenza.html",
+    "tags": [
+      "Stato",
+      "Skyy History - Indipendenza"
+    ]
+  },
+  {
+    "type": "pagina",
+    "title": "Skyy History - Euromaidan",
+    "text": "Euromaidan e Rivoluzione della Dignita.",
+    "href": "euromaidan.html",
+    "tags": [
+      "Societa",
+      "Skyy History - Euromaidan"
+    ]
+  },
+  {
+    "type": "pagina",
+    "title": "Skyy History - Crimea e Donbas",
+    "text": "Crimea occupata, Donbas e origini della guerra moderna.",
+    "href": "crimea-donbas.html",
+    "tags": [
+      "Guerra",
+      "Skyy History - Crimea e Donbas"
+    ]
+  },
+  {
+    "type": "pagina",
+    "title": "Skyy History - Invasione 2022",
+    "text": "Invasione russa su vasta scala del 24 febbraio 2022.",
+    "href": "invasione-2022.html",
+    "tags": [
+      "Guerra",
+      "Skyy History - Invasione 2022"
+    ]
+  },
+  {
+    "type": "pagina",
+    "title": "Skyy History - Bucha",
+    "text": "Bucha, occupazione e prove dei crimini contro civili.",
+    "href": "bucha.html",
+    "tags": [
+      "Crimini",
+      "Skyy History - Bucha"
+    ]
+  },
+  {
+    "type": "pagina",
+    "title": "Skyy History - Mariupol",
+    "text": "Mariupol, assedio, teatro bombardato e Azovstal.",
+    "href": "mariupol.html",
+    "tags": [
+      "Assedio",
+      "Skyy History - Mariupol"
+    ]
+  },
+  {
+    "type": "pagina",
+    "title": "Skyy History - Battaglie",
+    "text": "Battaglie, fronti, logistica, droni e documentari.",
+    "href": "battaglie.html",
+    "tags": [
+      "Guerra",
+      "Skyy History - Battaglie"
+    ]
+  },
+  {
+    "type": "pagina",
+    "title": "Skyy History - Atrocita",
+    "text": "Atrocita, categorie legali, prove e fonti indipendenti.",
+    "href": "atrocita.html",
+    "tags": [
+      "Crimini",
+      "Skyy History - Atrocita"
+    ]
+  },
+  {
+    "type": "pagina",
+    "title": "Skyy History - Difesa Ucraina",
+    "text": "Forze ucraine, volontari, tecnologia e societa civile.",
+    "href": "difesa.html",
+    "tags": [
+      "Difesa",
+      "Skyy History - Difesa Ucraina"
+    ]
+  },
+  {
+    "type": "pagina",
+    "title": "Skyy History - Dossier Ucraina",
+    "text": "Dossier ordinato su storia, cultura, guerra e fonti.",
+    "href": "dossier.html",
+    "tags": [
+      "Studio",
+      "Skyy History - Dossier Ucraina"
+    ]
+  },
+  {
+    "type": "pagina",
+    "title": "Skyy History - Museo Ucraina",
+    "text": "Museo interattivo e oggetti come fonti storiche.",
+    "href": "museo.html",
+    "tags": [
+      "Patrimonio",
+      "Skyy History - Museo Ucraina"
+    ]
+  },
+  {
+    "type": "pagina",
+    "title": "Skyy History - Lingua e cultura ucraina",
+    "text": "Lingua, toponimi, letteratura, musica e patrimonio.",
+    "href": "lingua-cultura.html",
+    "tags": [
+      "Cultura",
+      "Skyy History - Lingua e cultura ucraina"
+    ]
+  },
+  {
+    "type": "pagina",
+    "title": "Skyy History - Cucina ucraina",
+    "text": "Ricette, ingredienti, regioni, feste e dataset culinario.",
+    "href": "cucina.html",
+    "tags": [
+      "Cucina",
+      "Skyy History - Cucina ucraina"
+    ]
+  },
+  {
+    "type": "pagina",
+    "title": "Skyy History - Costumi ucraini",
+    "text": "Vyshyvanka, pysanky, rushnyk, Ornek e oggetti rituali.",
+    "href": "costumi.html",
+    "tags": [
+      "Costumi",
+      "Skyy History - Costumi ucraini"
+    ]
+  },
+  {
+    "type": "pagina",
+    "title": "Skyy History - Cucina e costumi separati",
+    "text": "Ponte compatibile tra cucina e costumi separati.",
+    "href": "cucina-costumi.html",
+    "tags": [
+      "Indice",
+      "Skyy History - Cucina e costumi separati"
+    ]
+  },
+  {
+    "type": "pagina",
+    "title": "Skyy History - Sport ucraino",
+    "text": "Sport ucraino, medaglie, record e infrastrutture colpite.",
+    "href": "sport.html",
+    "tags": [
+      "Sport",
+      "Skyy History - Sport ucraino"
+    ]
+  },
+  {
+    "type": "pagina",
+    "title": "Skyy History - Rifugiati e diaspora ucraina",
+    "text": "Rifugiati, sfollati, accoglienza e diaspora.",
+    "href": "rifugiati.html",
+    "tags": [
+      "Civili",
+      "Skyy History - Rifugiati e diaspora ucraina"
+    ]
+  },
+  {
+    "type": "pagina",
+    "title": "Skyy History - Ricostruzione Ucraina",
+    "text": "Ricostruzione, energia, mine, economia e futuro europeo.",
+    "href": "ricostruzione.html",
+    "tags": [
+      "Futuro",
+      "Skyy History - Ricostruzione Ucraina"
+    ]
+  },
+  {
+    "type": "pagina",
+    "title": "Skyy History - Film e documentari sull'Ucraina",
+    "text": "Archivio aggiornato di film e documentari sull'Ucraina.",
+    "href": "film.html",
+    "tags": [
+      "Cinema",
+      "Skyy History - Film e documentari sull'Ucraina"
+    ]
+  },
+  {
+    "type": "pagina",
+    "title": "Fonti",
+    "text": "Biblioteca ordinata di fonti primarie, istituzionali, culturali e cinematografiche usate nel sito.",
+    "href": "fonti.html",
+    "tags": [
+      "fonti",
+      "prove",
+      "ONU",
+      "UNESCO",
+      "film",
+      "archivio"
+    ]
+  },
+  {
+    "type": "pagina",
+    "title": "Ricerca",
+    "text": "Ricerca globale dentro pagine, film, ricette, fonti, mappe e cronologia.",
+    "href": "ricerca.html",
+    "tags": [
+      "ricerca",
+      "indice",
+      "studio",
+      "filtri",
+      "dati"
+    ]
+  },
+  {
+    "type": "pagina",
+    "title": "Admin",
+    "text": "Dashboard locale per controllare pagine, dataset, API, backend e ordine del progetto.",
+    "href": "admin.html",
+    "tags": [
+      "admin",
+      "dashboard",
+      "controllo",
+      "backend",
+      "json"
+    ]
+  },
+  {
+    "type": "pagina",
+    "title": "Timeline",
+    "text": "Cronologia compatta dall'Ucraina medievale alla situazione aggiornata a giugno 2026.",
+    "href": "timeline.html",
+    "tags": [
+      "timeline",
+      "cronologia",
+      "storia",
+      "guerra",
+      "cultura"
+    ]
+  },
+  {
+    "type": "pagina",
+    "title": "Mappe",
+    "text": "Atlante ordinato di luoghi, regioni, fronti, memoria, cultura e ricostruzione.",
+    "href": "mappe.html",
+    "tags": [
+      "mappe",
+      "luoghi",
+      "regioni",
+      "atlante",
+      "geografia"
+    ]
+  },
+  {
+    "type": "pagina",
+    "title": "Studio",
+    "text": "Percorsi guidati, schede ripasso e quiz per studiare senza perdersi nel sito.",
+    "href": "studio.html",
+    "tags": [
+      "studio",
+      "ripasso",
+      "quiz",
+      "scuola",
+      "percorso"
+    ]
+  },
+  {
+    "type": "ricetta",
+    "title": "",
+    "text": "diffuso, con varianti regionali ",
+    "href": "cucina.html",
+    "tags": []
+  },
+  {
+    "type": "ricetta",
+    "title": "",
+    "text": "primavera, Ucraina centrale e occidentale ",
+    "href": "cucina.html",
+    "tags": []
+  },
+  {
+    "type": "ricetta",
+    "title": "",
+    "text": "diffuso ",
+    "href": "cucina.html",
+    "tags": []
+  },
+  {
+    "type": "ricetta",
+    "title": "",
+    "text": "cucina estiva ",
+    "href": "cucina.html",
+    "tags": []
+  },
+  {
+    "type": "ricetta",
+    "title": "",
+    "text": "diffuso, con varianti ",
+    "href": "cucina.html",
+    "tags": []
+  },
+  {
+    "type": "ricetta",
+    "title": "",
+    "text": "diffuso ",
+    "href": "cucina.html",
+    "tags": []
+  },
+  {
+    "type": "ricetta",
+    "title": "",
+    "text": "Polissia e cucina familiare diffusa ",
+    "href": "cucina.html",
+    "tags": []
+  },
+  {
+    "type": "ricetta",
+    "title": "",
+    "text": "Carpazi, Hutsulshchyna ",
+    "href": "cucina.html",
+    "tags": []
+  },
+  {
+    "type": "ricetta",
+    "title": "",
+    "text": "diffuso ",
+    "href": "cucina.html",
+    "tags": []
+  },
+  {
+    "type": "ricetta",
+    "title": "",
+    "text": "diffuso ",
+    "href": "cucina.html",
+    "tags": []
+  },
+  {
+    "type": "ricetta",
+    "title": "",
+    "text": "Natale, molte regioni ",
+    "href": "cucina.html",
+    "tags": []
+  },
+  {
+    "type": "ricetta",
+    "title": "",
+    "text": "diffuso ",
+    "href": "cucina.html",
+    "tags": []
+  },
+  {
+    "type": "ricetta",
+    "title": "",
+    "text": "Pasqua, molte regioni ",
+    "href": "cucina.html",
+    "tags": []
+  },
+  {
+    "type": "ricetta",
+    "title": "",
+    "text": "matrimoni, molte regioni ",
+    "href": "cucina.html",
+    "tags": []
+  },
+  {
+    "type": "fonte",
+    "title": "OHCHR Ukraine reports",
+    "text": "Diritti umani Rapporti ONU su vittime civili, diritti umani, occupazione e protezione dei civili.",
+    "href": "https://ukraine.ohchr.org/en/reports",
+    "tags": [
+      "Diritti umani"
+    ]
+  },
+  {
+    "type": "fonte",
+    "title": "International Criminal Court - Ukraine",
+    "text": "Giustizia Pagina ufficiale della situazione Ucraina presso la Corte penale internazionale.",
+    "href": "https://www.icc-cpi.int/situations/ukraine",
+    "tags": [
+      "Giustizia"
+    ]
+  },
+  {
+    "type": "fonte",
+    "title": "Human Rights Watch - Ukraine",
+    "text": "Diritti umani Rapporti indipendenti su abusi, crimini di guerra e protezione dei civili.",
+    "href": "https://www.hrw.org/europe/central-asia/ukraine",
+    "tags": [
+      "Diritti umani"
+    ]
+  },
+  {
+    "type": "fonte",
+    "title": "UNHCR Ukraine situation",
+    "text": "Rifugiati Dati su rifugiati, sfollamento interno e risposta regionale.",
+    "href": "https://data.unhcr.org/en/situations/ukraine",
+    "tags": [
+      "Rifugiati"
+    ]
+  },
+  {
+    "type": "fonte",
+    "title": "UNDP RDNA5 Ukraine",
+    "text": "Ricostruzione Valutazione danni, perdite e bisogni di ricostruzione al 31 dicembre 2025.",
+    "href": "https://www.undp.org/ukraine/publications/ukraine-fifth-rapid-damage-and-needs-assessment-rdna5-february-2022-december-2025",
+    "tags": [
+      "Ricostruzione"
+    ]
+  },
+  {
+    "type": "fonte",
+    "title": "World Bank Data - Ukraine",
+    "text": "Dati Indicatori su popolazione, economia, societa e sviluppo.",
+    "href": "https://data.worldbank.org/country/ukraine",
+    "tags": [
+      "Dati"
+    ]
+  },
+  {
+    "type": "fonte",
+    "title": "Internet Encyclopedia of Ukraine",
+    "text": "Enciclopedia Enciclopedia accademica su storia, geografia, cultura e diaspora ucraine.",
+    "href": "https://www.encyclopediaofukraine.com/",
+    "tags": [
+      "Enciclopedia"
+    ]
+  },
+  {
+    "type": "fonte",
+    "title": "Encyclopedia of Modern Ukraine",
+    "text": "Enciclopedia Progetto enciclopedico ucraino sul periodo moderno e contemporaneo.",
+    "href": "https://esu.com.ua/en/about/overview",
+    "tags": [
+      "Enciclopedia"
+    ]
+  },
+  {
+    "type": "fonte",
+    "title": "Ukrainian Institute - Insight UA",
+    "text": "Cultura Atlante culturale su arti, cinema, letteratura, Crimea, musica e guerra.",
+    "href": "https://insight.ui.org.ua/",
+    "tags": [
+      "Cultura"
+    ]
+  },
+  {
+    "type": "fonte",
+    "title": "UNESCO - Ukrainian borscht cooking",
+    "text": "Cultura Scheda ufficiale UNESCO sulla cultura del borshch ucraino.",
+    "href": "https://ich.unesco.org/en/USL/01852",
+    "tags": [
+      "Cultura"
+    ]
+  },
+  {
+    "type": "fonte",
+    "title": "UNESCO - Ukraine intangible heritage",
+    "text": "Cultura Elementi ucraini del patrimonio culturale immateriale UNESCO.",
+    "href": "https://ich.unesco.org/en/state/ukraine-UA?info=elements-on-the-lists",
+    "tags": [
+      "Cultura"
+    ]
+  },
+  {
+    "type": "fonte",
+    "title": "PBS FRONTLINE - 2000 Meters to Andriivka",
+    "text": "Film Pagina ufficiale del documentario di Mstyslav Chernov.",
+    "href": "https://www.pbs.org/wgbh/frontline/documentary/2000-meters-to-andriivka/",
+    "tags": [
+      "Film"
+    ]
+  },
+  {
+    "type": "fonte",
+    "title": "Porcelain War - official site",
+    "text": "Film Sito ufficiale del documentario premiato su arte e resistenza ucraina.",
+    "href": "https://www.porcelainwar.com/",
+    "tags": [
+      "Film"
+    ]
+  },
+  {
+    "type": "fonte",
+    "title": "Berlinale - Timestamp",
+    "text": "Film Scheda festival del film di Kateryna Gornostai sulla scuola in guerra.",
+    "href": "https://www.berlinale.de/en/2025/programme/202504688.html",
+    "tags": [
+      "Film"
+    ]
+  },
+  {
+    "type": "fonte",
+    "title": "Biennale Cinema - Songs of Slow Burning Earth",
+    "text": "Film Scheda del film documentario di Olha Zhurba.",
+    "href": "https://www.labiennale.org/en/cinema/2024/out-competition/songs-slow-burning-earth",
+    "tags": [
+      "Film"
+    ]
+  },
+  {
+    "type": "fonte",
+    "title": "Britannica - Ukraine",
+    "text": "Enciclopedia Sintesi generale su territorio, storia, cultura e societa.",
+    "href": "https://www.britannica.com/place/Ukraine",
+    "tags": [
+      "Enciclopedia"
+    ]
+  },
+  {
+    "type": "timeline",
+    "title": "882-1240 - Kyivan Rus",
+    "text": "Kyiv diventa centro politico, religioso e commerciale dell'Europa orientale.",
+    "href": "timeline.html",
+    "tags": [
+      "storia"
+    ]
+  },
+  {
+    "type": "timeline",
+    "title": "1648 - Etmanato cosacco",
+    "text": "La rivolta guidata da Bohdan Khmelnytskyi apre una nuova stagione politica cosacca.",
+    "href": "timeline.html",
+    "tags": [
+      "storia"
+    ]
+  },
+  {
+    "type": "timeline",
+    "title": "1917-1921 - Repubblica Popolare Ucraina",
+    "text": "Tentativi di indipendenza durante il crollo degli imperi e la guerra civile.",
+    "href": "timeline.html",
+    "tags": [
+      "storia"
+    ]
+  },
+  {
+    "type": "timeline",
+    "title": "1932-1933 - Holodomor",
+    "text": "Carestia forzata che colpisce milioni di ucraini sotto il regime sovietico.",
+    "href": "timeline.html",
+    "tags": [
+      "memoria"
+    ]
+  },
+  {
+    "type": "timeline",
+    "title": "1941 - Babyn Yar",
+    "text": "Eccidio nazista a Kyiv e simbolo della Shoah in Ucraina.",
+    "href": "timeline.html",
+    "tags": [
+      "memoria"
+    ]
+  },
+  {
+    "type": "timeline",
+    "title": "1944 - Deportazione dei Tatari di Crimea",
+    "text": "Stalin deporta in massa il popolo tataro crimeano.",
+    "href": "timeline.html",
+    "tags": [
+      "memoria"
+    ]
+  },
+  {
+    "type": "timeline",
+    "title": "1986 - Chornobyl",
+    "text": "Il disastro nucleare mostra il costo della segretezza sovietica.",
+    "href": "timeline.html",
+    "tags": [
+      "ambiente"
+    ]
+  },
+  {
+    "type": "timeline",
+    "title": "24 agosto 1991 - Indipendenza",
+    "text": "Il parlamento proclama l'indipendenza ucraina.",
+    "href": "timeline.html",
+    "tags": [
+      "storia"
+    ]
+  },
+  {
+    "type": "timeline",
+    "title": "1 dicembre 1991 - Referendum",
+    "text": "La popolazione conferma l'indipendenza con voto nazionale.",
+    "href": "timeline.html",
+    "tags": [
+      "storia"
+    ]
+  },
+  {
+    "type": "timeline",
+    "title": "2004 - Rivoluzione arancione",
+    "text": "Mobilitazione civica contro brogli e per elezioni libere.",
+    "href": "timeline.html",
+    "tags": [
+      "societa"
+    ]
+  },
+  {
+    "type": "timeline",
+    "title": "2013-2014 - Euromaidan",
+    "text": "La Rivoluzione della Dignita difende scelta europea e diritti civili.",
+    "href": "timeline.html",
+    "tags": [
+      "societa"
+    ]
+  },
+  {
+    "type": "timeline",
+    "title": "2014 - Crimea e Donbas",
+    "text": "La Russia occupa la Crimea e alimenta la guerra nel Donbas.",
+    "href": "timeline.html",
+    "tags": [
+      "guerra"
+    ]
+  },
+  {
+    "type": "timeline",
+    "title": "24 febbraio 2022 - Invasione su vasta scala",
+    "text": "La Russia lancia l'invasione contro tutta l'Ucraina.",
+    "href": "timeline.html",
+    "tags": [
+      "guerra"
+    ]
+  },
+  {
+    "type": "timeline",
+    "title": "marzo-aprile 2022 - Bucha",
+    "text": "Dopo la ritirata russa emergono prove di uccisioni di civili.",
+    "href": "timeline.html",
+    "tags": [
+      "giustizia"
+    ]
+  },
+  {
+    "type": "timeline",
+    "title": "maggio 2022 - Mariupol e Azovstal",
+    "text": "La citta assediata diventa simbolo di distruzione e resistenza.",
+    "href": "timeline.html",
+    "tags": [
+      "guerra"
+    ]
+  },
+  {
+    "type": "timeline",
+    "title": "2023 - Cultura sotto attacco",
+    "text": "Musei, scuole, teatri, chiese e archivi diventano parte della memoria di guerra.",
+    "href": "timeline.html",
+    "tags": [
+      "cultura"
+    ]
+  },
+  {
+    "type": "timeline",
+    "title": "2024 - Olimpiadi e documentari",
+    "text": "Sport e cinema ucraini raccontano identita e resistenza internazionale.",
+    "href": "timeline.html",
+    "tags": [
+      "cultura"
+    ]
+  },
+  {
+    "type": "timeline",
+    "title": "2025 - Ricostruzione e giustizia",
+    "text": "Dati RDNA, processi e memoria pubblica rafforzano la documentazione.",
+    "href": "timeline.html",
+    "tags": [
+      "ricostruzione"
+    ]
+  },
+  {
+    "type": "timeline",
+    "title": "giugno 2026 - Sito aggiornato",
+    "text": "Le sezioni sono ordinate con pagine, dataset, API locali, fonti e ricerca.",
+    "href": "timeline.html",
+    "tags": [
+      "studio"
+    ]
+  },
+  {
+    "type": "mappa",
+    "title": "Kyiv",
+    "text": "Capitale e centro politico Memoria di Kyivan Rus, Maidan, bombardamenti, istituzioni e resistenza civile. 50.4501,30.5234",
+    "href": "mappe.html",
+    "tags": [
+      "storia"
+    ]
+  },
+  {
+    "type": "mappa",
+    "title": "Kharkiv",
+    "text": "Citta universitaria e industriale Bombardamenti, evacuazioni, vita culturale e difesa del nord-est. 49.9935,36.2304",
+    "href": "mappe.html",
+    "tags": [
+      "guerra"
+    ]
+  },
+  {
+    "type": "mappa",
+    "title": "Odesa",
+    "text": "Porto sul Mar Nero Identita multiculturale, export del grano, infrastrutture portuali e patrimonio urbano. 46.4825,30.7233",
+    "href": "mappe.html",
+    "tags": [
+      "economia"
+    ]
+  },
+  {
+    "type": "mappa",
+    "title": "Lviv",
+    "text": "Nodo culturale occidentale Accoglienza sfollati, retrovia culturale, archivi, universita e collegamenti europei. 49.8397,24.0297",
+    "href": "mappe.html",
+    "tags": [
+      "cultura"
+    ]
+  },
+  {
+    "type": "mappa",
+    "title": "Crimea",
+    "text": "Penisola occupata Tatari di Crimea, basi militari russe, repressione e diritto internazionale. 45.3453,34.4997",
+    "href": "mappe.html",
+    "tags": [
+      "occupazione"
+    ]
+  },
+  {
+    "type": "mappa",
+    "title": "Donbas",
+    "text": "Regione industriale e fronte Guerra dal 2014, miniere, citta contese e lunga militarizzazione. 48.0159,37.8028",
+    "href": "mappe.html",
+    "tags": [
+      "guerra"
+    ]
+  },
+  {
+    "type": "mappa",
+    "title": "Mariupol",
+    "text": "Porto assediato Teatro bombardato, Azovstal, distruzione urbana e deportazioni denunciate. 47.0971,37.5434",
+    "href": "mappe.html",
+    "tags": [
+      "memoria"
+    ]
+  },
+  {
+    "type": "mappa",
+    "title": "Bucha",
+    "text": "Luogo di prove e giustizia Occupazione russa, uccisioni di civili e indagini internazionali. 50.5539,30.2137",
+    "href": "mappe.html",
+    "tags": [
+      "giustizia"
+    ]
+  },
+  {
+    "type": "mappa",
+    "title": "Zaporizhzhia",
+    "text": "Energia e industria Centrale nucleare occupata nella regione, infrastrutture e rischio energetico. 47.8388,35.1396",
+    "href": "mappe.html",
+    "tags": [
+      "energia"
+    ]
+  },
+  {
+    "type": "mappa",
+    "title": "Dnipro",
+    "text": "Retrovia logistica Nodo industriale, medico e militare nel centro-est del paese. 48.4647,35.0462",
+    "href": "mappe.html",
+    "tags": [
+      "logistica"
+    ]
+  },
+  {
+    "type": "mappa",
+    "title": "Chernihiv",
+    "text": "Nord storico Assedio 2022, patrimonio medievale e ricostruzione locale. 51.4982,31.2893",
+    "href": "mappe.html",
+    "tags": [
+      "storia"
+    ]
+  },
+  {
+    "type": "mappa",
+    "title": "Kherson",
+    "text": "Sud liberato in parte Occupazione, liberazione della citta, bombardamenti e crisi dopo Kakhovka. 46.6354,32.6169",
+    "href": "mappe.html",
+    "tags": [
+      "guerra"
+    ]
+  }
+]

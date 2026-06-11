@@ -25,7 +25,27 @@
     "python": "backend/pages",
     "css": [
       "styles/site-order.css",
-      "styles/films.css"
+      "styles/films.css",
+      "styles/tools.css"
     ]
-  }
+  },
+  "quiz": [
+    {
+      "question": "Qual e il punto piu importante della pagina Skyy History - Cucina e costumi separati?",
+      "answers": [
+        {
+          "text": "Ponte compatibile tra cucina e costumi separati.",
+          "correct": true
+        },
+        {
+          "text": "Usare solo opinioni senza date e senza fonti.",
+          "correct": false
+        },
+        {
+          "text": "Ignorare collegamenti con luoghi, persone e conseguenze.",
+          "correct": false
+        }
+      ]
+    }
+  ]
 }

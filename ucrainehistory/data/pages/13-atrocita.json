@@ -25,7 +25,27 @@
     "python": "backend/pages",
     "css": [
       "styles/site-order.css",
-      "styles/films.css"
+      "styles/films.css",
+      "styles/tools.css"
     ]
-  }
+  },
+  "quiz": [
+    {
+      "question": "Qual e il punto piu importante della pagina Skyy History - Atrocita?",
+      "answers": [
+        {
+          "text": "Atrocita, categorie legali, prove e fonti indipendenti.",
+          "correct": true
+        },
+        {
+          "text": "Usare solo opinioni senza date e senza fonti.",
+          "correct": false
+        },
+        {
+          "text": "Ignorare collegamenti con luoghi, persone e conseguenze.",
+          "correct": false
+        }
+      ]
+    }
+  ]
 }

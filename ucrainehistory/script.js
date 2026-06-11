@@ -136,8 +136,8 @@ function setupGlobalNavbar() {
     "mariupol.html"
   ];
   const guerraPages = ["battaglie.html", "atrocita.html", "difesa.html"];
-  const studioPages = ["lingua-cultura.html", "cucina.html", "costumi.html", "cucina-costumi.html", "film.html", "sport.html"];
-  const risorsePages = ["museo.html", "dossier.html", "rifugiati.html", "ricostruzione.html"];
+  const studioPages = ["studio.html", "timeline.html", "mappe.html", "lingua-cultura.html", "cucina.html", "costumi.html", "cucina-costumi.html", "film.html", "sport.html"];
+  const risorsePages = ["ricerca.html", "fonti.html", "admin.html", "museo.html", "dossier.html", "rifugiati.html", "ricostruzione.html"];
 
   nav.className = "navbar navbar-expand-lg war-navbar sticky-top";
   nav.setAttribute("data-bs-theme", "dark");
@@ -186,6 +186,9 @@ function setupGlobalNavbar() {
             <a class="nav-link dropdown-toggle" href="${homeAnchor("impara")}" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-nav-section="studio">Studio</a>
             <ul class="dropdown-menu dropdown-menu-dark history-dropdown">
               <li><a class="dropdown-item" href="${homeAnchor("impara")}">Impara</a></li>
+              <li><a class="dropdown-item" href="studio.html">Studio guidato</a></li>
+              <li><a class="dropdown-item" href="timeline.html">Timeline completa</a></li>
+              <li><a class="dropdown-item" href="mappe.html">Mappe ordinate</a></li>
               <li><a class="dropdown-item" href="${homeAnchor("atlante-ucraina")}">Atlante Ucraina</a></li>
               <li><a class="dropdown-item" href="lingua-cultura.html">Lingua e cultura</a></li>
               <li><a class="dropdown-item" href="cucina.html">Cucina ucraina</a></li>
@@ -203,11 +206,14 @@ function setupGlobalNavbar() {
             <a class="nav-link dropdown-toggle" href="${homeAnchor("mappe")}" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-nav-section="risorse">Risorse</a>
             <ul class="dropdown-menu dropdown-menu-dark history-dropdown">
               <li><a class="dropdown-item" href="${homeAnchor("mappe")}">Mappe emotive</a></li>
+              <li><a class="dropdown-item" href="ricerca.html">Ricerca globale</a></li>
+              <li><a class="dropdown-item" href="fonti.html">Fonti ordinate</a></li>
               <li><a class="dropdown-item" href="${homeAnchor("documenti")}">Documenti e prove</a></li>
               <li><a class="dropdown-item" href="dossier.html">Dossier totale</a></li>
               <li><a class="dropdown-item" href="museo.html">Museo interattivo</a></li>
               <li><a class="dropdown-item" href="rifugiati.html">Rifugiati e diaspora</a></li>
               <li><a class="dropdown-item" href="ricostruzione.html">Ricostruzione</a></li>
+              <li><a class="dropdown-item" href="admin.html">Dashboard admin</a></li>
               <li><a class="dropdown-item" href="${homeAnchor("esplora")}">Esplora</a></li>
             </ul>
           </li>
@@ -284,6 +290,10 @@ function setupGlobalFooter() {
           <a href="${homeAnchor("forze-ucraine")}">Forze ed eroi</a>
           <a href="${homeAnchor("alleati")}">Paesi solidali</a>
           <a href="${homeAnchor("mappe")}">Mappe emotive</a>
+          <a href="mappe.html">Mappe ordinate</a>
+          <a href="timeline.html">Timeline</a>
+          <a href="studio.html">Studio guidato</a>
+          <a href="ricerca.html">Ricerca globale</a>
           <a href="${homeAnchor("armi")}">Armi usate</a>
           <a href="film.html">Film e documentari</a>
           <a href="${homeAnchor("potenza-culturale")}">Potenza culturale</a>
@@ -294,10 +304,15 @@ function setupGlobalFooter() {
           <a href="sport.html">Sport ucraino</a>
           <a href="rifugiati.html">Rifugiati e diaspora</a>
           <a href="ricostruzione.html">Ricostruzione</a>
+          <a href="fonti.html">Fonti ordinate</a>
         </section>
 
         <section>
           <h2>Pagine</h2>
+          <a href="studio.html">Studio guidato</a>
+          <a href="ricerca.html">Ricerca globale</a>
+          <a href="timeline.html">Timeline</a>
+          <a href="mappe.html">Mappe ordinate</a>
           <a href="battaglie.html">Battaglie</a>
           <a href="atrocita.html">Atrocita</a>
           <a href="difesa.html">Difesa ucraina</a>
@@ -310,6 +325,8 @@ function setupGlobalFooter() {
           <a href="sport.html">Sport ucraino</a>
           <a href="rifugiati.html">Rifugiati e diaspora</a>
           <a href="ricostruzione.html">Ricostruzione</a>
+          <a href="fonti.html">Fonti ordinate</a>
+          <a href="admin.html">Dashboard admin</a>
         </section>
 
         <section>
@@ -324,6 +341,7 @@ function setupGlobalFooter() {
 
         <section>
           <h2>Fonti</h2>
+          <a href="fonti.html">Biblioteca fonti del sito</a>
           <a href="https://ukraine.ohchr.org/en/reports">OHCHR</a>
           <a href="https://www.hrw.org/europe/central-asia/ukraine">Human Rights Watch</a>
           <a href="https://www.pbs.org/wgbh/frontline/">FRONTLINE</a>
@@ -428,6 +446,11 @@ function setupUkraineKnowledgePanel() {
 
       <div class="global-ukraine-actions reveal">
         <a class="history-btn" href="${homeAnchor("atlante-ucraina")}">Apri atlante</a>
+        <a class="history-btn" href="mappe.html">Mappe</a>
+        <a class="history-btn" href="timeline.html">Timeline</a>
+        <a class="history-btn" href="studio.html">Studio</a>
+        <a class="history-btn" href="ricerca.html">Ricerca</a>
+        <a class="history-btn" href="fonti.html">Fonti</a>
         <a class="history-btn" href="${homeAnchor("enciclopedia-ucraina")}">Enciclopedia</a>
         <a class="history-btn" href="dossier.html">Dossier totale</a>
         <a class="history-btn" href="${homeAnchor("potenza-culturale")}">Cultura e autori</a>
