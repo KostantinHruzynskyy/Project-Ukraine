@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Guida ampia alla cucina ucraina: ricette tradizionali documentate, regioni, ingredienti, feste, borshch UNESCO e backend dati aggiornato a giugno 2026.">
+    <title>Skyy History - Cucina ucraina</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/site-order.css">
+    <link rel="stylesheet" href="../styles/films.css">
+  <link rel="stylesheet" href="../styles/tools.css">
+  </head>
+  <body class="event-page-body">
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <nav class="navbar navbar-expand-lg war-navbar sticky-top" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="Main.html#inizio"><span class="brand-mark">SH</span>Skyy History</a>
+        <a class="btn history-btn ms-auto px-3" href="costumi.html">Costumi</a>
+      </div>
+    </nav>
+
+    <header class="event-hero food-hero" style='--event-image: url("https://commons.wikimedia.org/wiki/Special:FilePath/Borscht_served.jpg");'>
+      <div class="container event-hero-content reveal">
+        <p class="hero-kicker mb-3">Cucina ucraina</p>
+        <h1>Ricette, regioni, memoria</h1>
+        <p class="hero-lead mt-4">Una sezione ampia e autonoma sulla cucina ucraina: borshch UNESCO, piatti familiari, tavole rituali, ingredienti, varianti regionali e fonti aggiornate a giugno 2026.</p>
+        <div class="event-meta"><span>Borshch</span><span>Varenyky</span><span>Feste</span><span>Backend dati</span></div>
+      </div>
+    </header>
+
+    <main class="event-detail-section">
+      <div class="container">
+        <aside class="motto-strip reveal mb-4">
+          <strong>Cucina separata dai costumi</strong>
+          <span>Qui trovi solo cucina, ingredienti, ricette e rituali alimentari. Gli abiti, i ricami e gli oggetti simbolici sono nella pagina costumi.</span>
+        </aside>
+
+        <section class="dossier-section page-band">
+          <div class="row align-items-end mb-4 reveal">
+            <div class="col-lg-8">
+              <p class="section-kicker mb-2">Orientamento</p>
+              <h2 class="display-6 mb-3">Cosa sapere prima di cucinare o raccontare</h2>
+            </div>
+            <div class="col-lg-4">
+              <p class="section-text">La cucina ucraina non e una lista di piatti isolati: collega campagna, citta, religione, stagioni, diaspora, guerra e ospitalita.</p>
+            </div>
+          </div>
+
+          <div class="food-facts-grid">
+            <article class="fact-card reveal"><strong>Borshch UNESCO</strong>Dal 2022 la cultura del borshch ucraino e nella Lista UNESCO del patrimonio immateriale da salvaguardare urgentemente.</article>
+            <article class="fact-card reveal"><strong>Niente ricetta unica</strong>UNESCO riconosce la pratica culturale: casa, famiglia e regione restano parte della ricetta.</article>
+            <article class="fact-card reveal"><strong>Ingredienti chiave</strong>Barbabietola, cavolo, grano saraceno, patate, funghi, pesce, latticini, miele, papavero, aglio, aneto e olio di girasole.</article>
+            <article class="fact-card reveal"><strong>Aggiornamento</strong>Contenuti e fonti controllati a giugno 2026; le ricette sono didattiche, non imposizioni standardizzate.</article>
+          </div>
+        </section>
+
+        <section class="page-band food-section" data-cuisine-app>
+          <div class="row align-items-end mb-4 reveal">
+            <div class="col-lg-8">
+              <p class="section-kicker mb-2">Explorer ricette</p>
+              <h2 class="display-6 mb-3">Ricette filtrabili dal backend</h2>
+            </div>
+            <div class="col-lg-4">
+              <p class="section-text">La pagina prova a leggere i dati da PHP o JSON. Se apri il file senza server, il contenuto statico sotto resta comunque completo.</p>
+            </div>
+          </div>
+
+          <div class="cuisine-dashboard reveal">
+            <div class="recipe-toolbar">
+              <label for="recipeSearch">Cerca ricetta</label>
+              <input id="recipeSearch" class="recipe-search" type="search" placeholder="borshch, Natale, Carpazi, patate">
+              <span id="recipeCount">Dataset pronto</span>
+            </div>
+            <div id="recipeFilterButtons" class="recipe-pill-row" aria-label="Filtri ricette"></div>
+            <div class="recipe-app-layout">
+              <div id="recipeExplorer" class="recipe-explorer-grid">
+                <p class="recipe-empty">Caricamento ricette dal dataset cucina...</p>
+              </div>
+              <article id="recipeDetail" class="recipe-detail-card">
+                <span>Backend</span>
+                <h3>Dati cucina pronti</h3>
+                <p>Avvia un server locale o PHP per usare i filtri dinamici. Le ricette complete sono gia presenti nella pagina.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="page-band">
+          <div class="row align-items-end mb-4 reveal">
+            <div class="col-lg-8">
+              <p class="section-kicker mb-2">Dispensa</p>
+              <h2 class="display-6 mb-3">Ingredienti che spiegano il paese</h2>
+            </div>
+            <div class="col-lg-4">
+              <p class="section-text">Una ricetta ucraina diventa piu chiara quando la colleghi a terra, clima, conservazione e scambi regionali.</p>
+            </div>
+          </div>
+
+          <div class="pantry-grid">
+            <article class="pantry-card reveal"><span>Terra nera</span><h3>Grani e farine</h3><p>Frumento, segale, grano saraceno, miglio e mais entrano in pane, kasha, varenyky, banosh e piatti rituali.</p></article>
+            <article class="pantry-card reveal"><span>Orto</span><h3>Barbabietola, cavolo, patate</h3><p>Sono la base di borshch, kapusniak, deruny, contorni e cucina invernale.</p></article>
+            <article class="pantry-card reveal"><span>Foreste</span><h3>Funghi e bacche</h3><p>Nei Carpazi e in Polissia funghi secchi, mirtilli, erbe e conserve danno sapore alle stagioni fredde.</p></article>
+            <article class="pantry-card reveal"><span>Fiumi e mare</span><h3>Pesce e salamoie</h3><p>Dnipro, Mar Nero e aree costiere portano pesce, conserve, sapori salati e cucina portuale.</p></article>
+            <article class="pantry-card reveal"><span>Latticini</span><h3>Smetana, tvorog, brynza</h3><p>Panna acida, formaggi freschi e brynza carpatica completano zuppe, crespelle, dolci e banosh.</p></article>
+            <article class="pantry-card reveal"><span>Dolcezza</span><h3>Miele, papavero, frutta secca</h3><p>Kutia, uzvar, paska e dolci festivi usano miele, noci, semi di papavero, mele, pere e prugne essiccate.</p></article>
+          </div>
+        </section>
+
+        <section class="page-band food-section">
+          <div class="row align-items-end mb-4 reveal">
+            <div class="col-lg-8">
+              <p class="section-kicker mb-2">Regioni</p>
+              <h2 class="display-6 mb-3">Non esiste una sola cucina ucraina</h2>
+            </div>
+            <div class="col-lg-4">
+              <p class="section-text">Le regioni non sono gabbie: servono a non descrivere tutto come generico o uguale.</p>
+            </div>
+          </div>
+
+          <div class="regional-food-grid">
+            <article class="regional-food-card reveal"><span>Centro</span><h3>Kyiv, Poltava, Cherkasy</h3><p>Borshch, varenyky, pane, pollo alla Kyiv come piatto urbano conosciuto, orti e tavola familiare.</p></article>
+            <article class="regional-food-card reveal"><span>Ovest</span><h3>Halychyna e Lviv</h3><p>Caffe, dolci, fermentazioni, influenze mitteleuropee e cucina delle feste di citta.</p></article>
+            <article class="regional-food-card reveal"><span>Carpazi</span><h3>Hutsulshchyna</h3><p>Banosh, brynza, funghi, mais, piatti montani e tradizioni pastorali.</p></article>
+            <article class="regional-food-card reveal"><span>Nord</span><h3>Polissia</h3><p>Patate, funghi, bacche, zuppe dense e cucina di foresta e zone umide.</p></article>
+            <article class="regional-food-card reveal"><span>Sud</span><h3>Odesa, Bessarabia, Mar Nero</h3><p>Pesce, mercati portuali, vino, conserve, scambi con comunità bulgare, gagauze, ebraiche, greche e moldave.</p></article>
+            <article class="regional-food-card reveal"><span>Crimea</span><h3>Tatari di Crimea</h3><p>Chebureki, qistibi, pilaf, caffe, spezie e memoria indigena; tema collegato alla pagina sui Tatari di Crimea.</p></article>
+          </div>
+        </section>
+
+        <section class="page-band" id="ricette-complete">
+          <div class="row align-items-end mb-4 reveal">
+            <div class="col-lg-8">
+              <p class="section-kicker mb-2">Ricette complete</p>
+              <h2 class="display-6 mb-3">Piatti da conoscere bene</h2>
+            </div>
+            <div class="col-lg-4">
+              <p class="section-text">Le dosi sono orientative. Per essere corretti, cita sempre famiglia, regione o fonte quando presenti una variante specifica.</p>
+            </div>
+          </div>
+
+          <div class="recipe-grid recipe-grid-wide">
+            <article class="recipe-card reveal">
+              <span>UNESCO</span>
+              <h3>Borshch rosso ucraino</h3>
+              <p><strong>Ingredienti:</strong> barbabietole, cavolo, patate, carote, cipolla, pomodoro, brodo, aglio, aneto, panna acida.</p>
+              <ol>
+                <li>Prepara brodo e verdure con cotture separate.</li>
+                <li>Stufa barbabietola, carota e cipolla con pomodoro.</li>
+                <li>Unisci patate, cavolo e soffritto nel brodo.</li>
+                <li>Completa con aglio, aneto, riposo e panna acida.</li>
+              </ol>
+              <a class="source-link" href="https://ich.unesco.org/en/USL/01852">Fonte UNESCO</a>
+            </article>
+
+            <article class="recipe-card reveal">
+              <span>Primavera</span>
+              <h3>Borshch verde</h3>
+              <p><strong>Ingredienti:</strong> acetosella o erbe verdi, patate, carota, cipolla, brodo, uova sode, aneto, panna acida.</p>
+              <ol>
+                <li>Cuoci patate e verdure nel brodo.</li>
+                <li>Aggiungi le erbe verdi verso la fine.</li>
+                <li>Servi con uovo sodo, aneto e panna acida.</li>
+              </ol>
+            </article>
+
+            <article class="recipe-card reveal">
+              <span>Casa</span>
+              <h3>Varenyky con patate</h3>
+              <p><strong>Ingredienti:</strong> farina, acqua, sale, olio, patate, cipolla, pepe, burro o panna acida.</p>
+              <ol>
+                <li>Prepara una pasta elastica e falla riposare.</li>
+                <li>Farcisci con patate schiacciate e cipolla rosolata.</li>
+                <li>Lessa finche salgono a galla.</li>
+                <li>Condisci con cipolla, burro o smetana.</li>
+              </ol>
+            </article>
+
+            <article class="recipe-card reveal">
+              <span>Estate</span>
+              <h3>Varenyky con ciliegie</h3>
+              <p><strong>Ingredienti:</strong> pasta base, ciliegie snocciolate, zucchero, panna acida.</p>
+              <ol>
+                <li>Stendi dischi sottili.</li>
+                <li>Farcisci con ciliegie e poco zucchero.</li>
+                <li>Chiudi bene per trattenere il succo.</li>
+                <li>Servi con panna acida o sciroppo.</li>
+              </ol>
+            </article>
+
+            <article class="recipe-card reveal">
+              <span>Famiglia</span>
+              <h3>Holubtsi</h3>
+              <p><strong>Ingredienti:</strong> cavolo, riso o grano saraceno, cipolla, carota, pomodoro, brodo, carne opzionale.</p>
+              <ol>
+                <li>Sbollenta e prepara le foglie di cavolo.</li>
+                <li>Mescola il ripieno con cereale e verdure.</li>
+                <li>Arrotola, copri con salsa e brodo.</li>
+                <li>Cuoci lentamente.</li>
+              </ol>
+            </article>
+
+            <article class="recipe-card reveal">
+              <span>Pane</span>
+              <h3>Pampushky</h3>
+              <p><strong>Ingredienti:</strong> farina, lievito, acqua o latte, olio, sale, aglio, aneto.</p>
+              <ol>
+                <li>Impasta e lascia lievitare.</li>
+                <li>Forma piccoli panini e cuoci.</li>
+                <li>Versa salsa di aglio, olio e aneto sui panini caldi.</li>
+              </ol>
+            </article>
+
+            <article class="recipe-card reveal">
+              <span>Polissia</span>
+              <h3>Deruny</h3>
+              <p><strong>Ingredienti:</strong> patate, cipolla, uovo, farina, sale, pepe, olio, panna acida.</p>
+              <ol>
+                <li>Grattugia patate e cipolla.</li>
+                <li>Mescola con uovo e poca farina.</li>
+                <li>Friggi frittelle sottili.</li>
+                <li>Servi subito con panna acida.</li>
+              </ol>
+            </article>
+
+            <article class="recipe-card reveal">
+              <span>Carpazi</span>
+              <h3>Banosh</h3>
+              <p><strong>Ingredienti:</strong> farina di mais, panna acida, sale, brynza, funghi, ciccioli opzionali.</p>
+              <ol>
+                <li>Scalda panna o panna acida.</li>
+                <li>Versa farina di mais a pioggia.</li>
+                <li>Mescola fino a crema densa.</li>
+                <li>Completa con brynza e funghi.</li>
+              </ol>
+            </article>
+
+            <article class="recipe-card reveal">
+              <span>Inverno</span>
+              <h3>Kapusniak</h3>
+              <p><strong>Ingredienti:</strong> cavolo fermentato, patate, carote, cipolla, brodo, alloro, pepe, miglio opzionale.</p>
+              <ol>
+                <li>Cuoci verdure e patate nel brodo.</li>
+                <li>Aggiungi cavolo fermentato e miglio se previsto.</li>
+                <li>Lascia sobbollire per un sapore profondo.</li>
+              </ol>
+            </article>
+
+            <article class="recipe-card reveal">
+              <span>Natale</span>
+              <h3>Kutia</h3>
+              <p><strong>Ingredienti:</strong> grano cotto, semi di papavero, miele, noci, uvetta, uzvar opzionale.</p>
+              <ol>
+                <li>Cuoci il grano senza disfarlo.</li>
+                <li>Pesta i semi di papavero ammollati.</li>
+                <li>Unisci miele, noci e frutta secca.</li>
+                <li>Servi come piatto rituale della vigilia.</li>
+              </ol>
+            </article>
+
+            <article class="recipe-card reveal">
+              <span>Bevanda</span>
+              <h3>Uzvar</h3>
+              <p><strong>Ingredienti:</strong> mele, pere e prugne secche, acqua, miele, spezie opzionali.</p>
+              <ol>
+                <li>Sciacqua la frutta secca.</li>
+                <li>Fai sobbollire dolcemente.</li>
+                <li>Lascia riposare e dolcifica con miele tiepido.</li>
+              </ol>
+            </article>
+
+            <article class="recipe-card reveal">
+              <span>Pasqua</span>
+              <h3>Paska</h3>
+              <p><strong>Ingredienti:</strong> farina, latte, uova, burro, zucchero, lievito, sale, decorazioni di impasto.</p>
+              <ol>
+                <li>Prepara un impasto ricco e ben lavorato.</li>
+                <li>Lascia lievitare con calma.</li>
+                <li>Decora con trecce o simboli.</li>
+                <li>Cuoci fino a doratura.</li>
+              </ol>
+            </article>
+          </div>
+        </section>
+
+        <section class="page-band food-section">
+          <div class="row align-items-end mb-4 reveal">
+            <div class="col-lg-8">
+              <p class="section-kicker mb-2">Calendario</p>
+              <h2 class="display-6 mb-3">Quando compaiono i piatti</h2>
+            </div>
+            <div class="col-lg-4">
+              <p class="section-text">La cucina e anche tempo: festa, digiuno, raccolto, inverno, viaggio, lutto, matrimonio.</p>
+            </div>
+          </div>
+
+          <div class="season-grid">
+            <article class="season-card reveal"><span>Inverno</span><h3>Conserve e zuppe</h3><p>Kapusniak, borshch, funghi secchi, cavolo fermentato, uzvar e piatti sostanziosi.</p></article>
+            <article class="season-card reveal"><span>Natale</span><h3>Kutia e dodici piatti</h3><p>La vigilia collega grano, papavero, miele, memoria dei defunti e famiglia riunita.</p></article>
+            <article class="season-card reveal"><span>Pasqua</span><h3>Paska e cestino</h3><p>Pane pasquale, uova, latticini e cibi benedetti marcano rinascita e continuita.</p></article>
+            <article class="season-card reveal"><span>Estate</span><h3>Frutta e tavola leggera</h3><p>Varenyky con ciliegie, verdure fresche, erbe, conserve future e mercati.</p></article>
+            <article class="season-card reveal"><span>Matrimonio</span><h3>Korovai</h3><p>Pane cerimoniale decorato: sta tra cucina, famiglia, rito e comunita.</p></article>
+            <article class="season-card reveal"><span>Diaspora</span><h3>Ricette come memoria</h3><p>In Canada, Stati Uniti, Polonia, Italia e altrove le ricette tengono viva lingua e famiglia.</p></article>
+          </div>
+        </section>
+
+        <section class="dossier-sources reveal mt-5">
+          <h2>Fonti e backend</h2>
+          <div class="writers-grid">
+            <a href="https://ich.unesco.org/en/USL/01852">UNESCO - Culture of Ukrainian borscht cooking</a>
+            <a href="https://ich.unesco.org/en/state/ukraine-UA?info=elements-on-the-lists">UNESCO - patrimonio immateriale Ucraina</a>
+            <a href="https://www.encyclopediaofukraine.com/">Internet Encyclopedia of Ukraine</a>
+            <a href="https://insight.ui.org.ua/">Ukrainian Institute - Insight UA</a>
+            <a href="https://apnews.com/article/ec0bd5ce731fe28cf4b35479c0eec911">AP - borsch e cultura</a>
+            <a href="../data/cucina-data.json">Dataset JSON ricette</a>
+            <a href="../api/cucina-api.php">Endpoint PHP ricette</a>
+          </div>
+        </section>
+
+        <div class="back-link-row">
+          <a class="back-link" href="costumi.html">Apri costumi</a>
+          <a class="back-link" href="Main.html#potenza-culturale">Torna alla cultura</a>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="../scripts/encyclopedia-data.js"></script>
+    <script src="../scripts/encyclopedia.js"></script>
+    <script src="../scripts/script.js"></script>
+  <script src="../scripts/site-tools.js"></script>
+    <script src="../scripts/cucina.js"></script>
+  </body>
+</html>

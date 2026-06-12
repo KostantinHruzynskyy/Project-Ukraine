@@ -82,7 +82,7 @@ class SkyyHandler(SimpleHTTPRequestHandler):
 
 def main() -> None:
     server = ThreadingHTTPServer(("127.0.0.1", 8087), SkyyHandler)
-    print("Serving Skyy History on http://127.0.0.1:8087/Main.html")
+    print("Serving Skyy History on http://127.0.0.1:8087/pages/Main.html")
     try:
         server.serve_forever()
     except KeyboardInterrupt:

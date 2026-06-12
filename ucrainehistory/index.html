@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Accesso unico | Skyy History</title>
+  <meta name="description" content="Accesso unico a pagine, script, dati, API e backend del progetto Skyy History.">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/admin-console.css">
+  <style>
+    :root { color-scheme: light; }
+    body { margin: 0; background: #f5f7fb; color: #142033; font-family: Arial, sans-serif; }
+    .access-shell { width: min(1180px, calc(100% - 32px)); margin: 0 auto; padding: 32px 0 48px; }
+    .access-header { display: grid; gap: 16px; align-items: end; grid-template-columns: 1fr auto; border-bottom: 1px solid #d8e0ea; padding: 28px 0 24px; }
+    .access-header p { margin: 0; color: #526071; font-weight: 700; text-transform: uppercase; }
+    .access-header h1 { margin: 0; font-size: clamp(2rem, 5vw, 4.2rem); line-height: 1; letter-spacing: 0; }
+    .access-open { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; border-radius: 8px; background: #17415f; color: #fff; padding: 0 18px; text-decoration: none; font-weight: 800; }
+    .access-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin: 18px 0 24px; }
+    .access-stats article { border: 1px solid #d8e0ea; border-radius: 8px; background: #fff; padding: 14px; }
+    .access-stats strong { display: block; font-size: 1.45rem; }
+    .access-sections { display: grid; gap: 18px; }
+    .access-section { border: 1px solid #d8e0ea; border-radius: 8px; background: #fff; padding: 16px; }
+    .access-section h2 { display: flex; justify-content: space-between; gap: 16px; margin: 0 0 12px; font-size: 1.1rem; }
+    .access-section h2 span { color: #526071; font-size: .95rem; }
+    .access-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 8px; }
+    .access-link { display: grid; gap: 3px; min-height: 56px; border: 1px solid #e4e9f0; border-radius: 8px; padding: 10px; color: #142033; text-decoration: none; }
+    .access-link:hover, .access-link:focus-visible { border-color: #17415f; background: #eef6ff; outline: none; }
+    .access-link span { font-weight: 800; overflow-wrap: anywhere; }
+    .access-link small { color: #66758a; overflow-wrap: anywhere; }
+    @media (max-width: 680px) { .access-header { grid-template-columns: 1fr; } .access-open { width: 100%; } }
+  </style>
+</head>
+<body>
+  <main class="access-shell">
+    <header class="access-header">
+      <div>
+        <p>Accesso unico</p>
+        <h1>Skyy History</h1>
+      </div>
+      <a class="access-open" href="pages/Main.html">Apri home</a>
+    </header>
+
+    <div class="access-stats" aria-label="Conteggio file accessibili">
+      <article><strong>30</strong><span>HTML</span></article>
+      <article><strong>6</strong><span>JS</span></article>
+      <article><strong>40</strong><span>PHP</span></article>
+      <article><strong>40</strong><span>Python</span></article>
+      <article><strong>39</strong><span>JSON</span></article>
+      <article><strong>159</strong><span>Totale link</span></article>
+    </div>
+
+    <section class="access-section admin-terminal" id="admin-console">
+      <h2>Admin Console</h2>
+      <div class="console-output" aria-live="polite"></div>
+      <div class="console-actions">
+        <input id="admin_console_input" class="console-input" type="text" placeholder="Digita help per iniziare" aria-label="Comando admin">
+        <button id="admin_console_run" class="console-button" type="button">Esegui</button>
+      </div>
+      <p style="margin-top:0.85rem;color:#526071;font-size:0.95rem;">Questo terminale naviga il progetto localmente e carica file. L'editor diretto non salva sul server: usa il tuo ambiente di sviluppo per modifiche persistenti.</p>
+    </section>
+
+    <div class="access-sections">
+      <section class="access-section">
+        <h2>Pagine HTML <span>30</span></h2>
+        <div class="access-grid">
+          <a class="access-link" href="pages/Main.html"><span>Skyy</span><small>pages/Main.html</small></a>
+          <a class="access-link" href="pages/admin.html"><span>Admin | Skyy History</span><small>pages/admin.html</small></a>
+          <a class="access-link" href="pages/atrocita.html"><span>Skyy History - Atrocita</span><small>pages/atrocita.html</small></a>
+          <a class="access-link" href="pages/babyn-yar.html"><span>Skyy History - Babyn Yar</span><small>pages/babyn-yar.html</small></a>
+          <a class="access-link" href="pages/battaglie.html"><span>Skyy History - Battaglie</span><small>pages/battaglie.html</small></a>
+          <a class="access-link" href="pages/bucha.html"><span>Skyy History - Bucha</span><small>pages/bucha.html</small></a>
+          <a class="access-link" href="pages/chernobyl.html"><span>Skyy History - Chernobyl</span><small>pages/chernobyl.html</small></a>
+          <a class="access-link" href="pages/costumi.html"><span>Skyy History - Costumi ucraini</span><small>pages/costumi.html</small></a>
+          <a class="access-link" href="pages/crimea-donbas.html"><span>Skyy History - Crimea e Donbas</span><small>pages/crimea-donbas.html</small></a>
+          <a class="access-link" href="pages/cucina.html"><span>Skyy History - Cucina ucraina</span><small>pages/cucina.html</small></a>
+          <a class="access-link" href="pages/cucina-costumi.html"><span>Skyy History - Cucina e costumi separati</span><small>pages/cucina-costumi.html</small></a>
+          <a class="access-link" href="pages/difesa.html"><span>Skyy History - Difesa Ucraina</span><small>pages/difesa.html</small></a>
+          <a class="access-link" href="pages/dossier.html"><span>Skyy History - Dossier Ucraina</span><small>pages/dossier.html</small></a>
+          <a class="access-link" href="pages/euromaidan.html"><span>Skyy History - Euromaidan</span><small>pages/euromaidan.html</small></a>
+          <a class="access-link" href="pages/film.html"><span>Skyy History - Film e documentari sull&#39;Ucraina</span><small>pages/film.html</small></a>
+          <a class="access-link" href="pages/fonti.html"><span>Fonti | Skyy History</span><small>pages/fonti.html</small></a>
+          <a class="access-link" href="pages/holodomor.html"><span>Skyy History - Holodomor</span><small>pages/holodomor.html</small></a>
+          <a class="access-link" href="pages/indipendenza.html"><span>Skyy History - Indipendenza</span><small>pages/indipendenza.html</small></a>
+          <a class="access-link" href="pages/invasione-2022.html"><span>Skyy History - Invasione 2022</span><small>pages/invasione-2022.html</small></a>
+          <a class="access-link" href="pages/lingua-cultura.html"><span>Skyy History - Lingua e cultura ucraina</span><small>pages/lingua-cultura.html</small></a>
+          <a class="access-link" href="pages/mappe.html"><span>Mappe | Skyy History</span><small>pages/mappe.html</small></a>
+          <a class="access-link" href="pages/mariupol.html"><span>Skyy History - Mariupol</span><small>pages/mariupol.html</small></a>
+          <a class="access-link" href="pages/museo.html"><span>Skyy History - Museo Ucraina</span><small>pages/museo.html</small></a>
+          <a class="access-link" href="pages/ricerca.html"><span>Ricerca | Skyy History</span><small>pages/ricerca.html</small></a>
+          <a class="access-link" href="pages/ricostruzione.html"><span>Skyy History - Ricostruzione Ucraina</span><small>pages/ricostruzione.html</small></a>
+          <a class="access-link" href="pages/rifugiati.html"><span>Skyy History - Rifugiati e diaspora ucraina</span><small>pages/rifugiati.html</small></a>
+          <a class="access-link" href="pages/sport.html"><span>Skyy History - Sport ucraino</span><small>pages/sport.html</small></a>
+          <a class="access-link" href="pages/studio.html"><span>Studio | Skyy History</span><small>pages/studio.html</small></a>
+          <a class="access-link" href="pages/tatari-crimea.html"><span>Skyy History - Tatari di Crimea</span><small>pages/tatari-crimea.html</small></a>
+          <a class="access-link" href="pages/timeline.html"><span>Timeline | Skyy History</span><small>pages/timeline.html</small></a>
+        </div>
+      </section>
+      <section class="access-section">
+        <h2>Script JavaScript <span>6</span></h2>
+        <div class="access-grid">
+          <a class="access-link" href="scripts/cucina.js"><span>cucina.js</span><small>scripts/cucina.js</small></a>
+          <a class="access-link" href="scripts/encyclopedia.js"><span>encyclopedia.js</span><small>scripts/encyclopedia.js</small></a>
+          <a class="access-link" href="scripts/encyclopedia-data.js"><span>encyclopedia-data.js</span><small>scripts/encyclopedia-data.js</small></a>
+          <a class="access-link" href="scripts/museo.js"><span>museo.js</span><small>scripts/museo.js</small></a>
+          <a class="access-link" href="scripts/script.js"><span>script.js</span><small>scripts/script.js</small></a>
+          <a class="access-link" href="scripts/site-tools.js"><span>site-tools.js</span><small>scripts/site-tools.js</small></a>
+        </div>
+      </section>
+      <section class="access-section">
+        <h2>Stili CSS <span>4</span></h2>
+        <div class="access-grid">
+          <a class="access-link" href="styles/style.css"><span>style.css</span><small>styles/style.css</small></a>
+          <a class="access-link" href="styles/films.css"><span>films.css</span><small>styles/films.css</small></a>
+          <a class="access-link" href="styles/site-order.css"><span>site-order.css</span><small>styles/site-order.css</small></a>
+          <a class="access-link" href="styles/tools.css"><span>tools.css</span><small>styles/tools.css</small></a>
+        </div>
+      </section>
+      <section class="access-section">
+        <h2>Dati JSON <span>39</span></h2>
+        <div class="access-grid">
+          <a class="access-link" href="data/admin-checks.json"><span>admin-checks.json</span><small>data/admin-checks.json</small></a>
+          <a class="access-link" href="data/cucina-data.json"><span>cucina-data.json</span><small>data/cucina-data.json</small></a>
+          <a class="access-link" href="data/films.json"><span>films.json</span><small>data/films.json</small></a>
+          <a class="access-link" href="data/maps.json"><span>maps.json</span><small>data/maps.json</small></a>
+          <a class="access-link" href="data/pages/01-main.json"><span>01-main.json</span><small>data/pages/01-main.json</small></a>
+          <a class="access-link" href="data/pages/02-holodomor.json"><span>02-holodomor.json</span><small>data/pages/02-holodomor.json</small></a>
+          <a class="access-link" href="data/pages/03-babyn-yar.json"><span>03-babyn-yar.json</span><small>data/pages/03-babyn-yar.json</small></a>
+          <a class="access-link" href="data/pages/04-tatari-crimea.json"><span>04-tatari-crimea.json</span><small>data/pages/04-tatari-crimea.json</small></a>
+          <a class="access-link" href="data/pages/05-chernobyl.json"><span>05-chernobyl.json</span><small>data/pages/05-chernobyl.json</small></a>
+          <a class="access-link" href="data/pages/06-indipendenza.json"><span>06-indipendenza.json</span><small>data/pages/06-indipendenza.json</small></a>
+          <a class="access-link" href="data/pages/07-euromaidan.json"><span>07-euromaidan.json</span><small>data/pages/07-euromaidan.json</small></a>
+          <a class="access-link" href="data/pages/08-crimea-donbas.json"><span>08-crimea-donbas.json</span><small>data/pages/08-crimea-donbas.json</small></a>
+          <a class="access-link" href="data/pages/09-invasione-2022.json"><span>09-invasione-2022.json</span><small>data/pages/09-invasione-2022.json</small></a>
+          <a class="access-link" href="data/pages/10-bucha.json"><span>10-bucha.json</span><small>data/pages/10-bucha.json</small></a>
+          <a class="access-link" href="data/pages/11-mariupol.json"><span>11-mariupol.json</span><small>data/pages/11-mariupol.json</small></a>
+          <a class="access-link" href="data/pages/12-battaglie.json"><span>12-battaglie.json</span><small>data/pages/12-battaglie.json</small></a>
+          <a class="access-link" href="data/pages/13-atrocita.json"><span>13-atrocita.json</span><small>data/pages/13-atrocita.json</small></a>
+          <a class="access-link" href="data/pages/14-difesa.json"><span>14-difesa.json</span><small>data/pages/14-difesa.json</small></a>
+          <a class="access-link" href="data/pages/15-dossier.json"><span>15-dossier.json</span><small>data/pages/15-dossier.json</small></a>
+          <a class="access-link" href="data/pages/16-museo.json"><span>16-museo.json</span><small>data/pages/16-museo.json</small></a>
+          <a class="access-link" href="data/pages/17-lingua-cultura.json"><span>17-lingua-cultura.json</span><small>data/pages/17-lingua-cultura.json</small></a>
+          <a class="access-link" href="data/pages/18-cucina.json"><span>18-cucina.json</span><small>data/pages/18-cucina.json</small></a>
+          <a class="access-link" href="data/pages/19-costumi.json"><span>19-costumi.json</span><small>data/pages/19-costumi.json</small></a>
+          <a class="access-link" href="data/pages/20-cucina-costumi.json"><span>20-cucina-costumi.json</span><small>data/pages/20-cucina-costumi.json</small></a>
+          <a class="access-link" href="data/pages/21-sport.json"><span>21-sport.json</span><small>data/pages/21-sport.json</small></a>
+          <a class="access-link" href="data/pages/22-rifugiati.json"><span>22-rifugiati.json</span><small>data/pages/22-rifugiati.json</small></a>
+          <a class="access-link" href="data/pages/23-ricostruzione.json"><span>23-ricostruzione.json</span><small>data/pages/23-ricostruzione.json</small></a>
+          <a class="access-link" href="data/pages/24-film.json"><span>24-film.json</span><small>data/pages/24-film.json</small></a>
+          <a class="access-link" href="data/pages/25-fonti.json"><span>25-fonti.json</span><small>data/pages/25-fonti.json</small></a>
+          <a class="access-link" href="data/pages/26-ricerca.json"><span>26-ricerca.json</span><small>data/pages/26-ricerca.json</small></a>
+          <a class="access-link" href="data/pages/27-admin.json"><span>27-admin.json</span><small>data/pages/27-admin.json</small></a>
+          <a class="access-link" href="data/pages/28-timeline.json"><span>28-timeline.json</span><small>data/pages/28-timeline.json</small></a>
+          <a class="access-link" href="data/pages/29-mappe.json"><span>29-mappe.json</span><small>data/pages/29-mappe.json</small></a>
+          <a class="access-link" href="data/pages/30-studio.json"><span>30-studio.json</span><small>data/pages/30-studio.json</small></a>
+          <a class="access-link" href="data/pages/index.json"><span>index.json</span><small>data/pages/index.json</small></a>
+          <a class="access-link" href="data/search-index.json"><span>search-index.json</span><small>data/search-index.json</small></a>
+          <a class="access-link" href="data/sources.json"><span>sources.json</span><small>data/sources.json</small></a>
+          <a class="access-link" href="data/study.json"><span>study.json</span><small>data/study.json</small></a>
+          <a class="access-link" href="data/timeline.json"><span>timeline.json</span><small>data/timeline.json</small></a>
+        </div>
+      </section>
+      <section class="access-section">
+        <h2>API PHP <span>40</span></h2>
+        <div class="access-grid">
+          <a class="access-link" href="api/admin.php"><span>admin.php</span><small>api/admin.php</small></a>
+          <a class="access-link" href="api/cucina-api.php"><span>cucina-api.php</span><small>api/cucina-api.php</small></a>
+          <a class="access-link" href="api/films.php"><span>films.php</span><small>api/films.php</small></a>
+          <a class="access-link" href="api/maps.php"><span>maps.php</span><small>api/maps.php</small></a>
+          <a class="access-link" href="api/page_common.php"><span>page_common.php</span><small>api/page_common.php</small></a>
+          <a class="access-link" href="api/pages.php"><span>pages.php</span><small>api/pages.php</small></a>
+          <a class="access-link" href="api/pages/01-main.php"><span>01-main.php</span><small>api/pages/01-main.php</small></a>
+          <a class="access-link" href="api/pages/02-holodomor.php"><span>02-holodomor.php</span><small>api/pages/02-holodomor.php</small></a>
+          <a class="access-link" href="api/pages/03-babyn-yar.php"><span>03-babyn-yar.php</span><small>api/pages/03-babyn-yar.php</small></a>
+          <a class="access-link" href="api/pages/04-tatari-crimea.php"><span>04-tatari-crimea.php</span><small>api/pages/04-tatari-crimea.php</small></a>
+          <a class="access-link" href="api/pages/05-chernobyl.php"><span>05-chernobyl.php</span><small>api/pages/05-chernobyl.php</small></a>
+          <a class="access-link" href="api/pages/06-indipendenza.php"><span>06-indipendenza.php</span><small>api/pages/06-indipendenza.php</small></a>
+          <a class="access-link" href="api/pages/07-euromaidan.php"><span>07-euromaidan.php</span><small>api/pages/07-euromaidan.php</small></a>
+          <a class="access-link" href="api/pages/08-crimea-donbas.php"><span>08-crimea-donbas.php</span><small>api/pages/08-crimea-donbas.php</small></a>
+          <a class="access-link" href="api/pages/09-invasione-2022.php"><span>09-invasione-2022.php</span><small>api/pages/09-invasione-2022.php</small></a>
+          <a class="access-link" href="api/pages/10-bucha.php"><span>10-bucha.php</span><small>api/pages/10-bucha.php</small></a>
+          <a class="access-link" href="api/pages/11-mariupol.php"><span>11-mariupol.php</span><small>api/pages/11-mariupol.php</small></a>
+          <a class="access-link" href="api/pages/12-battaglie.php"><span>12-battaglie.php</span><small>api/pages/12-battaglie.php</small></a>
+          <a class="access-link" href="api/pages/13-atrocita.php"><span>13-atrocita.php</span><small>api/pages/13-atrocita.php</small></a>
+          <a class="access-link" href="api/pages/14-difesa.php"><span>14-difesa.php</span><small>api/pages/14-difesa.php</small></a>
+          <a class="access-link" href="api/pages/15-dossier.php"><span>15-dossier.php</span><small>api/pages/15-dossier.php</small></a>
+          <a class="access-link" href="api/pages/16-museo.php"><span>16-museo.php</span><small>api/pages/16-museo.php</small></a>
+          <a class="access-link" href="api/pages/17-lingua-cultura.php"><span>17-lingua-cultura.php</span><small>api/pages/17-lingua-cultura.php</small></a>
+          <a class="access-link" href="api/pages/18-cucina.php"><span>18-cucina.php</span><small>api/pages/18-cucina.php</small></a>
+          <a class="access-link" href="api/pages/19-costumi.php"><span>19-costumi.php</span><small>api/pages/19-costumi.php</small></a>
+          <a class="access-link" href="api/pages/20-cucina-costumi.php"><span>20-cucina-costumi.php</span><small>api/pages/20-cucina-costumi.php</small></a>
+          <a class="access-link" href="api/pages/21-sport.php"><span>21-sport.php</span><small>api/pages/21-sport.php</small></a>
+          <a class="access-link" href="api/pages/22-rifugiati.php"><span>22-rifugiati.php</span><small>api/pages/22-rifugiati.php</small></a>
+          <a class="access-link" href="api/pages/23-ricostruzione.php"><span>23-ricostruzione.php</span><small>api/pages/23-ricostruzione.php</small></a>
+          <a class="access-link" href="api/pages/24-film.php"><span>24-film.php</span><small>api/pages/24-film.php</small></a>
+          <a class="access-link" href="api/pages/25-fonti.php"><span>25-fonti.php</span><small>api/pages/25-fonti.php</small></a>
+          <a class="access-link" href="api/pages/26-ricerca.php"><span>26-ricerca.php</span><small>api/pages/26-ricerca.php</small></a>
+          <a class="access-link" href="api/pages/27-admin.php"><span>27-admin.php</span><small>api/pages/27-admin.php</small></a>
+          <a class="access-link" href="api/pages/28-timeline.php"><span>28-timeline.php</span><small>api/pages/28-timeline.php</small></a>
+          <a class="access-link" href="api/pages/29-mappe.php"><span>29-mappe.php</span><small>api/pages/29-mappe.php</small></a>
+          <a class="access-link" href="api/pages/30-studio.php"><span>30-studio.php</span><small>api/pages/30-studio.php</small></a>
+          <a class="access-link" href="api/search.php"><span>search.php</span><small>api/search.php</small></a>
+          <a class="access-link" href="api/sources.php"><span>sources.php</span><small>api/sources.php</small></a>
+          <a class="access-link" href="api/study.php"><span>study.php</span><small>api/study.php</small></a>
+          <a class="access-link" href="api/timeline.php"><span>timeline.php</span><small>api/timeline.php</small></a>
+        </div>
+      </section>
+      <section class="access-section">
+        <h2>Backend Python <span>40</span></h2>
+        <div class="access-grid">
+          <a class="access-link" href="backend/admin.py"><span>admin.py</span><small>backend/admin.py</small></a>
+          <a class="access-link" href="backend/cucina_backend.py"><span>cucina_backend.py</span><small>backend/cucina_backend.py</small></a>
+          <a class="access-link" href="backend/films.py"><span>films.py</span><small>backend/films.py</small></a>
+          <a class="access-link" href="backend/maps.py"><span>maps.py</span><small>backend/maps.py</small></a>
+          <a class="access-link" href="backend/page_common.py"><span>page_common.py</span><small>backend/page_common.py</small></a>
+          <a class="access-link" href="backend/pages/01-main.py"><span>01-main.py</span><small>backend/pages/01-main.py</small></a>
+          <a class="access-link" href="backend/pages/02-holodomor.py"><span>02-holodomor.py</span><small>backend/pages/02-holodomor.py</small></a>
+          <a class="access-link" href="backend/pages/03-babyn-yar.py"><span>03-babyn-yar.py</span><small>backend/pages/03-babyn-yar.py</small></a>
+          <a class="access-link" href="backend/pages/04-tatari-crimea.py"><span>04-tatari-crimea.py</span><small>backend/pages/04-tatari-crimea.py</small></a>
+          <a class="access-link" href="backend/pages/05-chernobyl.py"><span>05-chernobyl.py</span><small>backend/pages/05-chernobyl.py</small></a>
+          <a class="access-link" href="backend/pages/06-indipendenza.py"><span>06-indipendenza.py</span><small>backend/pages/06-indipendenza.py</small></a>
+          <a class="access-link" href="backend/pages/07-euromaidan.py"><span>07-euromaidan.py</span><small>backend/pages/07-euromaidan.py</small></a>
+          <a class="access-link" href="backend/pages/08-crimea-donbas.py"><span>08-crimea-donbas.py</span><small>backend/pages/08-crimea-donbas.py</small></a>
+          <a class="access-link" href="backend/pages/09-invasione-2022.py"><span>09-invasione-2022.py</span><small>backend/pages/09-invasione-2022.py</small></a>
+          <a class="access-link" href="backend/pages/10-bucha.py"><span>10-bucha.py</span><small>backend/pages/10-bucha.py</small></a>
+          <a class="access-link" href="backend/pages/11-mariupol.py"><span>11-mariupol.py</span><small>backend/pages/11-mariupol.py</small></a>
+          <a class="access-link" href="backend/pages/12-battaglie.py"><span>12-battaglie.py</span><small>backend/pages/12-battaglie.py</small></a>
+          <a class="access-link" href="backend/pages/13-atrocita.py"><span>13-atrocita.py</span><small>backend/pages/13-atrocita.py</small></a>
+          <a class="access-link" href="backend/pages/14-difesa.py"><span>14-difesa.py</span><small>backend/pages/14-difesa.py</small></a>
+          <a class="access-link" href="backend/pages/15-dossier.py"><span>15-dossier.py</span><small>backend/pages/15-dossier.py</small></a>
+          <a class="access-link" href="backend/pages/16-museo.py"><span>16-museo.py</span><small>backend/pages/16-museo.py</small></a>
+          <a class="access-link" href="backend/pages/17-lingua-cultura.py"><span>17-lingua-cultura.py</span><small>backend/pages/17-lingua-cultura.py</small></a>
+          <a class="access-link" href="backend/pages/18-cucina.py"><span>18-cucina.py</span><small>backend/pages/18-cucina.py</small></a>
+          <a class="access-link" href="backend/pages/19-costumi.py"><span>19-costumi.py</span><small>backend/pages/19-costumi.py</small></a>
+          <a class="access-link" href="backend/pages/20-cucina-costumi.py"><span>20-cucina-costumi.py</span><small>backend/pages/20-cucina-costumi.py</small></a>
+          <a class="access-link" href="backend/pages/21-sport.py"><span>21-sport.py</span><small>backend/pages/21-sport.py</small></a>
+          <a class="access-link" href="backend/pages/22-rifugiati.py"><span>22-rifugiati.py</span><small>backend/pages/22-rifugiati.py</small></a>
+          <a class="access-link" href="backend/pages/23-ricostruzione.py"><span>23-ricostruzione.py</span><small>backend/pages/23-ricostruzione.py</small></a>
+          <a class="access-link" href="backend/pages/24-film.py"><span>24-film.py</span><small>backend/pages/24-film.py</small></a>
+          <a class="access-link" href="backend/pages/25-fonti.py"><span>25-fonti.py</span><small>backend/pages/25-fonti.py</small></a>
+          <a class="access-link" href="backend/pages/26-ricerca.py"><span>26-ricerca.py</span><small>backend/pages/26-ricerca.py</small></a>
+          <a class="access-link" href="backend/pages/27-admin.py"><span>27-admin.py</span><small>backend/pages/27-admin.py</small></a>
+          <a class="access-link" href="backend/pages/28-timeline.py"><span>28-timeline.py</span><small>backend/pages/28-timeline.py</small></a>
+          <a class="access-link" href="backend/pages/29-mappe.py"><span>29-mappe.py</span><small>backend/pages/29-mappe.py</small></a>
+          <a class="access-link" href="backend/pages/30-studio.py"><span>30-studio.py</span><small>backend/pages/30-studio.py</small></a>
+          <a class="access-link" href="backend/search.py"><span>search.py</span><small>backend/search.py</small></a>
+          <a class="access-link" href="backend/site_backend.py"><span>site_backend.py</span><small>backend/site_backend.py</small></a>
+          <a class="access-link" href="backend/sources.py"><span>sources.py</span><small>backend/sources.py</small></a>
+          <a class="access-link" href="backend/study.py"><span>study.py</span><small>backend/study.py</small></a>
+          <a class="access-link" href="backend/timeline.py"><span>timeline.py</span><small>backend/timeline.py</small></a>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script src="scripts/admin-console.js"></script>
+</body>
+</html>
