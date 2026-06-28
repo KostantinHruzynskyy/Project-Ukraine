@@ -150,37 +150,32 @@ function initImageLazyLoading() {
 }
 
 function initBackToTop() {
-  const backToTopBtn = document.getElementById('backToTop');
+  let backToTopBtn = document.getElementById('backToTop');
   
   if (!backToTopBtn) {
-    const btn = document.createElement('button');
-    btn.id = 'backToTop';
-    btn.className = 'back-to-top';
-    btn.innerHTML = '↑';
-    btn.setAttribute('aria-label', 'Torna in cima');
-    btn.style.display = 'none';
-    document.body.appendChild(btn);
+    backToTopBtn = document.createElement('button');
+    backToTopBtn.id = 'backToTop';
+    backToTopBtn.className = 'back-to-top';
+    backToTopBtn.innerHTML = '↑';
+    backToTopBtn.setAttribute('aria-label', 'Torna in cima');
+    backToTopBtn.style.display = 'none';
+    document.body.appendChild(backToTopBtn);
     
-    btn.addEventListener('click', () => {
+    backToTopBtn.addEventListener('click', function() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   }
-
-  const observerTarget = document.getElementById('backToTop') || document.currentScript;
   
-  window.addEventListener('scroll', () => {
-    const btn = document.getElementById('backToTop');
-    if (btn) {
-      if (window.scrollY > 500) {
-        btn.style.display = 'flex';
-      } else {
-        btn.style.display = 'none';
-      }
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 500) {
+      backToTopBtn.style.display = 'flex';
+    } else {
+      backToTopBtn.style.display = 'none';
     }
   });
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function() {
   initTheme();
   initBreadcrumbs();
   initLanguageSwitcher();

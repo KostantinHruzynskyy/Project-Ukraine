@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Offline | Skyy History</title>
+  <link rel="stylesheet" href="../styles/style.css">
+  <style>
+    .offline-container { min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 2rem; }
+    .offline-content { max-width: 500px; }
+    .offline-icon { font-size: 5rem; margin-bottom: 1rem; }
+    .offline-title { font-size: 2rem; color: var(--ukraine-gold); margin-bottom: 1rem; }
+    .offline-message { color: rgba(238, 227, 200, 0.8); margin-bottom: 2rem; line-height: 1.6; }
+    .offline-btn { display: inline-block; padding: 0.75rem 1.5rem; background: var(--signal); color: #fff; text-decoration: none; border-radius: 8px; font-weight: 600; }
+    .cached-pages { margin-top: 2rem; text-align: left; }
+    .cached-pages h3 { color: var(--ukraine-gold); margin-bottom: 1rem; }
+    .cached-pages ul { list-style: none; padding: 0; }
+    .cached-pages li { padding: 0.5rem 0; border-bottom: 1px solid rgba(238, 227, 200, 0.1); }
+    .cached-pages a { color: var(--paper); text-decoration: none; }
+    .cached-pages a:hover { color: var(--ukraine-gold); }
+  </style>
+</head>
+<body>
+  <div class="offline-container">
+    <div class="offline-content">
+      <div class="offline-icon">📡</div>
+      <h1 class="offline-title">Sei offline</h1>
+      <p class="offline-message">Non hai connessione a internet in questo momento. Puoi comunque navigare tra le pagine che hai già visitato.</p>
+      <a href="Main.html" class="offline-btn">Torna alla Home</a>
+      <div class="cached-pages" id="cachedPages">
+        <h3>Pagine disponibili offline</h3>
+        <ul id="cachedList"></ul>
+      </div>
+    </div>
+  </div>
+  <script>
+    var cachedList = document.getElementById('cachedList');
+    var history = [];
+    try { history = JSON.parse(localStorage.getItem('skyyHistory') || '[]'); } catch (e) {}
+    if (history.length > 0) {
+      history.slice(0, 10).forEach(function(item) {
+        var li = document.createElement('li');
+        var a = document.createElement('a');
+        a.href = item.url;
+        a.textContent = item.title;
+        li.appendChild(a);
+        cachedList.appendChild(li);
+      });
+    } else {
+      cachedList.innerHTML = '<li>Nessuna pagina nella cache</li>';
+    }
+  </script>
+</body>
+</html>

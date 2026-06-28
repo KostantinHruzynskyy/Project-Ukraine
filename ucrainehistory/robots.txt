@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /backend/
+
+Sitemap: https://skyyhistory.org/sitemap.xml
+
+Host: skyyhistory.org
