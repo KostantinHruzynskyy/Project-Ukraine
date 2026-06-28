@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pagina non trovata - Skyy History">
+  <title>404 - Pagina non trovata | Skyy History</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="../styles/style.css">
+  <style>
+    .error-404 {
+      min-height: 80vh;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    .error-404 h1 {
+      font-size: clamp(4rem, 15vw, 10rem);
+      line-height: 1;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, var(--ukraine-blue), var(--ukraine-gold));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .error-404 p {
+      font-size: 1.25rem;
+      color: rgba(238, 227, 200, 0.8);
+      max-width: 500px;
+      margin: 0 auto 2rem;
+    }
+    .error-404 .actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .error-404 .btn {
+      min-width: 150px;
+    }
+    .error-suggestions {
+      margin-top: 3rem;
+      padding: 1.5rem;
+      background: rgba(238, 227, 200, 0.05);
+      border-radius: 8px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .error-suggestions h2 {
+      font-size: 1.1rem;
+      color: var(--ukraine-gold);
+      margin-bottom: 1rem;
+    }
+    .error-suggestions ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 0.5rem;
+    }
+    .error-suggestions a {
+      color: var(--paper);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .error-suggestions a:hover {
+      color: var(--ukraine-gold);
+    }
+  </style>
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  
+  <nav class="navbar navbar-expand-lg war-navbar sticky-top" data-bs-theme="dark">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="Main.html#inizio">
+        <span class="brand-mark">SH</span>
+        Skyy History
+      </a>
+      <a class="btn history-btn ms-auto px-3" href="Main.html">Home</a>
+    </div>
+  </nav>
+
+  <main class="error-404">
+    <div class="container">
+      <h1>404</h1>
+      <p>Questa pagina e come un archivio andato in cenere durante la guerra: i documenti esistevano, ma il percorso e stato cancellato.</p>
+      
+      <div class="actions">
+        <a href="Main.html" class="btn history-btn">Torna alla Home</a>
+        <a href="ricerca.html" class="btn history-btn">Cerca nel sito</a>
+        <a href="museo.html" class="btn history-btn">Visita il Museo</a>
+      </div>
+
+      <div class="error-suggestions">
+        <h2>Pagine che potresti cercare</h2>
+        <ul>
+          <li><a href="holodomor.html">Holodomor: la carestia forzata del 1932-1933</a></li>
+          <li><a href="babyn-yar.html"> memoria della Shoah</a></li>
+          <li><a href="mariupol.html">Mariupol: assedio e resistenza</a></li>
+          <li><a href="museo.html">Museo interattivo: esplora le sale</a></li>
+          <li><a href="timeline.html">Timeline: cronologia completa</a></li>
+          <li><a href="fonti.html">Fonti e riferimenti</a></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="../scripts/script.js"></script>
+</body>
+</html>

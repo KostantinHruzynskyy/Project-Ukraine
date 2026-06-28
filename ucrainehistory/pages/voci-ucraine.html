@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Voci ucraine: testimonianze, lettere e storie di chi vive la guerra e la resistenza.">
+  <title>Voci Ucraine | Skyy History</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/site-order.css">
+  <style>
+    .voices-hero {
+      min-height: 60vh;
+      display: grid;
+      align-items: end;
+      padding: 6rem 0 3rem;
+      background: linear-gradient(135deg, rgba(16, 24, 32, 0.96), rgba(38, 51, 34, 0.94));
+    }
+    .voice-card {
+      border: 1px solid rgba(238, 227, 200, 0.16);
+      border-radius: 8px;
+      padding: 1.5rem;
+      background: rgba(238, 227, 200, 0.05);
+      margin-bottom: 1.5rem;
+      transition: transform 0.25s ease, background 0.25s ease;
+    }
+    .voice-card:hover {
+      background: rgba(238, 227, 200, 0.1);
+      transform: translateY(-4px);
+    }
+    .voice-quote {
+      font-size: 1.2rem;
+      font-style: italic;
+      color: var(--paper);
+      border-left: 4px solid var(--ukraine-gold);
+      padding-left: 1rem;
+      margin-bottom: 1rem;
+    }
+    .voice-author {
+      color: var(--ukraine-gold);
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+    .voice-role {
+      color: rgba(238, 227, 200, 0.6);
+      font-size: 0.85rem;
+    }
+    .voice-date {
+      color: var(--signal);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05rem;
+    }
+    .voice-filter {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+    }
+    .voice-filter button {
+      border: 1px solid rgba(238, 227, 200, 0.24);
+      border-radius: 999px;
+      padding: 0.5rem 1rem;
+      color: var(--paper);
+      background: transparent;
+      font-family: Arial, sans-serif;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      transition: all 0.2s;
+    }
+    .voice-filter button.active,
+    .voice-filter button:hover {
+      border-color: var(--ukraine-gold);
+      background: rgba(242, 200, 75, 0.18);
+    }
+    .letter-card {
+      background: linear-gradient(135deg, rgba(248, 240, 220, 0.98), rgba(238, 227, 200, 0.95));
+      border: 1px solid rgba(16, 24, 32, 0.1);
+      border-radius: 8px;
+      padding: 2rem;
+      color: var(--ink);
+      font-family: Georgia, serif;
+    }
+    .letter-header {
+      border-bottom: 1px solid rgba(16, 24, 32, 0.1);
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+    }
+    .letter-from {
+      color: var(--signal);
+      font-weight: 700;
+    }
+    .letter-to {
+      color: rgba(16, 24, 32, 0.6);
+      font-style: italic;
+    }
+    .letter-content {
+      line-height: 1.8;
+      font-size: 1.05rem;
+    }
+    .letter-signature {
+      margin-top: 1.5rem;
+      text-align: right;
+      font-style: italic;
+      color: var(--signal);
+    }
+    .testimony-media {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .testimony-media img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    @media (max-width: 768px) {
+      .testimony-media {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  
+  <nav class="navbar navbar-expand-lg war-navbar sticky-top" data-bs-theme="dark">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="Main.html#inizio">
+        <span class="brand-mark">SH</span>
+        Skyy History
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#skyyNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="skyyNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="Main.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="">Museo</a></li>
+          <li class="nav-item"><a class="nav-link active" href="voci-ucraine.html">Voci Ucraine</a></li>
+          <li class="nav-item"><a class="nav-link" href="glossario.html">Glossario</a></li>
+          <li class="nav-item"><a class="nav-link" href="bambini.html">Bambini</a></li>
+          <li class="nav-item">
+            <button id="themeToggle" class="ms-lg-2" type="button" aria-label="Cambia tema"></button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="voices-hero">
+    <div class="container reveal">
+      <p class="hero-kicker mb-3">Testimonianze dal cuore</p>
+      <h1>Voci Ucraine</h1>
+      <p class="hero-lead mt-4">
+        Lettere, testimonianze e storie di chi vive la guerra, la resistenza e la speranza. 
+        Voci che non possono essere cancellate.
+      </p>
+    </div>
+  </main>
+
+  <section class="page-band">
+    <div class="container">
+      <div class="voice-filter">
+        <button class="active" data-filter="all">Tutte le voci</button>
+        <button data-filter="soldati">Soldati</button>
+        <button data-filter="civili">Civili</button>
+        <button data-filter="bambini">Bambini</button>
+        <button data-filter="medici">Medici</button>
+        <button data-filter="artisti">Artisti</button>
+        <button data-filter="lettere">Lettere</button>
+      </div>
+
+      <div id="voices-container">
+        <!-- Voce 1 -->
+        <div class="voice-card" data-category="soldati">
+          <div class="voice-quote">
+            "Non combattevamo per odio, combattevamo perché non volevamo che i nostri bambini crescessero senza patria."
+          </div>
+          <div class="voice-author">Mykola, 34 anni</div>
+          <div class="voice-role">Soldato, Brigata Azov</div>
+          <div class="voice-date">Mariupol, marzo 2022</div>
+        </div>
+
+        <!-- Voce 2 -->
+        <div class="voice-card" data-category="civili">
+          <div class="voice-quote">
+            "Il giorno che è caduto il teatro, ho capito che non eravamo solo noi a soffrire. Il mondo intero ha visto cosa ci hanno fatto."
+          </div>
+          <div class="voice-author">Olena, 45 anni</div>
+          <div class="voice-role">Insegnante, sopravvissuta a Mariupol</div>
+          <div class="voice-date">Kyiv, giugno 2022</div>
+        </div>
+
+        <!-- Voce 3 -->
+        <div class="voice-card" data-category="medici">
+          <div class="voice-quote">
+            "Abbiamo operato per 36 ore senza sotto. Non c'era tempo per paura. C'era solo salvare vite."
+          </div>
+          <div class="voice-author">Dott. Andriy, 38 anni</div>
+          <div class="voice-role">Chirurgo, Ospedale di Kharkiv</div>
+          <div class="voice-date">Kharkiv, aprile 2022</div>
+        </div>
+
+        <!-- Voce 4 -->
+        <div class="voice-card" data-category="bambini">
+          <div class="voice-quote">
+            "Mamma dice che torneremo a casa. Io credo che la nostra casa sia ovunque siamo insieme."
+          </div>
+          <div class="voice-author">Sofia, 8 anni</div>
+          <div class="voice-role">Scolarina, evacuata da Bucha</div>
+          <div class="voice-date">Polonia, maggio 2022</div>
+        </div>
+
+        <!-- Voce 5 -->
+        <div class="voice-card" data-category="artisti">
+          <div class="voice-quote">
+            "L'arte è la nostra resistenza. Ogni canzone che cantiamo è un attacco alla loro propaganda."
+          </div>
+          <div class="voice-author">Taras, 29 anni</div>
+          <div class="voice-role">Musicista, fronte di Donbas</div>
+          <div class="voice-date">Kyiv, dicembre 2022</div>
+        </div>
+
+        <!-- Lettera 1 -->
+        <div class="letter-card" data-category="lettere">
+          <div class="letter-header">
+            <div class="letter-from">Da: Sergiy, 42 anni, soldato</div>
+            <div class="letter-to">A: La mia famiglia</div>
+            <div class="voice-date">Fronte sud, 15 agosto 2022</div>
+          </div>
+          <div class="letter-content">
+            <p>Cari tutti,</p>
+            <p>Vi scrivo questa lettera sapendo che potrebbe essere l'ultima. Non per drammatizzare, ma perché sulla linea del fronte non si sa mai.</p>
+            <p>Voglio che sapiate che combatto perché credo in un futuro dove i nostri figli non dovranno più combattere. Credo in un'Ucraina libera, in un'Europa unita, in un mondo dove la forza non vince sulla giustizia.</p>
+            <p>Se non torno, non piangete per me. Cantate le nostre canzoni, raccontate le nostre storie, ricordate chi siamo stati.</p>
+            <p>Vi amo più di quanto le parole possano dire.</p>
+          </div>
+          <div class="letter-signature">
+            Con amore,<br>
+            Sergiy
+          </div>
+        </div>
+
+        <!-- Voce 6 -->
+        <div class="voice-card" data-category="civili">
+          <div class="voice-quote">
+            "Ho perso tutto: casa, lavoro, amici. Ma ho ancora la mia identità ucraina. Questo nessuno me lo toglie."
+          </div>
+          <div class="voice-author">Iryna, 52 anni</div>
+          <div class="voice-role">Imprenditrice, Bucha</div>
+          <div class="voice-date">Kyiv, settembre 2022</div>
+        </div>
+
+        <!-- Voce 7 -->
+        <div class="voice-card" data-category="soldati">
+          <div class="voice-quote">
+            "Quando ho visto la bandiera ucraina su Kherson, ho pianto come un bambino. Era il giorno in cui ho capito che stavamo vincendo."
+          </div>
+          <div class="voice-author">Yuriy, 28 anni</div>
+          <div class="voice-role">Capitano, Forze Armate</div>
+          <div class="voice-date">Kherson, 11 novembre 2022</div>
+        </div>
+
+        <!-- Lettera 2 -->
+        <div class="letter-card" data-category="lettere">
+          <div class="letter-header">
+            <div class="letter-from">Da: Maria, 67 anni, nonna</div>
+            <div class="letter-to">A: Mio nipote al fronte</div>
+            <div class="voice-date">Lviv, 24 dicembre 2022</div>
+          </div>
+          <div class="letter-content">
+            <p>Carissimo Dmytro,</p>
+            <p>Oggi è Natale e la tavola è vuota senza di te. Ma il cuore è pieno di orgogio per quello che fai.</p>
+            <p>Quando ero giovane, ho vissuto l'occupazione sovietica. Ho imparato a non arrendermi. Ora tocca a te, ma so che ce la farai perché sei forte come tuo nonno.</p>
+            <p>Torna a casa vivo. Ti aspettiamo con borshch e varenyky.</p>
+Con tutto il mio amore,</p>
+          </div>
+          <div class="letter-signature">
+            La tua nonna,<br>
+            Maria
+          </div>
+        </div>
+
+        <!-- Voce 8 -->
+        <div class="voice-card" data-category="medici">
+          <div class="voice-quote">
+            "Ho curato soldati di entrambe le parti. La guerra non ha umanità, ma noi medici dobbiamo averla sempre."
+          </div>
+          <div class="voice-author">Dott.ssa Kateryna, 41 anni</div>
+          <div class="voice-role">Medico di emergenza</div>
+          <div class="voice-date">Zaporizhzhia, gennaio 2023</div>
+        </div>
+
+        <!-- Voce 9 -->
+        <div class="voice-card" data-category="bambini">
+          <div class="voice-quote">
+            "Ho disegnato la mia casa. Quando tornerò, la riconoscerò."
+          </div>
+          <div class="voice-author">Danylo, 6 anni</div>
+          <div class="voice-role">Bambino, evacuato da Mariupol</div>
+          <div class="voice-date">Germania, luglio 2022</div>
+        </div>
+
+        <!-- Voce 10 -->
+        <div class="voice-card" data-category="artisti">
+          <div class="voice-quote">
+            "Dipingo la distruzione per ricordare cosa abbiamo perso. Ma dipingo anche la speranza, perché è l'unica cosa che ci resta."
+          </div>
+          <div class="voice-author">Anna, 33 anni</div>
+          <div class="voice-role">Artista, Kyiv</div>
+          <div class="voice-date">Kyiv, marzo 2023</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-band" style="background: rgba(16, 24, 32, 0.95);">
+    <div class="container reveal">
+      <h2 class="mb-4">Condividi la tua voce</h2>
+      <p class="section-text mb-4">
+        Se sei ucraino e vuoi condividere la tua storia, la tua lettera o il tuo messaggio, 
+        questo spazio è per te. Le voci ucraine devono essere ascoltate.
+      </p>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="voice-card">
+            <h3>Come partecipare</h3>
+            <ul style="color: rgba(238, 227, 200, 0.8); line-height: 2;">
+              <li>Scrivi la tua testimonianza o lettera</li>
+              <li>Indica il tuo nome (o pseudonimo) e ruolo</li>
+              <li>Specifica la data e il luogo</li>
+              <li>Invia a: voci@skyyhistory.org</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="voice-card">
+            <h3>Linee guida</h3>
+            <ul style="color: rgba(238, 227, 200, 0.8); line-height: 2;">
+              <li>Rispetta la privacy degli altri</li>
+              <li>Non condividere informazioni militari sensibili</li>
+              <li>Sii autentico, la verità è più potente della propaganda</li>
+              <li>Le storie verranno verificate prima della pubblicazione</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../scripts/script.js"></script>
+  <script src="../scripts/theme.js"></script>
+  <script>
+    document.querySelectorAll('.voice-filter button').forEach(btn => {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.voice-filter button').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        
+        const filter = this.dataset.filter;
+        document.querySelectorAll('.voice-card, .letter-card').forEach(card => {
+          if (filter === 'all' || card.dataset.category === filter) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

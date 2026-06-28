@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sezione bambini: storia dell'Ucraina raccontata con semplicità, giochi educativi e attività creative.">
+  <title>Sezione Bambini | Skyy History</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/style.css">
+  <style>
+    .kids-hero {
+      min-height: 50vh;
+      display: grid;
+      align-items: end;
+      padding: 5rem 0 2rem;
+      background: linear-gradient(135deg, rgba(39, 105, 179, 0.9), rgba(242, 200, 75, 0.8));
+    }
+    .kids-hero h1, .kids-hero p { color: #fff; }
+    .kids-section {
+      background: linear-gradient(135deg, rgba(248, 240, 220, 0.98), rgba(238, 227, 200, 0.95));
+      color: var(--ink);
+    }
+    .story-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      margin-bottom: 1.5rem;
+    }
+    .story-title {
+      color: var(--signal);
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .story-content { line-height: 1.8; font-size: 1.05rem; }
+    .quiz-box {
+      background: linear-gradient(135deg, var(--ukraine-blue), var(--ukraine-gold));
+      border-radius: 12px;
+      padding: 2rem;
+      color: #fff;
+      margin: 2rem 0;
+    }
+    .quiz-question { font-size: 1.3rem; font-weight: 700; margin-bottom: 1rem; }
+    .quiz-options { display: grid; gap: 0.75rem; }
+    .quiz-option {
+      background: rgba(255, 255, 255, 0.2);
+      border: 2px solid transparent;
+      border-radius: 8px;
+      padding: 1rem;
+      color: #fff;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .quiz-option:hover { background: rgba(255, 255, 255, 0.3); }
+    .quiz-option.correct { background: rgba(74, 222, 128, 0.5); border-color: #4ade80; }
+    .quiz-option.wrong { background: rgba(178, 59, 46, 0.5); border-color: var(--signal); }
+    .activity-box {
+      background: #fff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border: 2px dashed var(--ukraine-gold);
+    }
+    .activity-title { color: var(--signal); font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .fact-card {
+      background: linear-gradient(135deg, rgba(39, 105, 179, 0.1), rgba(242, 200, 75, 0.1));
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .fact-emoji { font-size: 2rem; margin-bottom: 0.5rem; }
+    .fact-text { font-size: 1.1rem; color: var(--ink); }
+    .nav-pills .nav-link { color: var(--ink); border-radius: 999px; padding: 0.75rem 1.5rem; margin: 0 0.25rem; }
+    .nav-pills .nav-link.active { background: var(--signal); color: #fff; }
+  </style>
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  
+  <nav class="navbar navbar-expand-lg war-navbar sticky-top" data-bs-theme="dark">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="Main.html#inizio">
+        <span class="brand-mark">SH</span> Skyy History
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#skyyNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="skyyNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="Main.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="museo.html">Museo</a></li>
+          <li class="nav-item"><a class="nav-link" href="voci-ucraine.html">Voci Ucraine</a></li>
+          <li class="nav-item"><a class="nav-link" href="glossario.html">Glossario</a></li>
+          <li class="nav-item"><a class="nav-link active" href="bambini.html">Bambini</a></li>
+          <li class="nav-item">
+            <button id="themeToggle" type="button" aria-label="Cambia tema"></button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="kids-hero">
+    <div class="container reveal">
+      <p class="hero-kicker mb-3" style="color: rgba(255,255,255,0.8);">Impara giocando</p>
+      <h1>Sezione Bambini</h1>
+      <p class="hero-lead mt-4">Scopri la storia dell'Ucraina con storie, giochi e attività divertenti!</p>
+    </div>
+  </main>
+
+  <section class="kids-section page-band">
+    <div class="container">
+      <ul class="nav nav-pills justify-content-center mb-4" id="kidsTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="stories-tab" data-bs-toggle="pill" data-bs-target="#stories" type="button">Storie</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="quiz-tab" data-bs-toggle="pill" data-bs-target="#quiz" type="button">Quiz</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="facts-tab" data-bs-toggle="pill" data-bs-target="#facts" type="button">Curiosità</button>
+        </li>
+      </ul>
+
+      <div class="tab-content" id="kidsTabContent">
+        <div class="tab-pane fade show active" id="stories" role="tabpanel">
+          <div class="story-card">
+            <div class="story-title">La Storia di Sofia e il suo Paese</div>
+            <div class="story-content">
+              <p>C'era una volta una bambina di nome Sofia che viveva in un paese bellissimo chiamato Ucraina. L'Ucraina è un paese grande, con montagne alte, fiumi lunghi e campi di grano che sembrano un mare d'oro.</p>
+              <p>Sofia amava ascoltare le storie della sua nonna, che le raccontava di quando l'Ucraina era governata da principi e principesse, tanto tempo fa.</p>
+              <p>"Sofia," diceva la nonna, "il nostro paese ha una parola speciale: <strong>Слава</strong>! Significa 'gloria' ed è quello che diciamo quando siamo orgogliosi del nostro paese."</p>
+              <p>E Sofia, ogni volta, rispondeva forte: "Слава Україні!" - "Gloria all'Ucraina!"</p>
+            </div>
+          </div>
+
+          <div class="story-card">
+            <div class="story-title">Il Cavaliere e la Bandiera</div>
+            <div class="story-content">
+              <p>Molto tempo fa, vivevano i cosacchi, dei cavalieri coraggiosi che proteggevano le terre ucraine. Indossavano vestiti colorati e avevano lunghi baffi.</p>
+              <p>Un giorno, un giovane cosacco di nome Taras vide che i nemici volevano rubare la bandiera del suo villaggio. La bandiera era speciale: era blu e giallo, come il cielo e il sole.</p>
+              <p>"Non ve la prenderete!" gridò Taras. E così, con il suo cavallo veloce, portò la bandiera in salvo sulle montagne più alte.</p>
+              <p>Da quel giorno, la bandiera blu e giallo divenne il simbolo della libertà dell'Ucraina.</p>
+            </div>
+          </div>
+
+          <div class="story-card">
+            <div class="story-title">La Piccola Pianista di Kyiv</div>
+            <div class="story-content">
+              <p>Nella bella città di Kyiv, viveva una bambina di nome Olena che amava suonare il pianoforte. La sua musica era così bella che tutti si fermavano ad ascoltare.</p>
+              <p>Un giorno, Olena sentì che stava per arrivare un temporale. "Non ho paura," disse, "perché la mia musica è più forte di qualsiasi tuono!"</p>
+              <p>E così, mentre tutti si nascondevano, Olena suonò la sua canzone più bella. Le note volavano nel cielo e, a un certo punto, le nubi si aprirono e tornò il sole!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="quiz" role="tabpanel">
+          <div class="quiz-box">
+            <div class="quiz-question">1. Qual è il colore della bandiera ucraina?</div>
+            <div class="quiz-options">
+              <button class="quiz-option" data-correct="false">Rosso e nero</button>
+              <button class="quiz-option" data-correct="true">Blu e giallo</button>
+              <button class="quiz-option" data-correct="false">Verde e bianco</button>
+            </div>
+          </div>
+
+          <div class="quiz-box">
+            <div class="quiz-question">2. Come si chiama la capitale dell'Ucraina?</div>
+            <div class="quiz-options">
+              <button class="quiz-option" data-correct="false">Mosca</button>
+              <button class="quiz-option" data-correct="true">Kyiv</button>
+              <button class="quiz-option" data-correct="false">Varsavia</button>
+            </div>
+          </div>
+
+          <div class="quiz-box">
+            <div class="quiz-question">3. Cosa significa "Слава Україні!"?</div>
+            <div class="quiz-options">
+              <button class="quiz-option" data-correct="true">Gloria all'Ucraina!</button>
+              <button class="quiz-option" data-correct="false">Buongiorno!</button>
+              <button class="quiz-option" data-correct="false">Grazie!</button>
+            </div>
+          </div>
+
+          <div class="quiz-box">
+            <div class="quiz-question">4. Qual è un piatto tipico ucraino?</div>
+            <div class="quiz-options">
+              <button class="quiz-option" data-correct="false">Pizza</button>
+              <button class="quiz-option" data-correct="true">Borshch</button>
+              <button class="quiz-option" data-correct="false">Sushi</button>
+            </div>
+          </div>
+
+          <div class="quiz-box">
+            <div class="quiz-question">5. Come si chiamano i guerrieri tradizionali ucraini?</div>
+            <div class="quiz-options">
+              <button class="quiz-option" data-correct="false">Ninja</button>
+              <button class="quiz-option" data-correct="true">Cosacchi</button>
+              <button class="quiz-option" data-correct="false">Samurai</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="facts" role="tabpanel">
+          <div class="fact-card">
+            <div class="fact-emoji">🌻</div>
+            <div class="fact-text">Il girasole è il fiore nazionale dell'Ucraina! Lo vediamo ovunque, perché ama il sole, proprio come il popolo ucraino.</div>
+          </div>
+
+          <div class="fact-card">
+            <div class="fact-emoji">️</div>
+            <div class="fact-text">Le montagne Carpaci sono tra le più alte d'Europa! Ci sono orsi e lupi che vivono lì.</div>
+          </div>
+
+          <div class="fact-card">
+            <div class="fact-emoji">🍲</div>
+            <div class="fact-text">Il borshch è così importante che l'UNESCO lo ha dichiarato patrimonio dell'umanità!</div>
+          </div>
+
+          <div class="fact-card">
+            <div class="fact-emoji">🎻</div>
+            <div class="fact-text">La bandura è uno strumento musicale speciale con molte corde. I suonatori si chiamano "kobzari".</div>
+          </div>
+
+          <div class="fact-card">
+            <div class="fact-emoji"></div>
+            <div class="fact-text">Le "pysanky" sono uova decorate che si fanno per Pasqua. Ogni regione ha i suoi disegni speciali!</div>
+          </div>
+
+          <div class="fact-card">
+            <div class="fact-emoji"></div>
+            <div class="fact-text">La cattedrale di Santa Sofia a Kyiv ha più di 1000 anni! È così bella che è patrimonio UNESCO.</div>
+          </div>
+
+          <div class="fact-card">
+            <div class="fact-emoji"></div>
+            <div class="fact-text">L'Ucraina ha un'industria spaziale! Ha lanciato satelliti e ha contribuito alla stazione spaziale internazionale.</div>
+          </div>
+
+          <div class="fact-card">
+            <div class="fact-emoji"></div>
+            <div class="fact-text">Taras Shevchenko è il poeta più famoso dell'Ucraina. Ha scritto poesie sulla libertà e sulla giustizia.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../scripts/script.js"></script>
+  <script src="../scripts/theme.js"></script>
+  <script>
+    document.querySelectorAll('.quiz-option').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const isCorrect = this.dataset.correct === 'true';
+        this.classList.add(isCorrect ? 'correct' : 'wrong');
+        this.parentElement.querySelectorAll('.quiz-option').forEach(opt => {
+          opt.style.pointerEvents = 'none';
+        });
+      });
+    });
+  </script>
+</body>
+</html>

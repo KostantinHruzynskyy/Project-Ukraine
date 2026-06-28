@@ -1,0 +1,13 @@
+{
+  "name": "Skyy History - Archivio Ucraina",
+  "short_name": "Skyy History",
+  "description": "Archivio interattivo sulla storia dell'Ucraina: memoria, guerra, cultura e resistenza",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#101820",
+  "theme_color": "#2769b3",
+  "orientation": "portrait-primary",
+  "categories": ["education", "books"],
+  "lang": "it",
+  "dir": "ltr"
+}

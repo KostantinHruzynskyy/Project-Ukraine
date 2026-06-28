@@ -1,171 +1,252 @@
-const rooms = {
+const museumRooms = {
   kyivan: {
-    period: "IX-XIII secolo",
+    era: "IX-XIII secolo",
     title: "Kyivan Rus'",
-    text: "Kyiv fu uno dei grandi centri medievali dell'Europa orientale. Questa sala apre la storia ucraina prima degli imperi moderni.",
+    description: "Kyiv fu uno dei grandi centri medievali dell'Europa orientale. Questa sala apre la storia ucraina prima degli imperi moderni.",
     object: "Oggetto simbolico: Kyiv, citta-madre della memoria storica.",
     image: "https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Ukraine.svg",
-    alt: "Bandiera dell'Ucraina"
+    facts: [
+      "Kyiv fu fondata nel V secolo",
+      "Il X secolo vide l'ascesa del Rus' di Kyiv",
+      "La cattedrale di Santa Sofia è patrimonio UNESCO",
+      "Kyiv è diventata centro religioso e commerciale"
+    ]
   },
   cosacchi: {
-    period: "XVI-XVIII secolo",
-    title: "Cosacchi e liberta",
-    text: "La tradizione cosacca unisce autonomia, difesa armata, assemblee e immaginario della frontiera.",
-    object: "Oggetto simbolico: la mazza da hetman, segno di autorita.",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Cossack%20with%20musket.svg",
-    alt: "Cosacco con moschetto"
+    era: "XVI-XVIII secolo",
+    title: "Cosacchi",
+    description: "La tradizione cosacca lega difesa, autonomia militare e immaginario della liberta ucraina. I cosacchi furono guerrieri liberi che difesero i confini.",
+    object: "Oggetto simbolico: La libertà delle steppe e la tradizione militare.",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Cossack%20with%20a%20musket.jpg",
+    facts: [
+      "I cosacchi nacquero nel XV secolo",
+      "La Zaporizhzhia fu la loro fortezza",
+      "Erano organizzati in republiche militari",
+      "Simbolo di autonomia e resistenza"
+    ]
   },
   holodomor: {
-    period: "1932-1933",
+    era: "1932-1933",
     title: "Holodomor",
-    text: "La carestia forzata colpi milioni di ucraini. Ricordarla significa opporsi alla cancellazione storica.",
-    object: "Oggetto simbolico: una spiga di grano spezzata.",
+    description: "La carestia forzata che colpì milioni di ucraini e diventa una ferita centrale della memoria nazionale.",
+    object: "Oggetto simbolico: Il chicco di grano, simbolo di vita e morte.",
     image: "https://commons.wikimedia.org/wiki/Special:FilePath/HolodomorKharkiv.jpg",
-    alt: "Civili durante l'Holodomor a Kharkiv"
+    facts: [
+      "Milioni di vittime in tutta l'Ucraina",
+      "Il grano fu requisito dal regime sovietico",
+      "La memoria fu censurata per decenni",
+      "Oggi è riconosciuto come genocidio"
+    ]
   },
   ww2: {
-    period: "1939-1945",
+    era: "1941-1945",
     title: "Seconda guerra mondiale",
-    text: "L'Ucraina subi occupazione nazista, massacri e distruzioni, ma milioni di ucraini contribuirono alla sconfitta del nazismo.",
-    object: "Oggetto simbolico: papavero della memoria, lutto e vittoria.",
+    description: "L'Ucraina fu uno dei principali campi di battaglia del fronte orientale. Milioni di ucraini combatterono nelle forze sovietiche.",
+    object: "Oggetto simbolico: La memoria dei caduti e la ricostruzione.",
     image: "https://commons.wikimedia.org/wiki/Special:FilePath/Kiev%20BabiYar%20Monument%20070613.jpg",
-    alt: "Monumento di Babyn Yar a Kyiv"
+    facts: [
+      "6+ milioni di ucraini nelle forze sovietiche",
+      "5-7 milioni di morti ucraini",
+      "700+ città distrutte",
+      "Babyn Yar: simbolo della Shoah ucraina"
+    ]
   },
   maidan: {
-    period: "2013-2014",
-    title: "Rivoluzione della Dignita",
-    text: "Maidan e la richiesta di dignita, giustizia e futuro europeo. Una piazza diventa luogo politico e morale.",
-    object: "Oggetto simbolico: casco, bandiera e barricate.",
+    era: "2013-2014",
+    title: "Maidan",
+    description: "La Rivoluzione della Dignita: proteste per dignita, giustizia e integrazione europea.",
+    object: "Oggetto simbolico: La piazza come spazio di liberta.",
     image: "https://commons.wikimedia.org/wiki/Special:FilePath/We%27ll%20not%20retreat%21%20Euromaidan%202014%20in%20Kyiv.jpg",
-    alt: "Euromaidan a Kyiv"
+    facts: [
+      "Iniziò nel novembre 2013",
+      "Heavenly Hundred: i manifestanti uccisi",
+      "Caduta di Yanukovych nel febbraio 2014",
+      "Simbolo della scelta europea"
+    ]
   },
   invasione: {
-    period: "Dal 2022",
-    title: "Invasione e resistenza",
-    text: "L'invasione russa su vasta scala trasforma l'intera societa ucraina in una rete di difesa, cura e memoria.",
-    object: "Oggetto simbolico: la bandiera ucraina tra le rovine.",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D0%BF%D1%80%D0%B0%D0%BF%D0%BE%D1%80_2022.jpg",
-    alt: "Bandiera ucraina nel 2022"
+    era: "2022-oggi",
+    title: "Invasione 2022",
+    description: "La guerra totale porta assedi, bombardamenti e resistenza nazionale.",
+    object: "Oggetto simbolico: La bandiera ucraina, simbolo di resistenza.",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%A3%D0%BA%D1%80%D0%B0%D0%B9%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D0%BF%D1%80%D0%B0%D0%BF%D0%BE%D1%80_2022.jpg",
+    facts: [
+      "24 febbraio 2022: inizio invasione",
+      "Kyiv resiste all'iniziale assedio",
+      "Bucha, Mariupol: simboli della sofferenza",
+      "Kherson liberata l'11 novembre 2022"
+    ]
   },
   cultura: {
-    period: "Sempre",
+    era: "Tradizione e modernita",
     title: "Cultura viva",
-    text: "Lingua, cibo, ricami, canti, letteratura e terra tengono insieme identita e futuro.",
-    object: "Oggetto simbolico: vyshyvanka, pane e parola ucraina.",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Ukrainian%20embroidery.jpg",
-    alt: "Ricamo tradizionale ucraino"
+    description: "La resistenza non e solo militare: vive nella lingua, nel cibo, nelle famiglie, nella scuola e nella letteratura.",
+    object: "Oggetto simbolico: Vyshyvanka, simbolo di identita.",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Vyshyvanka.jpg",
+    facts: [
+      "Borshch riconosciuto dall'UNESCO",
+      "Vyshyvanka: ricamo tradizionale",
+      "Pysanky: uova decorate",
+      "Musica: da bandura a DakhaBrakha"
+    ]
   },
   lingua: {
-    period: "Dal medioevo a oggi",
+    era: "Identita nazionale",
     title: "Lingua ucraina",
-    text: "L'ucraino e una lingua slava orientale, scritta in cirillico. La sua storia passa da creativita letteraria, divieti imperiali, russificazione sovietica e rinascita pubblica dopo l'indipendenza.",
-    object: "Oggetto simbolico: una pagina in ucraino con la parola воля, liberta.",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Ukrainian%20alphabet.svg",
-    alt: "Alfabeto ucraino"
+    description: "L'ucraino e lingua nazionale, scuola, letteratura e memoria quotidiana: usarla significa difendere identita dopo secoli di russificazione.",
+    object: "Oggetto simbolico: Il libro di Shevchenko, padre della lingua letteraria.",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Taras%20Shevchenko.jpg",
+    facts: [
+      "Lingua ufficiale dal 1991",
+      "Secolari di russificazione",
+      "Rinascita culturale contemporanea",
+      "24 agosto: Giorno della Lingua Ucraina"
+    ]
   },
   autori: {
-    period: "XVIII-XXI secolo",
-    title: "Autori e coscienza nazionale",
-    text: "Skovoroda, Shevchenko, Lesia Ukrainka, Franko, Stus, Kostenko, Zabuzhko e Zhadan mostrano come la letteratura difenda lingua, memoria, liberta e identita europea.",
-    object: "Oggetto simbolico: un libro consumato passato di mano in mano.",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Taras_Shevchenko_selfportrait_1840.jpg",
-    alt: "Autoritratto di Taras Shevchenko"
+    era: "Letteratura",
+    title: "Autori ucraini",
+    description: "Poeti e scrittori sono parte della coscienza nazionale: raccontano liberta, repressione, citta orientali, guerra, ironia e dignita.",
+    object: "Oggetto simbolico: Le opere di Shevchenko, Stus, Zhadan.",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Serhiy_Zhadan.jpg",
+    facts: [
+      "Taras Shevchenko: poeta nazionale",
+      "Vasyl Stus: poeta dissidente",
+      "Serhiy Zhadan: voce contemporanea",
+      "Oksana Zabuzhko: saggistica e narrativa"
+    ]
   },
   musica: {
-    period: "Tradizione e presente",
+    era: "Tradizione e innovazione",
     title: "Musica ucraina",
-    text: "Kobzari, bandura, canto corale, Mykola Lysenko, DakhaBrakha, Jamala, Go_A, ONUKA e Kalush collegano memoria popolare, sperimentazione e diplomazia culturale.",
-    object: "Oggetto simbolico: bandura, microfono e coro in rifugio.",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Bandura_instrument.jpg",
-    alt: "Bandura ucraina"
+    description: "La musica va dai kobzari alla scena elettronica e pop: folklore, jazz, rap, Eurovision e concerti al fronte diventano diplomazia culturale.",
+    object: "Oggetto simbolico: Bandura, strumento tradizionale.",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Bandura.jpg",
+    facts: [
+      "Bandura: strumento a corde tradizionale",
+      "Jamala: vittoria Eurovision 2016",
+      "DakhaBrakha: world music contemporanea",
+      "Kalush Orchestra: Eurovision 2022"
+    ]
   },
   cibo: {
-    period: "Famiglia e stagioni",
+    era: "Tradizioni culinarie",
     title: "Cibo e tradizioni",
-    text: "Borshch, varenyky, holubtsi, pampushky, kutia, pysanky e vyshyvanka raccontano ospitalita, agricoltura, rituali familiari e identita regionale.",
-    object: "Oggetto simbolico: una ciotola di borshch con pane e aglio.",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Borscht_served.jpg",
-    alt: "Borshch servito in una ciotola"
+    description: "Il cibo racconta famiglia, villaggio, festa, lutto e solidarieta. Anche cucinare diventa identita.",
+    object: "Oggetto simbolico: Borshch, zuppa nazionale.",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Borshch.jpg",
+    facts: [
+      "Borshch: patrimonio UNESCO",
+      "Varenyky: ravioli tradizionali",
+      "Holubtsi: ripieni di cavolo",
+      "Pampushky: pane all'aglio"
+    ]
   },
   citta: {
-    period: "Mappa viva",
-    title: "Citta ucraine",
-    text: "Kyiv, Lviv, Odesa, Kharkiv, Dnipro, Zaporizhzhia, Chernihiv e Uzhhorod hanno storie diverse: capitale, porto, industria, universita, confini, minoranze e resistenza.",
-    object: "Oggetto simbolico: una mappa con il Dnipro e le strade verso il Mar Nero.",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Map%20of%20Ukraine%20political%20simple%20blank.png",
-    alt: "Mappa politica semplificata dell'Ucraina"
+    era: "Territori",
+    title: "Città ucraine",
+    description: "Ogni citta racconta un volto diverso: capitale antica, frontiera europea, porto cosmopolita, industria, universita e resistenza.",
+    object: "Oggetto simbolico: Le citta come crocevia di culture.",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Kyiv_panorama.jpg",
+    facts: [
+      "Kyiv: capitale millenaria",
+      "Lviv: porta dell'Europa",
+      "Odesa: porto cosmopolita",
+      "Kharkiv: citta industriale"
+    ]
   },
   societa: {
-    period: "Pluralita religiosa e civile",
-    title: "Societa, fedi e comunita",
-    text: "Cristianesimo ortodosso, greco-cattolicesimo, ebraismo, islam crimeano tataro, protestantesimo e comunita locali mostrano una societa plurale. La guerra colpisce anche scuole, luoghi di culto, archivi e reti di solidarieta.",
-    object: "Oggetto simbolico: una candela accesa accanto a un registro di nomi.",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/St%20Sophia%27s%20Cathedral%20in%20Kyiv.jpg",
-    alt: "Cattedrale di Santa Sofia a Kyiv"
+    era: "Comunita",
+    title: "Societa e religioni",
+    description: "Ortodossi, greco-cattolici, ebrei, musulmani crimeani e altre comunita mostrano una storia religiosa plurale.",
+    object: "Oggetto simbolico: Le chiese, simbolo di pluralismo.",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Saint_Michael%27s_Golden-Domed_Monastery.jpg",
+    facts: [
+      "Chiesa ortodossa: maggioritaria",
+      "Chiesa greco-cattolica: occidentale",
+      "Comunità ebraica: storia millenaria",
+      "Tatari di Crimea: islam"
+    ]
   },
   diaspora: {
-    period: "XIX-XXI secolo",
-    title: "Diaspora ucraina",
-    text: "Comunita ucraine in Europa e Nord America hanno conservato lingua, chiese, scuole, archivi e sostegno civile. Dopo il 2022 una nuova diaspora di rifugiati ha portato la memoria della guerra in molte citta europee.",
-    object: "Oggetto simbolico: una valigia con libri, fotografie e una bandiera piegata.",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Ukraine.svg",
-    alt: "Bandiera ucraina come simbolo della diaspora"
+    era: "Mondi connessi",
+    title: "Diaspora",
+    description: "La diaspora conserva lingua, chiese, scuole, festival e reti di aiuto: durante la guerra e diventata anche diplomazia civile.",
+    object: "Oggetto simbolico: I ponti tra le comunita globali.",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Ukrainian_diaspora.jpg",
+    facts: [
+      "Forte presenza in Canada e USA",
+      "Comun e Europa",
+      "Reti di aiuto durante la guerra",
+      "Diplomazia civile globale"
+    ]
   },
   tecnologia: {
-    period: "XXI secolo",
-    title: "Tecnologia e ricostruzione",
-    text: "Droni, software, ferrovie, reti energetiche, app pubbliche, volontari digitali e protezione dei dati mostrano un'Ucraina moderna che difende e ricostruisce allo stesso tempo.",
-    object: "Oggetto simbolico: tablet, mappa digitale e generatore elettrico.",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/UA%20117th%20TDF%20Brigade%20heavy%20mortar.jpg",
-    alt: "Tecnologia e difesa territoriale ucraina"
+    era: "Innovazione",
+    title: "Tecnologia",
+    description: "L'Ucraina ha una forte tradizione tecnica: aerospazio, matematica, informatica, industria e innovazione militare/civile.",
+    object: "Oggetto simbolico: L'innovazione come difesa.",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Ukrainian_drone.jpg",
+    facts: [
+      "Industria aerospaziale storica",
+      "Settore IT globale",
+      "Droni: innovazione militare",
+      "Startup tecnologiche"
+    ]
   }
 };
 
-const roomButtons = document.querySelectorAll(".museum-room");
-const display = document.querySelector("#museumDisplay");
+function initMuseum() {
+  const navButtons = document.querySelectorAll('.museum-room');
+  const display = document.getElementById('museumDisplay');
+  const quizContainer = document.querySelector('[data-museum-quiz]');
+  const quizResult = document.getElementById('museumQuizResult');
 
-roomButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const room = rooms[button.dataset.room];
+  if (!navButtons.length || !display) return;
 
-    roomButtons.forEach((item) => item.classList.remove("active"));
-    button.classList.add("active");
+  function showRoom(roomId) {
+    const room = museumRooms[roomId];
+    if (!room) return;
 
     display.innerHTML = `
-      <img src="${room.image}" alt="${room.alt}">
+      <img src="${room.image}" alt="${room.title}" loading="lazy">
       <div>
-        <span>${room.period}</span>
+        <span>${room.era}</span>
         <h2>${room.title}</h2>
-        <p>${room.text}</p>
+        <p>${room.description}</p>
         <strong>${room.object}</strong>
+        <ul class="museum-facts">
+          ${room.facts.map(fact => `<li>${fact}</li>`).join('')}
+        </ul>
       </div>
     `;
 
-    const image = display.querySelector("img");
+    navButtons.forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.room === roomId);
+    });
+  }
 
-    if (image) {
-      image.loading = "lazy";
-      image.decoding = "async";
-      image.referrerPolicy = "no-referrer";
-      image.addEventListener("error", () => {
-        image.src = "https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Ukraine.svg";
-      }, { once: true });
-    }
-  });
-});
-
-const museumQuiz = document.querySelector("[data-museum-quiz]");
-const museumQuizResult = document.querySelector("#museumQuizResult");
-
-if (museumQuiz && museumQuizResult) {
-  museumQuiz.querySelectorAll("button").forEach((button) => {
-    button.addEventListener("click", () => {
-      museumQuiz.querySelectorAll("button").forEach((item) => item.classList.remove("correct", "wrong"));
-      const isCorrect = button.dataset.correct === "true";
-      button.classList.add(isCorrect ? "correct" : "wrong");
-      museumQuizResult.textContent = isCorrect
-        ? "Esatto: la resistenza ucraina e militare, ma anche culturale e civile."
-        : "Non proprio: la cultura e una parte essenziale della resistenza.";
+  navButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      showRoom(button.dataset.room);
     });
   });
+
+  if (quizContainer) {
+    quizContainer.addEventListener('click', (e) => {
+      if (e.target.tagName === 'BUTTON') {
+        const isCorrect = e.target.dataset.correct === 'true';
+        if (quizResult) {
+          quizResult.textContent = isCorrect 
+            ? 'Corretto! La cultura ucraina e fatta di lingua, memoria, terra e comunita.' 
+            : 'Riprova. Pensa a cosa rende un popolo resiliente oltre le armi.';
+          quizResult.className = 'quiz-result ' + (isCorrect ? 'correct' : 'incorrect');
+        }
+      }
+    });
+  }
+
+  showRoom('kyivan');
 }
+
+document.addEventListener('DOMContentLoaded', initMuseum);

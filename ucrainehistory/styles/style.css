@@ -4012,3 +4012,333 @@ img.image-focus-top {
     gap: 0.25rem !important;
   }
 }
+
+/* ===== NUOVE FUNZIONALITA ===== */
+
+/* Breadcrumb Navigation */
+#breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  border-bottom: 1px solid rgba(238, 227, 200, 0.1);
+  margin-bottom: 1rem;
+}
+
+.breadcrumb-link {
+  color: var(--paper);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.breadcrumb-link:hover {
+  color: var(--ukraine-gold);
+}
+
+.breadcrumb-separator {
+  color: rgba(238, 227, 200, 0.4);
+}
+
+.breadcrumb-current {
+  color: var(--ukraine-gold);
+  font-weight: 600;
+}
+
+/* Theme Toggle */
+#themeToggle {
+  background: rgba(238, 227, 200, 0.1);
+  border: 1px solid rgba(238, 227, 200, 0.2);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: grid;
+  place-items: center;
+  transition: background 0.2s, transform 0.2s;
+}
+
+#themeToggle:hover {
+  background: rgba(238, 227, 200, 0.2);
+  transform: scale(1.1);
+}
+
+/* Search Component */
+.search-container {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 0.9rem 1.2rem;
+  padding-right: 3rem;
+  border: 1px solid rgba(238, 227, 200, 0.3);
+  border-radius: 8px;
+  background: rgba(16, 24, 32, 0.8);
+  color: var(--paper);
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+}
+
+#searchInput:focus {
+  outline: none;
+  border-color: var(--ukraine-gold);
+  box-shadow: 0 0 0 3px rgba(242, 200, 75, 0.2);
+}
+
+#searchInput::placeholder {
+  color: rgba(238, 227, 200, 0.5);
+}
+
+#searchResults {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: rgba(16, 24, 32, 0.98);
+  border: 1px solid rgba(238, 227, 200, 0.2);
+  border-radius: 8px;
+  margin-top: 0.5rem;
+  max-height: 400px;
+  overflow-y: auto;
+  display: none;
+  z-index: 1000;
+}
+
+.search-results-header {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid rgba(238, 227, 200, 0.1);
+  font-size: 0.85rem;
+  color: rgba(238, 227, 200, 0.6);
+}
+
+.search-result-item {
+  display: grid;
+  gap: 0.25rem;
+  padding: 0.9rem 1rem;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(238, 227, 200, 0.05);
+  transition: background 0.2s;
+}
+
+.search-result-item:hover {
+  background: rgba(238, 227, 200, 0.1);
+}
+
+.search-result-category {
+  font-size: 0.75rem;
+  color: var(--ukraine-gold);
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
+.search-result-title {
+  color: var(--paper);
+  font-size: 1rem;
+}
+
+.search-result-title mark {
+  background: rgba(242, 200, 75, 0.3);
+  color: inherit;
+  padding: 0 0.1rem;
+}
+
+.search-result-link {
+  font-size: 0.8rem;
+  color: rgba(238, 227, 200, 0.5);
+}
+
+.search-no-results {
+  padding: 1.5rem;
+  text-align: center;
+  color: rgba(238, 227, 200, 0.7);
+}
+
+.search-no-results p:first-child {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Back to Top Button */
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--signal);
+  color: var(--paper);
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s, background 0.2s;
+  z-index: 999;
+}
+
+.back-to-top:hover {
+  transform: translateY(-4px);
+  background: #c44a3a;
+}
+
+/* Museum Facts */
+.museum-facts {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.museum-facts li {
+  position: relative;
+  padding-left: 1.5rem;
+  color: rgba(238, 227, 200, 0.85);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.museum-facts li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--ukraine-gold);
+}
+
+/* Quiz Result Styles */
+.quiz-result.correct {
+  color: #4ade80;
+  font-weight: 600;
+}
+
+.quiz-result.incorrect {
+  color: var(--signal);
+  font-weight: 600;
+}
+
+/* Light Theme */
+[data-theme="light"] {
+  --paper: #142033;
+  --paper-light: #ffffff;
+  --paper-dark: #526071;
+  --ink: #101820;
+  --ink-soft: #263322;
+}
+
+[data-theme="light"] body {
+  background:
+    linear-gradient(90deg, rgba(248, 240, 220, 0.95), rgba(248, 240, 220, 0.85) 48%, rgba(248, 240, 220, 0.95)),
+    linear-gradient(135deg, #f8f0dc, #eee3c8);
+  color: var(--ink);
+}
+
+[data-theme="light"] .war-navbar {
+  background:
+    linear-gradient(90deg, rgba(248, 240, 220, 0.98), rgba(238, 227, 200, 0.96)),
+    repeating-linear-gradient(135deg, rgba(16, 24, 32, 0.05) 0 1px, transparent 1px 14px) !important;
+  border-bottom-color: rgba(16, 24, 32, 0.15);
+}
+
+[data-theme="light"] .navbar-brand,
+[data-theme="light"] .nav-link {
+  color: var(--ink) !important;
+}
+
+[data-theme="light"] .nav-link:hover,
+[data-theme="light"] .nav-link.active {
+  color: var(--signal) !important;
+}
+
+[data-theme="light"] .nav-link::after {
+  background: var(--signal);
+}
+
+[data-theme="light"] .history-btn {
+  background: rgba(178, 59, 46, 0.1);
+  color: var(--ink);
+  border-color: rgba(178, 59, 46, 0.3);
+}
+
+[data-theme="light"] .history-btn:hover {
+  background: var(--signal);
+  color: #fff;
+}
+
+[data-theme="light"] .scroll-progress {
+  background: linear-gradient(90deg, var(--ukraine-blue), var(--ukraine-gold), var(--signal));
+}
+
+[data-theme="light"] #searchInput {
+  background: #fff;
+  color: var(--ink);
+  border-color: rgba(16, 24, 32, 0.2);
+}
+
+[data-theme="light"] #searchResults {
+  background: #fff;
+  border-color: rgba(16, 24, 32, 0.15);
+}
+
+[data-theme="light"] .search-result-item:hover {
+  background: rgba(16, 24, 32, 0.05);
+}
+
+[data-theme="light"] .search-result-title {
+  color: var(--ink);
+}
+
+[data-theme="light"] .breadcrumb-link {
+  color: var(--ink);
+}
+
+[data-theme="light"] .breadcrumb-current {
+  color: var(--signal);
+}
+
+/* Print Styles */
+@media print {
+  .war-navbar,
+  .scroll-progress,
+  .back-to-top,
+  #searchInput,
+  #searchResults,
+  #breadcrumb,
+  #themeToggle,
+  .site-footer {
+    display: none !important;
+  }
+
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  a {
+    color: #000 !important;
+    text-decoration: underline;
+  }
+
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+  }
+
+  p {
+    page-break-inside: avoid;
+  }
+}

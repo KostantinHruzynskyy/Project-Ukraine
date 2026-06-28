@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Glossario multilingue ucraino-italiano: termini storici, culturali e militari con pronuncia.">
+  <title>Glossario Multilingue | Skyy History</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/site-order.css">
+  <style>
+    .glossary-hero {
+      min-height: 50vh;
+      display: grid;
+      align-items: end;
+      padding: 5rem 0 2rem;
+      background: linear-gradient(135deg, rgba(16, 24, 32, 0.96), rgba(38, 51, 34, 0.94));
+    }
+    .glossary-search {
+      max-width: 600px;
+      margin: 2rem auto;
+    }
+    .glossary-search input {
+      width: 100%;
+      padding: 1rem 1.5rem;
+      border: 1px solid rgba(238, 227, 200, 0.3);
+      border-radius: 8px;
+      background: rgba(16, 24, 32, 0.8);
+      color: var(--paper);
+      font-size: 1.1rem;
+    }
+    .glossary-search input:focus {
+      outline: none;
+      border-color: var(--ukraine-gold);
+      box-shadow: 0 0 0 3px rgba(242, 200, 75, 0.2);
+    }
+    .glossary-filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+    .glossary-filters button {
+      border: 1px solid rgba(238, 227, 200, 0.24);
+      border-radius: 999px;
+      padding: 0.5rem 1rem;
+      color: var(--paper);
+      background: transparent;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      transition: all 0.2s;
+    }
+    .glossary-filters button.active,
+    .glossary-filters button:hover {
+      border-color: var(--ukraine-gold);
+      background: rgba(242, 200, 75, 0.18);
+    }
+    .glossary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 1.5rem;
+    }
+    .glossary-card {
+      border: 1px solid rgba(238, 227, 200, 0.16);
+      border-radius: 8px;
+      padding: 1.5rem;
+      background: rgba(238, 227, 200, 0.05);
+      transition: transform 0.25s ease, background 0.25s ease;
+    }
+    .glossary-card:hover {
+      background: rgba(238, 227, 200, 0.1);
+      transform: translateY(-4px);
+    }
+    .glossary-term {
+      font-size: 1.4rem;
+      color: var(--ukraine-gold);
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .glossary-pronunciation {
+      color: rgba(238, 227, 200, 0.6);
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+      font-style: italic;
+    }
+    .glossary-translation {
+      color: var(--paper);
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+    .glossary-definition {
+      color: rgba(238, 227, 200, 0.7);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    .glossary-category {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      background: rgba(178, 59, 46, 0.2);
+      color: var(--signal);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+    }
+    .alphabet-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.25rem;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+    .alphabet-nav button {
+      width: 36px;
+      height: 36px;
+      border: 1px solid rgba(238, 227, 200, 0.24);
+      border-radius: 4px;
+      background: transparent;
+      color: var(--paper);
+      font-weight: 700;
+      transition: all 0.2s;
+    }
+    .alphabet-nav button:hover,
+    .alphabet-nav button.active {
+      border-color: var(--ukraine-gold);
+      background: rgba(242, 200, 75, 0.18);
+    }
+    @media (max-width: 768px) {
+      .glossary-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  
+  <nav class="navbar navbar-expand-lg war-navbar sticky-top" data-bs-theme="dark">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="Main.html#inizio">
+        <span class="brand-mark">SH</span>
+        Skyy History
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#skyyNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="skyyNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="Main.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="museo.html">Museo</a></li>
+          <li class="nav-item"><a class="nav-link" href="voci-ucraine.html">Voci Ucraine</a></li>
+          <li class="nav-item"><a class="nav-link active" href="glossario.html">Glossario</a></li>
+          <li class="nav-item"><a class="nav-link" href="bambini.html">Bambini</a></li>
+          <li class="nav-item">
+            <button id="themeToggle" class="ms-lg-2" type="button" aria-label="Cambia tema"></button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="glossary-hero">
+    <div class="container reveal">
+      <p class="hero-kicker mb-3">Impara la lingua</p>
+      <h1>Glossario Multilingue</h1>
+      <p class="hero-lead mt-4">
+        Termini ucraini, russi e italiani con pronuncia e definizioni. 
+        Comprendere le parole per comprendere la cultura.
+      </p>
+    </div>
+  </main>
+
+  <section class="page-band">
+    <div class="container">
+      <div class="glossary-search">
+        <input type="search" id="glossarySearch" placeholder="Cerca un termine... (es. borshch, maidan, slava)">
+      </div>
+
+      <div class="glossary-filters">
+        <button class="active" data-filter="all">Tutti</button>
+        <button data-filter="saluti">Saluti</button>
+        <button data-filter="cibo">Cibo</button>
+        <button data-filter="storia">Storia</button>
+        <button data-filter="guerra">Guerra</button>
+        <button data-filter="cultura">Cultura</button>
+        <button data-filter="religione">Religione</button>
+        <button data-filter="politica">Politica</button>
+      </div>
+
+      <div class="glossary-grid" id="glossaryGrid">
+        <div class="glossary-card" data-category="saluti" data-initial="s">
+          <div class="glossary-term">Слава Україні!</div>
+          <div class="glossary-pronunciation">Slava Ukrayini!</div>
+          <div class="glossary-translation">Gloria all'Ucraina!</div>
+          <div class="glossary-definition">Saluto nazionale ucraino, diventato simbolo di resistenza durante la guerra del 2022.</div>
+          <span class="glossary-category">Saluti</span>
+        </div>
+
+        <div class="glossary-card" data-category="saluti" data-initial="h">
+          <div class="glossary-term">Героям слава!</div>
+          <div class="glossary-pronunciation">Heroyam slava!</div>
+          <div class="glossary-translation">Gloria agli eroi!</div>
+          <div class="glossary-definition">Risposta tradizionale al saluto "Slava Ukrayini", usata in contesti militari e patriottici.</div>
+          <span class="glossary-category">Saluti</span>
+        </div>
+
+        <div class="glossary-card" data-category="saluti" data-initial="d">
+          <div class="glossary-term">Добрий день</div>
+          <div class="glossary-pronunciation">Dobryy den'</div>
+          <div class="glossary-translation">Buongiorno</div>
+          <div class="glossary-definition">Saluto formale ucraino durante il giorno.</div>
+          <span class="glossary-category">Saluti</span>
+        </div>
+
+        <div class="glossary-card" data-category="saluti" data-initial="d">
+          <div class="glossary-term">Дякую</div>
+          <div class="glossary-pronunciation">Dyakuyu</div>
+          <div class="glossary-translation">Grazie</div>
+          <div class="glossary-definition">Espressione di gratitudine ucraina.</div>
+          <span class="glossary-category">Saluti</span>
+        </div>
+
+        <div class="glossary-card" data-category="cibo" data-initial="b">
+          <div class="glossary-term">Борщ</div>
+          <div class="glossary-pronunciation">Borshch</div>
+          <div class="glossary-translation">Borscht</div>
+          <div class="glossary-definition">Zuppa tradizionale ucraina di barbabietole, cavolo e carne. Patrimonio UNESCO dal 2022.</div>
+          <span class="glossary-category">Cibo</span>
+        </div>
+
+        <div class="glossary-card" data-category="cibo" data-initial="v">
+          <div class="glossary-term">Вареники</div>
+          <div class="glossary-pronunciation">Varenyky</div>
+          <div class="glossary-translation">Ravioli ucraini</div>
+          <div class="glossary-definition">Pasta ripiena con patate, formaggio, cibo o frutta. Piatto tradizionale delle feste.</div>
+          <span class="glossary-category">Cibo</span>
+        </div>
+
+        <div class="glossary-card" data-category="cibo" data-initial="h">
+          <div class="glossary-term">Голубці</div>
+          <div class="glossary-pronunciation">Holubtsi</div>
+          <div class="glossary-translation">Involtini di cavolo</div>
+          <div class="glossary-definition">Foglie di cavolo ripiene di riso e carne, cotte al forno.</div>
+          <span class="glossary-category">Cibo</span>
+        </div>
+
+        <div class="glossary-card" data-category="cibo" data-initial="p">
+          <div class="glossary-term">Пампушки</div>
+          <div class="glossary-pronunciation">Pampushky</div>
+          <div class="glossary-translation">Panini all'aglio</div>
+          <div class="glossary-definition">Piccoli panini serviti con il borshch, conditi con aglio e erbe.</div>
+          <span class="glossary-category">Cibo</span>
+        </div>
+
+        <div class="glossary-card" data-category="storia" data-initial="k">
+          <div class="glossary-term">Київська Русь</div>
+          <div class="glossary-pronunciation">Kyivs'ka Rus'</div>
+          <div class="glossary-translation">Rus' di Kyiv</div>
+          <div class="glossary-definition">Stato medievale dell'Europa orientale, con capitale Kyiv, esistito dal IX al XIII secolo.</div>
+          <span class="glossary-category">Storia</span>
+        </div>
+
+        <div class="glossary-card" data-category="storia" data-initial="k">
+          <div class="glossary-term">Козаки</div>
+          <div class="glossary-pronunciation">Kozaky</div>
+          <div class="glossary-translation">Cosacchi</div>
+          <div class="glossary-definition">Guerrieri liberi che vivevano nelle steppe, noti per la loro indipendenza e abilità militare.</div>
+          <span class="glossary-category">Storia</span>
+        </div>
+
+        <div class="glossary-card" data-category="storia" data-initial="h">
+          <div class="glossary-term">Голодомор</div>
+          <div class="glossary-pronunciation">Holodomor</div>
+          <div class="glossary-translation">Holodomor</div>
+          <div class="glossary-definition">"Morte per fame" - carestia forzata del 1932-1933 che uccise milioni di ucraini.</div>
+          <span class="glossary-category">Storia</span>
+        </div>
+
+        <div class="glossary-card" data-category="guerra" data-initial="v">
+          <div class="glossary-term">Війна</div>
+          <div class="glossary-pronunciation">Viyna</div>
+          <div class="glossary-translation">Guerra</div>
+          <div class="glossary-definition">Termine ucraino per guerra, usato per descrivere il conflitto russo-ucraino.</div>
+          <span class="glossary-category">Guerra</span>
+        </div>
+
+        <div class="glossary-card" data-category="guerra" data-initial="f">
+          <div class="glossary-term">Фронт</div>
+          <div class="glossary-pronunciation">Front</div>
+          <div class="glossary-translation">Fronte</div>
+          <div class="glossary-definition">Linea di combattimento tra forze nemiche.</div>
+          <span class="glossary-category">Guerra</span>
+        </div>
+
+        <div class="glossary-card" data-category="guerra" data-initial="o">
+          <div class="glossary-term">Окупація</div>
+          <div class="glossary-pronunciation">Okupatsiya</div>
+          <div class="glossary-translation">Occupazione</div>
+          <div class="glossary-definition">Controllo militare di un territorio straniero.</div>
+          <span class="glossary-category">Guerra</span>
+        </div>
+
+        <div class="glossary-card" data-category="cultura" data-initial="v">
+          <div class="glossary-term">Вишиванка</div>
+          <div class="glossary-pronunciation">Vyshyvanka</div>
+          <div class="glossary-translation">Camicia ricamata</div>
+          <div class="glossary-definition">Abito tradizionale ucraino con ricami regionali, simbolo dell'identità nazionale.</div>
+          <span class="glossary-category">Cultura</span>
+        </div>
+
+        <div class="glossary-card" data-category="cultura" data-initial="p">
+          <div class="glossary-term">Писанки</div>
+          <div class="glossary-pronunciation">Pysanky</div>
+          <div class="glossary-translation">Uova decorate</div>
+          <div class="glossary-definition">Uova decorate con simboli rituali, tradizione pasquale ucraina.</div>
+          <span class="glossary-category">Cultura</span>
+        </div>
+
+        <div class="glossary-card" data-category="cultura" data-initial="b">
+          <div class="glossary-term">Бандура</div>
+          <div class="glossary-pronunciation">Bandura</div>
+          <div class="glossary-translation">Bandura</div>
+          <div class="glossary-definition">Strumento a corde tradizionale, simbolo della musica ucraina.</div>
+          <span class="glossary-category">Cultura</span>
+        </div>
+
+        <div class="glossary-card" data-category="religione" data-initial="p">
+          <div class="glossary-term">Православ'я</div>
+          <div class="glossary-pronunciation">Pravoslav"ya</div>
+          <div class="glossary-translation">Ortodossia</div>
+          <div class="glossary-definition">Principale religione in Ucraina, con radici bizantine.</div>
+          <span class="glossary-category">Religione</span>
+        </div>
+
+        <div class="glossary-card" data-category="religione" data-initial="h">
+          <div class="glossary-term">Греко-католики</div>
+          <div class="glossary-pronunciation">Hreko-katoliky</div>
+          <div class="glossary-translation">Greci cattolici</div>
+          <div class="glossary-definition">Chiesa ucraina che segue il rito bizantino ma riconosce il Papa.</div>
+          <span class="glossary-category">Religione</span>
+        </div>
+
+        <div class="glossary-card" data-category="politica" data-initial="m">
+          <div class="glossary-term">Майдан</div>
+          <div class="glossary-pronunciation">Maidan</div>
+          <div class="glossary-translation">Piazza</div>
+          <div class="glossary-definition">Nome della piazza centrale di Kyiv, simbolo delle proteste del 2013-2014.</div>
+          <span class="glossary-category">Politica</span>
+        </div>
+
+        <div class="glossary-card" data-category="politica" data-initial="v">
+          <div class="glossary-term">Верховна Рада</div>
+          <div class="glossary-pronunciation">Verkhovna Rada</div>
+          <div class="glossary-translation">Parlamento ucraino</div>
+          <div class="glossary-definition">Assemblea legislativa suprema dell'Ucraina.</div>
+          <span class="glossary-category">Politica</span>
+        </div>
+
+        <div class="glossary-card" data-category="politica" data-initial="p">
+          <div class="glossary-term">Президент</div>
+          <div class="glossary-pronunciation">Prezydent</div>
+          <div class="glossary-translation">Presidente</div>
+          <div class="glossary-definition">Capo dello Stato ucraino.</div>
+          <span class="glossary-category">Politica</span>
+        </div>
+      </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../scripts/script.js"></script>
+  <script src="../scripts/theme.js"></script>
+  <script>
+    const searchInput = document.getElementById('glossarySearch');
+    const filterButtons = document.querySelectorAll('.glossary-filters button');
+    const cards = document.querySelectorAll('.glossary-card');
+
+    function filterCards() {
+      const searchTerm = searchInput.value.toLowerCase();
+      const activeFilter = document.querySelector('.glossary-filters button.active').dataset.filter;
+
+      cards.forEach(card => {
+        const term = card.querySelector('.glossary-term').textContent.toLowerCase();
+        const translation = card.querySelector('.glossary-translation')?.textContent.toLowerCase() || '';
+        const definition = card.querySelector('.glossary-definition')?.textContent.toLowerCase() || '';
+        const category = card.dataset.category;
+
+        const matchesSearch = term.includes(searchTerm) || translation.includes(searchTerm) || definition.includes(searchTerm);
+        const matchesFilter = activeFilter === 'all' || category === activeFilter;
+
+        card.style.display = (matchesSearch && matchesFilter) ? 'block' : 'none';
+      });
+    }
+
+    searchInput.addEventListener('input', filterCards);
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', function() {
+        filterButtons.forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        filterCards();
+      });
+    });
+  </script>
+</body>
+</html>
